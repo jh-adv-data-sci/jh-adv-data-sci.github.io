@@ -11,7 +11,7 @@
     "href": "exercises.html",
     "title": "Exercises",
     "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\n\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\nNo matching items"
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\n\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\n\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -53,7 +53,7 @@
     "href": "index.html#advanced-data-science-i",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "Advanced Data Science I",
-    "text": "Advanced Data Science I\n\nWeek 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell – Do (hands-on commands)\n\n\n\nWeek 2\n\nClass 3: Cluster – Present (concepts, use cases)\n\nClass 4: Cluster – Do (git practice on cluster)\n\n\n\nWeek 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Do (build & share slides)\n\n\n\nWeek 4\n\nClass 7: R packages – Lecture/Do (creating, managing packages)\n\nClass 8: Grants (grant writing basics)\n\n\n\nWeek 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: Data Lecture – Do (scientific data concepts)\n\n\n\nWeek 6\n\nClass 11: Data Visualization (EDA) – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\nWeek 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\nWeek 8\n\nClass 15: APIs + Pulling – Do (SQL, API integration)\n\nClass 16: Final Presentations"
+    "text": "Advanced Data Science I\n\nWeek 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\nWeek 2\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\nWeek 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\nWeek 4\n\nClass 7: R packages\nClass 8: Grants\n\n\n\nWeek 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\nWeek 6\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\nWeek 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\nWeek 8\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
   },
   {
     "objectID": "index.html#week-1",
@@ -116,7 +116,7 @@
     "href": "index.html#advanced-data-science-ii",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "Advanced Data Science II",
-    "text": "Advanced Data Science II\n\nWeek 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\nWeek 2\n\nClass 3: Model Selection – tidymodels (intro)\n\nClass 4: Model Selection – Do (practice)\n\n\n\nWeek 3\n\nClass 5: Missing Data – Present (theory, strategies)\n\nClass 6: Missing Data – Do (coding exercises)\n\n\n\nWeek 4\n\nClass 7: Pipelining Techniques – Lecture\n\nClass 8: Pipelining Techniques – Do\n\n\n\nWeek 5\n\nClass 9: Predictive Competition – Present (framing a comp)\n\nClass 10: Measurement & Models – Lecture\n\n\n\nWeek 6\n\nClass 11: Measurement & Models – Do\n\nClass 12: Practical Bayes – Present (intro)\n\n\n\nWeek 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\nWeek 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+    "text": "Advanced Data Science II\n\nWeek 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\nWeek 2\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\nWeek 3\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\nWeek 4\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\nWeek 5\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\nWeek 6\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\nWeek 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\nWeek 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
   },
   {
     "objectID": "index.html#week-1-1",
@@ -320,5 +320,124 @@
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "17) Sanity checks and integrity",
     "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html",
+    "href": "exercises/slurm_and_the_cluster.html",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "",
+    "text": "Setup assumptions: You have SSH access to the cluster and R is available via modules or a system install. Replace partition/account names with your site’s values."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#warmup-explore-the-cluster",
+    "href": "exercises/slurm_and_the_cluster.html#warmup-explore-the-cluster",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Warm‑up: Explore the cluster",
+    "text": "Warm‑up: Explore the cluster\nQuestion. What partitions/queues can you use, and what’s the default time limit and CPU/memory policy?\n\n\nShow solution\n\n\n\nCode\n# Partitions and key limits\nsinfo -o '%P %l %c %m %a'   # Partition, time limit, CPUs, memory, availability\n\n# Default Slurm config snippets\nscontrol show config | egrep 'DefMemPerCPU|DefMemPerNode|SchedulerType|SelectType'\n\n# Your account/QoS\nsacctmgr show assoc user=$USER format=Cluster,Account,Partition,MaxWall,MaxCPUs,MaxJobs,Grp* -Pn 2&gt;/dev/null || true\n\n\nNotes: sinfo gives active partitions. scontrol show config reveals defaults like memory policy per CPU or per node.\n\n\n\nModules\nQuestion. What modules are available? Which ones are loaded?\n\n\nCode\nmodule avail\n\n\n\n\nHIPAA\nRead the HIPAA section of https://jhpce.jhu.edu/joinus/hipaa/\n\n\nSSH\nSkim how to set up SSH: https://jhpce.jhu.edu/access/ssh/\n\n\nTransfer one file\nSee https://jhpce.jhu.edu/access/file-transfer/ for transferring files, do this on the transfer node.\n\n\nGet on the interactive node\nUse --partition=interactive. Try to have 2 running."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#submit-a-minimal-r-job-single-task",
+    "href": "exercises/slurm_and_the_cluster.html#submit-a-minimal-r-job-single-task",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Submit a minimal R job (single task)",
+    "text": "Submit a minimal R job (single task)\nQuestion. Write a Slurm batch script that runs a one‑liner in R and writes to slurm-%j.out. Name the job rmin and have a time limit of 5 minutes, with 2G of memory requested. The one line should just do cat(\"Hello from R on Slurm!\\n\")\n\n\nShow solution\n\n\n\nCode\ncat &gt; r_minimal.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J rmin\n#SBATCH -t 00:05:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%j.out\n\nmodule load conda_R 2&gt;/dev/null || true  # or: module load R; or skip if R in PATH\nRscript -e 'cat(\"Hello from R on Slurm!\\n\")'\nSB\n\nsbatch r_minimal.sbatch\n\n\n%j expands to the JobID. Inspect output with tail -f slurm-&lt;jobid&gt;.out."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#parameterized-simulation-in-r-script",
+    "href": "exercises/slurm_and_the_cluster.html#parameterized-simulation-in-r-script",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Parameterized simulation in R (script)",
+    "text": "Parameterized simulation in R (script)\nQuestion. Create sim.R that accepts command‑line args: n, mu, sigma, seed, runs a simple simulation (e.g., mean of rnorm), and writes a CSV line to results/sim_&lt;seed&gt;.csv. See ?commandArgs.\n\n\nShow solution\n\n\n\nCode\nmkdir -p results\ncat &gt; sim.R &lt;&lt;'RS'\nargs &lt;- commandArgs(trailingOnly = TRUE)\nstopifnot(length(args) == 4)\n\nn     &lt;- as.integer(args[1])\nmu    &lt;- as.numeric(args[2])\nsigma &lt;- as.numeric(args[3])\nseed  &lt;- as.integer(args[4])\n\nset.seed(seed)\nx &lt;- rnorm(n, mu, sigma)\nres &lt;- data.frame(n=n, mu=mu, sigma=sigma, seed=seed,\n                  mean=mean(x), sd=sd(x))\n\nout &lt;- sprintf('results/sim_%d.csv', seed)\nwrite.csv(res, out, row.names = FALSE)\ncat('Wrote', out, '\\n')\nRS"
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#batch-script-that-passes-parameters-to-r",
+    "href": "exercises/slurm_and_the_cluster.html#batch-script-that-passes-parameters-to-r",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Batch script that passes parameters to R",
+    "text": "Batch script that passes parameters to R\nQuestion. Write sim.sbatch that runs Rscript sim.R 10000 0 1 42.\n\n\nShow solution\n\n\n\nCode\ncat &gt; sim.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J sim\n#SBATCH -t 00:05:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%j.out\n\nmodule load conda_R 2&gt;/dev/null || true\nRscript sim.R 10000 0 1 42\nSB\n\nsbatch sim.sbatch"
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#create-a-parameter-grid-in-r-with-expand.grid",
+    "href": "exercises/slurm_and_the_cluster.html#create-a-parameter-grid-in-r-with-expand.grid",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "4) Create a parameter grid in R with expand.grid",
+    "text": "4) Create a parameter grid in R with expand.grid\nQuestion. Use R to create a grid of (n, mu, sigma, seed) and save it as params.csv for an array job (no header, one row per task).\n\n\nShow solution\n\n\nRscript - &lt;&lt;'RS'\nparams &lt;- expand.grid(\n  n    = c(1e4, 5e4),\n  mu   = c(0, 0.2),\n  sigma= c(1, 2),\n  seed = 1:8\n)\n# optional shuffle for load balance\nset.seed(1); params &lt;- params[sample(nrow(params)), ]\nwrite.table(params, file='params.csv', sep=',', row.names=FALSE, col.names=FALSE)\ncat(nrow(params), 'parameter rows written to params.csv\\n')\nRS\n\nhead -n 5 params.csv\nwc -l params.csv\n\nNotes: We removed headers so each array index can read the SLURM_ARRAY_TASK_ID‑th line directly."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#array-job-to-run-the-grid",
+    "href": "exercises/slurm_and_the_cluster.html#array-job-to-run-the-grid",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Array job to run the grid",
+    "text": "Array job to run the grid\nQuestion. Write sim_array.sbatch that runs one row of params.csv per array task and writes logs as slurm-%A_%a.out.\n\n\nShow solution\n\n\n\nCode\ncat &gt; sim_array.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J simarr\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%A_%a.out\n#SBATCH --array=1-32           # &lt;-- set to nrow(params.csv)\n\nmodule load conda_R 2&gt;/dev/null || true\n\n# Read the line matching this array index\nIFS=',' read -r n mu sigma seed &lt; &lt;(sed -n \"${SLURM_ARRAY_TASK_ID}p\" params.csv)\n\necho \"Task ${SLURM_ARRAY_TASK_ID}: n=$n mu=$mu sigma=$sigma seed=$seed\"\nRscript sim.R \"$n\" \"$mu\" \"$sigma\" \"$seed\"\nSB\n\n# Submit after matching the array range to your params\nlines=$(wc -l &lt; params.csv)\nsbatch --array=1-$lines sim_array.sbatch\n\n\nKey env vars: SLURM_ARRAY_TASK_ID (index), %A (ArrayJobID), %a (TaskID) for log naming."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#monitor-inspect-and-cancel-jobs",
+    "href": "exercises/slurm_and_the_cluster.html#monitor-inspect-and-cancel-jobs",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Monitor, inspect, and cancel jobs",
+    "text": "Monitor, inspect, and cancel jobs\nQuestion. How do you check running jobs and see finished job states? Cancel a stuck task 5 of an array.\n\n\nShow solution\n\n\n\nCode\n# Running/queued jobs for you\nsqueue -u $USER -o '%A %j %t %M %D %R'\n\n# Completed job accounting (after finish)\nsacct -u $USER --starttime today \\\n  --format=JobID,JobName%30,State,Elapsed,MaxRSS,ExitCode\n\n# Show details for a specific job\na_jobid=123456\nscontrol show job $a_jobid | less\n\n# Cancel a whole job or a single array task\nscancel 123456           # whole job\nscancel 123456_5         # only task 5\n\n\nUse tail -f slurm-123456_5.out to live‑watch a specific task’s output."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#postprocessing-with-job-dependencies",
+    "href": "exercises/slurm_and_the_cluster.html#postprocessing-with-job-dependencies",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "7) Post‑processing with job dependencies",
+    "text": "7) Post‑processing with job dependencies\nQuestion. Submit a combine job that runs after all array tasks succeed, binding its dependency to the array’s JobID.\n\n\nShow solution\n\n\ncat &gt; combine.R &lt;&lt;'RS'\nfl &lt;- list.files('results', pattern='^sim_\\\\d+\\\\.csv$', full.names=TRUE)\nif (length(fl)==0) stop('No results found')\nall &lt;- do.call(rbind, lapply(fl, read.csv))\nwrite.csv(all, 'results/combined.csv', row.names=FALSE)\ncat('Wrote results/combined.csv with', nrow(all), 'rows\\n')\nRS\n\ncat &gt; combine.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J combine\n#SBATCH -p short\n#SBATCH -t 00:05:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%j.out\nmodule load conda_R 2&gt;/dev/null || true\nRscript combine.R\nSB\n\n# Submit array and capture JobID, then submit dependent combine\njid=$(sbatch --parsable sim_array.sbatch)\n# If sim_array used --array, dependency should reference the parent array ID only\nparent=${jid%%.*}\nsbatch --dependency=afterok:$parent combine.sbatch\n\nNotes: Use afterok: to run combine only if all array tasks complete successfully. Use ${jid%%.*} to strip the task suffix."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#resource-requests-usage-diagnostics",
+    "href": "exercises/slurm_and_the_cluster.html#resource-requests-usage-diagnostics",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Resource requests & usage diagnostics",
+    "text": "Resource requests & usage diagnostics\nQuestion. Request 2 CPUs and 4G RAM per task; later, inspect actual usage.\n\n\nShow solution\n\n\n\nCode\n# In your .sbatch header\n#SBATCH -c 2\n#SBATCH --mem=4G\n\n# Inspect after completion\nsacct -j 123456 -o JobID,JobName%30,AllocCPUS,Elapsed,MaxRSS,State,ExitCode\n\n\nTip: Prefer --mem= (per node) vs --mem-per-cpu= depending on your site policy."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#resubmit-only-failed-array-tasks",
+    "href": "exercises/slurm_and_the_cluster.html#resubmit-only-failed-array-tasks",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Resubmit only failed array tasks",
+    "text": "Resubmit only failed array tasks\nQuestion. Find which tasks failed from a previous array job and resubmit only those indices.\n\n\nShow solution\n\n\n\nCode\njid=123456  # parent array job ID\n# List failed indices (State not COMPLETED)\nfail=$(sacct -j $jid --format=JobID,State -n | awk -F'[_. ]' '$2!=\"batch\" && $3!=\"COMPLETED\" {print $2}' | sort -n | uniq)\n\necho \"Failed indices: $fail\"\n[ -n \"$fail\" ] && sbatch --array=$(echo $fail | tr ' ' ',') sim_array.sbatch\n\n\nThis parses sub‑job entries like 123456_7 and extracts 7 when State != COMPLETED."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#interactive-work-debugging",
+    "href": "exercises/slurm_and_the_cluster.html#interactive-work-debugging",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Interactive work (debugging)",
+    "text": "Interactive work (debugging)\nQuestion. Start an interactive shell on a compute node and verify R sees multiple threads.\n\n\nShow solution\n\n\n\nCode\n# Allocate and attach to a compute node for 10 min with 2 CPUs and 2G RAM\nsalloc -t 00:10:00 -c 2 --mem=2G\nsrun --pty bash\n\nmodule load conda_R 2&gt;/dev/null || true\nR -q &lt;&lt;'RS'\nparallel::detectCores()\nsessionInfo()\nRS\n\n# Exit when done\nexit  # from R\nexit  # from shell to release allocation"
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#vs-code-positron-remote-dev",
+    "href": "exercises/slurm_and_the_cluster.html#vs-code-positron-remote-dev",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "VS Code / Positron remote dev",
+    "text": "VS Code / Positron remote dev\nQuestion. Configure VS Code (or Positron) to edit/submit jobs on the cluster via SSH.\n\n\nShow solution\n\nVS Code (Remote - SSH):\n\nInstall extensions: Remote - SSH, R, optionally Python, Bash IDE.\nCreate ~/.ssh/config entry on your laptop:\nHost myhpc\n  HostName login.cluster.edu\n  User your_netid\n  IdentityFile ~/.ssh/id_ed25519\nIn VS Code: Remote Explorer → SSH Targets → myhpc → Connect.\nOpen your home/project directory on the cluster.\nEnsure R is available in PATH on the cluster; set VS Code R extension (if needed) to use /usr/bin/R or your module path.\nUse VS Code terminal (connected to myhpc) to run sbatch, squeue, etc. Edit .sbatch/.R files locally but they execute on the cluster.\n\nPositron:\n\nInstall the Remote - SSH (or built‑in remote) capability; connect similarly to open a remote workspace.\nConfigure the R path in Positron settings to point to the cluster’s R binary; use the integrated terminal for sbatch.\n\nOptional: set up SSH keys and agent forwarding to enable Git from the cluster."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#helpful-shell-aliasesfunctions-for-slurm",
+    "href": "exercises/slurm_and_the_cluster.html#helpful-shell-aliasesfunctions-for-slurm",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Helpful shell aliases/functions for SLURM",
+    "text": "Helpful shell aliases/functions for SLURM\nTask: Look over these and add helpers to your ~/.bash_profile to speed up common tasks. Better yet, make a ~/.bash_aliases and put this in ~/.bashrc:\n\n\nCode\n# User specific aliases and functions\nif [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi\n\n\nCommands:\n\n\nCode\ncat &gt;&gt; ~/.bashrc &lt;&lt;'BRC'\n# Slurm quick views\nalias sj='squeue -u $USER -o \"%A %j %t %M %D %R\"'\nalias sa='sacct -u $USER --starttime today -o JobID,JobName%30,State,Elapsed,MaxRSS,ExitCode'\n\n# Tail latest log(s)\nsl(){ tail -n +1 -f slurm-*.out; }\n\n# Submit and print JobID only\nsb(){ sbatch --parsable \"$@\"; }\n\n# Describe a job\nsd(){ scontrol show job \"$1\" | less; }\n\n# Resubmit failed array tasks for a parent JobID\nsref(){ jid=\"$1\"; idx=$(sacct -j \"$jid\" -n -o JobID,State | awk -F'[_. ]' '$2!=\"batch\" && $3!=\"COMPLETED\"{print $2}' | sort -n | uniq | paste -sd, -); [ -n \"$idx\" ] && sbatch --array=\"$idx\" sim_array.sbatch; }\n\nalias sqme=\"squeue --me\"\n\nRnosave () \n{ \n    x=\"$1\";\n    tempfile=`mktemp file.XXXX.sh`;\n    echo \"#!/bin/bash\" &gt; $tempfile;\n    echo \". ~/.bash_profile\" &gt;&gt; $tempfile;\n    echo \"R --no-save &lt; ${x}\" &gt;&gt; $tempfile;\n    shift;\n    cmd=\"${submitter} $@ $tempfile\";\n    echo \"cmd is $cmd\";\n    ${cmd};\n    rm $tempfile\n}\n\n## Git Add, Commit, Push (GACP)\nfunction gacp { \n    git pull;\n    git add --all .;\n    git commit -m \"${1}\";\n    if [ -n \"${2}\" ]; then\n        echo \"Tagging Commit\";\n        git tag \"${2}\";\n        git push origin \"${2}\";\n        git commit --amend -m \"${1} [ci skip]\";\n    fi;\n    git push origin\n}\n\n## raw ls\nalias rls=\"/usr/bin/ls -f\"\n\n## grep on history this is really important\nfunction hgrep {\n    history | grep \"$@\"\n}\n\nBRC\n\n# Reload shell config\nsource ~/.bashrc\n\n\nThese helpers give you one‑letter shortcuts for listing jobs (sj), recent accounting (sa), tailing logs (sl), describing a job (sd), and resubmitting failures (sref)."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#bonus-make-a-project-scaffold",
+    "href": "exercises/slurm_and_the_cluster.html#bonus-make-a-project-scaffold",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Bonus: Make a project scaffold",
+    "text": "Bonus: Make a project scaffold\nQuestion. Create a scaffold with directories and template scripts for simulations.\n\n\nShow solution\n\n\n\nCode\nmkdir -p {scripts,results,logs}\n\n# Template sbatch header you can copy into scripts/\ncat &gt; scripts/_header.sbatch &lt;&lt;'H'\n#!/usr/bin/env bash\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o logs/slurm-%A_%a.out\nH\n\n\nNow copy _header.sbatch into new jobs and append your commands."
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#deliverables-for-practice",
+    "href": "exercises/slurm_and_the_cluster.html#deliverables-for-practice",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Deliverables (for practice)",
+    "text": "Deliverables (for practice)\n\nr_minimal.sbatch and output log\nsim.R, params.csv, sim_array.sbatch\nEvidence of a dependency submission (combine.sbatch and combined output)\nYour updated ~/.bashrc helpers"
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#use-expand.grid-in-r-with-slurm_array_task_id-no-params.csv",
+    "href": "exercises/slurm_and_the_cluster.html#use-expand.grid-in-r-with-slurm_array_task_id-no-params.csv",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)",
+    "text": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)\nQuestion. Within R, generate a parameter grid and pick the row corresponding to your task index using SLURM_ARRAY_TASK_ID. Run sim.R with those values.\n\n\nShow solution\n\ndriver.R\n\n\nCode\n# Read the array index (default 1 when running locally)\nidx &lt;- as.integer(Sys.getenv('SLURM_ARRAY_TASK_ID', '1'))\n\n# Define your parameter grid\nparams &lt;- expand.grid(\n  n    = c(1e4, 5e4),\n  mu   = c(0, 0.2),\n  sigma= c(1, 2),\n  seed = 1:8\n)\n\nstopifnot(idx &gt;= 1, idx &lt;= nrow(params))\np &lt;- params[idx, , drop = FALSE]\n\nset.seed(p$seed)\nx &lt;- rnorm(n, mu, sigma)\n\n\n\n\nCode\n# Minimal array submission (match the array range to nrow(params) = 64)\ncat &gt; driver_array.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J drv\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%A_%a.out\n#SBATCH --array=1-64\nmodule load conda_R 2&gt;/dev/null || true\nRscript driver.R\nSB\n\nsbatch driver_array.sbatch\n\n\nNotes: - Ensure the array range matches nrow(params) inside driver.R. - Locally, you can test with SLURM_ARRAY_TASK_ID=3 Rscript driver.R."
   }
 ]

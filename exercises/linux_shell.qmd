@@ -3,6 +3,7 @@ title: "Linux & the Shell — Open-Ended Exercises"
 author: "01-Linux & Shell"
 format:
   html:
+    toc: true
     code-fold: true
     code-tools: true
 editor: source
