@@ -1,5 +1,6 @@
 ---
 title: "Linux & the Shell — Open-Ended Exercises"
+subtitle: "How to Effectively Work at the Command Line"
 author: "01-Linux & Shell"
 format:
   html:
@@ -10,8 +11,6 @@ editor: source
 engine: knitr
 ---
 
-> **Audience:** PhD-level biostatisticians. Focus on workflows for data science, automation, compression, and reproducibility.
->
 > **Tip:** Unless stated otherwise, exercises assume a CSV named `penguins.csv` (with a header) in the working directory. Exercise **0** shows how to download one from the internet. Answers are hidden—click to reveal.
 
 ---

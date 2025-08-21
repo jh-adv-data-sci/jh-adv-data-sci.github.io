@@ -1,5 +1,6 @@
 ---
 title: "Submitting Jobs on HPC with SLURM"
+subtitle: "How to Effectively Work on JHPCE"
 author: "02-SLURM and the Cluster"
 format:
   html:
