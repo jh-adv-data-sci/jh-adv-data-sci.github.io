@@ -13,6 +13,7 @@ website:
       - href: exercises.qmd
         text: Exercises
       - href: homework.qmd
+      - href: resources.qmd
 
 format:
   html:

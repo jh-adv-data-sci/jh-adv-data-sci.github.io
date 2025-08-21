@@ -1,0 +1,6 @@
+---
+title: "Resources"
+editor: source
+listing:
+  contents: resources
+---

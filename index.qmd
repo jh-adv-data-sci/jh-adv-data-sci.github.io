@@ -40,7 +40,7 @@ None. Instead, we have a list of recommended readings on the web site available 
 
 ## Course Communication
 
-We will use [Slack](https://join.slack.com/t/jhu-advdatasci/shared_invite/zt-3c449h4dc-BAWFIJ9vgDyd2FpNL6ElaQ)/[CoursePlus](https://courseplus.jhu.edu/core/index.cfm/go/course.home/coid/24068/) to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime. 
+We will use [Slack](https://jhu-advdatasci.slack.com/)/[CoursePlus](https://courseplus.jhu.edu/core/index.cfm/go/course.home/coid/24068/) to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime. 
 
 ## Office hours
 
@@ -53,10 +53,11 @@ See [Schedule/Syllabus Tab](schedule.html)
 
 # Course components
 
-
 ## Grades
-* Attendance and Participation: 10%
-* Individual/group projects/assignments: 90%
+* Participation: 10%
+* Homework: 60%
+* Presentation(s): 30%
+
 
 If not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.  
 
