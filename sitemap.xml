@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jh-adv-data-sci.github.io/resources.html</loc>
-    <lastmod>2025-08-21T16:28:23.009Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.987Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/index.html</loc>
-    <lastmod>2025-08-21T16:28:23.008Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.987Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/linux_shell.html</loc>
-    <lastmod>2025-08-21T16:28:23.007Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.986Z</lastmod>
   </url>
   <url>
-    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
-    <lastmod>2025-08-21T16:28:23.007Z</lastmod>
+    <loc>https://jh-adv-data-sci.github.io/homework/nhanes_project.html</loc>
+    <lastmod>2025-08-21T16:45:11.987Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/schedule.html</loc>
-    <lastmod>2025-08-21T16:28:23.009Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.987Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
+    <lastmod>2025-08-21T16:45:11.986Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/power.html</loc>
-    <lastmod>2025-08-21T16:28:23.007Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.986Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/slurm_and_the_cluster.html</loc>
-    <lastmod>2025-08-21T16:28:23.008Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.986Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/homework.html</loc>
-    <lastmod>2025-08-21T16:28:23.008Z</lastmod>
+    <lastmod>2025-08-21T16:45:11.987Z</lastmod>
   </url>
 </urlset>
