@@ -1,0 +1,171 @@
+---
+title: "Advanced Data Science: Welcome and Syllabus"
+---
+
+Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist. 
+
+We will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language. 
+
+The course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis. 
+
+
+We will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods.
+
+# Course objectives
+
+Upon successfully completing this course, students will be able to:
+
+1. Formulate quantitative models to address scientific questions
+2. Obtain, clean, transform, and process raw data into usable formats
+3. Organize and perform a complete data analysis, from exploration/visualization, to analysis, to synthesis, to communication
+4. Apply a range of statistical methods for inference and prediction
+5. Operate within *nix operating systems.
+6. Submit jobs to a high-performance computing cluster.
+7. Create and distribute an R package.
+8. Write an statistical analysis plan (SAP), including a power analysis for a grant.
+9. Present on data science topics.
+
+
+# Course logistics 
+
+
+
+## Pre-requisites
+
+This course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. We are open to anyone taking the class, but since it is a core requirement for our PhD program we will not be slowing down or allowing auditors for the class. 
+
+## Required Textbook
+
+None. Instead, we have a list of recommended readings on the web site available at [Resources](resources.html).
+
+## Course Communication
+
+We will use [Slack](https://join.slack.com/t/jhu-advdatasci/shared_invite/zt-3c449h4dc-BAWFIJ9vgDyd2FpNL6ElaQ)/CoursePlus to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime. 
+
+## Office hours
+
+Office hours will be announced during the first week of class for each term.
+
+# Course Outline
+## Advanced Data Science I
+
+## Week 1
+- **Class 1:** [Intro](https://docs.google.com/presentation/d/1fb5W1fcnIdYtq_sXl6V3bh2uFdJ68h_qSwUxWtPs_to/edit?usp=sharing) and [Linux & Shell](https://docs.google.com/presentation/d/1kFjRsQ0tOaH59HNp-v5_xdmRvAfJM0uv3R3SS-RxT4I/edit?usp=sharing) – Present (intro, basics)  
+- **Class 2:** [Linux & Shell – Do](exercises/linux_shell.html) (hands-on commands)  
+
+## Week 2
+- **Class 3:** Cluster – Present (concepts, use cases)  
+- **Class 4:** Cluster – Do (git practice on cluster)  
+
+## Week 3
+- **Class 5:** Power Lecture (foundations/tools)  
+- **Class 6:** Power – Do (build & share slides)  
+
+## Week 4
+- **Class 7:** R packages – Lecture/Do (creating, managing packages)  
+- **Class 8:** Grants (grant writing basics)  
+
+## Week 5
+- **Class 9:** Present P1 – Do (SAP style project presentation)  
+- **Class 10:** Data Lecture – Do (scientific data concepts)  
+
+## Week 6
+- **Class 11:** Data Visualization (EDA) – Lecture  
+- **Class 12:** Data Visualization (EDA) – Do  
+
+## Week 7
+- **Class 13:** App Dashboard – Development (setup & workflow)  
+- **Class 14:** App Dashboard – Do (hands-on build)  
+
+## Week 8
+- **Class 15:** APIs + Pulling – Do (SQL, API integration)  
+- **Class 16:** Final Presentations  
+
+
+## Advanced Data Science II
+
+## Week 1
+- **Class 1:** Language Models – API (overview, usage)  
+- **Class 2:** Language Models – Do (hands-on, coding)  
+
+## Week 2
+- **Class 3:** Model Selection – tidymodels (intro)  
+- **Class 4:** Model Selection – Do (practice)  
+
+## Week 3
+- **Class 5:** Missing Data – Present (theory, strategies)  
+- **Class 6:** Missing Data – Do (coding exercises)  
+
+## Week 4
+- **Class 7:** Pipelining Techniques – Lecture  
+- **Class 8:** Pipelining Techniques – Do  
+
+## Week 5
+- **Class 9:** Predictive Competition – Present (framing a comp)  
+- **Class 10:** Measurement & Models – Lecture  
+
+## Week 6
+- **Class 11:** Measurement & Models – Do  
+- **Class 12:** Practical Bayes – Present (intro)  
+
+## Week 7
+- **Class 13:** Practical Bayes – Lecture (methods)  
+- **Class 14:** Practical Bayes – Do (applications)  
+
+## Week 8
+- **Class 15:** Presentation prep  
+- **Class 16:** Final Presentations  
+
+
+# Course components
+
+
+## Grades
+* Attendance and Participation: 10%
+* Individual/group projects/assignments: 90%
+
+If not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.  
+
+
+### Homework
+
+Homework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment. 
+
+### Collaboration Policy 
+
+You are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the **work you turn in must be your own**. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to [Office of Academic Integrity](https://www.jhsph.edu/offices-and-services/office-of-academic-affairs/academic-integrity/index.html), and will fail the assignment. 
+
+#### Collaboration with AI
+
+We fully encourage you to use AI when you feel necessary, and to use as an aid.  At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.
+
+
+### Quoting Sources
+
+You must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!
+
+You may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.
+
+### Missed Activities and Assignment Deadlines
+
+Projects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).
+
+### Late Day Policy
+
+Each student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.
+
+Although the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is <24 hours late, and 20% points for the assignment that is 24-48 hours late. 
+
+
+### Regrading Policy
+
+It is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment.
+
+
+# Additional Information
+
+### Accessibility
+
+If you have a documented disability (physical or cognitive) that may impair your ability to complete assignments or otherwise participate in the course and satisfy course criteria, please meet with us at your earliest convenience to identify, discuss, and document any feasible instructional modifications or accommodations. You should also contact the [Office of Student Disability Services](https://studentaffairs.jhu.edu/disabilities/) to request an official letter outlining authorized accommodations.
+
+

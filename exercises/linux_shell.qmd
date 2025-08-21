@@ -1,0 +1,366 @@
+---
+title: "Linux & the Shell — Open-Ended Exercises"
+author: "01-Linux & Shell"
+format:
+  html:
+    code-fold: true
+    code-tools: true
+editor: source
+engine: knitr
+---
+
+> **Audience:** PhD-level biostatisticians. Focus on workflows for data science, automation, compression, and reproducibility.
+>
+> **Tip:** Unless stated otherwise, exercises assume a CSV named `penguins.csv` (with a header) in the working directory. Exercise **0** shows how to download one from the internet. Answers are hidden—click to reveal.
+
+---
+
+## 0) Download a CSV from the internet (and name it `penguins.csv`)
+**Question.** Use a command-line tool to download a CSV and save it as `penguins.csv`. Verify it looks like a CSV and preview the first few lines.
+
+The file is available at https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv
+
+
+
+<details><summary>Show solution</summary>
+
+```bash
+# Using curl (follow redirects, write to file):
+curl -L -o penguins.csv \
+  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv
+
+# Or using wget:
+wget -O penguins.csv \
+  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv
+
+# (Optional) R from shell:
+R -q -e "download.file('https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv','penguins.csv', mode='wb')"
+
+# (Optional) Python from shell:
+python - <<'PY'
+import urllib.request
+url='https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv'
+urllib.request.urlretrieve(url, 'penguins.csv')
+PY
+
+# Basic checks
+file penguins.csv
+head -n 5 penguins.csv
+wc -l penguins.csv   # total lines (incl. header)
+```
+
+Notes:
+- `-L` (curl) follows redirects. `-O/-o` choose output filename.
+- Use `head`, `wc -l`, and `cut -d',' -f1-5 | head` to quickly sanity-check.
+</details>
+
+---
+
+## 1) Where am I? What’s here?
+**Question.** Print your current directory and list files with sizes and hidden entries.
+
+<details><summary>Show solution</summary>
+
+```bash
+pwd
+ls -lha
+```
+</details>
+
+---
+
+## 2) Create a working area
+**Question.** Make a folder `shell_practice` and change into it. Create `notes.md`.
+
+<details><summary>Show solution</summary>
+
+```bash
+mkdir -p shell_practice && cd shell_practice
+: > notes.md   # or: touch notes.md
+```
+</details>
+
+---
+
+## 3) Count rows in an **uncompressed** CSV (skip header)
+**Question.** Count the number of data rows (exclude the header line) in `penguins.csv`.
+
+<details><summary>Show solution</summary>
+
+```bash
+# total lines minus header
+total=$(wc -l < penguins.csv)
+echo $(( total - 1 ))
+
+# or with tail:
+tail -n +2 penguins.csv | wc -l
+```
+</details>
+
+---
+
+## 4) Compress a CSV with `gzip` and `pigz`
+**Question.** Create `penguins.csv.gz` using (a) `gzip` and (b) `pigz`. Compare time and file size.
+
+<details><summary>Show solution</summary>
+
+```bash
+# (a) Using gzip
+time gzip -kf penguins.csv     # -k keep original, -f overwrite
+ls -lh penguins.csv penguins.csv.gz
+
+# (b) Using pigz (parallel gzip)
+# If missing, install via your package manager (e.g., apt, brew, conda).
+time pigz -kf penguins.csv
+ls -lh penguins.csv penguins.csv.gz
+
+# Inspect compressed vs uncompressed byte counts
+gzip -l penguins.csv.gz
+```
+
+Notes:
+- `pigz` uses multiple cores → faster on large files; compression ratio is the same algorithm as gzip.
+</details>
+
+---
+
+## 5) Count rows in a **compressed** CSV (`.gz`)
+**Question.** Count data rows in `penguins.csv.gz` **without** fully decompressing to disk.
+
+<details><summary>Show solution</summary>
+
+```bash
+# Using gzip’s decompressor:
+gzip -cd penguins.csv.gz | tail -n +2 | wc -l
+
+# Using pigz if available:
+pigz -dc penguins.csv.gz | tail -n +2 | wc -l
+
+# Using zcat (often symlinked to gzip -cd):
+zcat penguins.csv.gz | tail -n +2 | wc -l
+```
+
+Why: `-c` writes to stdout; `-d` decompresses. `tail -n +2` skips the header.
+</details>
+
+---
+
+## 6) Quick column exploration with `cut`, `head`, `sort`, `uniq`
+**Question.** Show the first 5 IDs and the distinct sex values with counts.
+
+<details><summary>Show solution</summary>
+
+```bash
+head -n 6 penguins.csv | cut -d',' -f1      # header + first 5 IDs
+cut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c
+```
+</details>
+
+---
+
+## 7) Filter rows by a condition with `awk`
+**Question.** Count participants with `age >= 60`. Compute the mean BMI.
+
+<details><summary>Show solution</summary>
+
+```bash
+# age >= 60 (age is 3rd column)
+awk -F',' 'NR>1 && $3 >= 60 {c++} END{print c+0}' penguins.csv
+
+# mean BMI (4th column)
+awk -F',' 'NR>1 {s+=$4; n++} END{print s/n}' penguins.csv
+```
+</details>
+
+---
+
+## 8) Find rows with missing values in **any** field
+**Question.** Count how many data rows contain an empty field.
+
+<details><summary>Show solution</summary>
+
+```bash
+# simple heuristic: consecutive delimiters or trailing comma
+grep -E ',,' penguins.csv | wc -l
+# more thorough (detect empty at start/end or middle):
+awk -F',' 'NR>1{for(i=1;i<=NF;i++) if($i==""){m++ ; break}} END{print m+0}' penguins.csv
+```
+</details>
+
+---
+
+## 9) Save the first 20 IDs to a file
+**Question.** Write the first 20 **IDs** (not including header) to `sample_ids.txt`.
+
+<details><summary>Show solution</summary>
+
+```bash
+tail -n +2 penguins.csv | cut -d',' -f1 | head -n 20 > sample_ids.txt
+wc -l sample_ids.txt   # should be 20
+```
+</details>
+
+---
+
+## 10) Chain operations with pipes
+**Question.** Among *male* participants, show counts by **age** (3rd column) in ascending order.
+
+<details><summary>Show solution</summary>
+
+```bash
+awk -F',' 'NR>1 && $2=="male"{print $3}' penguins.csv | sort -n | uniq -c
+```
+</details>
+
+---
+
+## 11) Make the analysis reproducible with a script
+**Question.** Create `analyze.sh` that prints: total rows, rows age ≥ 60, and mean BMI. Run it.
+
+<details><summary>Show solution</summary>
+
+```bash
+cat > analyze.sh << 'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+
+csv="${1:-penguins.csv}"
+
+echo "File: $csv"
+echo -n "Total data rows: "
+tail -n +2 "$csv" | wc -l
+
+echo -n "Age >= 60 rows: "
+awk -F',' 'NR>1 && $3 >= 60 {c++} END{print c+0}' "$csv"
+
+echo -n "Mean BMI: "
+awk -F',' 'NR>1 {s+=$4; n++} END{print s/n}' "$csv"
+EOF
+
+chmod +x analyze.sh
+./analyze.sh penguins.csv
+```
+</details>
+
+---
+
+## 12) Script for **compressed** input
+**Question.** Modify your script so it also accepts `penguins.csv.gz` seamlessly.
+
+<details><summary>Show solution</summary>
+
+```bash
+cat > analyze_any.sh << 'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+f="${1:-penguins.csv}"
+
+stream() {
+  case "$f" in
+    *.gz)  gzip -cd "$f" ;;
+    *)     cat "$f" ;;
+  esac
+}
+
+# Skip header once:
+data="$(stream | tail -n +2)"
+
+echo "File: $f"
+echo "Total data rows: $(printf "%s\n" "$data" | wc -l)"
+echo "Age >= 60 rows: $(printf "%s\n" "$data" | awk -F',' '$3>=60{c++} END{print c+0}')"
+echo "Mean BMI: $(printf "%s\n" "$data" | awk -F',' '{s+=$4; n++} END{print s/n}')"
+EOF
+
+chmod +x analyze_any.sh
+./analyze_any.sh penguins.csv.gz
+```
+</details>
+
+---
+
+## 13) Record a reproducible terminal session
+**Question.** Record your workflow to `session.log` and preview it.
+
+<details><summary>Show solution</summary>
+
+```bash
+script -q session.log
+# …run a few commands…
+exit
+less session.log
+```
+</details>
+
+---
+
+## 14) One-liners for large files
+**Question.** Show the **uncompressed byte size** of `penguins.csv.gz` without fully inflating it; then estimate memory needed to load the CSV.
+
+<details><summary>Show solution</summary>
+
+```bash
+# Uncompressed and compressed sizes (bytes):
+gzip -l penguins.csv.gz
+
+# Rough row count without header (streaming):
+rows=$(gzip -cd penguins.csv.gz | tail -n +2 | wc -l)
+echo "Rows: $rows"
+```
+
+Notes:
+- `gzip -l` reports compressed and uncompressed sizes; not row count.
+- Memory needs depend on parsing overhead; this is only an order-of-magnitude check.
+</details>
+
+---
+
+## 15) Remote/HPC touchpoint (optional)
+**Question.** Copy your CSV to a remote machine and check its line count there.
+
+<details><summary>Show solution</summary>
+
+```bash
+scp penguins.csv user@server:~/data/
+ssh user@server 'wc -l ~/data/penguins.csv'
+```
+</details>
+
+---
+
+## 16) Parallel compression benchmarking (optional, larger files)
+**Question.** Compare wall-clock time for `gzip` vs `pigz` on a large file.
+
+<details><summary>Show solution</summary>
+
+```bash
+# Create a larger file by duplication (demo only):
+awk 'NR==1 || FNR>1' penguins.csv penguins.csv penguins.csv penguins.csv penguins.csv \
+  > big.csv   # header from first file, rest skip header
+
+# Benchmark (prints elapsed time)
+/usr/bin/time -f "gzip: %E" gzip -kf big.csv
+/usr/bin/time -f "pigz: %E" pigz -kf big.csv
+ls -lh big.csv big.csv.gz
+```
+</details>
+
+---
+
+## 17) Sanity checks and integrity
+**Question.** Verify that the compressed and uncompressed files have identical content checksums.
+
+<details><summary>Show solution</summary>
+
+```bash
+md5sum penguins.csv
+gzip -c penguins.csv | md5sum       # checksum of compressed stream (different)
+gzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream
+# To compare content equality:
+md5sum penguins.csv > a.md5
+gzip -cd penguins.csv.gz | md5sum > b.md5
+diff a.md5 b.md5   # no output => identical content
+```
+
+Explanation: the compressed file’s checksum differs, but the **decompressed content** checksum should match the original.
+</details>
+
