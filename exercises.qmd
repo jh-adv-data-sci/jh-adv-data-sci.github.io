@@ -3,4 +3,6 @@ title: "Exercises"
 editor: source
 listing:
   contents: exercises
+  sort:
+    - "author"  
 ---
