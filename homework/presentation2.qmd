@@ -1,0 +1,19 @@
+---
+title: "Presentation 2"
+subtitle: "Study design and statistical analysis plan"
+author: "Presentation 2"
+format: html
+editor: source
+engine: knitr
+---
+
+This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analsysis of the NHANES data.  In this presentation please:
+
++ Limit your presentation to 10 slides.
++ Limit your presentation to ??? minutes.
+
+You will be graded on the following criteria:
+
++ Clarity of the study design and statistical analysis plan.
++ Clarity of the presentation.
++ Design of the presentation.

@@ -1,15 +1,14 @@
 ---
-title: "NHANES Project"
-subtitle: "Analyzing NHANES"
-author: "03-NHANES"
+title: "Homework 8"
+subtitle: "NHANES project"
+author: "Final Homework"
 format: html
 editor: source
 engine: knitr
 ---
+This is the final homework for the term and will serve as the basis for your final presentation.
 
 ## NHANES Data
-
-The assignment link is here: <https://classroom.github.com/a/IqJYjsdq>
 
 The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States. The survey is unique in that it combines interviews and physical examinations. NHANES is a major program of the National Center for Health Statistics (NCHS). NCHS is part of the Centers for Disease Control and Prevention (CDC) and has the responsibility for producing vital and health statistics for the Nation.
 

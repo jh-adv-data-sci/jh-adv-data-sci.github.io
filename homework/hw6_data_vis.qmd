@@ -1,0 +1,12 @@
+---
+title: "Homework 6"
+subtitle: "Data Visualization"
+author: "HW 6"
+format: html
+editor: source
+engine: knitr
+---
+
+In this homework, you will create a data visualization project using a dataset of your choice. The project should include a single, hosted (on github) web page with a clear and informative visualization of the data. 
+
+Push your code and supporting files to the github classroom repo with a link to the live visualization. Because GH classroom repos are private, the hosted web page should be in a separate public repo. 

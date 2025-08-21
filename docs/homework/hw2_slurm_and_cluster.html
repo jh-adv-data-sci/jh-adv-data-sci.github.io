@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="HW 2">
 
-<title>Missing Data Lecure – Advanced Data Science</title>
+<title>Homework 2 – Advanced Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -120,22 +150,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#testing-ols-regressions-breaking-point" id="toc-testing-ols-regressions-breaking-point" class="nav-link active" data-scroll-target="#testing-ols-regressions-breaking-point">Testing OLS Regression’s Breaking Point</a>
+  <ul class="collapse">
+  <li><a href="#the-simulation-grid" id="toc-the-simulation-grid" class="nav-link" data-scroll-target="#the-simulation-grid">The Simulation Grid</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Missing Data Lecure</h1>
-<p class="subtitle lead">Missing Data Lecure</p>
+<h1 class="title">Homework 2</h1>
+<p class="subtitle lead">Slurm and the cluster HW</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>HW 2 </p>
+          </div>
+  </div>
     
   
     
@@ -146,9 +191,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>See https://www.lshtm.ac.uk/media/38306</p>
+<section id="testing-ols-regressions-breaking-point" class="level1">
+<h1>Testing OLS Regression’s Breaking Point</h1>
+<p>The goal is to simulate how the Ordinary Least Squares linear regression estimator behaves under stress. According to the Gauss-Markov theorem, OLS is the “best” linear unbiased estimator only under assumptions. Your job is to quantify what happens when they aren’t. You’ll investigate two key properties of an estimator for a regression coefficient, <span class="math inline">\(\beta\)</span>:</p>
+<ul>
+<li>Bias</li>
+<li>Efficiency (Variance)</li>
+</ul>
+<section id="the-simulation-grid" class="level2">
+<h2 class="anchored" data-anchor-id="the-simulation-grid">The Simulation Grid</h2>
+<p>You will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.</p>
+<p>Simulation Parameters to Vary: + Sample Size (n): How does the number of data points affect performance? + Values: 50, 100, 500, 1000, 5000 + Degree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable <span class="math inline">\(x\)</span>.</p>
+<ul>
+<li><span class="math inline">\(x ~ N(0,1)\)</span></li>
+<li><span class="math inline">\(\beta = 1\)</span></li>
+<li>The error term epsilon will be drawn from <span class="math inline">\(N(0, \exp(\alpha x))\)</span>.</li>
+<li>Values for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).</li>
+<li>Degree of Autocorrelation (<span class="math inline">\(\rho\)</span>): This violates the “independent errors” assumption, common in time-series data.</li>
+<li>The error term <span class="math inline">\(\epsilon_i\)</span> will be calculated as <span class="math inline">\(\epsilon_i = \epsilon_{i −1} + w_i\)</span>, where <span class="math inline">\(w_i \sim N(0,2)\)</span>.</li>
+<li>Values: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).</li>
+</ul>
+<p>Your full experiment will be a grid of 5 (n) x 4 (alpha) x 4 (rho) = 80 unique scenarios. For each scenario, you’ll run 1000 replications. Evaluate both bias and standard error. Run your simulation on the cluster using a slurm array job</p>
+<p>Include your code and a no more than two page write up of results in your git repository and push your changes.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

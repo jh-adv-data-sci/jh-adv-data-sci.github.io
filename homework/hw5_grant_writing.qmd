@@ -1,0 +1,18 @@
+---
+title: "Homework 5"
+subtitle: "Grant writing"
+author: "HW 5"
+format: html
+editor: source
+engine: knitr
+---
+
+
+In this homework, you will write up grant proposal for a methods or application of your choice. Your proposal should be no more than 2 pages long, and should include the following sections:
+
++ Specific Aims
++ Significance
++ Innovation
++ Approach
++ References
+
