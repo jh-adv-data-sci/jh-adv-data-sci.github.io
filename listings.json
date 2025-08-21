@@ -1,0 +1,18 @@
+[
+  {
+    "listing": "/homework.html",
+    "items": []
+  },
+  {
+    "listing": "/exercises.html",
+    "items": [
+      "/exercises/linux_shell.html",
+      "/exercises/power.html",
+      "/exercises/slurm_and_the_cluster.html"
+    ]
+  },
+  {
+    "listing": "/resources.html",
+    "items": []
+  }
+]
