@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercises – Advanced Data Science</title>
+<title>Schedule – Advanced Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -153,11 +93,11 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./exercises.html" aria-current="page"> 
+    <a class="nav-link" href="./exercises.html"> 
 <span class="menu-text">Exercises</span></a>
   </li>  
   <li class="nav-item">
@@ -175,20 +115,51 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-outline" id="toc-course-outline" class="nav-link active" data-scroll-target="#course-outline">Course Outline</a>
+  <ul class="collapse">
+  <li><a href="#advanced-data-science-i" id="toc-advanced-data-science-i" class="nav-link" data-scroll-target="#advanced-data-science-i">Advanced Data Science I</a>
+  <ul class="collapse">
+  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1">Week 1</a></li>
+  <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework 1</a></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3</a></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
+  <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a></li>
+  <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a></li>
+  <li><a href="#week-8" id="toc-week-8" class="nav-link" data-scroll-target="#week-8">Week 8</a></li>
+  </ul></li>
+  <li><a href="#advanced-data-science-ii" id="toc-advanced-data-science-ii" class="nav-link" data-scroll-target="#advanced-data-science-ii">Advanced Data Science II</a>
+  <ul class="collapse">
+  <li><a href="#week-1-1" id="toc-week-1-1" class="nav-link" data-scroll-target="#week-1-1">Week 1</a></li>
+  <li><a href="#week-2-1" id="toc-week-2-1" class="nav-link" data-scroll-target="#week-2-1">Week 2</a></li>
+  <li><a href="#week-3-1" id="toc-week-3-1" class="nav-link" data-scroll-target="#week-3-1">Week 3</a></li>
+  <li><a href="#week-4-1" id="toc-week-4-1" class="nav-link" data-scroll-target="#week-4-1">Week 4</a></li>
+  <li><a href="#week-5-1" id="toc-week-5-1" class="nav-link" data-scroll-target="#week-5-1">Week 5</a></li>
+  <li><a href="#week-6-1" id="toc-week-6-1" class="nav-link" data-scroll-target="#week-6-1">Week 6</a></li>
+  <li><a href="#week-7-1" id="toc-week-7-1" class="nav-link" data-scroll-target="#week-7-1">Week 7</a></li>
+  <li><a href="#week-8-1" id="toc-week-8-1" class="nav-link" data-scroll-target="#week-8-1">Week 8</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercises</h1>
+<h1 class="title">Schedule</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -200,67 +171,149 @@ window.Quarto = {
 </header>
 
 
+<section id="course-outline" class="level1">
+<h1>Course Outline</h1>
+<section id="advanced-data-science-i" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-data-science-i">Advanced Data Science I</h2>
+<section id="week-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
+<ul>
+<li><strong>Class 1:</strong> <a href="https://docs.google.com/presentation/d/1fb5W1fcnIdYtq_sXl6V3bh2uFdJ68h_qSwUxWtPs_to/edit?usp=sharing">Intro</a> and <a href="https://docs.google.com/presentation/d/1kFjRsQ0tOaH59HNp-v5_xdmRvAfJM0uv3R3SS-RxT4I/edit?usp=sharing">Linux &amp; Shell</a> – Present (intro, basics)<br>
+</li>
+<li><strong>Class 2:</strong> <a href="exercises/linux_shell.html">Linux &amp; Shell - Practice</a> (hands-on commands)</li>
+</ul>
+</section>
+<section id="homework-1" class="level3">
+<h3 class="anchored" data-anchor-id="homework-1">Homework 1</h3>
+<ul>
+<li><strong>Homework 1:</strong> <a href="homework/hw1.html">Homework 1</a></li>
+</ul>
+</section>
+<section id="week-2" class="level3">
+<h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
+<ul>
+<li><strong>Class 3:</strong> <a href="https://docs.google.com/presentation/d/1L8KgZ_my3Onj8COclq71cQxWP47MHZD1zTG5dHdUdMA/edit?usp=sharing">SLURM and the Cluster</a></li>
+<li><strong>Class 4:</strong> <a href="exercises/slurm_and_the_cluster.html">SLURM and the Cluster - Practice</a></li>
+</ul>
+</section>
+<section id="week-3" class="level3">
+<h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
+<ul>
+<li><strong>Class 5:</strong> Power Lecture (foundations/tools)<br>
+</li>
+<li><strong>Class 6:</strong> <a href="exercises/power.html">Power – Practice</a></li>
+</ul>
+</section>
+<section id="week-4" class="level3">
+<h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
+<ul>
+<li><strong>Class 7:</strong> <a href="https://drive.google.com/file/d/17mLWgxBLnAXoRntMAiNYAm4JsqO12AUl/view?usp=sharing">R packages</a></li>
+<li><strong>Class 8:</strong> <a href="https://docs.google.com/presentation/d/1kU4HcYdaVqkg7I3ZexhAse5AZG8dlxTEgfakOUvCIdo/edit?usp=sharing">Grants</a></li>
+</ul>
+</section>
+<section id="week-5" class="level3">
+<h3 class="anchored" data-anchor-id="week-5">Week 5</h3>
+<ul>
+<li><strong>Class 9:</strong> Present P1 – Do (SAP style project presentation)<br>
+</li>
+<li><strong>Class 10:</strong> <a href="https://docs.google.com/presentation/d/15bZFKubDeY5Mmj37j1p639h2uLMAxZzHW9gExUh2jcU/edit?slide=id.p#slide=id.p">SQL</a> Data Lecture – Do (scientific data concepts)</li>
+</ul>
+</section>
+<section id="week-6" class="level3">
+<h3 class="anchored" data-anchor-id="week-6">Week 6</h3>
+<ul>
+<li><strong>Class 11:</strong> <a href="https://docs.google.com/presentation/d/17RY0WNOqnsjiII_hE-T7ADP5fAGZdd6v56O8QEw7qhg/edit?usp=sharing">Data Visualization</a> – Lecture<br>
+</li>
+<li><strong>Class 12:</strong> Data Visualization (EDA) – Do</li>
+</ul>
+</section>
+<section id="week-7" class="level3">
+<h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
+<ul>
+<li><strong>Class 13:</strong> App Dashboard – Development (setup &amp; workflow)<br>
+</li>
+<li><strong>Class 14:</strong> App Dashboard – Do (hands-on build)</li>
+</ul>
+</section>
+<section id="week-8" class="level3">
+<h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
+<ul>
+<li><strong>Class 15:</strong> <a href="https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing">APIs + Pulling</a></li>
+<li><strong>Class 16:</strong> Final Presentations</li>
+</ul>
+</section>
+</section>
+<section id="advanced-data-science-ii" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-data-science-ii">Advanced Data Science II</h2>
+<section id="week-1-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-1">Week 1</h3>
+<ul>
+<li><strong>Class 1:</strong> Language Models – API (overview, usage)<br>
+</li>
+<li><strong>Class 2:</strong> Language Models – Do (hands-on, coding)</li>
+</ul>
+</section>
+<section id="week-2-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-2-1">Week 2</h3>
+<ul>
+<li><strong>Class 3:</strong> <a href="https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing">Performance Metrics</a> Measurement &amp; Models – Lecture<br>
+</li>
+<li><strong>Class 4:</strong> Predictive Competition – Present (framing a comp)</li>
+</ul>
+</section>
+<section id="week-3-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-3-1">Week 3</h3>
+<ul>
+<li><strong>Class 5:</strong> Model Selection – tidymodels (intro)<br>
+</li>
+<li><strong>Class 6:</strong> Model Selection – Do (practice)</li>
+</ul>
+</section>
+<section id="week-4-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-4-1">Week 4</h3>
+<ul>
+<li><strong>Class 7:</strong> <a href="https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing">Missing Data</a></li>
+<li><strong>Class 8:</strong> Missing Data – Do (coding exercises)</li>
+</ul>
+</section>
+<section id="week-5-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-5-1">Week 5</h3>
+<ul>
+<li><strong>Class 9:</strong> Pipelining Techniques – Lecture<br>
+</li>
+<li><strong>Class 10:</strong> Pipelining Techniques – Do</li>
+</ul>
+</section>
+<section id="week-6-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-6-1">Week 6</h3>
+<ul>
+<li><strong>Class 11:</strong> <a href="https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing">Performance Metrics</a> Measurement &amp; Models – Lecture<br>
+</li>
+<li><strong>Class 12:</strong> Measurement &amp; Models – Do</li>
+</ul>
+</section>
+<section id="week-7-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-7-1">Week 7</h3>
+<ul>
+<li><strong>Class 13:</strong> Practical Bayes – Lecture (methods)<br>
+</li>
+<li><strong>Class 14:</strong> Practical Bayes – Do (applications)</li>
+</ul>
+</section>
+<section id="week-8-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-8-1">Week 8</h3>
+<ul>
+<li><strong>Class 15:</strong> Presentation prep<br>
+</li>
+<li><strong>Class 16:</strong> Final Presentations</li>
+</ul>
 
 
+</section>
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1755790591128" data-listing-reading-time-sort="6" data-listing-word-count-sort="1067">
-<div class="thumbnail">
-<p><a href="./exercises/linux_shell.html" class="no-external"></a></p><a href="./exercises/linux_shell.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./exercises/linux_shell.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./exercises/linux_shell.html" class="no-external">Linux &amp; the Shell — Open-Ended Exercises</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./exercises/linux_shell.html" class="no-external">How to Effectively Work at the Command Line</a>
-</div>
-<div class="listing-description">
-<a href="./exercises/linux_shell.html" class="no-external"><strong>Tip:</strong> Unless stated otherwise, exercises assume a CSV named <code>penguins.csv</code> (with a header) in the working directory. Exercise <strong>0</strong> shows how to download one from the internet.…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./exercises/linux_shell.html" class="no-external"></a></p><a href="./exercises/linux_shell.html" class="no-external">
-<div class="listing-author">
-01-Linux &amp; Shell
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1755748343073" data-listing-reading-time-sort="8" data-listing-word-count-sort="1588">
-<div class="thumbnail">
-<p><a href="./exercises/slurm_and_the_cluster.html" class="no-external"></a></p><a href="./exercises/slurm_and_the_cluster.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./exercises/slurm_and_the_cluster.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./exercises/slurm_and_the_cluster.html" class="no-external">Submitting Jobs on HPC with SLURM</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./exercises/slurm_and_the_cluster.html" class="no-external">How to Effectively Work on JHPCE</a>
-</div>
-<div class="listing-description">
-<a href="./exercises/slurm_and_the_cluster.html" class="no-external"><strong>Setup assumptions:</strong> You have SSH access to the cluster and R is available via modules or a system install. Replace partition/account names with your site’s values.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./exercises/slurm_and_the_cluster.html" class="no-external"></a></p><a href="./exercises/slurm_and_the_cluster.html" class="no-external">
-<div class="listing-author">
-02-SLURM and the Cluster
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

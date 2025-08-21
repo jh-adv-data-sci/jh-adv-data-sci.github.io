@@ -53,7 +53,7 @@
     "href": "index.html#advanced-data-science-i",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "Advanced Data Science I",
-    "text": "Advanced Data Science I\n\nWeek 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\nWeek 2\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\nWeek 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\nWeek 4\n\nClass 7: R packages\nClass 8: Grants\n\n\n\nWeek 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\nWeek 6\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\nWeek 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\nWeek 8\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
+    "text": "Advanced Data Science I\n\nWeek 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\nHomework 1\n\nHomework 1: Homework 1\n\n\n\nWeek 2\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\nWeek 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\nWeek 4\n\nClass 7: R packages\nClass 8: Grants\n\n\n\nWeek 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\nWeek 6\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\nWeek 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\nWeek 8\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
   },
   {
     "objectID": "index.html#week-1",
@@ -193,7 +193,7 @@
     "href": "exercises/linux_shell.html",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "",
-    "text": "Tip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal."
+    "text": "Tip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal.\nIf you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there."
   },
   {
     "objectID": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
@@ -439,5 +439,33 @@
     "title": "Submitting Jobs on HPC with SLURM",
     "section": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)",
     "text": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)\nQuestion. Within R, generate a parameter grid and pick the row corresponding to your task index using SLURM_ARRAY_TASK_ID. Run sim.R with those values.\n\n\nShow solution\n\ndriver.R\n\n\nCode\n# Read the array index (default 1 when running locally)\nidx &lt;- as.integer(Sys.getenv('SLURM_ARRAY_TASK_ID', '1'))\n\n# Define your parameter grid\nparams &lt;- expand.grid(\n  n    = c(1e4, 5e4),\n  mu   = c(0, 0.2),\n  sigma= c(1, 2),\n  seed = 1:8\n)\n\nstopifnot(idx &gt;= 1, idx &lt;= nrow(params))\np &lt;- params[idx, , drop = FALSE]\n\nset.seed(p$seed)\nx &lt;- rnorm(n, mu, sigma)\n\n\n\n\nCode\n# Minimal array submission (match the array range to nrow(params) = 64)\ncat &gt; driver_array.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J drv\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%A_%a.out\n#SBATCH --array=1-64\nmodule load conda_R 2&gt;/dev/null || true\nRscript driver.R\nSB\n\nsbatch driver_array.sbatch\n\n\nNotes: - Ensure the array range matches nrow(params) inside driver.R. - Locally, you can test with SLURM_ARRAY_TASK_ID=3 Rscript driver.R."
+  },
+  {
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations\n\n\n\n\n\n\n\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#advanced-data-science-i",
+    "href": "schedule.html#advanced-data-science-i",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#advanced-data-science-ii",
+    "href": "schedule.html#advanced-data-science-ii",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
   }
 ]

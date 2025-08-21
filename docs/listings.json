@@ -5,5 +5,9 @@
       "/exercises/linux_shell.html",
       "/exercises/slurm_and_the_cluster.html"
     ]
+  },
+  {
+    "listing": "/homework.html",
+    "items": []
   }
 ]

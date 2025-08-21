@@ -15,6 +15,8 @@ engine: knitr
 
 ---
 
+**If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there.**
+
 ## 0) Download a CSV from the internet (and name it `penguins.csv`)
 **Question.** Use a command-line tool to download a CSV and save it as `penguins.csv`. Verify it looks like a CSV and preview the first few lines.
 

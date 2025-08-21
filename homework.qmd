@@ -1,0 +1,6 @@
+---
+title: "Homework"
+editor: source
+listing:
+  contents: homework
+---

@@ -8,8 +8,11 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: schedule.qmd
+        text: Schedule/Syllabus
       - href: exercises.qmd
         text: Exercises
+      - href: homework.qmd
 
 format:
   html:
