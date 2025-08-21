@@ -237,12 +237,12 @@ window.Quarto = {
 <section id="onesample-ttest-power-n-10-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="onesample-ttest-power-n-10-minutes">1) One‑sample t‑test power &amp; n (10 minutes)</h2>
 <p><strong>Setup.</strong> You expect observations (<span class="math inline">\(Y\sim \mathcal{N}(\mu,\sigma^2)\)</span>) with (<span class="math inline">\(\sigma=10\)</span>). You will test (<span class="math inline">\(H_0: \mu=0\)</span>) vs (<span class="math inline">\(H_1: \mu\neq 0\)</span>). The scientifically relevant effect is (<span class="math inline">\(\delta = 3\)</span>) (i.e., (<span class="math inline">\(\mu=3\)</span>)).</p>
-<p><strong>1A.</strong> Compute power for (n=50).</p>
+<p><strong>1A.</strong> Compute power for (<span class="math inline">\(n=50\)</span>).</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Analytic normal approx: (Z = Y/(/n)), noncentrality (= n/).</p>
+<p>Analytic normal approx: (<span class="math inline">\(Z = \bar Y/(\sigma/\sqrt n)\)</span>), noncentrality (<span class="math inline">\(\lambda = \delta\sqrt n/\sigma\)</span>).</p>
 <p>[ = 3/10 = 3/10 . ]</p>
 <p>Two‑sided power (z‑approx): [ 1 - (z_{0.975}-) + (-z_{0.975}-) -(1.96-2.121)+(-1.96-2.121) -(-0.161)+(-4.081). ] This is (-(0.436)+ ). Using exact <strong>t</strong> power:</p>
 <div class="cell">
@@ -991,13 +991,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>**Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., ($\mu=3$)).</span>
 <span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>**1A.** Compute power for (n=50).</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>**1A.** Compute power for ($n=50$).</span>
 <span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
 <span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
 <span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>Analytic normal approx: (Z = \bar Y/(\sigma/\sqrt n)), noncentrality (\lambda = \delta\sqrt n/\sigma).</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>Analytic normal approx: ($Z = \bar Y/(\sigma/\sqrt n)$), noncentrality ($\lambda = \delta\sqrt n/\sigma$).</span>
 <span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> \lambda = 3\cdot\sqrt{50}/10 = 3\cdot7.071/10 \approx 2.121. <span class="sc">\]</span></span>
 <span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a></span>

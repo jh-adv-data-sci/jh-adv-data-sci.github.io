@@ -19,13 +19,13 @@ engine: knitr
 
 **Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., ($\mu=3$)).
 
-**1A.** Compute power for (n=50).
+**1A.** Compute power for ($n=50$).
 
 <details>
 
 <summary>Answer</summary>
 
-Analytic normal approx: (Z = \bar Y/(\sigma/\sqrt n)), noncentrality (\lambda = \delta\sqrt n/\sigma).
+Analytic normal approx: ($Z = \bar Y/(\sigma/\sqrt n)$), noncentrality ($\lambda = \delta\sqrt n/\sigma$).
 
 \[ \lambda = 3\cdot\sqrt{50}/10 = 3\cdot7.071/10 \approx 2.121. \]
 
