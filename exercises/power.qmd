@@ -11,6 +11,7 @@ editor: source
 engine: knitr
 ---
 
+
 > **Conventions:** Two‑sided tests at α = 0.05 unless stated. Use R where helpful. Symbols: δ = effect size in the outcome scale; σ = SD; n = total sample unless noted. For two‑sample tests, assume equal allocation and equal variances unless stated.
 
 ------------------------------------------------------------------------
