@@ -1,7 +1,9 @@
 [
   {
     "listing": "/homework.html",
-    "items": []
+    "items": [
+      "/homework/nhanes_project.html"
+    ]
   },
   {
     "listing": "/exercises.html",
