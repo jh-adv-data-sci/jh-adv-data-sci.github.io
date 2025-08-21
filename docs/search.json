@@ -193,7 +193,7 @@
     "href": "exercises/linux_shell.html",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "",
-    "text": "Audience: PhD-level biostatisticians. Focus on workflows for data science, automation, compression, and reproducibility.\nTip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal."
+    "text": "Tip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal."
   },
   {
     "objectID": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
