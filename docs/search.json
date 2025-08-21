@@ -1,0 +1,324 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods.\n\nCourse objectives\nUpon successfully completing this course, students will be able to:\n\nFormulate quantitative models to address scientific questions\nObtain, clean, transform, and process raw data into usable formats\nOrganize and perform a complete data analysis, from exploration, to analysis, to synthesis, to communication\nApply a range of statistical methods for inference and prediction\nBuild data science products that can be used by a broad audience\n\n\n\nCourse logistics\n\nPre-requisites\nThis course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. I am open to anyone taking the class, but since it is a core requirement for our PhD program I will not be slowing down or allowing auditors for the class.\n\n\nRequired Textbook\nNone. Instead, we have a list of recommended readings on the web site available at Resources.\n\n\nCourse Communication\nWe will use Slack to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all annoucements, so it is important that you are signed up. Feel free to ask questions during class, or anytime.\n\n\nOffice hours\n\n\n\nStaff\nDay, Time\nLocation\n\n\n\n\nGuoqing\nFri, 11:30am-12:30pm\nE3037\n\n\nAthena\nTues, 12-1pm\nE3035\n\n\n\n\n\n\nCourse components\nWe break down the course components and grading into two terms:\n\n140.711.01 Advanced Data Science I\nWe will learn these concepts through hands-on data analysis assignments. Specficially, grades will be based on:\n\n6 homeworks (16.6% each)\n\n\n\n140.712.01 Advanced Data Science II\nWe will learn these concepts through hands-on data analysis assignments. Specficially, grades will be based on:\n\n2 homeworks (25% each)\n1 final project (50%)\n\n\n\nHomework\nHomework will be submitted using git/GitHub and will be due at midnight on Wednesdays in term 1 and Fridays in term 2 (unless otherwise stated). The last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nFinal Project\nAt the beginning of the second term, you will start to work on a data science final project. The goal of the project is to go through the complete data science process to answer questions you have about some topic of your own choosing. You will acquire the data, design your visualizations, run statistical analysis, and communicate the results. You will have the opportunity to meet with either a TA or instructor at the beginning to initially help guide you in this project. You will have approximately three weeks at the end of term to focus on the final project.\nYou will work closely with other classmates in a 2-4 (max) person project team. You can come up with your own teams and use Slack to find prospective team members. We recognize that individual schedules, preferences, and other constraints might limit your ability to work in a team. If this the case, ask us for permission to work alone. However, you will still be expected to complete all portions of the final project on your own.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment.\n\n\n\nAdditional Information\n\nAccessibility\nIf you have a documented disability (physical or cognitive) that may impair your ability to complete assignments or otherwise participate in the course and satisfy course criteria, please meet with us at your earliest convenience to identify, discuss, and document any feasible instructional modifications or accommodations. You should also contact the Office of Student Disability Services to request an official letter outlining authorized accommodations."
+  },
+  {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\n\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "",
+    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods."
+  },
+  {
+    "objectID": "index.html#pre-requisites",
+    "href": "index.html#pre-requisites",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Pre-requisites",
+    "text": "Pre-requisites\nThis course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. We are open to anyone taking the class, but since it is a core requirement for our PhD program we will not be slowing down or allowing auditors for the class."
+  },
+  {
+    "objectID": "index.html#required-textbook",
+    "href": "index.html#required-textbook",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Required Textbook",
+    "text": "Required Textbook\nNone. Instead, we have a list of recommended readings on the web site available at Resources."
+  },
+  {
+    "objectID": "index.html#course-communication",
+    "href": "index.html#course-communication",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Course Communication",
+    "text": "Course Communication\nWe will use Slack/CoursePlus to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime."
+  },
+  {
+    "objectID": "index.html#office-hours",
+    "href": "index.html#office-hours",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Office hours",
+    "text": "Office hours\nOffice hours will be announced during the first week of class for each term."
+  },
+  {
+    "objectID": "index.html#advanced-data-science-i",
+    "href": "index.html#advanced-data-science-i",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Advanced Data Science I",
+    "text": "Advanced Data Science I"
+  },
+  {
+    "objectID": "index.html#week-1",
+    "href": "index.html#week-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 1",
+    "text": "Week 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell – Do (hands-on commands)"
+  },
+  {
+    "objectID": "index.html#week-2",
+    "href": "index.html#week-2",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 2",
+    "text": "Week 2\n\nClass 3: Cluster – Present (concepts, use cases)\n\nClass 4: Cluster – Do (git practice on cluster)"
+  },
+  {
+    "objectID": "index.html#week-3",
+    "href": "index.html#week-3",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 3",
+    "text": "Week 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Do (build & share slides)"
+  },
+  {
+    "objectID": "index.html#week-4",
+    "href": "index.html#week-4",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 4",
+    "text": "Week 4\n\nClass 7: R packages – Lecture/Do (creating, managing packages)\n\nClass 8: Grants (grant writing basics)"
+  },
+  {
+    "objectID": "index.html#week-5",
+    "href": "index.html#week-5",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 5",
+    "text": "Week 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: Data Lecture – Do (scientific data concepts)"
+  },
+  {
+    "objectID": "index.html#week-6",
+    "href": "index.html#week-6",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 6",
+    "text": "Week 6\n\nClass 11: Data Visualization (EDA) – Lecture\n\nClass 12: Data Visualization (EDA) – Do"
+  },
+  {
+    "objectID": "index.html#week-7",
+    "href": "index.html#week-7",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 7",
+    "text": "Week 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)"
+  },
+  {
+    "objectID": "index.html#week-8",
+    "href": "index.html#week-8",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 8",
+    "text": "Week 8\n\nClass 15: APIs + Pulling – Do (SQL, API integration)\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "index.html#advanced-data-science-ii",
+    "href": "index.html#advanced-data-science-ii",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Advanced Data Science II",
+    "text": "Advanced Data Science II"
+  },
+  {
+    "objectID": "index.html#week-1-1",
+    "href": "index.html#week-1-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 1",
+    "text": "Week 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)"
+  },
+  {
+    "objectID": "index.html#week-2-1",
+    "href": "index.html#week-2-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 2",
+    "text": "Week 2\n\nClass 3: Model Selection – tidymodels (intro)\n\nClass 4: Model Selection – Do (practice)"
+  },
+  {
+    "objectID": "index.html#week-3-1",
+    "href": "index.html#week-3-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 3",
+    "text": "Week 3\n\nClass 5: Missing Data – Present (theory, strategies)\n\nClass 6: Missing Data – Do (coding exercises)"
+  },
+  {
+    "objectID": "index.html#week-4-1",
+    "href": "index.html#week-4-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 4",
+    "text": "Week 4\n\nClass 7: Pipelining Techniques – Lecture\n\nClass 8: Pipelining Techniques – Do"
+  },
+  {
+    "objectID": "index.html#week-5-1",
+    "href": "index.html#week-5-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 5",
+    "text": "Week 5\n\nClass 9: Predictive Competition – Present (framing a comp)\n\nClass 10: Measurement & Models – Lecture"
+  },
+  {
+    "objectID": "index.html#week-6-1",
+    "href": "index.html#week-6-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 6",
+    "text": "Week 6\n\nClass 11: Measurement & Models – Do\n\nClass 12: Practical Bayes – Present (intro)"
+  },
+  {
+    "objectID": "index.html#week-7-1",
+    "href": "index.html#week-7-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 7",
+    "text": "Week 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)"
+  },
+  {
+    "objectID": "index.html#week-8-1",
+    "href": "index.html#week-8-1",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Week 8",
+    "text": "Week 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "index.html#grades",
+    "href": "index.html#grades",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Grades",
+    "text": "Grades\n\nAttendance and Participation: 10%\nIndividual/group projects/assignments: 90%\n\nIf not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.\n\nHomework\nHomework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\nCollaboration with AI\nWe fully encourage you to use AI when you feel necessary, and to use as an aid. At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.\n\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "exercises/linux_shell.html",
+    "href": "exercises/linux_shell.html",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "",
+    "text": "Audience: PhD-level biostatisticians. Focus on workflows for data science, automation, compression, and reproducibility.\nTip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal."
+  },
+  {
+    "objectID": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
+    "href": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "0) Download a CSV from the internet (and name it penguins.csv)",
+    "text": "0) Download a CSV from the internet (and name it penguins.csv)\nQuestion. Use a command-line tool to download a CSV and save it as penguins.csv. Verify it looks like a CSV and preview the first few lines.\nThe file is available at https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n\nShow solution\n\n# Using curl (follow redirects, write to file):\ncurl -L -o penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# Or using wget:\nwget -O penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# (Optional) R from shell:\nR -q -e \"download.file('https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv','penguins.csv', mode='wb')\"\n\n# (Optional) Python from shell:\npython - &lt;&lt;'PY'\nimport urllib.request\nurl='https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv'\nurllib.request.urlretrieve(url, 'penguins.csv')\nPY\n\n# Basic checks\nfile penguins.csv\nhead -n 5 penguins.csv\nwc -l penguins.csv   # total lines (incl. header)\nNotes: - -L (curl) follows redirects. -O/-o choose output filename. - Use head, wc -l, and cut -d',' -f1-5 | head to quickly sanity-check."
+  },
+  {
+    "objectID": "exercises/linux_shell.html#where-am-i-whats-here",
+    "href": "exercises/linux_shell.html#where-am-i-whats-here",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "1) Where am I? What’s here?",
+    "text": "1) Where am I? What’s here?\nQuestion. Print your current directory and list files with sizes and hidden entries.\n\n\nShow solution\n\npwd\nls -lha"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#create-a-working-area",
+    "href": "exercises/linux_shell.html#create-a-working-area",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "2) Create a working area",
+    "text": "2) Create a working area\nQuestion. Make a folder shell_practice and change into it. Create notes.md.\n\n\nShow solution\n\nmkdir -p shell_practice && cd shell_practice\n: &gt; notes.md   # or: touch notes.md"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#count-rows-in-an-uncompressed-csv-skip-header",
+    "href": "exercises/linux_shell.html#count-rows-in-an-uncompressed-csv-skip-header",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "3) Count rows in an uncompressed CSV (skip header)",
+    "text": "3) Count rows in an uncompressed CSV (skip header)\nQuestion. Count the number of data rows (exclude the header line) in penguins.csv.\n\n\nShow solution\n\n# total lines minus header\ntotal=$(wc -l &lt; penguins.csv)\necho $(( total - 1 ))\n\n# or with tail:\ntail -n +2 penguins.csv | wc -l"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#compress-a-csv-with-gzip-and-pigz",
+    "href": "exercises/linux_shell.html#compress-a-csv-with-gzip-and-pigz",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "4) Compress a CSV with gzip and pigz",
+    "text": "4) Compress a CSV with gzip and pigz\nQuestion. Create penguins.csv.gz using (a) gzip and (b) pigz. Compare time and file size.\n\n\nShow solution\n\n# (a) Using gzip\ntime gzip -kf penguins.csv     # -k keep original, -f overwrite\nls -lh penguins.csv penguins.csv.gz\n\n# (b) Using pigz (parallel gzip)\n# If missing, install via your package manager (e.g., apt, brew, conda).\ntime pigz -kf penguins.csv\nls -lh penguins.csv penguins.csv.gz\n\n# Inspect compressed vs uncompressed byte counts\ngzip -l penguins.csv.gz\nNotes: - pigz uses multiple cores → faster on large files; compression ratio is the same algorithm as gzip."
+  },
+  {
+    "objectID": "exercises/linux_shell.html#count-rows-in-a-compressed-csv-.gz",
+    "href": "exercises/linux_shell.html#count-rows-in-a-compressed-csv-.gz",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "5) Count rows in a compressed CSV (.gz)",
+    "text": "5) Count rows in a compressed CSV (.gz)\nQuestion. Count data rows in penguins.csv.gz without fully decompressing to disk.\n\n\nShow solution\n\n# Using gzip’s decompressor:\ngzip -cd penguins.csv.gz | tail -n +2 | wc -l\n\n# Using pigz if available:\npigz -dc penguins.csv.gz | tail -n +2 | wc -l\n\n# Using zcat (often symlinked to gzip -cd):\nzcat penguins.csv.gz | tail -n +2 | wc -l\nWhy: -c writes to stdout; -d decompresses. tail -n +2 skips the header."
+  },
+  {
+    "objectID": "exercises/linux_shell.html#quick-column-exploration-with-cut-head-sort-uniq",
+    "href": "exercises/linux_shell.html#quick-column-exploration-with-cut-head-sort-uniq",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "6) Quick column exploration with cut, head, sort, uniq",
+    "text": "6) Quick column exploration with cut, head, sort, uniq\nQuestion. Show the first 5 IDs and the distinct sex values with counts.\n\n\nShow solution\n\nhead -n 6 penguins.csv | cut -d',' -f1      # header + first 5 IDs\ncut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#filter-rows-by-a-condition-with-awk",
+    "href": "exercises/linux_shell.html#filter-rows-by-a-condition-with-awk",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "7) Filter rows by a condition with awk",
+    "text": "7) Filter rows by a condition with awk\nQuestion. Count participants with age &gt;= 60. Compute the mean BMI.\n\n\nShow solution\n\n# age &gt;= 60 (age is 3rd column)\nawk -F',' 'NR&gt;1 && $3 &gt;= 60 {c++} END{print c+0}' penguins.csv\n\n# mean BMI (4th column)\nawk -F',' 'NR&gt;1 {s+=$4; n++} END{print s/n}' penguins.csv"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#find-rows-with-missing-values-in-any-field",
+    "href": "exercises/linux_shell.html#find-rows-with-missing-values-in-any-field",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "8) Find rows with missing values in any field",
+    "text": "8) Find rows with missing values in any field\nQuestion. Count how many data rows contain an empty field.\n\n\nShow solution\n\n# simple heuristic: consecutive delimiters or trailing comma\ngrep -E ',,' penguins.csv | wc -l\n# more thorough (detect empty at start/end or middle):\nawk -F',' 'NR&gt;1{for(i=1;i&lt;=NF;i++) if($i==\"\"){m++ ; break}} END{print m+0}' penguins.csv"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#save-the-first-20-ids-to-a-file",
+    "href": "exercises/linux_shell.html#save-the-first-20-ids-to-a-file",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "9) Save the first 20 IDs to a file",
+    "text": "9) Save the first 20 IDs to a file\nQuestion. Write the first 20 IDs (not including header) to sample_ids.txt.\n\n\nShow solution\n\ntail -n +2 penguins.csv | cut -d',' -f1 | head -n 20 &gt; sample_ids.txt\nwc -l sample_ids.txt   # should be 20"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#chain-operations-with-pipes",
+    "href": "exercises/linux_shell.html#chain-operations-with-pipes",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "10) Chain operations with pipes",
+    "text": "10) Chain operations with pipes\nQuestion. Among male participants, show counts by age (3rd column) in ascending order.\n\n\nShow solution\n\nawk -F',' 'NR&gt;1 && $2==\"male\"{print $3}' penguins.csv | sort -n | uniq -c"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#make-the-analysis-reproducible-with-a-script",
+    "href": "exercises/linux_shell.html#make-the-analysis-reproducible-with-a-script",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "11) Make the analysis reproducible with a script",
+    "text": "11) Make the analysis reproducible with a script\nQuestion. Create analyze.sh that prints: total rows, rows age ≥ 60, and mean BMI. Run it.\n\n\nShow solution\n\ncat &gt; analyze.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\n\ncsv=\"${1:-penguins.csv}\"\n\necho \"File: $csv\"\necho -n \"Total data rows: \"\ntail -n +2 \"$csv\" | wc -l\n\necho -n \"Age &gt;= 60 rows: \"\nawk -F',' 'NR&gt;1 && $3 &gt;= 60 {c++} END{print c+0}' \"$csv\"\n\necho -n \"Mean BMI: \"\nawk -F',' 'NR&gt;1 {s+=$4; n++} END{print s/n}' \"$csv\"\nEOF\n\nchmod +x analyze.sh\n./analyze.sh penguins.csv"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#script-for-compressed-input",
+    "href": "exercises/linux_shell.html#script-for-compressed-input",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "12) Script for compressed input",
+    "text": "12) Script for compressed input\nQuestion. Modify your script so it also accepts penguins.csv.gz seamlessly.\n\n\nShow solution\n\ncat &gt; analyze_any.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\nf=\"${1:-penguins.csv}\"\n\nstream() {\n  case \"$f\" in\n    *.gz)  gzip -cd \"$f\" ;;\n    *)     cat \"$f\" ;;\n  esac\n}\n\n# Skip header once:\ndata=\"$(stream | tail -n +2)\"\n\necho \"File: $f\"\necho \"Total data rows: $(printf \"%s\\n\" \"$data\" | wc -l)\"\necho \"Age &gt;= 60 rows: $(printf \"%s\\n\" \"$data\" | awk -F',' '$3&gt;=60{c++} END{print c+0}')\"\necho \"Mean BMI: $(printf \"%s\\n\" \"$data\" | awk -F',' '{s+=$4; n++} END{print s/n}')\"\nEOF\n\nchmod +x analyze_any.sh\n./analyze_any.sh penguins.csv.gz"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#record-a-reproducible-terminal-session",
+    "href": "exercises/linux_shell.html#record-a-reproducible-terminal-session",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "13) Record a reproducible terminal session",
+    "text": "13) Record a reproducible terminal session\nQuestion. Record your workflow to session.log and preview it.\n\n\nShow solution\n\nscript -q session.log\n# …run a few commands…\nexit\nless session.log"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#one-liners-for-large-files",
+    "href": "exercises/linux_shell.html#one-liners-for-large-files",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "14) One-liners for large files",
+    "text": "14) One-liners for large files\nQuestion. Show the uncompressed byte size of penguins.csv.gz without fully inflating it; then estimate memory needed to load the CSV.\n\n\nShow solution\n\n# Uncompressed and compressed sizes (bytes):\ngzip -l penguins.csv.gz\n\n# Rough row count without header (streaming):\nrows=$(gzip -cd penguins.csv.gz | tail -n +2 | wc -l)\necho \"Rows: $rows\"\nNotes: - gzip -l reports compressed and uncompressed sizes; not row count. - Memory needs depend on parsing overhead; this is only an order-of-magnitude check."
+  },
+  {
+    "objectID": "exercises/linux_shell.html#remotehpc-touchpoint-optional",
+    "href": "exercises/linux_shell.html#remotehpc-touchpoint-optional",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "15) Remote/HPC touchpoint (optional)",
+    "text": "15) Remote/HPC touchpoint (optional)\nQuestion. Copy your CSV to a remote machine and check its line count there.\n\n\nShow solution\n\nscp penguins.csv user@server:~/data/\nssh user@server 'wc -l ~/data/penguins.csv'"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#parallel-compression-benchmarking-optional-larger-files",
+    "href": "exercises/linux_shell.html#parallel-compression-benchmarking-optional-larger-files",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "16) Parallel compression benchmarking (optional, larger files)",
+    "text": "16) Parallel compression benchmarking (optional, larger files)\nQuestion. Compare wall-clock time for gzip vs pigz on a large file.\n\n\nShow solution\n\n# Create a larger file by duplication (demo only):\nawk 'NR==1 || FNR&gt;1' penguins.csv penguins.csv penguins.csv penguins.csv penguins.csv \\\n  &gt; big.csv   # header from first file, rest skip header\n\n# Benchmark (prints elapsed time)\n/usr/bin/time -f \"gzip: %E\" gzip -kf big.csv\n/usr/bin/time -f \"pigz: %E\" pigz -kf big.csv\nls -lh big.csv big.csv.gz"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#sanity-checks-and-integrity",
+    "href": "exercises/linux_shell.html#sanity-checks-and-integrity",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "17) Sanity checks and integrity",
+    "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
+  }
+]
