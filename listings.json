@@ -1,18 +1,18 @@
 [
   {
-    "listing": "/homework.html",
+    "listing": "/resources.html",
     "items": []
   },
   {
     "listing": "/exercises.html",
     "items": [
       "/exercises/linux_shell.html",
-      "/exercises/power.html",
-      "/exercises/slurm_and_the_cluster.html"
+      "/exercises/slurm_and_the_cluster.html",
+      "/exercises/power.html"
     ]
   },
   {
-    "listing": "/resources.html",
+    "listing": "/homework.html",
     "items": []
   }
 ]

@@ -1,24 +1,52 @@
 [
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations\n\n\n\n\n\n\n\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+    "text": "No matching items"
   },
   {
-    "objectID": "schedule.html#advanced-data-science-i",
-    "href": "schedule.html#advanced-data-science-i",
-    "title": "Schedule",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
+    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods."
   },
   {
-    "objectID": "schedule.html#advanced-data-science-ii",
-    "href": "schedule.html#advanced-data-science-ii",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+    "objectID": "index.html#pre-requisites",
+    "href": "index.html#pre-requisites",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Pre-requisites",
+    "text": "Pre-requisites\nThis course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. We are open to anyone taking the class, but since it is a core requirement for our PhD program we will not be slowing down or allowing auditors for the class."
+  },
+  {
+    "objectID": "index.html#required-textbook",
+    "href": "index.html#required-textbook",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Required Textbook",
+    "text": "Required Textbook\nNone. Instead, we have a list of recommended readings on the web site available at Resources."
+  },
+  {
+    "objectID": "index.html#course-communication",
+    "href": "index.html#course-communication",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Course Communication",
+    "text": "Course Communication\nWe will use Slack/CoursePlus to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime."
+  },
+  {
+    "objectID": "index.html#office-hours",
+    "href": "index.html#office-hours",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Office hours",
+    "text": "Office hours\nOffice hours will be announced during the first week of class for each term."
+  },
+  {
+    "objectID": "index.html#grades",
+    "href": "index.html#grades",
+    "title": "Advanced Data Science: Welcome and Syllabus",
+    "section": "Grades",
+    "text": "Grades\n\nParticipation: 10%\nHomework: 60%\nPresentation(s): 30%\n\nIf not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.\n\nHomework\nHomework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\nCollaboration with AI\nWe fully encourage you to use AI when you feel necessary, and to use as an aid. At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.\n\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment."
   },
   {
     "objectID": "exercises/linux_shell.html",
@@ -154,6 +182,34 @@
     "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
   },
   {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations\n\n\n\n\n\n\n\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#advanced-data-science-i",
+    "href": "schedule.html#advanced-data-science-i",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: SQL Data Lecture – Do (scientific data concepts)\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#advanced-data-science-ii",
+    "href": "schedule.html#advanced-data-science-ii",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
     "objectID": "exercises/power.html",
     "href": "exercises/power.html",
     "title": "Power & Sample Size",
@@ -165,7 +221,7 @@
     "href": "exercises/power.html#onesample-ttest-power-n-10-minutes",
     "title": "Power & Sample Size",
     "section": "1) One‑sample t‑test power & n (10 minutes)",
-    "text": "1) One‑sample t‑test power & n (10 minutes)\nSetup. You expect observations (\\(Y\\sim \\mathcal{N}(\\mu,\\sigma^2)\\)) with (\\(\\sigma=10\\)). You will test (\\(H_0: \\mu=0\\)) vs (\\(H_1: \\mu\\neq 0\\)). The scientifically relevant effect is (\\(\\delta = 3\\)) (i.e., (\\(\\mu=3\\))).\n1A. Compute power for (n=50).\n\n\nAnswer\n\nAnalytic normal approx: (Z = Y/(/n)), noncentrality (= n/).\n[ = 3/10 = 3/10 . ]\nTwo‑sided power (z‑approx): [ 1 - (z_{0.975}-) + (-z_{0.975}-) -(1.96-2.121)+(-1.96-2.121) -(-0.161)+(-4.081). ] This is (-(0.436)+ ). Using exact t power:\n\n\nCode\npower.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$power\n\n\n\n1B. Required (n) for 80% power.\n\n\nAnswer\n\nClosed‑form (z‑approx): ( n (z_{0.975}+z_{0.8})2,/^2 ).\n[ n (1.96+0.84)^2 = (2.80)^2 /9 . ]\nExact via R:\n\n\nCode\npower.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
+    "text": "1) One‑sample t‑test power & n (10 minutes)\nSetup. You expect observations (\\(Y\\sim \\mathcal{N}(\\mu,\\sigma^2)\\)) with (\\(\\sigma=10\\)). You will test (\\(H_0: \\mu=0\\)) vs (\\(H_1: \\mu\\neq 0\\)). The scientifically relevant effect is (\\(\\delta = 3\\)) (i.e., (\\(\\mu=3\\))).\n1A. Compute power for (\\(n=50\\)).\n\n\nAnswer\n\nAnalytic normal approx: (\\(Z = \\bar Y/(\\sigma/\\sqrt n)\\)), noncentrality (\\(\\lambda = \\delta\\sqrt n/\\sigma\\)).\n[ = 3/10 = 3/10 . ]\nTwo‑sided power (z‑approx): [ 1 - (z_{0.975}-) + (-z_{0.975}-) -(1.96-2.121)+(-1.96-2.121) -(-0.161)+(-4.081). ] This is (-(0.436)+ ). Using exact t power:\n\n\nCode\npower.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$power\n\n\n\n1B. Required (n) for 80% power.\n\n\nAnswer\n\nClosed‑form (z‑approx): ( n (z_{0.975}+z_{0.8})2,/^2 ).\n[ n (1.96+0.84)^2 = (2.80)^2 /9 . ]\nExact via R:\n\n\nCode\npower.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
   },
   {
     "objectID": "exercises/power.html#twosample-ttest-equal-variance-8-minutes",
@@ -208,62 +264,6 @@
     "title": "Power & Sample Size",
     "section": "7) (Optional) Monte Carlo verification (5 minutes)",
     "text": "7) (Optional) Monte Carlo verification (5 minutes)\nSimulate to verify analytic power for a two‑sample t‑test or slope test.\n\n\nAnswer\n\n\n\nCode\nset.seed(1)\nB &lt;- 5000\nn &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05\np &lt;- replicate(B, {\n  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)\n  t.test(x2, x1, var.equal = TRUE)$p.value\n})\nmean(p &lt; alpha)  # ~ power\n\n\n\n\n\nQuick reference\n\nOne‑sample n (z‑approx): ( n = (z_{1-/2}+z_{1-})2,/^2 )\nTwo‑sample per‑group n: ( n = 2(z_{1-/2}+z_{1-})2,/^2 )\nSLR slope power ncp: ( = (_1/) (_1/) )\nOverall MR test: (f2=R2/(1-R^2),; =f^2(n-p-1))\nPI half‑width at (x_0): ( t, )"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "",
-    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods."
-  },
-  {
-    "objectID": "index.html#pre-requisites",
-    "href": "index.html#pre-requisites",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "Pre-requisites",
-    "text": "Pre-requisites\nThis course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. We are open to anyone taking the class, but since it is a core requirement for our PhD program we will not be slowing down or allowing auditors for the class."
-  },
-  {
-    "objectID": "index.html#required-textbook",
-    "href": "index.html#required-textbook",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "Required Textbook",
-    "text": "Required Textbook\nNone. Instead, we have a list of recommended readings on the web site available at Resources."
-  },
-  {
-    "objectID": "index.html#course-communication",
-    "href": "index.html#course-communication",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "Course Communication",
-    "text": "Course Communication\nWe will use Slack/CoursePlus to organize course discussions. There are channels to ask questions and discuss the lectures, homework assignments, and final projects. The channels will be monitored by the TA during class. We will also use Slack for all announcements, so it is important that you are signed up. Feel free to ask questions during class, or anytime."
-  },
-  {
-    "objectID": "index.html#office-hours",
-    "href": "index.html#office-hours",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "Office hours",
-    "text": "Office hours\nOffice hours will be announced during the first week of class for each term."
-  },
-  {
-    "objectID": "index.html#grades",
-    "href": "index.html#grades",
-    "title": "Advanced Data Science: Welcome and Syllabus",
-    "section": "Grades",
-    "text": "Grades\n\nParticipation: 10%\nHomework: 60%\nPresentation(s): 30%\n\nIf not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.\n\nHomework\nHomework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\nCollaboration with AI\nWe fully encourage you to use AI when you feel necessary, and to use as an aid. At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.\n\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment."
-  },
-  {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "exercises.html",
-    "href": "exercises.html",
-    "title": "Exercises",
-    "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exercises/slurm_and_the_cluster.html",
@@ -371,9 +371,9 @@
     "text": "Deliverables (for practice)\n\nr_minimal.sbatch and output log\nsim.R, params.csv, sim_array.sbatch\nEvidence of a dependency submission (combine.sbatch and combined output)\nYour updated ~/.bashrc helpers"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
     "section": "",
     "text": "No matching items"
   }
