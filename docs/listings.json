@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/homework.html",
-    "items": [
-      "/homework/nhanes_project.html"
-    ]
-  },
-  {
     "listing": "/exercises.html",
     "items": [
       "/exercises/linux_shell.html",
@@ -14,7 +8,15 @@
     ]
   },
   {
+    "listing": "/homework.html",
+    "items": [
+      "/homework/nhanes_project.html"
+    ]
+  },
+  {
     "listing": "/resources.html",
-    "items": []
+    "items": [
+      "/resources/missing_data_lecture.html"
+    ]
   }
 ]
