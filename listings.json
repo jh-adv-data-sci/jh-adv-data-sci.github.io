@@ -16,7 +16,16 @@
   {
     "listing": "/homework.html",
     "items": [
-      "/homework/nhanes_project.html"
+      "/homework/hw1_shell_and_linux.html",
+      "/homework/hw2_slurm_and_cluster.html",
+      "/homework/hw3_study_planning.html",
+      "/homework/hw4_R_package.html",
+      "/homework/hw5_grant_writing.html",
+      "/homework/hw6_data_vis.html",
+      "/homework/hw7_app.html",
+      "/homework/nhanes_project.html",
+      "/homework/presentation1.html",
+      "/homework/presentation2.html"
     ]
   }
 ]

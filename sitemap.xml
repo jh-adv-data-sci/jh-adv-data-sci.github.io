@@ -2,42 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jh-adv-data-sci.github.io/resources.html</loc>
-    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/resources/missing_data_lecture.html</loc>
-    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/slurm_and_the_cluster.html</loc>
-    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.235Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/power.html</loc>
-    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.235Z</lastmod>
   </url>
   <url>
-    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
-    <lastmod>2025-08-21T16:58:22.025Z</lastmod>
+    <loc>https://jh-adv-data-sci.github.io/homework/presentation2.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw7_app.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw2_slurm_and_cluster.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw1_shell_and_linux.html</loc>
+    <lastmod>2025-08-21T22:15:24.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw4_R_package.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/schedule.html</loc>
-    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.237Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
+    <lastmod>2025-08-21T22:15:24.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw3_study_planning.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw5_grant_writing.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/homework/nhanes_project.html</loc>
-    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/hw6_data_vis.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/presentation1.html</loc>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/linux_shell.html</loc>
-    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.234Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/index.html</loc>
-    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.236Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/homework.html</loc>
-    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+    <lastmod>2025-08-21T22:15:24.235Z</lastmod>
   </url>
 </urlset>
