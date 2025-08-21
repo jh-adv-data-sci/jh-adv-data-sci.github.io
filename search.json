@@ -182,25 +182,11 @@
     "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
   },
   {
-    "objectID": "homework/nhanes_project.html",
-    "href": "homework/nhanes_project.html",
-    "title": "NHANES Project",
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
     "section": "",
-    "text": "The assignment link is here: https://classroom.github.com/a/IqJYjsdq\nThe National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States. The survey is unique in that it combines interviews and physical examinations. NHANES is a major program of the National Center for Health Statistics (NCHS). NCHS is part of the Centers for Disease Control and Prevention (CDC) and has the responsibility for producing vital and health statistics for the Nation."
-  },
-  {
-    "objectID": "homework/nhanes_project.html#nhanes-data",
-    "href": "homework/nhanes_project.html#nhanes-data",
-    "title": "NHANES Project",
-    "section": "",
-    "text": "The assignment link is here: https://classroom.github.com/a/IqJYjsdq\nThe National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States. The survey is unique in that it combines interviews and physical examinations. NHANES is a major program of the National Center for Health Statistics (NCHS). NCHS is part of the Centers for Disease Control and Prevention (CDC) and has the responsibility for producing vital and health statistics for the Nation."
-  },
-  {
-    "objectID": "homework/nhanes_project.html#project",
-    "href": "homework/nhanes_project.html#project",
-    "title": "NHANES Project",
-    "section": "Project",
-    "text": "Project\nWe want to demonstrate the skills to connect to the cluster, download data, and perform an analysis. The expected output is a report to be given to a collaborator. Code should be hidden unless otherwise specified. This indicates we should have a statement of the purpose of the analysis/introduction, a description of the data (not using names from code, unless relevant), a description of the methods used (including any model formulations if models are used), the results of the analysis. The results section should reference figures or tables for the analysis and provide insight to what you are seeing. Tell the reader what you are seeing. Then a conclusion/discussion section should provide some distillation of the analysis and what was learned.\n\nThe Data\nThe data in this project is from Wave I (2015-2016) data from the NHANES. Each data set has an online associated codebook. You will likely need to reference these codebooks to understand the data. For example, https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&CycleBeginYear=2015 will list out some of the questionnaires.\n\n\nPurpose\nWe would like to show a few concepts:\n\nConnecting to the Cluster\nInteracting with a Database using SQL, dplyr + dbplyr, or Python equivalents\nPerform an analysis on real-world data, with missingness patterns\n\n\n\nAnalysis\nWe would like find associations of smoking, alcohol use, diabetes, and oral health.\nWe define:\n\nAlcohol use (ALQ101): as Had at least 12 alcohol drinks/1 year.\nDiabetes status (DIQ010): Doctor told you have diabetes (group borderline as yes)\nEver smoker (SMQ020): Smoked at least 100 cigarettes in life?\nOral health issue: (OHAREC) if you are recommended care other than “Continue your regular routine care”\n\n\n\nTasks\n\nName your analysis code file as index.Rmd/index.qmd. The output should be index.pdf. The PDF should be generated from the Rmd/qmd.\n(code should be demonstrated here). Automatically download the nhanes_wave_i.sqlite database from the cluster at /users/bcaffo/dataPublic/nhanes on the JHPCE computing cluster.\n\nInclude the sqlite file in your GitHub (it is publicly available data)\nPut the file in a data/ subfolder (this will be checked).\n\n(code demonstrated here) Connect to the SQLITE database using the DBI/dplyr/dbplyr packages (in R) or equivalent in Python. Create counts of missing values for diabetes status and alcohol use using SQL commands.\nCreate a “table 1” that describes the population, including, age, gender, education level, smoking status, alcohol use, diabetes status, and oral health issues. Decide how to present missing data.\n\nMake sure you label variables appropriately for a collaborator.\n\nCreate a table of smoking status versus whether the person was told benefit giving up cigarettes (from (OHQ_I). Discuss missingness and the relationship of these 2 variables with a hypothesis test.\nWe want to determine the effect of smoking and alcohol use on good oral health (outcome). We would adjust for any demographics you think relevant/significant. Discuss how a model was chosen and any performance metrics. Decide whether to adjust for diabetes and discuss why.\nCreate one figure that demonstrates the effect of age on good oral health.\n\n\n\nNotes\nDo not use setwd in your scripts.\nMake sure the figure aspect ratios are appropriate (get someone else to look it over!).\nAny questions on this project should be posted as an issue on https://github.com/jh-adv-data-sci/adv_data_sci_2023/issues."
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "schedule.html",
@@ -222,13 +208,6 @@
     "title": "Schedule",
     "section": "",
     "text": "Class 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
-  },
-  {
-    "objectID": "exercises.html",
-    "href": "exercises.html",
-    "title": "Exercises",
-    "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exercises/power.html",
@@ -396,6 +375,6 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "NHANES Project\n\n\nAnalyzing NHANES\n\n\n\n\n\n\n\n\n03-NHANES\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   }
 ]
