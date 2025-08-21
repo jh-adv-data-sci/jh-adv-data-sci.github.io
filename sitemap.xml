@@ -2,34 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jh-adv-data-sci.github.io/resources.html</loc>
-    <lastmod>2025-08-21T16:43:39.374Z</lastmod>
+    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
   </url>
   <url>
-    <loc>https://jh-adv-data-sci.github.io/index.html</loc>
-    <lastmod>2025-08-21T16:43:39.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jh-adv-data-sci.github.io/exercises/linux_shell.html</loc>
-    <lastmod>2025-08-21T16:43:39.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
-    <lastmod>2025-08-21T16:43:39.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jh-adv-data-sci.github.io/schedule.html</loc>
-    <lastmod>2025-08-21T16:43:39.375Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jh-adv-data-sci.github.io/exercises/power.html</loc>
-    <lastmod>2025-08-21T16:43:39.373Z</lastmod>
+    <loc>https://jh-adv-data-sci.github.io/resources/missing_data_lecture.html</loc>
+    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/exercises/slurm_and_the_cluster.html</loc>
-    <lastmod>2025-08-21T16:43:39.373Z</lastmod>
+    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/exercises/power.html</loc>
+    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/exercises.html</loc>
+    <lastmod>2025-08-21T16:58:22.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/schedule.html</loc>
+    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/homework/nhanes_project.html</loc>
+    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/exercises/linux_shell.html</loc>
+    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jh-adv-data-sci.github.io/index.html</loc>
+    <lastmod>2025-08-21T16:58:22.027Z</lastmod>
   </url>
   <url>
     <loc>https://jh-adv-data-sci.github.io/homework.html</loc>
-    <lastmod>2025-08-21T16:43:39.374Z</lastmod>
+    <lastmod>2025-08-21T16:58:22.026Z</lastmod>
   </url>
 </urlset>

@@ -1,7 +1,9 @@
 [
   {
     "listing": "/resources.html",
-    "items": []
+    "items": [
+      "/resources/missing_data_lecture.html"
+    ]
   },
   {
     "listing": "/exercises.html",
@@ -13,6 +15,8 @@
   },
   {
     "listing": "/homework.html",
-    "items": []
+    "items": [
+      "/homework/nhanes_project.html"
+    ]
   }
 ]
