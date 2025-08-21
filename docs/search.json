@@ -53,7 +53,7 @@
     "href": "index.html#advanced-data-science-i",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "Advanced Data Science I",
-    "text": "Advanced Data Science I"
+    "text": "Advanced Data Science I\n\nWeek 1\n\nClass 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell – Do (hands-on commands)\n\n\n\nWeek 2\n\nClass 3: Cluster – Present (concepts, use cases)\n\nClass 4: Cluster – Do (git practice on cluster)\n\n\n\nWeek 3\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Do (build & share slides)\n\n\n\nWeek 4\n\nClass 7: R packages – Lecture/Do (creating, managing packages)\n\nClass 8: Grants (grant writing basics)\n\n\n\nWeek 5\n\nClass 9: Present P1 – Do (SAP style project presentation)\n\nClass 10: Data Lecture – Do (scientific data concepts)\n\n\n\nWeek 6\n\nClass 11: Data Visualization (EDA) – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\nWeek 7\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\nWeek 8\n\nClass 15: APIs + Pulling – Do (SQL, API integration)\n\nClass 16: Final Presentations"
   },
   {
     "objectID": "index.html#week-1",
@@ -116,7 +116,7 @@
     "href": "index.html#advanced-data-science-ii",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "Advanced Data Science II",
-    "text": "Advanced Data Science II"
+    "text": "Advanced Data Science II\n\nWeek 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\nWeek 2\n\nClass 3: Model Selection – tidymodels (intro)\n\nClass 4: Model Selection – Do (practice)\n\n\n\nWeek 3\n\nClass 5: Missing Data – Present (theory, strategies)\n\nClass 6: Missing Data – Do (coding exercises)\n\n\n\nWeek 4\n\nClass 7: Pipelining Techniques – Lecture\n\nClass 8: Pipelining Techniques – Do\n\n\n\nWeek 5\n\nClass 9: Predictive Competition – Present (framing a comp)\n\nClass 10: Measurement & Models – Lecture\n\n\n\nWeek 6\n\nClass 11: Measurement & Models – Do\n\nClass 12: Practical Bayes – Present (intro)\n\n\n\nWeek 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\nWeek 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
   },
   {
     "objectID": "index.html#week-1-1",

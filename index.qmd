@@ -49,70 +49,70 @@ Office hours will be announced during the first week of class for each term.
 # Course Outline
 ## Advanced Data Science I
 
-## Week 1
+### Week 1
 - **Class 1:** [Intro](https://docs.google.com/presentation/d/1fb5W1fcnIdYtq_sXl6V3bh2uFdJ68h_qSwUxWtPs_to/edit?usp=sharing) and [Linux & Shell](https://docs.google.com/presentation/d/1kFjRsQ0tOaH59HNp-v5_xdmRvAfJM0uv3R3SS-RxT4I/edit?usp=sharing) – Present (intro, basics)  
 - **Class 2:** [Linux & Shell – Do](exercises/linux_shell.html) (hands-on commands)  
 
-## Week 2
+### Week 2
 - **Class 3:** Cluster – Present (concepts, use cases)  
 - **Class 4:** Cluster – Do (git practice on cluster)  
 
-## Week 3
+### Week 3
 - **Class 5:** Power Lecture (foundations/tools)  
 - **Class 6:** Power – Do (build & share slides)  
 
-## Week 4
+### Week 4
 - **Class 7:** R packages – Lecture/Do (creating, managing packages)  
 - **Class 8:** Grants (grant writing basics)  
 
-## Week 5
+### Week 5
 - **Class 9:** Present P1 – Do (SAP style project presentation)  
 - **Class 10:** Data Lecture – Do (scientific data concepts)  
 
-## Week 6
+### Week 6
 - **Class 11:** Data Visualization (EDA) – Lecture  
 - **Class 12:** Data Visualization (EDA) – Do  
 
-## Week 7
+### Week 7
 - **Class 13:** App Dashboard – Development (setup & workflow)  
 - **Class 14:** App Dashboard – Do (hands-on build)  
 
-## Week 8
+### Week 8
 - **Class 15:** APIs + Pulling – Do (SQL, API integration)  
 - **Class 16:** Final Presentations  
 
 
 ## Advanced Data Science II
 
-## Week 1
+### Week 1
 - **Class 1:** Language Models – API (overview, usage)  
 - **Class 2:** Language Models – Do (hands-on, coding)  
 
-## Week 2
+### Week 2
 - **Class 3:** Model Selection – tidymodels (intro)  
 - **Class 4:** Model Selection – Do (practice)  
 
-## Week 3
+### Week 3
 - **Class 5:** Missing Data – Present (theory, strategies)  
 - **Class 6:** Missing Data – Do (coding exercises)  
 
-## Week 4
+### Week 4
 - **Class 7:** Pipelining Techniques – Lecture  
 - **Class 8:** Pipelining Techniques – Do  
 
-## Week 5
+### Week 5
 - **Class 9:** Predictive Competition – Present (framing a comp)  
 - **Class 10:** Measurement & Models – Lecture  
 
-## Week 6
+### Week 6
 - **Class 11:** Measurement & Models – Do  
 - **Class 12:** Practical Bayes – Present (intro)  
 
-## Week 7
+### Week 7
 - **Class 13:** Practical Bayes – Lecture (methods)  
 - **Class 14:** Practical Bayes – Do (applications)  
 
-## Week 8
+### Week 8
 - **Class 15:** Presentation prep  
 - **Class 16:** Final Presentations  
 
