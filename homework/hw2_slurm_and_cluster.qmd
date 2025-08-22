@@ -18,18 +18,19 @@ You'll investigate two key properties of an estimator for a regression coefficie
 You will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.
 
 Simulation Parameters to Vary:
+
 + Sample Size (n): How does the number of data points affect performance?
 + Values: 50, 100, 500, 1000, 5000
 + Degree of Heteroscedasticity (alpha): This is a violation of the "constant variance" assumption. We'll make the error variance depend on the independent variable $x$.
 
-+ $x ~ N(0,1)$
++ $x \sim N(0,1)$
 + $\beta = 1$
-+ The error term epsilon will be drawn from $N(0, \exp(\alpha x))$. 
++ The error term $\epsilon$ will be drawn from $N(0, \exp(\alpha x))$. 
 + Values for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).
 + Degree of Autocorrelation ($\rho$): This violates the "independent errors" assumption, common in time-series data.
 + The error term $\epsilon_i$ will be calculated as  $\epsilon_i = \epsilon_{i −1} + w_i$, where $w_i \sim N(0,2)$.
 + Values: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).
 
-Your full experiment will be a grid of 5 (n) x 4 (alpha) x 4 (rho) = 80 unique scenarios. For each scenario, you'll run 1000 replications.  Evaluate both bias and standard error. Run your simulation on the cluster using a slurm array job
+Your full experiment will be a grid of 5 ($n$) x 4 ($\alpha$) x 4 ($\rho$) = 80 unique scenarios. For each scenario, run $1000$ replications.  Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.
 
 Include your code and a no more than two page write up of results in your git repository and push your changes. 

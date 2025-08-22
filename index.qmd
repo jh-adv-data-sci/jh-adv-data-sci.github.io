@@ -36,7 +36,7 @@ This course is designed for PhD students in the Biostatistics department at John
 
 ## Required Textbook
 
-None. Instead, we have a list of recommended readings on the web site available at [Resources](resources.html).
+None. Instead, we will list recommended readings on the web site available at [Resources](resources.html).
 
 ## Course Communication
 
@@ -54,6 +54,9 @@ See [Schedule/Syllabus Tab](schedule.html)
 # Course components
 
 ## Grades
+
+Attendance in class is expected will be taken randomly.  If you are planning on missing classes, especially at the end of the 2nd term, you are expected to notify the instructors with a solution.
+
 * Participation: 10%
 * Homework: 60%
 * Presentation(s): 30%
@@ -77,7 +80,7 @@ We fully encourage you to use AI when you feel necessary, and to use as an aid. 
 
 ### Quoting Sources
 
-You must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README.txt file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!
+You must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!
 
 You may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.
 

@@ -132,7 +132,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
-<span class="menu-text">Homework and presentations</span></a>
+<span class="menu-text">Homework and Presentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources.html"> 
@@ -200,17 +200,20 @@ window.Quarto = {
 <section id="the-simulation-grid" class="level2">
 <h2 class="anchored" data-anchor-id="the-simulation-grid">The Simulation Grid</h2>
 <p>You will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.</p>
-<p>Simulation Parameters to Vary: + Sample Size (n): How does the number of data points affect performance? + Values: 50, 100, 500, 1000, 5000 + Degree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable <span class="math inline">\(x\)</span>.</p>
+<p>Simulation Parameters to Vary:</p>
 <ul>
-<li><span class="math inline">\(x ~ N(0,1)\)</span></li>
-<li><span class="math inline">\(\beta = 1\)</span></li>
-<li>The error term epsilon will be drawn from <span class="math inline">\(N(0, \exp(\alpha x))\)</span>.</li>
-<li>Values for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).</li>
-<li>Degree of Autocorrelation (<span class="math inline">\(\rho\)</span>): This violates the “independent errors” assumption, common in time-series data.</li>
-<li>The error term <span class="math inline">\(\epsilon_i\)</span> will be calculated as <span class="math inline">\(\epsilon_i = \epsilon_{i −1} + w_i\)</span>, where <span class="math inline">\(w_i \sim N(0,2)\)</span>.</li>
-<li>Values: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).</li>
+<li><p>Sample Size (n): How does the number of data points affect performance?</p></li>
+<li><p>Values: 50, 100, 500, 1000, 5000</p></li>
+<li><p>Degree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable <span class="math inline">\(x\)</span>.</p></li>
+<li><p><span class="math inline">\(x \sim N(0,1)\)</span></p></li>
+<li><p><span class="math inline">\(\beta = 1\)</span></p></li>
+<li><p>The error term <span class="math inline">\(\epsilon\)</span> will be drawn from <span class="math inline">\(N(0, \exp(\alpha x))\)</span>.</p></li>
+<li><p>Values for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).</p></li>
+<li><p>Degree of Autocorrelation (<span class="math inline">\(\rho\)</span>): This violates the “independent errors” assumption, common in time-series data.</p></li>
+<li><p>The error term <span class="math inline">\(\epsilon_i\)</span> will be calculated as <span class="math inline">\(\epsilon_i = \epsilon_{i −1} + w_i\)</span>, where <span class="math inline">\(w_i \sim N(0,2)\)</span>.</p></li>
+<li><p>Values: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).</p></li>
 </ul>
-<p>Your full experiment will be a grid of 5 (n) x 4 (alpha) x 4 (rho) = 80 unique scenarios. For each scenario, you’ll run 1000 replications. Evaluate both bias and standard error. Run your simulation on the cluster using a slurm array job</p>
+<p>Your full experiment will be a grid of 5 (<span class="math inline">\(n\)</span>) x 4 (<span class="math inline">\(\alpha\)</span>) x 4 (<span class="math inline">\(\rho\)</span>) = 80 unique scenarios. For each scenario, run <span class="math inline">\(1000\)</span> replications. Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.</p>
 <p>Include your code and a no more than two page write up of results in your git repository and push your changes.</p>
 
 

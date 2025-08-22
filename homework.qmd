@@ -1,5 +1,5 @@
 ---
-title: "Homework and presentations"
+title: "Homework and Presentations"
 editor: source
 listing:
   contents: homework

@@ -10,7 +10,7 @@ engine: knitr
 In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer's disease study planning project from homework 3. In this presentation please:
 
 + Limit your presentation to 10 slides.
-+ Limit your presentation to ??? minutes.
++ Limit your presentation to 5 minutes + 2 minutes for questions.
 
 You will be graded on the following criteria:
 

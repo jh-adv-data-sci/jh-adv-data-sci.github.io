@@ -11,7 +11,7 @@ editor: source
 - **Class 2:** [Linux & Shell - Practice](exercises/linux_shell.html) (hands-on commands)  
 
 ### Homework 1
-- **Homework 1:**  [Homework 1](homework/hw1.html)
+- **Homework 1:**  [Homework 1](homework/hw1_shell_and_linux.html)
 
 ### Week 2
 - **Class 3:** [SLURM and the Cluster](https://docs.google.com/presentation/d/1L8KgZ_my3Onj8COclq71cQxWP47MHZD1zTG5dHdUdMA/edit?usp=sharing)
@@ -26,8 +26,8 @@ editor: source
 - **Class 8:** [Grants](https://docs.google.com/presentation/d/1kU4HcYdaVqkg7I3ZexhAse5AZG8dlxTEgfakOUvCIdo/edit?usp=sharing)
 
 ### Week 5
-- **Class 9:** Present P1 – Do (SAP style project presentation)  
-- **Class 10:** [SQL](https://docs.google.com/presentation/d/15bZFKubDeY5Mmj37j1p639h2uLMAxZzHW9gExUh2jcU/edit?slide=id.p#slide=id.p)  Data Lecture – Do (scientific data concepts)  
+- **Class 9:** Present P1 (see [Presentations](homework/presentation1.html))
+- **Class 10:** [SQL Basics and Hurdles](https://docs.google.com/presentation/d/15bZFKubDeY5Mmj37j1p639h2uLMAxZzHW9gExUh2jcU/edit?slide=id.p#slide=id.p)  
 
 ### Week 6
 - **Class 11:** [Data Visualization](https://docs.google.com/presentation/d/17RY0WNOqnsjiII_hE-T7ADP5fAGZdd6v56O8QEw7qhg/edit?usp=sharing) – Lecture  

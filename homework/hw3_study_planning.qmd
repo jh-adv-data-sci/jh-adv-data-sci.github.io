@@ -15,11 +15,12 @@ Do the following:
 
 + Propose a statistical analysis plan. 
 + Perform study planning for a clinical trial to test the primary and hopefully secondary outcome.
-+ Subjects enrollment and will cost $3k for enrollment and $2k per subsequent visit. 
++ Subjects enrollment and will cost \$3k for enrollment and \$2k per subsequent visit. 
 + Adding an MRI for the secondary outcome will cost an additional $5k per visit.
 + Power for the primary hypothesis must be 90%
 + Type 1 error rate (multiplicity adjusted) must be 5%
 + Maximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.
 
-Write up your results in a no more than 2 page whitepaper.
+Write up your results in a no more than 2 page technical paper.
 
+This project will be used as the foundation for one of your in-class presentatinos.

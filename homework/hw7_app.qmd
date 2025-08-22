@@ -11,7 +11,7 @@ In this homework, you will bundle your R package for the Alzheimer's trial in a 
 
 1. Your code 
 2. A README file with instructions on how to run the app
-3. A link to the live app hosted on shinyapps.io in the README file
+3. A link to the live app hosted on `shinyapps.io` (or other live hosting/using WebR) in the README file
 4. An animated gif screenshot of the app in action in the README file (note there are chrome extensions that can help you create these)
 
 
