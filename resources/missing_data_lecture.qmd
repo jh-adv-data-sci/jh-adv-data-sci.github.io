@@ -6,4 +6,4 @@ editor: source
 engine: knitr
 ---
 
-See https://www.lshtm.ac.uk/media/38306
+See [https://www.lshtm.ac.uk/media/38306](https://www.lshtm.ac.uk/media/38306)
