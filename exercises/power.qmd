@@ -18,7 +18,7 @@ engine: knitr
 
 ## 1) One‑sample t‑test power & n (10 minutes)
 
-**Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., ($\mu=3$)).
+**Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., $\mu=3$).
 
 **1A.** Compute power for ($n=50$).
 
@@ -30,7 +30,7 @@ Analytic normal approx: ($Z = \bar Y/(\sigma/\sqrt n)$), noncentrality ($\lambda
 
 \[ \lambda = 3\cdot\sqrt{50}/10 = 3\cdot7.071/10 \approx 2.121. \]
 
-Two‑sided power (z‑approx): \[ 1 - \Phi(z\_{0.975}-\lambda) + \Phi(-z\_{0.975}-\lambda) \approx 1-\Phi(1.96-2.121)+\Phi(-1.96-2.121) \approx 1-\Phi(-0.161)+\Phi(-4.081). \] This is (\approx 1-(0.436)+\text{tiny} \approx 0.564). Using exact **t** power:
+Two‑sided power (z‑approx): \[ 1 - \Phi(z_{0.975}-\lambda) + \Phi(-z_{0.975}-\lambda) \approx 1-\Phi(1.96-2.121)+\Phi(-1.96-2.121) \approx 1-\Phi(-0.161)+\Phi(-4.081). \] This is (\approx 1-(0.436)+\text{tiny} \approx 0.564). Using exact **t** power:
 
 ```{r, eval = FALSE}
 power.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,
@@ -45,9 +45,9 @@ power.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,
 
 <summary>Answer</summary>
 
-Closed‑form (z‑approx): ( n \approx (z\_{0.975}+z\_{0.8})^2,^\sigma2/\delta\^2 ).
+Closed‑form (z‑approx): ($n \approx (z_{0.975}+z_{0.8})^2, \frac{\sigma^2}}{\delta^2}$ ).
 
-\[ n \approx (1.96+0.84)\^2\frac{10^2}{3^2} = (2.80)\^2 \cdot 100/9 \approx 7.84 \cdot 11.11 \approx 87.1. \]
+\[ n \approx (1.96+0.84)^2\frac{10^2}{3^2} = (2.80)^2 \cdot 100/9 \approx 7.84 \cdot 11.11 \approx 87.1. \]
 
 Exact via R:
 
@@ -62,7 +62,7 @@ power.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,
 
 ## 2) Two‑sample t‑test (equal variance) (8 minutes)
 
-**Setup.** Two arms, equal allocation, common (\sigma=12), difference of means (\delta = 5).
+**Setup.** Two arms, equal allocation, common ($\sigma=12$), difference of means ($\delta = 5$).
 
 **2A.** Per‑group (n) for 90% power.
 
@@ -70,9 +70,13 @@ power.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,
 
 <summary>Answer</summary>
 
-Z‑approx per‑group (n): ( n \approx 2 (z\_{0.975}+z\_{0.90})^2,^\sigma2/\delta\^2 ).
+Z‑approx per‑group (n): ($n \approx 2 (z_{0.975}+z_{0.90})^2 \frac{\sigma^2}{\delta^2}$ ).
 
-\[ n \approx 2(1.96+1.282)^2(12^2)/5\^2 = 2(3.242)\^2\cdot144/25 \approx 2\cdot10.52\cdot5.76 \approx 121.1. \] So about **122 per group**. Exact:
+$$
+n \approx 2(1.96+1.282)^2(12^2)/5^2 = 2(3.242)^2\cdot144/25 \approx 2\cdot10.52\cdot5.76 \approx 121.1 
+$$ 
+
+So about **122 per group**. Exact:
 
 ```{r, eval = FALSE}
 power.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,
@@ -81,7 +85,7 @@ power.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,
 
 </details>
 
-**2B.** Power if (n=40) per group.
+**2B.** Power if ($n=40$) per group.
 
 <details>
 
@@ -98,7 +102,7 @@ power.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,
 
 ## 3) Paired t‑test (5 minutes)
 
-**Setup.** Pre/post measurements with (\sigma*{pre}=*\sigma{post}=8), correlation (\rho=0.6). Mean change (\delta=2).
+**Setup.** Pre/post measurements with ($\sigma_{\text{pre}}=\sigma_{\text{post}}=8$), correlation ($\rho=0.6$). Mean change ($\delta=2$).
 
 **Question.** Required number of pairs for 80% power.
 
@@ -106,7 +110,7 @@ power.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,
 
 <summary>Answer</summary>
 
-SD of differences: (\sigma\_D=\sqrt{\sigma^2+\sigma^2-2\rho\sigma^2}=\sqrt{2\sigma^2(1-\rho)} = 8\sqrt{2(1-0.6)}=8\sqrt{0.8}\approx 7.155.) Use one‑sample t on differences with (sd=\sigma\_D), effect (\delta):
+SD of differences: ($\sigma_D=\sqrt{\sigma^2+\sigma^2-2\rho\sigma^2}=\sqrt{2\sigma^2(1-\rho)} = 8\sqrt{2(1-0.6)}=8\sqrt{0.8}\approx 7.155$.) Use one‑sample t-est on differences with (sd=$\sigma_D$), effect ($\delta$):
 
 ```{r, eval = FALSE}
 power.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,
@@ -119,20 +123,29 @@ power.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,
 
 ## 4) Simple linear regression: test a slope (10 minutes)
 
-**Setup.** Model (Y=\beta\_0+\beta\_1 X+\varepsilon), (\varepsilon\sim N(0,\sigma\^2)) with (\sigma=10) and (X) standardized: (\bar X\approx 0), (\operatorname{Var}(X)=1). Suppose (\beta\_1=3). Test (H_0:\beta\_1=0).
+**Setup.** Model $Y=\beta_0+\beta_1 X+\varepsilon$, $\varepsilon \sim N(0,\sigma^2)$ with ($\sigma=10$) and (X) standardized: ($\bar{X} \approx 0$), ($\operatorname{Var}(X)=1$). 
 
-**4A.** Power at (n=60) using the noncentral t formulation.
+Suppose ($\beta_1=3$). Test ($H_0:\beta_1=0$).
+
+**4A.** Power at ($n=60$) using the noncentral t formulation.
 
 <details>
 
 <summary>Answer</summary>
 
-For centered/standardized (X), (S\_{xx}=\sum (x_i-\bar x)\^2\approx n-1). The test statistic for (\beta\_1) has noncentrality \[ \lambda = \frac{\beta_1}{\sigma}\sqrt{S_{xx}} \approx \frac{3}{10}\sqrt{59} = 0.3\cdot7.681\approx 2.304. \] Power (two‑sided) is (1-\beta) with df=(n-2=58):
+For centered/standardized (X), ($S_{xx} = \sum (x_i-\bar x)^2 \approx n-1$). The test statistic for ($\beta_1$) has noncentrality paramter
+$$
+\lambda = \frac{\beta_1}{\sigma}\sqrt{S_{xx}} \approx \frac{3}{10}\sqrt{59} = 0.3 \cdot 7.681 \approx 2.304
+$$
+Power (two‑sided) is ($1-\beta$) with df=($n-2=58$):
 
 ```{r, eval = FALSE}
-n <- 60; sigma <- 10; beta1 <- 3
+n <- 60; 
+sigma <- 10; 
+beta1 <- 3
 lambda <- beta1/sigma * sqrt(n-1)
-alpha <- 0.05; df <- n - 2
+alpha <- 0.05; 
+df <- n - 2
 c <- qt(1 - alpha/2, df)
 # power = P(|T_nc| > c)
 1 - (pt(c, df, ncp=lambda) - pt(-c, df, ncp=lambda))
@@ -146,7 +159,9 @@ c <- qt(1 - alpha/2, df)
 
 <summary>Answer</summary>
 
-For SLR, (r=\operatorname{Cor}(X,Y)=\beta\_1\sigma\_X/\sigma\_Y). With (\sigma\_X=1), (\sigma\_Y=\sqrt{\beta_1^2+\sigma^2}=\sqrt{9+100}=\sqrt{109}\approx 10.44), so (r\approx 3/10.44\approx 0.287.) Test of (r=0) uses the same df and noncentrality (\sqrt{n-2},r/\sqrt{1-r^2}), which equals (\lambda) above.
+For SLR, ($r=\operatorname{Cor}(X,Y)= \frac{\beta_1 \sigma_X}{\sigma_Y}$). With ($\sigma_X=1$), ($\sigma_Y = \sqrt{\beta_1^2+\sigma^2} = \sqrt{9+100} = \sqrt{109} \approx 10.44$), so ($r\approx 3/10.44\approx 0.287$). 
+
+Test of ($r=0$) uses the same df and noncentrality ($\sqrt{n-2}, \frac{r}{\sqrt{1-r^2}}$), which equals ($\lambda$) above.
 
 ```{r, eval = FALSE}
 r <- 3/sqrt(9+100)
@@ -158,15 +173,17 @@ all.equal(lambda, lambda2)
 
 ------------------------------------------------------------------------
 
-## 5) Multiple regression: overall (R\^2) (7 minutes)
+## 5) Multiple regression: overall ($R^2$) (7 minutes)
 
-**Setup.** You plan (p=4) predictors and expect population (R\^2=0.20). Test (H_0: R\^2=0) (overall model). Find power at (n=80) and required (n) for 80% power.
+**Setup.** You plan (p=4) predictors and expect population ($R^2=0.20$). Test ($H_0: R^2=0$) (overall model). 
+
+Find power at ($n=80$) and required (n) for 80% power.
 
 <details>
 
 <summary>Answer</summary>
 
-Use Cohen’s (f^2=R^2/(1-R\^2)=0.25). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (\lambda=f\^2(n-p-1)).
+Use Cohen's ($f^2=\frac{R^2}{1-R^2}=0.25$). The overall F test has df1=(p), df2=(n-p-1), and noncentrality ($\lambda=f^2(n-p-1)$).
 
 Power at (n=80):
 
@@ -198,27 +215,34 @@ uniroot(f_target, c(p+5, 1000))$root
 
 ## 6) Sample size for **prediction interval width** in SLR (10 minutes)
 
-**Setup.** In (Y=\beta\_0+\beta\_1 X+\varepsilon) with (\varepsilon\sim N(0,\sigma\^2)), suppose (\sigma=10) and you plan (X) standardized (mean 0, var 1). You want a **95% prediction interval** for a *future* observation at (x_0) to have **total width** (W). Consider two cases: (i) (x_0=0) (mean of (X)), (ii) (x_0=1) (1 SD from mean).
+**Setup.** In $Y=\beta_0+\beta_1 X+\varepsilon$ with $\varepsilon\sim N(0,\sigma^2)$, suppose ($\sigma=10$) and you plan ($X$) standardized (mean 0, var 1). You want a **95% prediction interval** for a *future* observation at ($x_0$) to have **total width** ($). 
 
-**Facts.** The half‑width (HW) at (x_0) is \[ \text{HW}(x_0) = t\_{0.975,,n-2},\sigma,\sqrt{1+\frac{1}{n}+\frac{(x_0-\bar x)^2}{S_{xx}}},\quad S\_{xx}=\sum (x_i-\bar x)\^2\approx n-1. \] The **minimum achievable** half‑width is as (n\to\infty): (t\_{\infty,0.975},\sigma=1.96,\sigma).
+Consider two cases: (i) ($x_0=0$) (mean of (X)), (ii) ($x_0=1$) (1 SD from mean).
 
-**6A.** Feasibility check. With (\sigma=10), what is the smallest possible total width (W\_{min})?
+**Facts.** The half‑width (HW) at ($x_0$) is 
+$$
+\text{HW}(x_0) = t_{0.975,,n-2} \sigma \sqrt{1+\frac{1}{n}+\frac{(x_0-\bar x)^2}{S_{xx}}},\quad S_{xx}=\sum (x_i-\bar x)^2\approx n-1. 
+$$
+
+The **minimum achievable** half‑width is as ($n\to\infty$): ($t_{\infty,0.975} \sigma)$ where $t_{\infty,0.975}=1.96$.
+
+**6A.** Feasibility check. With ($\sigma=10$), what is the smallest possible total width ($W_\text{min}$)?
 
 <details>
 
 <summary>Answer</summary>
 
-(W\_{min}=2\times 1.96\times 10 \approx 39.2.) Any target width (W\<39.2) is **impossible** regardless of (n).
+($W_\text{min}=2\times 1.96\times 10 \approx 39.2$) Any target width ($W<39.2$) is **impossible** regardless of ($n$).
 
 </details>
 
-**6B.** Find (n) to achieve (W=48) (half‑width 24) at (x_0=0).
+**6B.** Find ($n$) to achieve ($W=48$) (half‑width 24) at ($x_0=0$).  You can brute force it, but also try using root-finding/optimization procedures.
 
 <details>
 
 <summary>Answer</summary>
 
-Solve ( t\_{0.975,n-2},10,\sqrt{1+1/n} = 24). Use numeric root‑finding:
+Solve ( $t_{0.975,n-2} 10 \sqrt{1+1/n} = 24$). Use numeric root‑finding:
 
 ```{r, eval = FALSE}
 sigma <- 10; HW <- 24
@@ -233,13 +257,13 @@ ceiling(uniroot(f, c(5, 1e5))$root)
 
 </details>
 
-**6C.** Repeat for (x_0=1). Use (S\_{xx}\approx n-1), (\bar x\approx 0).
+**6C.** Repeat for ($x_0=1$). Use ($S_{xx}\approx n-1$), ($\bar x\approx 0$).
 
 <details>
 
 <summary>Answer</summary>
 
-Half‑width equation: ( t,\sigma\sqrt{1+1/n+1/(n-1)} = 24 ).
+Half‑width equation: ( $t \sigma\sqrt{1+1/n+1/(n-1)} = 24$ ).
 
 ```{r, eval = FALSE}
 sigma <- 10; HW <- 24
@@ -257,13 +281,13 @@ Note the larger (n) due to being 1 SD away from the design mean.
 
 </details>
 
-**6D. (Optional)** Design‑sensitive planning. If you can spread (X) to increase (S\_{xx}) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?
+**6D. (Optional)** Design‑sensitive planning. If you can spread (X) to increase ($S_{xx}$) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?
 
 <details>
 
 <summary>Answer</summary>
 
-Increasing (S\_{xx}) shrinks the term ((x_0-\bar x)\^2/S\_{xx}), reducing the half‑width for off‑mean predictions. For a fixed (n), wider X range lowers HW at (x_0\neq\bar x). Conversely, for fixed HW, larger (S\_{xx}) allows smaller (n).
+Increasing ($S_{xx}$) shrinks the term $\frac{(x_0- \bar{x})^2}{S_{xx}}$, reducing the half‑width for off‑mean predictions. For a fixed ($n$), wider X range lowers HW at ($x_0\neq\bar x$). Conversely, for fixed HW, larger ($S_{xx}$) allows smaller (n).
 
 </details>
 
@@ -294,8 +318,8 @@ mean(p < alpha)  # ~ power
 
 ### Quick reference
 
--   One‑sample n (z‑approx): ( n = (z\_{1-\alpha/2}+z\_{1-\beta})^2,^\sigma2/\delta\^2 )
--   Two‑sample per‑group n: ( n = 2(z\_{1-\alpha/2}+z\_{1-\beta})^2,^\sigma2/\delta\^2 )
--   SLR slope power ncp: ( \lambda = (\beta\_1/\sigma)\sqrt{S_{xx}} \approx (\beta\_1/\sigma)\sqrt{n-1} )
--   Overall MR test: (f^2=R^2/(1-R\^2),; \lambda=f\^2(n-p-1))
--   PI half‑width at (x_0): ( t,\sigma\sqrt{1+1/n+(x_0-\bar x)^2/S_{xx}} )
+-   One‑sample n (z‑approx): ( $n = (z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}$ )
+-   Two‑sample per‑group n: ( $n = 2(z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}$ )
+-   SLR slope power ncp: ( $\lambda = (\beta_1/\sigma)\sqrt{S_{xx}} \approx (\beta_1/\sigma)\sqrt{n-1}$ )
+-   Overall MR test: ($f^2=R^2/(1-R^2)$, $\lambda=f^2(n-p-1)$)
+-   PI half‑width at (x_0): ( $t\sigma\sqrt{1+1/n+(x_0-\bar x)^2/S_{xx}}$ )

@@ -166,7 +166,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
-<span class="menu-text">Homework and presentations</span></a>
+<span class="menu-text">Homework and Presentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources.html"> 
@@ -192,7 +192,7 @@ window.Quarto = {
   <li><a href="#twosample-ttest-equal-variance-8-minutes" id="toc-twosample-ttest-equal-variance-8-minutes" class="nav-link" data-scroll-target="#twosample-ttest-equal-variance-8-minutes">2) Two‑sample t‑test (equal variance) (8 minutes)</a></li>
   <li><a href="#paired-ttest-5-minutes" id="toc-paired-ttest-5-minutes" class="nav-link" data-scroll-target="#paired-ttest-5-minutes">3) Paired t‑test (5 minutes)</a></li>
   <li><a href="#simple-linear-regression-test-a-slope-10-minutes" id="toc-simple-linear-regression-test-a-slope-10-minutes" class="nav-link" data-scroll-target="#simple-linear-regression-test-a-slope-10-minutes">4) Simple linear regression: test a slope (10 minutes)</a></li>
-  <li><a href="#multiple-regression-overall-r2-7-minutes" id="toc-multiple-regression-overall-r2-7-minutes" class="nav-link" data-scroll-target="#multiple-regression-overall-r2-7-minutes">5) Multiple regression: overall (R^2) (7 minutes)</a></li>
+  <li><a href="#multiple-regression-overall-r2-7-minutes" id="toc-multiple-regression-overall-r2-7-minutes" class="nav-link" data-scroll-target="#multiple-regression-overall-r2-7-minutes">5) Multiple regression: overall (<span class="math inline">\(R^2\)</span>) (7 minutes)</a></li>
   <li><a href="#sample-size-for-prediction-interval-width-in-slr-10-minutes" id="toc-sample-size-for-prediction-interval-width-in-slr-10-minutes" class="nav-link" data-scroll-target="#sample-size-for-prediction-interval-width-in-slr-10-minutes">6) Sample size for <strong>prediction interval width</strong> in SLR (10 minutes)</a></li>
   <li><a href="#optional-monte-carlo-verification-5-minutes" id="toc-optional-monte-carlo-verification-5-minutes" class="nav-link" data-scroll-target="#optional-monte-carlo-verification-5-minutes">7) (Optional) Monte Carlo verification (5 minutes)</a>
   <ul class="collapse">
@@ -236,7 +236,7 @@ window.Quarto = {
 <hr>
 <section id="onesample-ttest-power-n-10-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="onesample-ttest-power-n-10-minutes">1) One‑sample t‑test power &amp; n (10 minutes)</h2>
-<p><strong>Setup.</strong> You expect observations (<span class="math inline">\(Y\sim \mathcal{N}(\mu,\sigma^2)\)</span>) with (<span class="math inline">\(\sigma=10\)</span>). You will test (<span class="math inline">\(H_0: \mu=0\)</span>) vs (<span class="math inline">\(H_1: \mu\neq 0\)</span>). The scientifically relevant effect is (<span class="math inline">\(\delta = 3\)</span>) (i.e., (<span class="math inline">\(\mu=3\)</span>)).</p>
+<p><strong>Setup.</strong> You expect observations (<span class="math inline">\(Y\sim \mathcal{N}(\mu,\sigma^2)\)</span>) with (<span class="math inline">\(\sigma=10\)</span>). You will test (<span class="math inline">\(H_0: \mu=0\)</span>) vs (<span class="math inline">\(H_1: \mu\neq 0\)</span>). The scientifically relevant effect is (<span class="math inline">\(\delta = 3\)</span>) (i.e., <span class="math inline">\(\mu=3\)</span>).</p>
 <p><strong>1A.</strong> Compute power for (<span class="math inline">\(n=50\)</span>).</p>
 <details>
 <summary>
@@ -258,7 +258,7 @@ Answer
 <summary>
 Answer
 </summary>
-<p>Closed‑form (z‑approx): ( n (z_{0.975}+z_{0.8})<sup>2,</sup>/^2 ).</p>
+<p>Closed‑form (z‑approx): (<span class="math inline">\(n \approx (z_{0.975}+z_{0.8})^2, \frac{\sigma^2}}{\delta^2}\)</span> ).</p>
 <p>[ n (1.96+0.84)^2 = (2.80)^2 /9 . ]</p>
 <p>Exact via R:</p>
 <div class="cell">
@@ -273,14 +273,17 @@ Answer
 </section>
 <section id="twosample-ttest-equal-variance-8-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="twosample-ttest-equal-variance-8-minutes">2) Two‑sample t‑test (equal variance) (8 minutes)</h2>
-<p><strong>Setup.</strong> Two arms, equal allocation, common (), difference of means (= 5).</p>
+<p><strong>Setup.</strong> Two arms, equal allocation, common (<span class="math inline">\(\sigma=12\)</span>), difference of means (<span class="math inline">\(\delta = 5\)</span>).</p>
 <p><strong>2A.</strong> Per‑group (n) for 90% power.</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Z‑approx per‑group (n): ( n (z_{0.975}+z_{0.90})<sup>2,</sup>/^2 ).</p>
-<p>[ n (1.96+1.282)<sup>2(12</sup>2)/5^2 = 2(3.242)^2/25 . ] So about <strong>122 per group</strong>. Exact:</p>
+<p>Z‑approx per‑group (n): (<span class="math inline">\(n \approx 2 (z_{0.975}+z_{0.90})^2 \frac{\sigma^2}{\delta^2}\)</span> ).</p>
+<p><span class="math display">\[
+n \approx 2(1.96+1.282)^2(12^2)/5^2 = 2(3.242)^2\cdot144/25 \approx 2\cdot10.52\cdot5.76 \approx 121.1
+\]</span></p>
+<p>So about <strong>122 per group</strong>. Exact:</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -289,7 +292,7 @@ Answer
 </details>
 </div>
 </details>
-<p><strong>2B.</strong> Power if (n=40) per group.</p>
+<p><strong>2B.</strong> Power if (<span class="math inline">\(n=40\)</span>) per group.</p>
 <details>
 <summary>
 Answer
@@ -306,13 +309,13 @@ Answer
 </section>
 <section id="paired-ttest-5-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="paired-ttest-5-minutes">3) Paired t‑test (5 minutes)</h2>
-<p><strong>Setup.</strong> Pre/post measurements with (=*=8), correlation (). Mean change ().</p>
+<p><strong>Setup.</strong> Pre/post measurements with (<span class="math inline">\(\sigma_{\text{pre}}=\sigma_{\text{post}}=8\)</span>), correlation (<span class="math inline">\(\rho=0.6\)</span>). Mean change (<span class="math inline">\(\delta=2\)</span>).</p>
 <p><strong>Question.</strong> Required number of pairs for 80% power.</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>SD of differences: (_D== = 8=8.) Use one‑sample t on differences with (sd=_D), effect ():</p>
+<p>SD of differences: (<span class="math inline">\(\sigma_D=\sqrt{\sigma^2+\sigma^2-2\rho\sigma^2}=\sqrt{2\sigma^2(1-\rho)} = 8\sqrt{2(1-0.6)}=8\sqrt{0.8}\approx 7.155\)</span>.) Use one‑sample t-est on differences with (sd=<span class="math inline">\(\sigma_D\)</span>), effect (<span class="math inline">\(\delta\)</span>):</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -325,22 +328,28 @@ Answer
 </section>
 <section id="simple-linear-regression-test-a-slope-10-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="simple-linear-regression-test-a-slope-10-minutes">4) Simple linear regression: test a slope (10 minutes)</h2>
-<p><strong>Setup.</strong> Model (Y=_0+_1 X+), (N(0,^2)) with () and (X) standardized: (X), ((X)=1). Suppose (_1=3). Test (H_0:_1=0).</p>
-<p><strong>4A.</strong> Power at (n=60) using the noncentral t formulation.</p>
+<p><strong>Setup.</strong> Model <span class="math inline">\(Y=\beta_0+\beta_1 X+\varepsilon\)</span>, <span class="math inline">\(\varepsilon \sim N(0,\sigma^2)\)</span> with (<span class="math inline">\(\sigma=10\)</span>) and (X) standardized: (<span class="math inline">\(\bar{X} \approx 0\)</span>), (<span class="math inline">\(\operatorname{Var}(X)=1\)</span>).</p>
+<p>Suppose (<span class="math inline">\(\beta_1=3\)</span>). Test (<span class="math inline">\(H_0:\beta_1=0\)</span>).</p>
+<p><strong>4A.</strong> Power at (<span class="math inline">\(n=60\)</span>) using the noncentral t formulation.</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>For centered/standardized (X), (S_{xx}=(x_i-x)^2n-1). The test statistic for (_1) has noncentrality [ = = 0.3. ] Power (two‑sided) is (1-) with df=(n-2=58):</p>
+<p>For centered/standardized (X), (<span class="math inline">\(S_{xx} = \sum (x_i-\bar x)^2 \approx n-1\)</span>). The test statistic for (<span class="math inline">\(\beta_1\)</span>) has noncentrality paramter <span class="math display">\[
+\lambda = \frac{\beta_1}{\sigma}\sqrt{S_{xx}} \approx \frac{3}{10}\sqrt{59} = 0.3 \cdot 7.681 \approx 2.304
+\]</span> Power (two‑sided) is (<span class="math inline">\(1-\beta\)</span>) with df=(<span class="math inline">\(n-2=58\)</span>):</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">60</span>; sigma <span class="ot">&lt;-</span> <span class="dv">10</span>; beta1 <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">&lt;-</span> beta1<span class="sc">/</span>sigma <span class="sc">*</span> <span class="fu">sqrt</span>(n<span class="dv">-1</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span>; df <span class="ot">&lt;-</span> n <span class="sc">-</span> <span class="dv">2</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">qt</span>(<span class="dv">1</span> <span class="sc">-</span> alpha<span class="sc">/</span><span class="dv">2</span>, df)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># power = P(|T_nc| &gt; c)</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">-</span> (<span class="fu">pt</span>(c, df, <span class="at">ncp=</span>lambda) <span class="sc">-</span> <span class="fu">pt</span>(<span class="sc">-</span>c, df, <span class="at">ncp=</span>lambda))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">60</span>; </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sigma <span class="ot">&lt;-</span> <span class="dv">10</span>; </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>beta1 <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">&lt;-</span> beta1<span class="sc">/</span>sigma <span class="sc">*</span> <span class="fu">sqrt</span>(n<span class="dv">-1</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span>; </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> n <span class="sc">-</span> <span class="dv">2</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">qt</span>(<span class="dv">1</span> <span class="sc">-</span> alpha<span class="sc">/</span><span class="dv">2</span>, df)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># power = P(|T_nc| &gt; c)</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">-</span> (<span class="fu">pt</span>(c, df, <span class="at">ncp=</span>lambda) <span class="sc">-</span> <span class="fu">pt</span>(<span class="sc">-</span>c, df, <span class="at">ncp=</span>lambda))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </details>
@@ -349,7 +358,8 @@ Answer
 <summary>
 Answer
 </summary>
-<p>For SLR, (r=(X,Y)=_1_X/_Y). With (_X=1), (_Y===), so (r/10.44.) Test of (r=0) uses the same df and noncentrality (,r/), which equals () above.</p>
+<p>For SLR, (<span class="math inline">\(r=\operatorname{Cor}(X,Y)= \frac{\beta_1 \sigma_X}{\sigma_Y}\)</span>). With (<span class="math inline">\(\sigma_X=1\)</span>), (<span class="math inline">\(\sigma_Y = \sqrt{\beta_1^2+\sigma^2} = \sqrt{9+100} = \sqrt{109} \approx 10.44\)</span>), so (<span class="math inline">\(r\approx 3/10.44\approx 0.287\)</span>).</p>
+<p>Test of (<span class="math inline">\(r=0\)</span>) uses the same df and noncentrality (<span class="math inline">\(\sqrt{n-2}, \frac{r}{\sqrt{1-r^2}}\)</span>), which equals (<span class="math inline">\(\lambda\)</span>) above.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -362,13 +372,14 @@ Answer
 <hr>
 </section>
 <section id="multiple-regression-overall-r2-7-minutes" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-overall-r2-7-minutes">5) Multiple regression: overall (R^2) (7 minutes)</h2>
-<p><strong>Setup.</strong> You plan (p=4) predictors and expect population (R^2=0.20). Test (H_0: R^2=0) (overall model). Find power at (n=80) and required (n) for 80% power.</p>
+<h2 class="anchored" data-anchor-id="multiple-regression-overall-r2-7-minutes">5) Multiple regression: overall (<span class="math inline">\(R^2\)</span>) (7 minutes)</h2>
+<p><strong>Setup.</strong> You plan (p=4) predictors and expect population (<span class="math inline">\(R^2=0.20\)</span>). Test (<span class="math inline">\(H_0: R^2=0\)</span>) (overall model).</p>
+<p>Find power at (<span class="math inline">\(n=80\)</span>) and required (n) for 80% power.</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Use Cohen’s (f<sup>2=R</sup>2/(1-R^2)=0.25). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (=f^2(n-p-1)).</p>
+<p>Use Cohen’s (<span class="math inline">\(f^2=\frac{R^2}{1-R^2}=0.25\)</span>). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (<span class="math inline">\(\lambda=f^2(n-p-1)\)</span>).</p>
 <p>Power at (n=80):</p>
 <div class="cell">
 <details class="code-fold">
@@ -400,21 +411,25 @@ Answer
 </section>
 <section id="sample-size-for-prediction-interval-width-in-slr-10-minutes" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size-for-prediction-interval-width-in-slr-10-minutes">6) Sample size for <strong>prediction interval width</strong> in SLR (10 minutes)</h2>
-<p><strong>Setup.</strong> In (Y=_0+_1 X+) with (N(0,^2)), suppose () and you plan (X) standardized (mean 0, var 1). You want a <strong>95% prediction interval</strong> for a <em>future</em> observation at (x_0) to have <strong>total width</strong> (W). Consider two cases: (i) (x_0=0) (mean of (X)), (ii) (x_0=1) (1 SD from mean).</p>
-<p><strong>Facts.</strong> The half‑width (HW) at (x_0) is [ (x_0) = t_{0.975,,n-2},,,S_{xx}=(x_i-x)^2n-1. ] The <strong>minimum achievable</strong> half‑width is as (n): (t_{,0.975},,).</p>
-<p><strong>6A.</strong> Feasibility check. With (), what is the smallest possible total width (W_{min})?</p>
+<p><strong>Setup.</strong> In <span class="math inline">\(Y=\beta_0+\beta_1 X+\varepsilon\)</span> with <span class="math inline">\(\varepsilon\sim N(0,\sigma^2)\)</span>, suppose (<span class="math inline">\(\sigma=10\)</span>) and you plan (<span class="math inline">\(X\)</span>) standardized (mean 0, var 1). You want a <strong>95% prediction interval</strong> for a <em>future</em> observation at (<span class="math inline">\(x_0\)</span>) to have <strong>total width</strong> ($).</p>
+<p>Consider two cases: (i) (<span class="math inline">\(x_0=0\)</span>) (mean of (X)), (ii) (<span class="math inline">\(x_0=1\)</span>) (1 SD from mean).</p>
+<p><strong>Facts.</strong> The half‑width (HW) at (<span class="math inline">\(x_0\)</span>) is <span class="math display">\[
+\text{HW}(x_0) = t_{0.975,,n-2} \sigma \sqrt{1+\frac{1}{n}+\frac{(x_0-\bar x)^2}{S_{xx}}},\quad S_{xx}=\sum (x_i-\bar x)^2\approx n-1.
+\]</span></p>
+<p>The <strong>minimum achievable</strong> half‑width is as (<span class="math inline">\(n\to\infty\)</span>): (<span class="math inline">\(t_{\infty,0.975} \sigma)\)</span> where <span class="math inline">\(t_{\infty,0.975}=1.96\)</span>.</p>
+<p><strong>6A.</strong> Feasibility check. With (<span class="math inline">\(\sigma=10\)</span>), what is the smallest possible total width (<span class="math inline">\(W_\text{min}\)</span>)?</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>(W_{min}=2 .) Any target width (W&lt;39.2) is <strong>impossible</strong> regardless of (n).</p>
+<p>(<span class="math inline">\(W_\text{min}=2\times 1.96\times 10 \approx 39.2\)</span>) Any target width (<span class="math inline">\(W&lt;39.2\)</span>) is <strong>impossible</strong> regardless of (<span class="math inline">\(n\)</span>).</p>
 </details>
-<p><strong>6B.</strong> Find (n) to achieve (W=48) (half‑width 24) at (x_0=0).</p>
+<p><strong>6B.</strong> Find (<span class="math inline">\(n\)</span>) to achieve (<span class="math inline">\(W=48\)</span>) (half‑width 24) at (<span class="math inline">\(x_0=0\)</span>). You can brute force it, but also try using root-finding/optimization procedures.</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Solve ( t_{0.975,n-2},10, = 24). Use numeric root‑finding:</p>
+<p>Solve ( <span class="math inline">\(t_{0.975,n-2} 10 \sqrt{1+1/n} = 24\)</span>). Use numeric root‑finding:</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -429,12 +444,12 @@ Answer
 </details>
 </div>
 </details>
-<p><strong>6C.</strong> Repeat for (x_0=1). Use (S_{xx}n-1), (x).</p>
+<p><strong>6C.</strong> Repeat for (<span class="math inline">\(x_0=1\)</span>). Use (<span class="math inline">\(S_{xx}\approx n-1\)</span>), (<span class="math inline">\(\bar x\approx 0\)</span>).</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Half‑width equation: ( t, = 24 ).</p>
+<p>Half‑width equation: ( <span class="math inline">\(t \sigma\sqrt{1+1/n+1/(n-1)} = 24\)</span> ).</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -451,12 +466,12 @@ Answer
 </div>
 <p>Note the larger (n) due to being 1 SD away from the design mean.</p>
 </details>
-<p><strong>6D. (Optional)</strong> Design‑sensitive planning. If you can spread (X) to increase (S_{xx}) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?</p>
+<p><strong>6D. (Optional)</strong> Design‑sensitive planning. If you can spread (X) to increase (<span class="math inline">\(S_{xx}\)</span>) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?</p>
 <details>
 <summary>
 Answer
 </summary>
-<p>Increasing (S_{xx}) shrinks the term ((x_0-x)^2/S_{xx}), reducing the half‑width for off‑mean predictions. For a fixed (n), wider X range lowers HW at (x_0x). Conversely, for fixed HW, larger (S_{xx}) allows smaller (n).</p>
+<p>Increasing (<span class="math inline">\(S_{xx}\)</span>) shrinks the term <span class="math inline">\(\frac{(x_0- \bar{x})^2}{S_{xx}}\)</span>, reducing the half‑width for off‑mean predictions. For a fixed (<span class="math inline">\(n\)</span>), wider X range lowers HW at (<span class="math inline">\(x_0\neq\bar x\)</span>). Conversely, for fixed HW, larger (<span class="math inline">\(S_{xx}\)</span>) allows smaller (n).</p>
 </details>
 <hr>
 </section>
@@ -485,11 +500,11 @@ Answer
 <section id="quick-reference" class="level3">
 <h3 class="anchored" data-anchor-id="quick-reference">Quick reference</h3>
 <ul>
-<li>One‑sample n (z‑approx): ( n = (z_{1-/2}+z_{1-})<sup>2,</sup>/^2 )</li>
-<li>Two‑sample per‑group n: ( n = 2(z_{1-/2}+z_{1-})<sup>2,</sup>/^2 )</li>
-<li>SLR slope power ncp: ( = (_1/) (_1/) )</li>
-<li>Overall MR test: (f<sup>2=R</sup>2/(1-R^2),; =f^2(n-p-1))</li>
-<li>PI half‑width at (x_0): ( t, )</li>
+<li>One‑sample n (z‑approx): ( <span class="math inline">\(n = (z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}\)</span> )</li>
+<li>Two‑sample per‑group n: ( <span class="math inline">\(n = 2(z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}\)</span> )</li>
+<li>SLR slope power ncp: ( <span class="math inline">\(\lambda = (\beta_1/\sigma)\sqrt{S_{xx}} \approx (\beta_1/\sigma)\sqrt{n-1}\)</span> )</li>
+<li>Overall MR test: (<span class="math inline">\(f^2=R^2/(1-R^2)\)</span>, <span class="math inline">\(\lambda=f^2(n-p-1)\)</span>)</li>
+<li>PI half‑width at (x_0): ( <span class="math inline">\(t\sigma\sqrt{1+1/n+(x_0-\bar x)^2/S_{xx}}\)</span> )</li>
 </ul>
 
 
@@ -990,7 +1005,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1) One‑sample t‑test power &amp; n (10 minutes)</span></span>
 <span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>**Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., ($\mu=3$)).</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>**Setup.** You expect observations ($Y\sim \mathcal{N}(\mu,\sigma^2)$) with ($\sigma=10$). You will test ($H_0: \mu=0$) vs ($H_1: \mu\neq 0$). The scientifically relevant effect is ($\delta = 3$) (i.e., $\mu=3$).</span>
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>**1A.** Compute power for ($n=50$).</span>
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a></span>
@@ -1002,7 +1017,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> \lambda = 3\cdot\sqrt{50}/10 = 3\cdot7.071/10 \approx 2.121. <span class="sc">\]</span></span>
 <span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>Two‑sided power (z‑approx): <span class="sc">\[</span> 1 - \Phi(z<span class="sc">\_</span>{0.975}-\lambda) + \Phi(-z<span class="sc">\_</span>{0.975}-\lambda) \approx 1-\Phi(1.96-2.121)+\Phi(-1.96-2.121) \approx 1-\Phi(-0.161)+\Phi(-4.081). <span class="sc">\]</span> This is (\approx 1-(0.436)+\text{tiny} \approx 0.564). Using exact **t** power:</span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>Two‑sided power (z‑approx): <span class="sc">\[</span> 1 - \Phi(z_{0.975}-\lambda) + \Phi(-z_{0.975}-\lambda) \approx 1-\Phi(1.96-2.121)+\Phi(-1.96-2.121) \approx 1-\Phi(-0.161)+\Phi(-4.081). <span class="sc">\]</span> This is (\approx 1-(0.436)+\text{tiny} \approx 0.564). Using exact **t** power:</span>
 <span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
 <span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,</span></span>
@@ -1017,9 +1032,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
 <span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a>Closed‑form (z‑approx): ( n \approx (z<span class="sc">\_</span>{0.975}+z<span class="sc">\_</span>{0.8})^2,^\sigma2/\delta\^2 ).</span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a>Closed‑form (z‑approx): ($n \approx (z_{0.975}+z_{0.8})^2, \frac{\sigma^2}}{\delta^2}$ ).</span>
 <span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> n \approx (1.96+0.84)\^2\frac{10^2}{3^2} = (2.80)\^2 \cdot 100/9 \approx 7.84 \cdot 11.11 \approx 87.1. <span class="sc">\]</span></span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> n \approx (1.96+0.84)^2\frac{10^2}{3^2} = (2.80)^2 \cdot 100/9 \approx 7.84 \cdot 11.11 \approx 87.1. <span class="sc">\]</span></span>
 <span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>Exact via R:</span>
 <span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a></span>
@@ -1034,7 +1049,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2) Two‑sample t‑test (equal variance) (8 minutes)</span></span>
 <span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>**Setup.** Two arms, equal allocation, common (\sigma=12), difference of means (\delta = 5).</span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>**Setup.** Two arms, equal allocation, common ($\sigma=12$), difference of means ($\delta = 5$).</span>
 <span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>**2A.** Per‑group (n) for 90% power.</span>
 <span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a></span>
@@ -1042,235 +1057,259 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
 <span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a>Z‑approx per‑group (n): ( n \approx 2 (z<span class="sc">\_</span>{0.975}+z<span class="sc">\_</span>{0.90})^2,^\sigma2/\delta\^2 ).</span>
+<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a>Z‑approx per‑group (n): ($n \approx 2 (z_{0.975}+z_{0.90})^2 \frac{\sigma^2}{\delta^2}$ ).</span>
 <span id="cb13-74"><a href="#cb13-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-75"><a href="#cb13-75" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> n \approx 2(1.96+1.282)^2(12^2)/5\^2 = 2(3.242)\^2\cdot144/25 \approx 2\cdot10.52\cdot5.76 \approx 121.1. <span class="sc">\]</span> So about **122 per group**. Exact:</span>
-<span id="cb13-76"><a href="#cb13-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-77"><a href="#cb13-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-78"><a href="#cb13-78" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,</span></span>
-<span id="cb13-79"><a href="#cb13-79" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "two.sample", alternative = "two.sided")$n</span></span>
-<span id="cb13-80"><a href="#cb13-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-81"><a href="#cb13-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-82"><a href="#cb13-82" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-83"><a href="#cb13-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-84"><a href="#cb13-84" aria-hidden="true" tabindex="-1"></a>**2B.** Power if (n=40) per group.</span>
+<span id="cb13-75"><a href="#cb13-75" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb13-76"><a href="#cb13-76" aria-hidden="true" tabindex="-1"></a>n \approx 2(1.96+1.282)^2(12^2)/5^2 = 2(3.242)^2\cdot144/25 \approx 2\cdot10.52\cdot5.76 \approx 121.1 </span>
+<span id="cb13-77"><a href="#cb13-77" aria-hidden="true" tabindex="-1"></a>$$ </span>
+<span id="cb13-78"><a href="#cb13-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-79"><a href="#cb13-79" aria-hidden="true" tabindex="-1"></a>So about **122 per group**. Exact:</span>
+<span id="cb13-80"><a href="#cb13-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-81"><a href="#cb13-81" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-82"><a href="#cb13-82" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,</span></span>
+<span id="cb13-83"><a href="#cb13-83" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "two.sample", alternative = "two.sided")$n</span></span>
+<span id="cb13-84"><a href="#cb13-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-85"><a href="#cb13-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-86"><a href="#cb13-86" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-86"><a href="#cb13-86" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
 <span id="cb13-87"><a href="#cb13-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-88"><a href="#cb13-88" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-88"><a href="#cb13-88" aria-hidden="true" tabindex="-1"></a>**2B.** Power if ($n=40$) per group.</span>
 <span id="cb13-89"><a href="#cb13-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-90"><a href="#cb13-90" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-91"><a href="#cb13-91" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,</span></span>
-<span id="cb13-92"><a href="#cb13-92" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "two.sample", alternative = "two.sided")$power</span></span>
-<span id="cb13-93"><a href="#cb13-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-94"><a href="#cb13-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-95"><a href="#cb13-95" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-96"><a href="#cb13-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-97"><a href="#cb13-97" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-90"><a href="#cb13-90" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-91"><a href="#cb13-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-92"><a href="#cb13-92" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-93"><a href="#cb13-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-94"><a href="#cb13-94" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-95"><a href="#cb13-95" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,</span></span>
+<span id="cb13-96"><a href="#cb13-96" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "two.sample", alternative = "two.sided")$power</span></span>
+<span id="cb13-97"><a href="#cb13-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-98"><a href="#cb13-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-99"><a href="#cb13-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3) Paired t‑test (5 minutes)</span></span>
+<span id="cb13-99"><a href="#cb13-99" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
 <span id="cb13-100"><a href="#cb13-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-101"><a href="#cb13-101" aria-hidden="true" tabindex="-1"></a>**Setup.** Pre/post measurements with (\sigma*{pre}=*\sigma{post}=8), correlation (\rho=0.6). Mean change (\delta=2).</span>
+<span id="cb13-101"><a href="#cb13-101" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb13-102"><a href="#cb13-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-103"><a href="#cb13-103" aria-hidden="true" tabindex="-1"></a>**Question.** Required number of pairs for 80% power.</span>
+<span id="cb13-103"><a href="#cb13-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3) Paired t‑test (5 minutes)</span></span>
 <span id="cb13-104"><a href="#cb13-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-105"><a href="#cb13-105" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-105"><a href="#cb13-105" aria-hidden="true" tabindex="-1"></a>**Setup.** Pre/post measurements with ($\sigma_{\text{pre}}=\sigma_{\text{post}}=8$), correlation ($\rho=0.6$). Mean change ($\delta=2$).</span>
 <span id="cb13-106"><a href="#cb13-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-107"><a href="#cb13-107" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-107"><a href="#cb13-107" aria-hidden="true" tabindex="-1"></a>**Question.** Required number of pairs for 80% power.</span>
 <span id="cb13-108"><a href="#cb13-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-109"><a href="#cb13-109" aria-hidden="true" tabindex="-1"></a>SD of differences: (\sigma<span class="sc">\_</span>D=\sqrt{\sigma^2+\sigma^2-2\rho\sigma^2}=\sqrt{2\sigma^2(1-\rho)} = 8\sqrt{2(1-0.6)}=8\sqrt{0.8}\approx 7.155.) Use one‑sample t on differences with (sd=\sigma<span class="sc">\_</span>D), effect (\delta):</span>
+<span id="cb13-109"><a href="#cb13-109" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
 <span id="cb13-110"><a href="#cb13-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-111"><a href="#cb13-111" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-112"><a href="#cb13-112" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,</span></span>
-<span id="cb13-113"><a href="#cb13-113" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "one.sample", alternative = "two.sided")$n</span></span>
-<span id="cb13-114"><a href="#cb13-114" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-115"><a href="#cb13-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-116"><a href="#cb13-116" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-117"><a href="#cb13-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-118"><a href="#cb13-118" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-111"><a href="#cb13-111" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-112"><a href="#cb13-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-113"><a href="#cb13-113" aria-hidden="true" tabindex="-1"></a>SD of differences: ($\sigma_D=\sqrt{\sigma^2+\sigma^2-2\rho\sigma^2}=\sqrt{2\sigma^2(1-\rho)} = 8\sqrt{2(1-0.6)}=8\sqrt{0.8}\approx 7.155$.) Use one‑sample t-est on differences with (sd=$\sigma_D$), effect ($\delta$):</span>
+<span id="cb13-114"><a href="#cb13-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-115"><a href="#cb13-115" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-116"><a href="#cb13-116" aria-hidden="true" tabindex="-1"></a><span class="in">power.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,</span></span>
+<span id="cb13-117"><a href="#cb13-117" aria-hidden="true" tabindex="-1"></a><span class="in">             type = "one.sample", alternative = "two.sided")$n</span></span>
+<span id="cb13-118"><a href="#cb13-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-119"><a href="#cb13-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-120"><a href="#cb13-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4) Simple linear regression: test a slope (10 minutes)</span></span>
+<span id="cb13-120"><a href="#cb13-120" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
 <span id="cb13-121"><a href="#cb13-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-122"><a href="#cb13-122" aria-hidden="true" tabindex="-1"></a>**Setup.** Model (Y=\beta<span class="sc">\_</span>0+\beta<span class="sc">\_</span>1 X+\varepsilon), (\varepsilon\sim N(0,\sigma\^2)) with (\sigma=10) and (X) standardized: (\bar X\approx 0), (\operatorname{Var}(X)=1). Suppose (\beta<span class="sc">\_</span>1=3). Test (H_0:\beta<span class="sc">\_</span>1=0).</span>
+<span id="cb13-122"><a href="#cb13-122" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb13-123"><a href="#cb13-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-124"><a href="#cb13-124" aria-hidden="true" tabindex="-1"></a>**4A.** Power at (n=60) using the noncentral t formulation.</span>
+<span id="cb13-124"><a href="#cb13-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4) Simple linear regression: test a slope (10 minutes)</span></span>
 <span id="cb13-125"><a href="#cb13-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-126"><a href="#cb13-126" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-126"><a href="#cb13-126" aria-hidden="true" tabindex="-1"></a>**Setup.** Model $Y=\beta_0+\beta_1 X+\varepsilon$, $\varepsilon \sim N(0,\sigma^2)$ with ($\sigma=10$) and (X) standardized: ($\bar{X} \approx 0$), ($\operatorname{Var}(X)=1$). </span>
 <span id="cb13-127"><a href="#cb13-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-128"><a href="#cb13-128" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-128"><a href="#cb13-128" aria-hidden="true" tabindex="-1"></a>Suppose ($\beta_1=3$). Test ($H_0:\beta_1=0$).</span>
 <span id="cb13-129"><a href="#cb13-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-130"><a href="#cb13-130" aria-hidden="true" tabindex="-1"></a>For centered/standardized (X), (S<span class="sc">\_</span>{xx}=\sum (x_i-\bar x)\^2\approx n-1). The test statistic for (\beta<span class="sc">\_</span>1) has noncentrality <span class="sc">\[</span> \lambda = \frac{\beta_1}{\sigma}\sqrt{S_{xx}} \approx \frac{3}{10}\sqrt{59} = 0.3\cdot7.681\approx 2.304. <span class="sc">\]</span> Power (two‑sided) is (1-\beta) with df=(n-2=58):</span>
+<span id="cb13-130"><a href="#cb13-130" aria-hidden="true" tabindex="-1"></a>**4A.** Power at ($n=60$) using the noncentral t formulation.</span>
 <span id="cb13-131"><a href="#cb13-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-132"><a href="#cb13-132" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-133"><a href="#cb13-133" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 60; sigma &lt;- 10; beta1 &lt;- 3</span></span>
-<span id="cb13-134"><a href="#cb13-134" aria-hidden="true" tabindex="-1"></a><span class="in">lambda &lt;- beta1/sigma * sqrt(n-1)</span></span>
-<span id="cb13-135"><a href="#cb13-135" aria-hidden="true" tabindex="-1"></a><span class="in">alpha &lt;- 0.05; df &lt;- n - 2</span></span>
-<span id="cb13-136"><a href="#cb13-136" aria-hidden="true" tabindex="-1"></a><span class="in">c &lt;- qt(1 - alpha/2, df)</span></span>
-<span id="cb13-137"><a href="#cb13-137" aria-hidden="true" tabindex="-1"></a><span class="in"># power = P(|T_nc| &gt; c)</span></span>
-<span id="cb13-138"><a href="#cb13-138" aria-hidden="true" tabindex="-1"></a><span class="in">1 - (pt(c, df, ncp=lambda) - pt(-c, df, ncp=lambda))</span></span>
-<span id="cb13-139"><a href="#cb13-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-140"><a href="#cb13-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-141"><a href="#cb13-141" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-142"><a href="#cb13-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-143"><a href="#cb13-143" aria-hidden="true" tabindex="-1"></a>**4B.** Alternative via correlation. Show equivalence.</span>
-<span id="cb13-144"><a href="#cb13-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-145"><a href="#cb13-145" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-146"><a href="#cb13-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-147"><a href="#cb13-147" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
-<span id="cb13-148"><a href="#cb13-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-149"><a href="#cb13-149" aria-hidden="true" tabindex="-1"></a>For SLR, (r=\operatorname{Cor}(X,Y)=\beta<span class="sc">\_</span>1\sigma<span class="sc">\_</span>X/\sigma<span class="sc">\_</span>Y). With (\sigma<span class="sc">\_</span>X=1), (\sigma<span class="sc">\_</span>Y=\sqrt{\beta_1^2+\sigma^2}=\sqrt{9+100}=\sqrt{109}\approx 10.44), so (r\approx 3/10.44\approx 0.287.) Test of (r=0) uses the same df and noncentrality (\sqrt{n-2},r/\sqrt{1-r^2}), which equals (\lambda) above.</span>
-<span id="cb13-150"><a href="#cb13-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-151"><a href="#cb13-151" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-152"><a href="#cb13-152" aria-hidden="true" tabindex="-1"></a><span class="in">r &lt;- 3/sqrt(9+100)</span></span>
-<span id="cb13-153"><a href="#cb13-153" aria-hidden="true" tabindex="-1"></a><span class="in">lambda2 &lt;- sqrt(n-2) * r / sqrt(1 - r^2)</span></span>
-<span id="cb13-154"><a href="#cb13-154" aria-hidden="true" tabindex="-1"></a><span class="in">all.equal(lambda, lambda2)</span></span>
-<span id="cb13-155"><a href="#cb13-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-156"><a href="#cb13-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-157"><a href="#cb13-157" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-158"><a href="#cb13-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-159"><a href="#cb13-159" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb13-160"><a href="#cb13-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-161"><a href="#cb13-161" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5) Multiple regression: overall (R\^2) (7 minutes)</span></span>
-<span id="cb13-162"><a href="#cb13-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-163"><a href="#cb13-163" aria-hidden="true" tabindex="-1"></a>**Setup.** You plan (p=4) predictors and expect population (R\^2=0.20). Test (H_0: R\^2=0) (overall model). Find power at (n=80) and required (n) for 80% power.</span>
-<span id="cb13-164"><a href="#cb13-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-165"><a href="#cb13-165" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-166"><a href="#cb13-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-167"><a href="#cb13-167" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
-<span id="cb13-168"><a href="#cb13-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-169"><a href="#cb13-169" aria-hidden="true" tabindex="-1"></a>Use Cohen’s (f^2=R^2/(1-R\^2)=0.25). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (\lambda=f\^2(n-p-1)).</span>
-<span id="cb13-170"><a href="#cb13-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-171"><a href="#cb13-171" aria-hidden="true" tabindex="-1"></a>Power at (n=80):</span>
-<span id="cb13-172"><a href="#cb13-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-173"><a href="#cb13-173" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-174"><a href="#cb13-174" aria-hidden="true" tabindex="-1"></a><span class="in">p &lt;- 4; R2 &lt;- 0.20; f2 &lt;- R2/(1-R2)</span></span>
-<span id="cb13-175"><a href="#cb13-175" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 80; df1 &lt;- p; df2 &lt;- n - p - 1</span></span>
-<span id="cb13-176"><a href="#cb13-176" aria-hidden="true" tabindex="-1"></a><span class="in">lambda &lt;- f2 * df2</span></span>
-<span id="cb13-177"><a href="#cb13-177" aria-hidden="true" tabindex="-1"></a><span class="in">alpha &lt;- 0.05; Fc &lt;- qf(1 - alpha, df1, df2)</span></span>
-<span id="cb13-178"><a href="#cb13-178" aria-hidden="true" tabindex="-1"></a><span class="in"># P(F_nc &gt; Fc)</span></span>
-<span id="cb13-179"><a href="#cb13-179" aria-hidden="true" tabindex="-1"></a><span class="in">power &lt;- 1 - pf(Fc, df1, df2, ncp=lambda)</span></span>
-<span id="cb13-180"><a href="#cb13-180" aria-hidden="true" tabindex="-1"></a><span class="in">power</span></span>
-<span id="cb13-181"><a href="#cb13-181" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-182"><a href="#cb13-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-183"><a href="#cb13-183" aria-hidden="true" tabindex="-1"></a>Solve for (n) (80% power):</span>
-<span id="cb13-184"><a href="#cb13-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-185"><a href="#cb13-185" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-186"><a href="#cb13-186" aria-hidden="true" tabindex="-1"></a><span class="in">f_target &lt;- function(n){</span></span>
-<span id="cb13-187"><a href="#cb13-187" aria-hidden="true" tabindex="-1"></a><span class="in">  df2 &lt;- n - p - 1</span></span>
-<span id="cb13-188"><a href="#cb13-188" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df2 &lt;= 0) return(-1)  # invalid</span></span>
-<span id="cb13-189"><a href="#cb13-189" aria-hidden="true" tabindex="-1"></a><span class="in">  Fc &lt;- qf(0.95, df1=p, df2=df2)</span></span>
-<span id="cb13-190"><a href="#cb13-190" aria-hidden="true" tabindex="-1"></a><span class="in">  1 - pf(Fc, df1=p, df2=df2, ncp=f2*df2) - 0.80</span></span>
-<span id="cb13-191"><a href="#cb13-191" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a><span class="in">uniroot(f_target, c(p+5, 1000))$root</span></span>
-<span id="cb13-193"><a href="#cb13-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-195"><a href="#cb13-195" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-197"><a href="#cb13-197" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb13-198"><a href="#cb13-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-199"><a href="#cb13-199" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6) Sample size for **prediction interval width** in SLR (10 minutes)</span></span>
-<span id="cb13-200"><a href="#cb13-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-201"><a href="#cb13-201" aria-hidden="true" tabindex="-1"></a>**Setup.** In (Y=\beta\_0+\beta\_1 X+\varepsilon) with (\varepsilon\sim N(0,\sigma\^2)), suppose (\sigma=10) and you plan (X) standardized (mean 0, var 1). You want a **95% prediction interval** for a *future* observation at (x_0) to have **total width** (W). Consider two cases: (i) (x_0=0) (mean of (X)), (ii) (x_0=1) (1 SD from mean).</span>
-<span id="cb13-202"><a href="#cb13-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a>**Facts.** The half‑width (HW) at (x_0) is \[ \text{HW}(x_0) = t\_{0.975,,n-2},\sigma,\sqrt{1+\frac{1}{n}+\frac{(x_0-\bar x)^2}{S_{xx}}},\quad S\_{xx}=\sum (x_i-\bar x)\^2\approx n-1. \] The **minimum achievable** half‑width is as (n\to\infty): (t<span class="sc">\_</span>{\infty,0.975},\sigma=1.96,\sigma).</span>
-<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a>**6A.** Feasibility check. With (\sigma=10), what is the smallest possible total width (W<span class="sc">\_</span>{min})?</span>
-<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
-<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a>(W<span class="sc">\_</span>{min}=2\times 1.96\times 10 \approx 39.2.) Any target width (W<span class="sc">\&lt;</span>39.2) is **impossible** regardless of (n).</span>
-<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-215"><a href="#cb13-215" aria-hidden="true" tabindex="-1"></a>**6B.** Find (n) to achieve (W=48) (half‑width 24) at (x_0=0).</span>
-<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-218"><a href="#cb13-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
-<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a>Solve ( t<span class="sc">\_</span>{0.975,n-2},10,\sqrt{1+1/n} = 24). Use numeric root‑finding:</span>
-<span id="cb13-222"><a href="#cb13-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-223"><a href="#cb13-223" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-224"><a href="#cb13-224" aria-hidden="true" tabindex="-1"></a><span class="in">sigma &lt;- 10; HW &lt;- 24</span></span>
-<span id="cb13-225"><a href="#cb13-225" aria-hidden="true" tabindex="-1"></a><span class="in">f &lt;- function(n){</span></span>
-<span id="cb13-226"><a href="#cb13-226" aria-hidden="true" tabindex="-1"></a><span class="in">  df &lt;- n - 2</span></span>
-<span id="cb13-227"><a href="#cb13-227" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df &lt;= 0) return(1e6)</span></span>
-<span id="cb13-228"><a href="#cb13-228" aria-hidden="true" tabindex="-1"></a><span class="in">  t &lt;- qt(0.975, df)</span></span>
-<span id="cb13-229"><a href="#cb13-229" aria-hidden="true" tabindex="-1"></a><span class="in">  t * sigma * sqrt(1 + 1/n) - HW</span></span>
-<span id="cb13-230"><a href="#cb13-230" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb13-231"><a href="#cb13-231" aria-hidden="true" tabindex="-1"></a><span class="in">ceiling(uniroot(f, c(5, 1e5))$root)</span></span>
-<span id="cb13-232"><a href="#cb13-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-233"><a href="#cb13-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-234"><a href="#cb13-234" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-235"><a href="#cb13-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-236"><a href="#cb13-236" aria-hidden="true" tabindex="-1"></a>**6C.** Repeat for (x_0=1). Use (S<span class="sc">\_</span>{xx}\approx n-1), (\bar x\approx 0).</span>
-<span id="cb13-237"><a href="#cb13-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-238"><a href="#cb13-238" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-239"><a href="#cb13-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-240"><a href="#cb13-240" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
-<span id="cb13-241"><a href="#cb13-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-242"><a href="#cb13-242" aria-hidden="true" tabindex="-1"></a>Half‑width equation: ( t,\sigma\sqrt{1+1/n+1/(n-1)} = 24 ).</span>
-<span id="cb13-243"><a href="#cb13-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-244"><a href="#cb13-244" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-245"><a href="#cb13-245" aria-hidden="true" tabindex="-1"></a><span class="in">sigma &lt;- 10; HW &lt;- 24</span></span>
-<span id="cb13-246"><a href="#cb13-246" aria-hidden="true" tabindex="-1"></a><span class="in">f &lt;- function(n){</span></span>
-<span id="cb13-247"><a href="#cb13-247" aria-hidden="true" tabindex="-1"></a><span class="in">  df &lt;- n - 2</span></span>
-<span id="cb13-248"><a href="#cb13-248" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df &lt;= 2) return(1e6)</span></span>
-<span id="cb13-249"><a href="#cb13-249" aria-hidden="true" tabindex="-1"></a><span class="in">  t &lt;- qt(0.975, df)</span></span>
-<span id="cb13-250"><a href="#cb13-250" aria-hidden="true" tabindex="-1"></a><span class="in">  Sxx &lt;- n - 1</span></span>
-<span id="cb13-251"><a href="#cb13-251" aria-hidden="true" tabindex="-1"></a><span class="in">  t * sigma * sqrt(1 + 1/n + 1/Sxx) - HW</span></span>
-<span id="cb13-252"><a href="#cb13-252" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb13-253"><a href="#cb13-253" aria-hidden="true" tabindex="-1"></a><span class="in">ceiling(uniroot(f, c(6, 1e6))$root)</span></span>
-<span id="cb13-254"><a href="#cb13-254" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-255"><a href="#cb13-255" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-256"><a href="#cb13-256" aria-hidden="true" tabindex="-1"></a>Note the larger (n) due to being 1 SD away from the design mean.</span>
+<span id="cb13-132"><a href="#cb13-132" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-133"><a href="#cb13-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-134"><a href="#cb13-134" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-135"><a href="#cb13-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-136"><a href="#cb13-136" aria-hidden="true" tabindex="-1"></a>For centered/standardized (X), ($S_{xx} = \sum (x_i-\bar x)^2 \approx n-1$). The test statistic for ($\beta_1$) has noncentrality paramter</span>
+<span id="cb13-137"><a href="#cb13-137" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb13-138"><a href="#cb13-138" aria-hidden="true" tabindex="-1"></a>\lambda = \frac{\beta_1}{\sigma}\sqrt{S_{xx}} \approx \frac{3}{10}\sqrt{59} = 0.3 \cdot 7.681 \approx 2.304</span>
+<span id="cb13-139"><a href="#cb13-139" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb13-140"><a href="#cb13-140" aria-hidden="true" tabindex="-1"></a>Power (two‑sided) is ($1-\beta$) with df=($n-2=58$):</span>
+<span id="cb13-141"><a href="#cb13-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-142"><a href="#cb13-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-143"><a href="#cb13-143" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 60; </span></span>
+<span id="cb13-144"><a href="#cb13-144" aria-hidden="true" tabindex="-1"></a><span class="in">sigma &lt;- 10; </span></span>
+<span id="cb13-145"><a href="#cb13-145" aria-hidden="true" tabindex="-1"></a><span class="in">beta1 &lt;- 3</span></span>
+<span id="cb13-146"><a href="#cb13-146" aria-hidden="true" tabindex="-1"></a><span class="in">lambda &lt;- beta1/sigma * sqrt(n-1)</span></span>
+<span id="cb13-147"><a href="#cb13-147" aria-hidden="true" tabindex="-1"></a><span class="in">alpha &lt;- 0.05; </span></span>
+<span id="cb13-148"><a href="#cb13-148" aria-hidden="true" tabindex="-1"></a><span class="in">df &lt;- n - 2</span></span>
+<span id="cb13-149"><a href="#cb13-149" aria-hidden="true" tabindex="-1"></a><span class="in">c &lt;- qt(1 - alpha/2, df)</span></span>
+<span id="cb13-150"><a href="#cb13-150" aria-hidden="true" tabindex="-1"></a><span class="in"># power = P(|T_nc| &gt; c)</span></span>
+<span id="cb13-151"><a href="#cb13-151" aria-hidden="true" tabindex="-1"></a><span class="in">1 - (pt(c, df, ncp=lambda) - pt(-c, df, ncp=lambda))</span></span>
+<span id="cb13-152"><a href="#cb13-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-153"><a href="#cb13-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-154"><a href="#cb13-154" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-155"><a href="#cb13-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-156"><a href="#cb13-156" aria-hidden="true" tabindex="-1"></a>**4B.** Alternative via correlation. Show equivalence.</span>
+<span id="cb13-157"><a href="#cb13-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-158"><a href="#cb13-158" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-159"><a href="#cb13-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-160"><a href="#cb13-160" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-161"><a href="#cb13-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-162"><a href="#cb13-162" aria-hidden="true" tabindex="-1"></a>For SLR, ($r=\operatorname{Cor}(X,Y)= \frac{\beta_1 \sigma_X}{\sigma_Y}$). With ($\sigma_X=1$), ($\sigma_Y = \sqrt{\beta_1^2+\sigma^2} = \sqrt{9+100} = \sqrt{109} \approx 10.44$), so ($r\approx 3/10.44\approx 0.287$). </span>
+<span id="cb13-163"><a href="#cb13-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-164"><a href="#cb13-164" aria-hidden="true" tabindex="-1"></a>Test of ($r=0$) uses the same df and noncentrality ($\sqrt{n-2}, \frac{r}{\sqrt{1-r^2}}$), which equals ($\lambda$) above.</span>
+<span id="cb13-165"><a href="#cb13-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-166"><a href="#cb13-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-167"><a href="#cb13-167" aria-hidden="true" tabindex="-1"></a><span class="in">r &lt;- 3/sqrt(9+100)</span></span>
+<span id="cb13-168"><a href="#cb13-168" aria-hidden="true" tabindex="-1"></a><span class="in">lambda2 &lt;- sqrt(n-2) * r / sqrt(1 - r^2)</span></span>
+<span id="cb13-169"><a href="#cb13-169" aria-hidden="true" tabindex="-1"></a><span class="in">all.equal(lambda, lambda2)</span></span>
+<span id="cb13-170"><a href="#cb13-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-171"><a href="#cb13-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-172"><a href="#cb13-172" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-173"><a href="#cb13-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-174"><a href="#cb13-174" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-175"><a href="#cb13-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-176"><a href="#cb13-176" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5) Multiple regression: overall ($R^2$) (7 minutes)</span></span>
+<span id="cb13-177"><a href="#cb13-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-178"><a href="#cb13-178" aria-hidden="true" tabindex="-1"></a>**Setup.** You plan (p=4) predictors and expect population ($R^2=0.20$). Test ($H_0: R^2=0$) (overall model). </span>
+<span id="cb13-179"><a href="#cb13-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-180"><a href="#cb13-180" aria-hidden="true" tabindex="-1"></a>Find power at ($n=80$) and required (n) for 80% power.</span>
+<span id="cb13-181"><a href="#cb13-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-182"><a href="#cb13-182" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-183"><a href="#cb13-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-184"><a href="#cb13-184" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-185"><a href="#cb13-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-186"><a href="#cb13-186" aria-hidden="true" tabindex="-1"></a>Use Cohen's ($f^2=\frac{R^2}{1-R^2}=0.25$). The overall F test has df1=(p), df2=(n-p-1), and noncentrality ($\lambda=f^2(n-p-1)$).</span>
+<span id="cb13-187"><a href="#cb13-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-188"><a href="#cb13-188" aria-hidden="true" tabindex="-1"></a>Power at (n=80):</span>
+<span id="cb13-189"><a href="#cb13-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-190"><a href="#cb13-190" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-191"><a href="#cb13-191" aria-hidden="true" tabindex="-1"></a><span class="in">p &lt;- 4; R2 &lt;- 0.20; f2 &lt;- R2/(1-R2)</span></span>
+<span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 80; df1 &lt;- p; df2 &lt;- n - p - 1</span></span>
+<span id="cb13-193"><a href="#cb13-193" aria-hidden="true" tabindex="-1"></a><span class="in">lambda &lt;- f2 * df2</span></span>
+<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a><span class="in">alpha &lt;- 0.05; Fc &lt;- qf(1 - alpha, df1, df2)</span></span>
+<span id="cb13-195"><a href="#cb13-195" aria-hidden="true" tabindex="-1"></a><span class="in"># P(F_nc &gt; Fc)</span></span>
+<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a><span class="in">power &lt;- 1 - pf(Fc, df1, df2, ncp=lambda)</span></span>
+<span id="cb13-197"><a href="#cb13-197" aria-hidden="true" tabindex="-1"></a><span class="in">power</span></span>
+<span id="cb13-198"><a href="#cb13-198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-199"><a href="#cb13-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-200"><a href="#cb13-200" aria-hidden="true" tabindex="-1"></a>Solve for (n) (80% power):</span>
+<span id="cb13-201"><a href="#cb13-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-202"><a href="#cb13-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a><span class="in">f_target &lt;- function(n){</span></span>
+<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a><span class="in">  df2 &lt;- n - p - 1</span></span>
+<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df2 &lt;= 0) return(-1)  # invalid</span></span>
+<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a><span class="in">  Fc &lt;- qf(0.95, df1=p, df2=df2)</span></span>
+<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a><span class="in">  1 - pf(Fc, df1=p, df2=df2, ncp=f2*df2) - 0.80</span></span>
+<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a><span class="in">uniroot(f_target, c(p+5, 1000))$root</span></span>
+<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-215"><a href="#cb13-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6) Sample size for **prediction interval width** in SLR (10 minutes)</span></span>
+<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-218"><a href="#cb13-218" aria-hidden="true" tabindex="-1"></a>**Setup.** In $Y=\beta_0+\beta_1 X+\varepsilon$ with $\varepsilon\sim N(0,\sigma^2)$, suppose ($\sigma=10$) and you plan ($X$) standardized (mean 0, var 1). You want a **95% prediction interval** for a *future* observation at ($x_0$) to have **total width** ($). </span>
+<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a>Consider two cases: (i) ($x_0=0$) (mean of (X)), (ii) ($x_0=1$) (1 SD from mean).</span>
+<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-222"><a href="#cb13-222" aria-hidden="true" tabindex="-1"></a>**Facts.** The half‑width (HW) at ($x_0$) is </span>
+<span id="cb13-223"><a href="#cb13-223" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb13-224"><a href="#cb13-224" aria-hidden="true" tabindex="-1"></a>\text{HW}(x_0) = t_{0.975,,n-2} \sigma \sqrt{1+\frac{1}{n}+\frac{(x_0-\bar x)^2}{S_{xx}}},\quad S_{xx}=\sum (x_i-\bar x)^2\approx n-1. </span>
+<span id="cb13-225"><a href="#cb13-225" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb13-226"><a href="#cb13-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-227"><a href="#cb13-227" aria-hidden="true" tabindex="-1"></a>The **minimum achievable** half‑width is as ($n\to\infty$): ($t_{\infty,0.975} \sigma)$ where $t_{\infty,0.975}=1.96$.</span>
+<span id="cb13-228"><a href="#cb13-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-229"><a href="#cb13-229" aria-hidden="true" tabindex="-1"></a>**6A.** Feasibility check. With ($\sigma=10$), what is the smallest possible total width ($W_\text{min}$)?</span>
+<span id="cb13-230"><a href="#cb13-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-231"><a href="#cb13-231" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-232"><a href="#cb13-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-233"><a href="#cb13-233" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-234"><a href="#cb13-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-235"><a href="#cb13-235" aria-hidden="true" tabindex="-1"></a>($W_\text{min}=2\times 1.96\times 10 \approx 39.2$) Any target width ($W&lt;39.2$) is **impossible** regardless of ($n$).</span>
+<span id="cb13-236"><a href="#cb13-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-237"><a href="#cb13-237" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-238"><a href="#cb13-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-239"><a href="#cb13-239" aria-hidden="true" tabindex="-1"></a>**6B.** Find ($n$) to achieve ($W=48$) (half‑width 24) at ($x_0=0$).  You can brute force it, but also try using root-finding/optimization procedures.</span>
+<span id="cb13-240"><a href="#cb13-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-241"><a href="#cb13-241" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-242"><a href="#cb13-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-243"><a href="#cb13-243" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-244"><a href="#cb13-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-245"><a href="#cb13-245" aria-hidden="true" tabindex="-1"></a>Solve ( $t_{0.975,n-2} 10 \sqrt{1+1/n} = 24$). Use numeric root‑finding:</span>
+<span id="cb13-246"><a href="#cb13-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-247"><a href="#cb13-247" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-248"><a href="#cb13-248" aria-hidden="true" tabindex="-1"></a><span class="in">sigma &lt;- 10; HW &lt;- 24</span></span>
+<span id="cb13-249"><a href="#cb13-249" aria-hidden="true" tabindex="-1"></a><span class="in">f &lt;- function(n){</span></span>
+<span id="cb13-250"><a href="#cb13-250" aria-hidden="true" tabindex="-1"></a><span class="in">  df &lt;- n - 2</span></span>
+<span id="cb13-251"><a href="#cb13-251" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df &lt;= 0) return(1e6)</span></span>
+<span id="cb13-252"><a href="#cb13-252" aria-hidden="true" tabindex="-1"></a><span class="in">  t &lt;- qt(0.975, df)</span></span>
+<span id="cb13-253"><a href="#cb13-253" aria-hidden="true" tabindex="-1"></a><span class="in">  t * sigma * sqrt(1 + 1/n) - HW</span></span>
+<span id="cb13-254"><a href="#cb13-254" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb13-255"><a href="#cb13-255" aria-hidden="true" tabindex="-1"></a><span class="in">ceiling(uniroot(f, c(5, 1e5))$root)</span></span>
+<span id="cb13-256"><a href="#cb13-256" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-257"><a href="#cb13-257" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-258"><a href="#cb13-258" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
 <span id="cb13-259"><a href="#cb13-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-260"><a href="#cb13-260" aria-hidden="true" tabindex="-1"></a>**6D. (Optional)** Design‑sensitive planning. If you can spread (X) to increase (S<span class="sc">\_</span>{xx}) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?</span>
+<span id="cb13-260"><a href="#cb13-260" aria-hidden="true" tabindex="-1"></a>**6C.** Repeat for ($x_0=1$). Use ($S_{xx}\approx n-1$), ($\bar x\approx 0$).</span>
 <span id="cb13-261"><a href="#cb13-261" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-262"><a href="#cb13-262" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
 <span id="cb13-263"><a href="#cb13-263" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-264"><a href="#cb13-264" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
 <span id="cb13-265"><a href="#cb13-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-266"><a href="#cb13-266" aria-hidden="true" tabindex="-1"></a>Increasing (S<span class="sc">\_</span>{xx}) shrinks the term ((x_0-\bar x)\^2/S<span class="sc">\_</span>{xx}), reducing the half‑width for off‑mean predictions. For a fixed (n), wider X range lowers HW at (x_0\neq\bar x). Conversely, for fixed HW, larger (S<span class="sc">\_</span>{xx}) allows smaller (n).</span>
+<span id="cb13-266"><a href="#cb13-266" aria-hidden="true" tabindex="-1"></a>Half‑width equation: ( $t \sigma\sqrt{1+1/n+1/(n-1)} = 24$ ).</span>
 <span id="cb13-267"><a href="#cb13-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-268"><a href="#cb13-268" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-269"><a href="#cb13-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-270"><a href="#cb13-270" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb13-271"><a href="#cb13-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-272"><a href="#cb13-272" aria-hidden="true" tabindex="-1"></a><span class="fu">## 7) (Optional) Monte Carlo verification (5 minutes)</span></span>
-<span id="cb13-273"><a href="#cb13-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-274"><a href="#cb13-274" aria-hidden="true" tabindex="-1"></a>Simulate to verify analytic power for a two‑sample t‑test or slope test.</span>
-<span id="cb13-275"><a href="#cb13-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-276"><a href="#cb13-276" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
-<span id="cb13-277"><a href="#cb13-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-278"><a href="#cb13-278" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-268"><a href="#cb13-268" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-269"><a href="#cb13-269" aria-hidden="true" tabindex="-1"></a><span class="in">sigma &lt;- 10; HW &lt;- 24</span></span>
+<span id="cb13-270"><a href="#cb13-270" aria-hidden="true" tabindex="-1"></a><span class="in">f &lt;- function(n){</span></span>
+<span id="cb13-271"><a href="#cb13-271" aria-hidden="true" tabindex="-1"></a><span class="in">  df &lt;- n - 2</span></span>
+<span id="cb13-272"><a href="#cb13-272" aria-hidden="true" tabindex="-1"></a><span class="in">  if (df &lt;= 2) return(1e6)</span></span>
+<span id="cb13-273"><a href="#cb13-273" aria-hidden="true" tabindex="-1"></a><span class="in">  t &lt;- qt(0.975, df)</span></span>
+<span id="cb13-274"><a href="#cb13-274" aria-hidden="true" tabindex="-1"></a><span class="in">  Sxx &lt;- n - 1</span></span>
+<span id="cb13-275"><a href="#cb13-275" aria-hidden="true" tabindex="-1"></a><span class="in">  t * sigma * sqrt(1 + 1/n + 1/Sxx) - HW</span></span>
+<span id="cb13-276"><a href="#cb13-276" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb13-277"><a href="#cb13-277" aria-hidden="true" tabindex="-1"></a><span class="in">ceiling(uniroot(f, c(6, 1e6))$root)</span></span>
+<span id="cb13-278"><a href="#cb13-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-279"><a href="#cb13-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-280"><a href="#cb13-280" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
-<span id="cb13-281"><a href="#cb13-281" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(1)</span></span>
-<span id="cb13-282"><a href="#cb13-282" aria-hidden="true" tabindex="-1"></a><span class="in">B &lt;- 5000</span></span>
-<span id="cb13-283"><a href="#cb13-283" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05</span></span>
-<span id="cb13-284"><a href="#cb13-284" aria-hidden="true" tabindex="-1"></a><span class="in">p &lt;- replicate(B, {</span></span>
-<span id="cb13-285"><a href="#cb13-285" aria-hidden="true" tabindex="-1"></a><span class="in">  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)</span></span>
-<span id="cb13-286"><a href="#cb13-286" aria-hidden="true" tabindex="-1"></a><span class="in">  t.test(x2, x1, var.equal = TRUE)$p.value</span></span>
-<span id="cb13-287"><a href="#cb13-287" aria-hidden="true" tabindex="-1"></a><span class="in">})</span></span>
-<span id="cb13-288"><a href="#cb13-288" aria-hidden="true" tabindex="-1"></a><span class="in">mean(p &lt; alpha)  # ~ power</span></span>
-<span id="cb13-289"><a href="#cb13-289" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-290"><a href="#cb13-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-291"><a href="#cb13-291" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
-<span id="cb13-292"><a href="#cb13-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-293"><a href="#cb13-293" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb13-294"><a href="#cb13-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-295"><a href="#cb13-295" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick reference</span></span>
-<span id="cb13-296"><a href="#cb13-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-297"><a href="#cb13-297" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>One‑sample n (z‑approx): ( n = (z<span class="sc">\_</span>{1-\alpha/2}+z<span class="sc">\_</span>{1-\beta})^2,^\sigma2/\delta\^2 )</span>
-<span id="cb13-298"><a href="#cb13-298" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Two‑sample per‑group n: ( n = 2(z<span class="sc">\_</span>{1-\alpha/2}+z<span class="sc">\_</span>{1-\beta})^2,^\sigma2/\delta\^2 )</span>
-<span id="cb13-299"><a href="#cb13-299" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>SLR slope power ncp: ( \lambda = (\beta<span class="sc">\_</span>1/\sigma)\sqrt{S_{xx}} \approx (\beta<span class="sc">\_</span>1/\sigma)\sqrt{n-1} )</span>
-<span id="cb13-300"><a href="#cb13-300" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Overall MR test: (f^2=R^2/(1-R\^2),; \lambda=f\^2(n-p-1))</span>
-<span id="cb13-301"><a href="#cb13-301" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>PI half‑width at (x_0): ( t,\sigma\sqrt{1+1/n+(x_0-\bar x)^2/S_{xx}} )</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb13-280"><a href="#cb13-280" aria-hidden="true" tabindex="-1"></a>Note the larger (n) due to being 1 SD away from the design mean.</span>
+<span id="cb13-281"><a href="#cb13-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-282"><a href="#cb13-282" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-283"><a href="#cb13-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-284"><a href="#cb13-284" aria-hidden="true" tabindex="-1"></a>**6D. (Optional)** Design‑sensitive planning. If you can spread (X) to increase ($S_{xx}$) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?</span>
+<span id="cb13-285"><a href="#cb13-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-286"><a href="#cb13-286" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-287"><a href="#cb13-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-288"><a href="#cb13-288" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-289"><a href="#cb13-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-290"><a href="#cb13-290" aria-hidden="true" tabindex="-1"></a>Increasing ($S_{xx}$) shrinks the term $\frac{(x_0- \bar{x})^2}{S_{xx}}$, reducing the half‑width for off‑mean predictions. For a fixed ($n$), wider X range lowers HW at ($x_0\neq\bar x$). Conversely, for fixed HW, larger ($S_{xx}$) allows smaller (n).</span>
+<span id="cb13-291"><a href="#cb13-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-292"><a href="#cb13-292" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-293"><a href="#cb13-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-294"><a href="#cb13-294" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-295"><a href="#cb13-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-296"><a href="#cb13-296" aria-hidden="true" tabindex="-1"></a><span class="fu">## 7) (Optional) Monte Carlo verification (5 minutes)</span></span>
+<span id="cb13-297"><a href="#cb13-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-298"><a href="#cb13-298" aria-hidden="true" tabindex="-1"></a>Simulate to verify analytic power for a two‑sample t‑test or slope test.</span>
+<span id="cb13-299"><a href="#cb13-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-300"><a href="#cb13-300" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb13-301"><a href="#cb13-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-302"><a href="#cb13-302" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt;Answer&lt;/summary&gt;</span>
+<span id="cb13-303"><a href="#cb13-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-304"><a href="#cb13-304" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval = FALSE}</span></span>
+<span id="cb13-305"><a href="#cb13-305" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(1)</span></span>
+<span id="cb13-306"><a href="#cb13-306" aria-hidden="true" tabindex="-1"></a><span class="in">B &lt;- 5000</span></span>
+<span id="cb13-307"><a href="#cb13-307" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05</span></span>
+<span id="cb13-308"><a href="#cb13-308" aria-hidden="true" tabindex="-1"></a><span class="in">p &lt;- replicate(B, {</span></span>
+<span id="cb13-309"><a href="#cb13-309" aria-hidden="true" tabindex="-1"></a><span class="in">  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)</span></span>
+<span id="cb13-310"><a href="#cb13-310" aria-hidden="true" tabindex="-1"></a><span class="in">  t.test(x2, x1, var.equal = TRUE)$p.value</span></span>
+<span id="cb13-311"><a href="#cb13-311" aria-hidden="true" tabindex="-1"></a><span class="in">})</span></span>
+<span id="cb13-312"><a href="#cb13-312" aria-hidden="true" tabindex="-1"></a><span class="in">mean(p &lt; alpha)  # ~ power</span></span>
+<span id="cb13-313"><a href="#cb13-313" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-314"><a href="#cb13-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-315"><a href="#cb13-315" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span>
+<span id="cb13-316"><a href="#cb13-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-317"><a href="#cb13-317" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb13-318"><a href="#cb13-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-319"><a href="#cb13-319" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick reference</span></span>
+<span id="cb13-320"><a href="#cb13-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-321"><a href="#cb13-321" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>One‑sample n (z‑approx): ( $n = (z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}$ )</span>
+<span id="cb13-322"><a href="#cb13-322" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Two‑sample per‑group n: ( $n = 2(z_{1-\alpha/2}+z_{1-\beta})^2 \frac{\sigma^2}{\delta^2}$ )</span>
+<span id="cb13-323"><a href="#cb13-323" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>SLR slope power ncp: ( $\lambda = (\beta_1/\sigma)\sqrt{S_{xx}} \approx (\beta_1/\sigma)\sqrt{n-1}$ )</span>
+<span id="cb13-324"><a href="#cb13-324" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Overall MR test: ($f^2=R^2/(1-R^2)$, $\lambda=f^2(n-p-1)$)</span>
+<span id="cb13-325"><a href="#cb13-325" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>PI half‑width at (x_0): ( $t\sigma\sqrt{1+1/n+(x_0-\bar x)^2/S_{xx}}$ )</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
