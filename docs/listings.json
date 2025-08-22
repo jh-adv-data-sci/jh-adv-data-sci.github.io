@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/resources.html",
-    "items": [
-      "/resources/missing_data_lecture.html"
-    ]
-  },
-  {
     "listing": "/homework.html",
     "items": [
       "/homework/hw1_shell_and_linux.html",
@@ -26,6 +20,12 @@
       "/exercises/linux_shell.html",
       "/exercises/slurm_and_the_cluster.html",
       "/exercises/power.html"
+    ]
+  },
+  {
+    "listing": "/resources.html",
+    "items": [
+      "/resources/missing_data_lecture.html"
     ]
   }
 ]
