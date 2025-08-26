@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Visualization Handout – Advanced Data Science</title>
+<title>Data Visualization – Advanced Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,6 +140,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructors" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Instructors</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-instructors">    
+        <li>
+    <a class="dropdown-item" href="https://bcaffo.com/">
+ <span class="dropdown-text">Brian Caffo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://johnmuschelli.com/">
+ <span class="dropdown-text">John Muschelli</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
@@ -161,13 +176,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul class="collapse">
   <li><a href="#distribution-histogram-density-overlay-diamonds" id="toc-distribution-histogram-density-overlay-diamonds" class="nav-link active" data-scroll-target="#distribution-histogram-density-overlay-diamonds">1) Distribution: Histogram + Density Overlay (Diamonds)</a></li>
+  <li><a href="#make-the-above-graph-better" id="toc-make-the-above-graph-better" class="nav-link" data-scroll-target="#make-the-above-graph-better">1.1) Make the above graph better</a></li>
   <li><a href="#bivariate-scatter-with-loess-trend-facets-mpg" id="toc-bivariate-scatter-with-loess-trend-facets-mpg" class="nav-link" data-scroll-target="#bivariate-scatter-with-loess-trend-facets-mpg">2) Bivariate: Scatter with LOESS Trend + Facets (MPG)</a></li>
+  <li><a href="#make-the-above-graph-better-1" id="toc-make-the-above-graph-better-1" class="nav-link" data-scroll-target="#make-the-above-graph-better-1">2.1) Make the above graph better</a></li>
   <li><a href="#small-multiples-facet-wrap-by-class-mpg" id="toc-small-multiples-facet-wrap-by-class-mpg" class="nav-link" data-scroll-target="#small-multiples-facet-wrap-by-class-mpg">3) Small Multiples: Facet Wrap by Class (MPG)</a></li>
+  <li><a href="#make-the-above-graph-better-2" id="toc-make-the-above-graph-better-2" class="nav-link" data-scroll-target="#make-the-above-graph-better-2">3.1) Make the above graph better</a></li>
   <li><a href="#time-series-unemployment-rate-with-12-month-moving-average-economics" id="toc-time-series-unemployment-rate-with-12-month-moving-average-economics" class="nav-link" data-scroll-target="#time-series-unemployment-rate-with-12-month-moving-average-economics">4) Time Series: Unemployment Rate with 12-Month Moving Average (economics)</a></li>
   <li><a href="#distribution-by-group-violin-box-jitter-iris" id="toc-distribution-by-group-violin-box-jitter-iris" class="nav-link" data-scroll-target="#distribution-by-group-violin-box-jitter-iris">5) Distribution by Group: Violin + Box + Jitter (iris)</a></li>
+  <li><a href="#make-the-above-graph-better-3" id="toc-make-the-above-graph-better-3" class="nav-link" data-scroll-target="#make-the-above-graph-better-3">5.1) Make the above graph better</a></li>
   <li><a href="#correlation-heatmap-with-clustering-mtcars" id="toc-correlation-heatmap-with-clustering-mtcars" class="nav-link" data-scroll-target="#correlation-heatmap-with-clustering-mtcars">6) Correlation Heatmap with Clustering (mtcars)</a></li>
+  <li><a href="#make-the-above-graph-better-4" id="toc-make-the-above-graph-better-4" class="nav-link" data-scroll-target="#make-the-above-graph-better-4">6.1) Make the above graph better</a></li>
   <li><a href="#tile-heatmap-housing-prices-by-month-year-txhousing" id="toc-tile-heatmap-housing-prices-by-month-year-txhousing" class="nav-link" data-scroll-target="#tile-heatmap-housing-prices-by-month-year-txhousing">7) Tile Heatmap: Housing Prices by Month × Year (txhousing)</a></li>
-  <li><a href="#optional-extension-transformations-outlier-handling-diamonds" id="toc-optional-extension-transformations-outlier-handling-diamonds" class="nav-link" data-scroll-target="#optional-extension-transformations-outlier-handling-diamonds">Optional Extension) Transformations &amp; Outlier Handling (diamonds)</a>
+  <li><a href="#make-the-above-graph-better-5" id="toc-make-the-above-graph-better-5" class="nav-link" data-scroll-target="#make-the-above-graph-better-5">7.1) Make the above graph better</a>
   <ul class="collapse">
   <li><a href="#appendix-session-info-hidden" id="toc-appendix-session-info-hidden" class="nav-link" data-scroll-target="#appendix-session-info-hidden">Appendix: Session Info (hidden)</a></li>
   </ul></li>
@@ -179,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Visualization Handout</h1>
+<h1 class="title">Data Visualization</h1>
 </div>
 
 
@@ -258,6 +278,10 @@ Figure&nbsp;1: Histogram and scaled density of diamond prices (≤ $10k).
 </div>
 <hr>
 </section>
+<section id="make-the-above-graph-better" class="level1">
+<h1>1.1) Make the above graph better</h1>
+<hr>
+</section>
 <section id="bivariate-scatter-with-loess-trend-facets-mpg" class="level1">
 <h1>2) Bivariate: Scatter with LOESS Trend + Facets (MPG)</h1>
 <p>Using <code>ggplot2::mpg</code>, visualize <strong>highway mileage (hwy)</strong> vs <strong>engine displacement (displ)</strong>, colored by <strong>class</strong>. Add a LOESS smooth and facet by <strong>drive (drv)</strong>.</p>
@@ -299,6 +323,10 @@ Figure&nbsp;2: Highway MPG vs.&nbsp;engine displacement, colored by class, facet
 </div>
 <hr>
 </section>
+<section id="make-the-above-graph-better-1" class="level1">
+<h1>2.1) Make the above graph better</h1>
+<hr>
+</section>
 <section id="small-multiples-facet-wrap-by-class-mpg" class="level1">
 <h1>3) Small Multiples: Facet Wrap by Class (MPG)</h1>
 <p>Produce small multiples of <strong>hwy vs displ</strong> but facet by <strong>class</strong> to compare patterns across vehicle classes.</p>
@@ -335,6 +363,10 @@ Figure&nbsp;3: Small multiples of hwy vs displ by vehicle class (linear fits).
 </div>
 </div>
 </div>
+<hr>
+</section>
+<section id="make-the-above-graph-better-2" class="level1">
+<h1>3.1) Make the above graph better</h1>
 <hr>
 </section>
 <section id="time-series-unemployment-rate-with-12-month-moving-average-economics" class="level1">
@@ -423,6 +455,10 @@ Figure&nbsp;5: Sepal length distributions by species (iris).
 </div>
 <hr>
 </section>
+<section id="make-the-above-graph-better-3" class="level1">
+<h1>5.1) Make the above graph better</h1>
+<hr>
+</section>
 <section id="correlation-heatmap-with-clustering-mtcars" class="level1">
 <h1>6) Correlation Heatmap with Clustering (mtcars)</h1>
 <p>Compute a <strong>Spearman correlation matrix</strong> for numeric variables in <code>mtcars</code>, cluster variables, and display a heatmap with correlation values.</p>
@@ -473,6 +509,10 @@ Figure&nbsp;6: Spearman correlation heatmap with hierarchical clustering (mtcars
 </div>
 <hr>
 </section>
+<section id="make-the-above-graph-better-4" class="level1">
+<h1>6.1) Make the above graph better</h1>
+<hr>
+</section>
 <section id="tile-heatmap-housing-prices-by-month-year-txhousing" class="level1">
 <h1>7) Tile Heatmap: Housing Prices by Month × Year (txhousing)</h1>
 <p>Using <code>ggplot2::txhousing</code>, create a month × year <strong>heatmap</strong> of median home prices for <strong>Austin</strong>.</p>
@@ -515,56 +555,9 @@ Figure&nbsp;7: Median home price (Austin): month × year heatmap (txhousing).
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="optional-extension-transformations-outlier-handling-diamonds" class="level1">
-<h1>Optional Extension) Transformations &amp; Outlier Handling (diamonds)</h1>
-<p>Recreate a <strong>log10</strong>-scaled view of diamond prices vs carat, with alpha blending and hex-binning for dense regions.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Use <code>geom_hex()</code> with <code>bins = 40</code>.</li>
-<li>Transform both axes with <code>scale_x_log10()</code> and <code>scale_y_log10()</code> (use <code>price</code> vs <code>carat</code>).</li>
-<li>Add a well-labeled legend and title.</li>
-</ul>
-<div class="cell">
-<details class="code-fold">
-<summary>Show answer code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hex binning is in ggplot2 via stat_bin_hex/geom_hex</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">requireNamespace</span>(<span class="st">"hexbin"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  diamonds <span class="sc">|&gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(carat, price)) <span class="sc">+</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_hex</span>(<span class="at">bins =</span> <span class="dv">40</span>) <span class="sc">+</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_log10</span>() <span class="sc">+</span> <span class="fu">scale_y_log10</span>(<span class="at">labels =</span> scales<span class="sc">::</span>dollar) <span class="sc">+</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Price vs Carat (log10 scales)"</span>,</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Carat (log10)"</span>, <span class="at">y =</span> <span class="st">"Price (USD, log10)"</span>, <span class="at">fill =</span> <span class="st">"Count"</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Fallback: scatter with alpha if hexbin isn't available</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  diamonds <span class="sc">|&gt;</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(carat, price)) <span class="sc">+</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.15</span>, <span class="at">size =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_log10</span>() <span class="sc">+</span> <span class="fu">scale_y_log10</span>(<span class="at">labels =</span> scales<span class="sc">::</span>dollar) <span class="sc">+</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Price vs Carat (log10 scales)"</span>,</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Carat (log10)"</span>, <span class="at">y =</span> <span class="st">"Price (USD, log10)"</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output-display">
-<div id="fig-diamonds-hex" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-diamonds-hex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="data_viz_files/figure-html/fig-diamonds-hex-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diamonds-hex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Hex-binned scatter of price vs carat on log10 scales (diamonds).
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<section id="make-the-above-graph-better-5" class="level1">
+<h1>7.1) Make the above graph better</h1>
 <hr>
 <section id="appendix-session-info-hidden" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-session-info-hidden">Appendix: Session Info (hidden)</h2>
