@@ -319,7 +319,7 @@
     "href": "exercises.html",
     "title": "Exercises",
     "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\nNo matching items"
+    "text": "Data Visualization Handout\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/hw6_data_vis.html",
@@ -474,5 +474,26 @@
     "title": "Resources",
     "section": "",
     "text": "Missing Data Lecure\n\n\nMissing Data Lecure\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "discussion.html",
+    "href": "discussion.html",
+    "title": "Discussion",
+    "section": "",
+    "text": "All course related discussion will be handled by Slack. You will receive a request on the first day of class.\nhttps://jhu-advdatasci.slack.com/"
+  },
+  {
+    "objectID": "exercises/data_viz.html",
+    "href": "exercises/data_viz.html",
+    "title": "Data Visualization Handout",
+    "section": "",
+    "text": "How to render with/without answers\n\n\n\n\nWith answers (default): quarto render viz-handout.qmd\nWithout answers (figures only): quarto render viz-handout.qmd -P show_answers:false"
+  },
+  {
+    "objectID": "exercises/data_viz.html#appendix-session-info-hidden",
+    "href": "exercises/data_viz.html#appendix-session-info-hidden",
+    "title": "Data Visualization Handout",
+    "section": "Appendix: Session Info (hidden)",
+    "text": "Appendix: Session Info (hidden)"
   }
 ]

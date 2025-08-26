@@ -13,6 +13,12 @@ website:
       - href: exercises.qmd
         text: Exercises
       - href: homework.qmd
+      - text: "Instructors"
+        menu: # The 'menu' key creates a drop-down
+          - text: "Brian Caffo"
+            href: https://bcaffo.com/
+          - text: "John Muschelli"
+            href: https://johnmuschelli.com/
       - href: resources.qmd
 
 format:
