@@ -10,8 +10,7 @@ engine: knitr
 Create a new directory and execute the following bash script. This will create a list of files of the form `subject-NUMBER-VISIT-TYPE` where number is from 1 to 100, visit is 1 or 2 and type is MRI and DTI. Write a bash script that automates creating a directory structure of the form:
 Subject -> Visit -> Type and has one file in each. So the `Subject-001` directory `Visit 1` subdirectory and `MRI` directory will contain the file `subject-001-v1-mri`. Execute your script and reorganize the files.
 
-```
----begin script---
+```bash
 #!/bin/bash
 
 # Create a directory to store the files, if it doesn't exist
@@ -32,7 +31,6 @@ echo "Total files generated: 100 subjects * 2 versions * 2 types = 400 files."
 # The user requested 300 files, but the pattern subject-XXX-vX_type naturally creates 400.
 # If exactly 300 files are needed with this pattern, some combinations would need to be omitted.
 # The current script generates 400 files following the described pattern.
----end script---
 ```
 
 Hand in your bash script and screen shots of your directory in your github classroom repository.

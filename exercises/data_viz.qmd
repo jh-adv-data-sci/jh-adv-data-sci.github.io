@@ -1,10 +1,13 @@
 ---
 title: "Data Visualization"
+subtitle: "How to Make Dynamic Figures"
+author: "08-Data Visualization"
 format:
   html:
     toc: true
     toc-depth: 2
     code-fold: true
+    code-tools: true
     code-summary: "Show answer"
     df-print: paged
 params:

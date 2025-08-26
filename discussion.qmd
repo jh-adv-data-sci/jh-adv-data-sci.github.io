@@ -5,4 +5,4 @@ title: "Discussion"
 
 All course related discussion will be handled by Slack. You will receive a request on the first day of class. 
 
-https://jhu-advdatasci.slack.com/
+[https://jhu-advdatasci.slack.com/](https://jhu-advdatasci.slack.com/)

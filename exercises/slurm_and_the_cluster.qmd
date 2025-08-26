@@ -49,11 +49,11 @@ module avail
 ```
 
 ### HIPAA
-Read the HIPAA section of https://jhpce.jhu.edu/joinus/hipaa/
+Read the HIPAA section of [https://jhpce.jhu.edu/joinus/hipaa/](https://jhpce.jhu.edu/joinus/hipaa/)
 
 ### SSH 
 
-Skim how to set up SSH: https://jhpce.jhu.edu/access/ssh/
+Skim how to set up SSH: [https://jhpce.jhu.edu/access/ssh/](https://jhpce.jhu.edu/access/ssh/)
 
 ### Transfer one file
 
@@ -165,7 +165,8 @@ sbatch sim.sbatch
 
 <details><summary>Show solution</summary>
 
-`driver.R`
+`driver.R`:
+
 ```{r, eval = FALSE}
 # Read the array index (default 1 when running locally)
 idx <- as.integer(Sys.getenv('SLURM_ARRAY_TASK_ID', '1'))
@@ -184,6 +185,8 @@ p <- params[idx, , drop = FALSE]
 set.seed(p$seed)
 x <- rnorm(n, mu, sigma)
 ```
+
+`driver_array.sbatch`:
 
 ```{bash, eval = FALSE}
 # Minimal array submission (match the array range to nrow(params) = 64)

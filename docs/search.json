@@ -214,7 +214,7 @@
     "href": "homework/hw1_shell_and_linux.html",
     "title": "Homework 1",
     "section": "",
-    "text": "Create a new directory and execute the following bash script. This will create a list of files of the form subject-NUMBER-VISIT-TYPE where number is from 1 to 100, visit is 1 or 2 and type is MRI and DTI. Write a bash script that automates creating a directory structure of the form: Subject -&gt; Visit -&gt; Type and has one file in each. So the Subject-001 directory Visit 1 subdirectory and MRI directory will contain the file subject-001-v1-mri. Execute your script and reorganize the files.\n---begin script---\n#!/bin/bash\n\n# Create a directory to store the files, if it doesn't exist\nmkdir -p generated_files\ncd generated_files\n\nfor i in $(seq -w 001 100); do\n  for v in v1 v2; do\n    touch \"subject-${i}-${v}_mri\"\n    touch \"subject-${i}-${v}_dti\"\n  done\ndone\n\necho \"Generated 200 files in the 'generated_files' directory.\"\necho \"Each subject has two versions (v1, v2) and two types (mri, dti).\"\necho \"Total files generated: 100 subjects * 2 versions * 2 types = 400 files.\"\n\n# The user requested 300 files, but the pattern subject-XXX-vX_type naturally creates 400.\n# If exactly 300 files are needed with this pattern, some combinations would need to be omitted.\n# The current script generates 400 files following the described pattern.\n---end script---\nHand in your bash script and screen shots of your directory in your github classroom repository."
+    "text": "Create a new directory and execute the following bash script. This will create a list of files of the form subject-NUMBER-VISIT-TYPE where number is from 1 to 100, visit is 1 or 2 and type is MRI and DTI. Write a bash script that automates creating a directory structure of the form: Subject -&gt; Visit -&gt; Type and has one file in each. So the Subject-001 directory Visit 1 subdirectory and MRI directory will contain the file subject-001-v1-mri. Execute your script and reorganize the files.\n#!/bin/bash\n\n# Create a directory to store the files, if it doesn't exist\nmkdir -p generated_files\ncd generated_files\n\nfor i in $(seq -w 001 100); do\n  for v in v1 v2; do\n    touch \"subject-${i}-${v}_mri\"\n    touch \"subject-${i}-${v}_dti\"\n  done\ndone\n\necho \"Generated 200 files in the 'generated_files' directory.\"\necho \"Each subject has two versions (v1, v2) and two types (mri, dti).\"\necho \"Total files generated: 100 subjects * 2 versions * 2 types = 400 files.\"\n\n# The user requested 300 files, but the pattern subject-XXX-vX_type naturally creates 400.\n# If exactly 300 files are needed with this pattern, some combinations would need to be omitted.\n# The current script generates 400 files following the described pattern.\nHand in your bash script and screen shots of your directory in your github classroom repository."
   },
   {
     "objectID": "homework/hw4_R_package.html",
@@ -319,7 +319,7 @@
     "href": "exercises.html",
     "title": "Exercises",
     "section": "",
-    "text": "Data Visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\nNo matching items"
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/hw6_data_vis.html",
@@ -403,7 +403,7 @@
     "href": "exercises/slurm_and_the_cluster.html#use-expand.grid-in-r-with-slurm_array_task_id-no-params.csv",
     "title": "Submitting Jobs on HPC with SLURM",
     "section": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)",
-    "text": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)\nQuestion. Within R, generate a parameter grid and pick the row corresponding to your task index using SLURM_ARRAY_TASK_ID. Run sim.R with those values.\n\n\nShow solution\n\ndriver.R\n\n\nCode\n# Read the array index (default 1 when running locally)\nidx &lt;- as.integer(Sys.getenv('SLURM_ARRAY_TASK_ID', '1'))\n\n# Define your parameter grid\nparams &lt;- expand.grid(\n  n    = c(1e4, 5e4),\n  mu   = c(0, 0.2),\n  sigma= c(1, 2),\n  seed = 1:8\n)\n\nstopifnot(idx &gt;= 1, idx &lt;= nrow(params))\np &lt;- params[idx, , drop = FALSE]\n\nset.seed(p$seed)\nx &lt;- rnorm(n, mu, sigma)\n\n\n\n\nCode\n# Minimal array submission (match the array range to nrow(params) = 64)\ncat &gt; driver_array.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J drv\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%A_%a.out\n#SBATCH --array=1-64\nmodule load conda_R 2&gt;/dev/null || true\nRscript driver.R\nSB\n\nsbatch driver_array.sbatch\n\n\nNotes: - Ensure the array range matches nrow(params) inside driver.R. - Locally, you can test with SLURM_ARRAY_TASK_ID=3 Rscript driver.R."
+    "text": "Use expand.grid in R with SLURM_ARRAY_TASK_ID (no params.csv)\nQuestion. Within R, generate a parameter grid and pick the row corresponding to your task index using SLURM_ARRAY_TASK_ID. Run sim.R with those values.\n\n\nShow solution\n\ndriver.R:\n\n\nCode\n# Read the array index (default 1 when running locally)\nidx &lt;- as.integer(Sys.getenv('SLURM_ARRAY_TASK_ID', '1'))\n\n# Define your parameter grid\nparams &lt;- expand.grid(\n  n    = c(1e4, 5e4),\n  mu   = c(0, 0.2),\n  sigma= c(1, 2),\n  seed = 1:8\n)\n\nstopifnot(idx &gt;= 1, idx &lt;= nrow(params))\np &lt;- params[idx, , drop = FALSE]\n\nset.seed(p$seed)\nx &lt;- rnorm(n, mu, sigma)\n\n\ndriver_array.sbatch:\n\n\nCode\n# Minimal array submission (match the array range to nrow(params) = 64)\ncat &gt; driver_array.sbatch &lt;&lt;'SB'\n#!/usr/bin/env bash\n#SBATCH -J drv\n#SBATCH -t 00:10:00\n#SBATCH -c 1\n#SBATCH --mem=2G\n#SBATCH -o slurm-%A_%a.out\n#SBATCH --array=1-64\nmodule load conda_R 2&gt;/dev/null || true\nRscript driver.R\nSB\n\nsbatch driver_array.sbatch\n\n\nNotes: - Ensure the array range matches nrow(params) inside driver.R. - Locally, you can test with SLURM_ARRAY_TASK_ID=3 Rscript driver.R."
   },
   {
     "objectID": "exercises/slurm_and_the_cluster.html#array-job-to-run-the-grid",
@@ -607,5 +607,12 @@
     "title": "Schedule",
     "section": "Week 8",
     "text": "Week 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
+    "href": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "18) Find an Answer in the Shell you didn’t know",
+    "text": "18) Find an Answer in the Shell you didn’t know\nQuestion. Either ask a question about the shell you do not know, one thing you’d like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell).\nShare this question/solution with the instructors and the class."
   }
 ]
