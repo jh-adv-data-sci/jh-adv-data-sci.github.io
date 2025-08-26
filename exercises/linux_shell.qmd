@@ -366,3 +366,10 @@ diff a.md5 b.md5   # no output => identical content
 Explanation: the compressed file’s checksum differs, but the **decompressed content** checksum should match the original.
 </details>
 
+## 18) Find an Answer in the Shell you didn't know
+
+
+**Question.** Either ask a question about the shell you do not know, one thing you'd like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell). 
+
+Share this question/solution with the instructors and the class.
+
