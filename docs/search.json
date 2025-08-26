@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations\n\n\n\n\n\n\n\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
   },
   {
     "objectID": "schedule.html#advanced-data-science-i",
@@ -495,5 +495,117 @@
     "title": "Data Visualization",
     "section": "Appendix: Session Info (hidden)",
     "text": "Appendix: Session Info (hidden)"
+  },
+  {
+    "objectID": "schedule.html#week-1",
+    "href": "schedule.html#week-1",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1"
+  },
+  {
+    "objectID": "schedule.html#week-2",
+    "href": "schedule.html#week-2",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice"
+  },
+  {
+    "objectID": "schedule.html#week-3",
+    "href": "schedule.html#week-3",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice"
+  },
+  {
+    "objectID": "schedule.html#week-4",
+    "href": "schedule.html#week-4",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 7: R packages\nClass 8: Grants"
+  },
+  {
+    "objectID": "schedule.html#week-5",
+    "href": "schedule.html#week-5",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles"
+  },
+  {
+    "objectID": "schedule.html#week-6",
+    "href": "schedule.html#week-6",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do"
+  },
+  {
+    "objectID": "schedule.html#week-7",
+    "href": "schedule.html#week-7",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)"
+  },
+  {
+    "objectID": "schedule.html#week-8",
+    "href": "schedule.html#week-8",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 15: APIs + Pulling\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#week-1-1",
+    "href": "schedule.html#week-1-1",
+    "title": "Schedule",
+    "section": "Week 1",
+    "text": "Week 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)"
+  },
+  {
+    "objectID": "schedule.html#week-2-1",
+    "href": "schedule.html#week-2-1",
+    "title": "Schedule",
+    "section": "Week 2",
+    "text": "Week 2\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)"
+  },
+  {
+    "objectID": "schedule.html#week-3-1",
+    "href": "schedule.html#week-3-1",
+    "title": "Schedule",
+    "section": "Week 3",
+    "text": "Week 3\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)"
+  },
+  {
+    "objectID": "schedule.html#week-4-1",
+    "href": "schedule.html#week-4-1",
+    "title": "Schedule",
+    "section": "Week 4",
+    "text": "Week 4\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)"
+  },
+  {
+    "objectID": "schedule.html#week-5-1",
+    "href": "schedule.html#week-5-1",
+    "title": "Schedule",
+    "section": "Week 5",
+    "text": "Week 5\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do"
+  },
+  {
+    "objectID": "schedule.html#week-6-1",
+    "href": "schedule.html#week-6-1",
+    "title": "Schedule",
+    "section": "Week 6",
+    "text": "Week 6\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do"
+  },
+  {
+    "objectID": "schedule.html#week-7-1",
+    "href": "schedule.html#week-7-1",
+    "title": "Schedule",
+    "section": "Week 7",
+    "text": "Week 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)"
+  },
+  {
+    "objectID": "schedule.html#week-8-1",
+    "href": "schedule.html#week-8-1",
+    "title": "Schedule",
+    "section": "Week 8",
+    "text": "Week 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
   }
 ]
