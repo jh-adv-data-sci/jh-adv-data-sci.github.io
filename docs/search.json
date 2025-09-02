@@ -319,7 +319,7 @@
     "href": "exercises.html",
     "title": "Exercises",
     "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\n\nNo matching items"
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/hw6_data_vis.html",
@@ -614,5 +614,47 @@
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "18) Find an Answer in the Shell you didn’t know",
     "text": "18) Find an Answer in the Shell you didn’t know\nQuestion. Either ask a question about the shell you do not know, one thing you’d like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell).\nShare this question/solution with the instructors and the class."
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better",
+    "href": "exercises/data_viz.html#make-the-above-graph-better",
+    "title": "Data Visualization",
+    "section": "# 1.1) Make the above graph better",
+    "text": "# 1.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "title": "Data Visualization",
+    "section": "# 2.1) Make the above graph better",
+    "text": "# 2.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "title": "Data Visualization",
+    "section": "# 3.1) Make the above graph better",
+    "text": "# 3.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "title": "Data Visualization",
+    "section": "# 5.1) Make the above graph better",
+    "text": "# 5.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-4",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-4",
+    "title": "Data Visualization",
+    "section": "# 6.1) Make the above graph better",
+    "text": "# 6.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-5",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-5",
+    "title": "Data Visualization",
+    "section": "# 7.1) Make the above graph better",
+    "text": "# 7.1) Make the above graph better"
   }
 ]
