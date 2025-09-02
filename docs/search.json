@@ -7,18 +7,172 @@
     "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
   },
   {
-    "objectID": "schedule.html#advanced-data-science-i",
-    "href": "schedule.html#advanced-data-science-i",
+    "objectID": "schedule.html#week-1",
+    "href": "schedule.html#week-1",
     "title": "Schedule",
     "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\nClass 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice\n\n\n\n\n\nClass 7: R packages\nClass 8: Grants\n\n\n\n\n\nClass 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\nClass 15: APIs + Pulling\nClass 16: Final Presentations"
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1"
   },
   {
-    "objectID": "schedule.html#advanced-data-science-ii",
-    "href": "schedule.html#advanced-data-science-ii",
+    "objectID": "schedule.html#week-2",
+    "href": "schedule.html#week-2",
     "title": "Schedule",
     "section": "",
-    "text": "Class 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)\n\n\n\n\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)\n\n\n\n\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)\n\n\n\n\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)\n\n\n\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do\n\n\n\n\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do\n\n\n\n\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)\n\n\n\n\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+    "text": "Class 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice"
+  },
+  {
+    "objectID": "schedule.html#week-3",
+    "href": "schedule.html#week-3",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice"
+  },
+  {
+    "objectID": "schedule.html#week-4",
+    "href": "schedule.html#week-4",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 7: R packages\nClass 8: Grants"
+  },
+  {
+    "objectID": "schedule.html#week-5",
+    "href": "schedule.html#week-5",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles"
+  },
+  {
+    "objectID": "schedule.html#week-6",
+    "href": "schedule.html#week-6",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do"
+  },
+  {
+    "objectID": "schedule.html#week-7",
+    "href": "schedule.html#week-7",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)"
+  },
+  {
+    "objectID": "schedule.html#week-8",
+    "href": "schedule.html#week-8",
+    "title": "Schedule",
+    "section": "",
+    "text": "Class 15: APIs + Pulling\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "schedule.html#week-1-1",
+    "href": "schedule.html#week-1-1",
+    "title": "Schedule",
+    "section": "Week 1",
+    "text": "Week 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)"
+  },
+  {
+    "objectID": "schedule.html#week-2-1",
+    "href": "schedule.html#week-2-1",
+    "title": "Schedule",
+    "section": "Week 2",
+    "text": "Week 2\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)"
+  },
+  {
+    "objectID": "schedule.html#week-3-1",
+    "href": "schedule.html#week-3-1",
+    "title": "Schedule",
+    "section": "Week 3",
+    "text": "Week 3\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)"
+  },
+  {
+    "objectID": "schedule.html#week-4-1",
+    "href": "schedule.html#week-4-1",
+    "title": "Schedule",
+    "section": "Week 4",
+    "text": "Week 4\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)"
+  },
+  {
+    "objectID": "schedule.html#week-5-1",
+    "href": "schedule.html#week-5-1",
+    "title": "Schedule",
+    "section": "Week 5",
+    "text": "Week 5\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do"
+  },
+  {
+    "objectID": "schedule.html#week-6-1",
+    "href": "schedule.html#week-6-1",
+    "title": "Schedule",
+    "section": "Week 6",
+    "text": "Week 6\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do"
+  },
+  {
+    "objectID": "schedule.html#week-7-1",
+    "href": "schedule.html#week-7-1",
+    "title": "Schedule",
+    "section": "Week 7",
+    "text": "Week 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)"
+  },
+  {
+    "objectID": "schedule.html#week-8-1",
+    "href": "schedule.html#week-8-1",
+    "title": "Schedule",
+    "section": "Week 8",
+    "text": "Week 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
+  },
+  {
+    "objectID": "exercises/power.html",
+    "href": "exercises/power.html",
+    "title": "Power & Sample Size",
+    "section": "",
+    "text": "Conventions: Two‑sided tests at α = 0.05 unless stated. Use R where helpful. Symbols: δ = effect size in the outcome scale; σ = SD; n = total sample unless noted. For two‑sample tests, assume equal allocation and equal variances unless stated."
+  },
+  {
+    "objectID": "exercises/power.html#onesample-ttest-power-n-10-minutes",
+    "href": "exercises/power.html#onesample-ttest-power-n-10-minutes",
+    "title": "Power & Sample Size",
+    "section": "1) One‑sample t‑test power & n (10 minutes)",
+    "text": "1) One‑sample t‑test power & n (10 minutes)\nSetup. You expect observations (\\(Y\\sim \\mathcal{N}(\\mu,\\sigma^2)\\)) with (\\(\\sigma=10\\)). You will test (\\(H_0: \\mu=0\\)) vs (\\(H_1: \\mu\\neq 0\\)). The scientifically relevant effect is (\\(\\delta = 3\\)) (i.e., \\(\\mu=3\\)).\n1A. Compute power for (\\(n=50\\)).\n\n\nAnswer\n\nAnalytic normal approx: (\\(Z = \\bar Y/(\\sigma/\\sqrt n)\\)), noncentrality (\\(\\lambda = \\delta\\sqrt n/\\sigma\\)).\n[ = 3/10 = 3/10 . ]\nTwo‑sided power (z‑approx): [ 1 - (z_{0.975}-) + (-z_{0.975}-) -(1.96-2.121)+(-1.96-2.121) -(-0.161)+(-4.081). ] This is (-(0.436)+ ). Using exact t power:\n\n\nCode\npower.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$power\n\n\n\n1B. Required (n) for 80% power.\n\n\nAnswer\n\nClosed‑form (z‑approx): (\\(n \\approx (z_{0.975}+z_{0.8})^2, \\frac{\\sigma^2}}{\\delta^2}\\) ).\n[ n (1.96+0.84)^2 = (2.80)^2 /9 . ]\nExact via R:\n\n\nCode\npower.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
+  },
+  {
+    "objectID": "exercises/power.html#twosample-ttest-equal-variance-8-minutes",
+    "href": "exercises/power.html#twosample-ttest-equal-variance-8-minutes",
+    "title": "Power & Sample Size",
+    "section": "2) Two‑sample t‑test (equal variance) (8 minutes)",
+    "text": "2) Two‑sample t‑test (equal variance) (8 minutes)\nSetup. Two arms, equal allocation, common (\\(\\sigma=12\\)), difference of means (\\(\\delta = 5\\)).\n2A. Per‑group (n) for 90% power.\n\n\nAnswer\n\nZ‑approx per‑group (n): (\\(n \\approx 2 (z_{0.975}+z_{0.90})^2 \\frac{\\sigma^2}{\\delta^2}\\) ).\n\\[\nn \\approx 2(1.96+1.282)^2(12^2)/5^2 = 2(3.242)^2\\cdot144/25 \\approx 2\\cdot10.52\\cdot5.76 \\approx 121.1\n\\]\nSo about 122 per group. Exact:\n\n\nCode\npower.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,\n             type = \"two.sample\", alternative = \"two.sided\")$n\n\n\n\n2B. Power if (\\(n=40\\)) per group.\n\n\nAnswer\n\n\n\nCode\npower.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,\n             type = \"two.sample\", alternative = \"two.sided\")$power"
+  },
+  {
+    "objectID": "exercises/power.html#paired-ttest-5-minutes",
+    "href": "exercises/power.html#paired-ttest-5-minutes",
+    "title": "Power & Sample Size",
+    "section": "3) Paired t‑test (5 minutes)",
+    "text": "3) Paired t‑test (5 minutes)\nSetup. Pre/post measurements with (\\(\\sigma_{\\text{pre}}=\\sigma_{\\text{post}}=8\\)), correlation (\\(\\rho=0.6\\)). Mean change (\\(\\delta=2\\)).\nQuestion. Required number of pairs for 80% power.\n\n\nAnswer\n\nSD of differences: (\\(\\sigma_D=\\sqrt{\\sigma^2+\\sigma^2-2\\rho\\sigma^2}=\\sqrt{2\\sigma^2(1-\\rho)} = 8\\sqrt{2(1-0.6)}=8\\sqrt{0.8}\\approx 7.155\\).) Use one‑sample t-est on differences with (sd=\\(\\sigma_D\\)), effect (\\(\\delta\\)):\n\n\nCode\npower.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
+  },
+  {
+    "objectID": "exercises/power.html#simple-linear-regression-test-a-slope-10-minutes",
+    "href": "exercises/power.html#simple-linear-regression-test-a-slope-10-minutes",
+    "title": "Power & Sample Size",
+    "section": "4) Simple linear regression: test a slope (10 minutes)",
+    "text": "4) Simple linear regression: test a slope (10 minutes)\nSetup. Model \\(Y=\\beta_0+\\beta_1 X+\\varepsilon\\), \\(\\varepsilon \\sim N(0,\\sigma^2)\\) with (\\(\\sigma=10\\)) and (X) standardized: (\\(\\bar{X} \\approx 0\\)), (\\(\\operatorname{Var}(X)=1\\)).\nSuppose (\\(\\beta_1=3\\)). Test (\\(H_0:\\beta_1=0\\)).\n4A. Power at (\\(n=60\\)) using the noncentral t formulation.\n\n\nAnswer\n\nFor centered/standardized (X), (\\(S_{xx} = \\sum (x_i-\\bar x)^2 \\approx n-1\\)). The test statistic for (\\(\\beta_1\\)) has noncentrality paramter \\[\n\\lambda = \\frac{\\beta_1}{\\sigma}\\sqrt{S_{xx}} \\approx \\frac{3}{10}\\sqrt{59} = 0.3 \\cdot 7.681 \\approx 2.304\n\\] Power (two‑sided) is (\\(1-\\beta\\)) with df=(\\(n-2=58\\)):\n\n\nCode\nn &lt;- 60; \nsigma &lt;- 10; \nbeta1 &lt;- 3\nlambda &lt;- beta1/sigma * sqrt(n-1)\nalpha &lt;- 0.05; \ndf &lt;- n - 2\nc &lt;- qt(1 - alpha/2, df)\n# power = P(|T_nc| &gt; c)\n1 - (pt(c, df, ncp=lambda) - pt(-c, df, ncp=lambda))\n\n\n\n4B. Alternative via correlation. Show equivalence.\n\n\nAnswer\n\nFor SLR, (\\(r=\\operatorname{Cor}(X,Y)= \\frac{\\beta_1 \\sigma_X}{\\sigma_Y}\\)). With (\\(\\sigma_X=1\\)), (\\(\\sigma_Y = \\sqrt{\\beta_1^2+\\sigma^2} = \\sqrt{9+100} = \\sqrt{109} \\approx 10.44\\)), so (\\(r\\approx 3/10.44\\approx 0.287\\)).\nTest of (\\(r=0\\)) uses the same df and noncentrality (\\(\\sqrt{n-2}, \\frac{r}{\\sqrt{1-r^2}}\\)), which equals (\\(\\lambda\\)) above.\n\n\nCode\nr &lt;- 3/sqrt(9+100)\nlambda2 &lt;- sqrt(n-2) * r / sqrt(1 - r^2)\nall.equal(lambda, lambda2)"
+  },
+  {
+    "objectID": "exercises/power.html#multiple-regression-overall-r2-7-minutes",
+    "href": "exercises/power.html#multiple-regression-overall-r2-7-minutes",
+    "title": "Power & Sample Size",
+    "section": "5) Multiple regression: overall (\\(R^2\\)) (7 minutes)",
+    "text": "5) Multiple regression: overall (\\(R^2\\)) (7 minutes)\nSetup. You plan (p=4) predictors and expect population (\\(R^2=0.20\\)). Test (\\(H_0: R^2=0\\)) (overall model).\nFind power at (\\(n=80\\)) and required (n) for 80% power.\n\n\nAnswer\n\nUse Cohen’s (\\(f^2=\\frac{R^2}{1-R^2}=0.25\\)). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (\\(\\lambda=f^2(n-p-1)\\)).\nPower at (n=80):\n\n\nCode\np &lt;- 4; R2 &lt;- 0.20; f2 &lt;- R2/(1-R2)\nn &lt;- 80; df1 &lt;- p; df2 &lt;- n - p - 1\nlambda &lt;- f2 * df2\nalpha &lt;- 0.05; Fc &lt;- qf(1 - alpha, df1, df2)\n# P(F_nc &gt; Fc)\npower &lt;- 1 - pf(Fc, df1, df2, ncp=lambda)\npower\n\n\nSolve for (n) (80% power):\n\n\nCode\nf_target &lt;- function(n){\n  df2 &lt;- n - p - 1\n  if (df2 &lt;= 0) return(-1)  # invalid\n  Fc &lt;- qf(0.95, df1=p, df2=df2)\n  1 - pf(Fc, df1=p, df2=df2, ncp=f2*df2) - 0.80\n}\nuniroot(f_target, c(p+5, 1000))$root"
+  },
+  {
+    "objectID": "exercises/power.html#sample-size-for-prediction-interval-width-in-slr-10-minutes",
+    "href": "exercises/power.html#sample-size-for-prediction-interval-width-in-slr-10-minutes",
+    "title": "Power & Sample Size",
+    "section": "6) Sample size for prediction interval width in SLR (10 minutes)",
+    "text": "6) Sample size for prediction interval width in SLR (10 minutes)\nSetup. In \\(Y=\\beta_0+\\beta_1 X+\\varepsilon\\) with \\(\\varepsilon\\sim N(0,\\sigma^2)\\), suppose (\\(\\sigma=10\\)) and you plan (\\(X\\)) standardized (mean 0, var 1). You want a 95% prediction interval for a future observation at (\\(x_0\\)) to have total width ($).\nConsider two cases: (i) (\\(x_0=0\\)) (mean of (X)), (ii) (\\(x_0=1\\)) (1 SD from mean).\nFacts. The half‑width (HW) at (\\(x_0\\)) is \\[\n\\text{HW}(x_0) = t_{0.975,,n-2} \\sigma \\sqrt{1+\\frac{1}{n}+\\frac{(x_0-\\bar x)^2}{S_{xx}}},\\quad S_{xx}=\\sum (x_i-\\bar x)^2\\approx n-1.\n\\]\nThe minimum achievable half‑width is as (\\(n\\to\\infty\\)): (\\(t_{\\infty,0.975} \\sigma)\\) where \\(t_{\\infty,0.975}=1.96\\).\n6A. Feasibility check. With (\\(\\sigma=10\\)), what is the smallest possible total width (\\(W_\\text{min}\\))?\n\n\nAnswer\n\n(\\(W_\\text{min}=2\\times 1.96\\times 10 \\approx 39.2\\)) Any target width (\\(W&lt;39.2\\)) is impossible regardless of (\\(n\\)).\n\n6B. Find (\\(n\\)) to achieve (\\(W=48\\)) (half‑width 24) at (\\(x_0=0\\)). You can brute force it, but also try using root-finding/optimization procedures.\n\n\nAnswer\n\nSolve ( \\(t_{0.975,n-2} 10 \\sqrt{1+1/n} = 24\\)). Use numeric root‑finding:\n\n\nCode\nsigma &lt;- 10; HW &lt;- 24\nf &lt;- function(n){\n  df &lt;- n - 2\n  if (df &lt;= 0) return(1e6)\n  t &lt;- qt(0.975, df)\n  t * sigma * sqrt(1 + 1/n) - HW\n}\nceiling(uniroot(f, c(5, 1e5))$root)\n\n\n\n6C. Repeat for (\\(x_0=1\\)). Use (\\(S_{xx}\\approx n-1\\)), (\\(\\bar x\\approx 0\\)).\n\n\nAnswer\n\nHalf‑width equation: ( \\(t \\sigma\\sqrt{1+1/n+1/(n-1)} = 24\\) ).\n\n\nCode\nsigma &lt;- 10; HW &lt;- 24\nf &lt;- function(n){\n  df &lt;- n - 2\n  if (df &lt;= 2) return(1e6)\n  t &lt;- qt(0.975, df)\n  Sxx &lt;- n - 1\n  t * sigma * sqrt(1 + 1/n + 1/Sxx) - HW\n}\nceiling(uniroot(f, c(6, 1e6))$root)\n\n\nNote the larger (n) due to being 1 SD away from the design mean.\n\n6D. (Optional) Design‑sensitive planning. If you can spread (X) to increase (\\(S_{xx}\\)) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?\n\n\nAnswer\n\nIncreasing (\\(S_{xx}\\)) shrinks the term \\(\\frac{(x_0- \\bar{x})^2}{S_{xx}}\\), reducing the half‑width for off‑mean predictions. For a fixed (\\(n\\)), wider X range lowers HW at (\\(x_0\\neq\\bar x\\)). Conversely, for fixed HW, larger (\\(S_{xx}\\)) allows smaller (n)."
+  },
+  {
+    "objectID": "exercises/power.html#optional-monte-carlo-verification-5-minutes",
+    "href": "exercises/power.html#optional-monte-carlo-verification-5-minutes",
+    "title": "Power & Sample Size",
+    "section": "7) (Optional) Monte Carlo verification (5 minutes)",
+    "text": "7) (Optional) Monte Carlo verification (5 minutes)\nSimulate to verify analytic power for a two‑sample t‑test or slope test.\n\n\nAnswer\n\n\n\nCode\nset.seed(1)\nB &lt;- 5000\nn &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05\np &lt;- replicate(B, {\n  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)\n  t.test(x2, x1, var.equal = TRUE)$p.value\n})\nmean(p &lt; alpha)  # ~ power\n\n\n\n\n\nQuick reference\n\nOne‑sample n (z‑approx): ( \\(n = (z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nTwo‑sample per‑group n: ( \\(n = 2(z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nSLR slope power ncp: ( \\(\\lambda = (\\beta_1/\\sigma)\\sqrt{S_{xx}} \\approx (\\beta_1/\\sigma)\\sqrt{n-1}\\) )\nOverall MR test: (\\(f^2=R^2/(1-R^2)\\), \\(\\lambda=f^2(n-p-1)\\))\nPI half‑width at (x_0): ( \\(t\\sigma\\sqrt{1+1/n+(x_0-\\bar x)^2/S_{xx}}\\) )"
   },
   {
     "objectID": "exercises/linux_shell.html",
@@ -154,60 +308,46 @@
     "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
   },
   {
-    "objectID": "exercises/power.html",
-    "href": "exercises/power.html",
-    "title": "Power & Sample Size",
+    "objectID": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
+    "href": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
+    "title": "Linux & the Shell — Open-Ended Exercises",
+    "section": "18) Find an Answer in the Shell you didn’t know",
+    "text": "18) Find an Answer in the Shell you didn’t know\nQuestion. Either ask a question about the shell you do not know, one thing you’d like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell).\nShare this question/solution with the instructors and the class."
+  },
+  {
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework and Presentations",
     "section": "",
-    "text": "Conventions: Two‑sided tests at α = 0.05 unless stated. Use R where helpful. Symbols: δ = effect size in the outcome scale; σ = SD; n = total sample unless noted. For two‑sample tests, assume equal allocation and equal variances unless stated."
+    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nData Visualization\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 7\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 7\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 8\n\n\nNHANES project\n\n\n\n\n\n\n\n\nFinal Homework\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "exercises/power.html#onesample-ttest-power-n-10-minutes",
-    "href": "exercises/power.html#onesample-ttest-power-n-10-minutes",
-    "title": "Power & Sample Size",
-    "section": "1) One‑sample t‑test power & n (10 minutes)",
-    "text": "1) One‑sample t‑test power & n (10 minutes)\nSetup. You expect observations (\\(Y\\sim \\mathcal{N}(\\mu,\\sigma^2)\\)) with (\\(\\sigma=10\\)). You will test (\\(H_0: \\mu=0\\)) vs (\\(H_1: \\mu\\neq 0\\)). The scientifically relevant effect is (\\(\\delta = 3\\)) (i.e., \\(\\mu=3\\)).\n1A. Compute power for (\\(n=50\\)).\n\n\nAnswer\n\nAnalytic normal approx: (\\(Z = \\bar Y/(\\sigma/\\sqrt n)\\)), noncentrality (\\(\\lambda = \\delta\\sqrt n/\\sigma\\)).\n[ = 3/10 = 3/10 . ]\nTwo‑sided power (z‑approx): [ 1 - (z_{0.975}-) + (-z_{0.975}-) -(1.96-2.121)+(-1.96-2.121) -(-0.161)+(-4.081). ] This is (-(0.436)+ ). Using exact t power:\n\n\nCode\npower.t.test(n = 50, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$power\n\n\n\n1B. Required (n) for 80% power.\n\n\nAnswer\n\nClosed‑form (z‑approx): (\\(n \\approx (z_{0.975}+z_{0.8})^2, \\frac{\\sigma^2}}{\\delta^2}\\) ).\n[ n (1.96+0.84)^2 = (2.80)^2 /9 . ]\nExact via R:\n\n\nCode\npower.t.test(power = 0.8, delta = 3, sd = 10, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
+    "objectID": "discussion.html",
+    "href": "discussion.html",
+    "title": "Discussion",
+    "section": "",
+    "text": "All course related discussion will be handled by Slack. You will receive a request on the first day of class.\nhttps://jhu-advdatasci.slack.com/"
   },
   {
-    "objectID": "exercises/power.html#twosample-ttest-equal-variance-8-minutes",
-    "href": "exercises/power.html#twosample-ttest-equal-variance-8-minutes",
-    "title": "Power & Sample Size",
-    "section": "2) Two‑sample t‑test (equal variance) (8 minutes)",
-    "text": "2) Two‑sample t‑test (equal variance) (8 minutes)\nSetup. Two arms, equal allocation, common (\\(\\sigma=12\\)), difference of means (\\(\\delta = 5\\)).\n2A. Per‑group (n) for 90% power.\n\n\nAnswer\n\nZ‑approx per‑group (n): (\\(n \\approx 2 (z_{0.975}+z_{0.90})^2 \\frac{\\sigma^2}{\\delta^2}\\) ).\n\\[\nn \\approx 2(1.96+1.282)^2(12^2)/5^2 = 2(3.242)^2\\cdot144/25 \\approx 2\\cdot10.52\\cdot5.76 \\approx 121.1\n\\]\nSo about 122 per group. Exact:\n\n\nCode\npower.t.test(power = 0.9, delta = 5, sd = 12, sig.level = 0.05,\n             type = \"two.sample\", alternative = \"two.sided\")$n\n\n\n\n2B. Power if (\\(n=40\\)) per group.\n\n\nAnswer\n\n\n\nCode\npower.t.test(n = 40, delta = 5, sd = 12, sig.level = 0.05,\n             type = \"two.sample\", alternative = \"two.sided\")$power"
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Missing Data Lecure\n\n\nMissing Data Lecure\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "exercises/power.html#paired-ttest-5-minutes",
-    "href": "exercises/power.html#paired-ttest-5-minutes",
-    "title": "Power & Sample Size",
-    "section": "3) Paired t‑test (5 minutes)",
-    "text": "3) Paired t‑test (5 minutes)\nSetup. Pre/post measurements with (\\(\\sigma_{\\text{pre}}=\\sigma_{\\text{post}}=8\\)), correlation (\\(\\rho=0.6\\)). Mean change (\\(\\delta=2\\)).\nQuestion. Required number of pairs for 80% power.\n\n\nAnswer\n\nSD of differences: (\\(\\sigma_D=\\sqrt{\\sigma^2+\\sigma^2-2\\rho\\sigma^2}=\\sqrt{2\\sigma^2(1-\\rho)} = 8\\sqrt{2(1-0.6)}=8\\sqrt{0.8}\\approx 7.155\\).) Use one‑sample t-est on differences with (sd=\\(\\sigma_D\\)), effect (\\(\\delta\\)):\n\n\nCode\npower.t.test(power = 0.8, delta = 2, sd = 7.155, sig.level = 0.05,\n             type = \"one.sample\", alternative = \"two.sided\")$n"
+    "objectID": "homework/hw7_app.html",
+    "href": "homework/hw7_app.html",
+    "title": "Homework 7",
+    "section": "",
+    "text": "In this homework, you will bundle your R package for the Alzheimer’s trial in a Shiny app. The app should allow users to do study planning for a similar trial with different parameters. Please include:\n\nYour code\nA README file with instructions on how to run the app\nA link to the live app hosted on shinyapps.io (or other live hosting/using WebR) in the README file\nAn animated gif screenshot of the app in action in the README file (note there are chrome extensions that can help you create these)"
   },
   {
-    "objectID": "exercises/power.html#simple-linear-regression-test-a-slope-10-minutes",
-    "href": "exercises/power.html#simple-linear-regression-test-a-slope-10-minutes",
-    "title": "Power & Sample Size",
-    "section": "4) Simple linear regression: test a slope (10 minutes)",
-    "text": "4) Simple linear regression: test a slope (10 minutes)\nSetup. Model \\(Y=\\beta_0+\\beta_1 X+\\varepsilon\\), \\(\\varepsilon \\sim N(0,\\sigma^2)\\) with (\\(\\sigma=10\\)) and (X) standardized: (\\(\\bar{X} \\approx 0\\)), (\\(\\operatorname{Var}(X)=1\\)).\nSuppose (\\(\\beta_1=3\\)). Test (\\(H_0:\\beta_1=0\\)).\n4A. Power at (\\(n=60\\)) using the noncentral t formulation.\n\n\nAnswer\n\nFor centered/standardized (X), (\\(S_{xx} = \\sum (x_i-\\bar x)^2 \\approx n-1\\)). The test statistic for (\\(\\beta_1\\)) has noncentrality paramter \\[\n\\lambda = \\frac{\\beta_1}{\\sigma}\\sqrt{S_{xx}} \\approx \\frac{3}{10}\\sqrt{59} = 0.3 \\cdot 7.681 \\approx 2.304\n\\] Power (two‑sided) is (\\(1-\\beta\\)) with df=(\\(n-2=58\\)):\n\n\nCode\nn &lt;- 60; \nsigma &lt;- 10; \nbeta1 &lt;- 3\nlambda &lt;- beta1/sigma * sqrt(n-1)\nalpha &lt;- 0.05; \ndf &lt;- n - 2\nc &lt;- qt(1 - alpha/2, df)\n# power = P(|T_nc| &gt; c)\n1 - (pt(c, df, ncp=lambda) - pt(-c, df, ncp=lambda))\n\n\n\n4B. Alternative via correlation. Show equivalence.\n\n\nAnswer\n\nFor SLR, (\\(r=\\operatorname{Cor}(X,Y)= \\frac{\\beta_1 \\sigma_X}{\\sigma_Y}\\)). With (\\(\\sigma_X=1\\)), (\\(\\sigma_Y = \\sqrt{\\beta_1^2+\\sigma^2} = \\sqrt{9+100} = \\sqrt{109} \\approx 10.44\\)), so (\\(r\\approx 3/10.44\\approx 0.287\\)).\nTest of (\\(r=0\\)) uses the same df and noncentrality (\\(\\sqrt{n-2}, \\frac{r}{\\sqrt{1-r^2}}\\)), which equals (\\(\\lambda\\)) above.\n\n\nCode\nr &lt;- 3/sqrt(9+100)\nlambda2 &lt;- sqrt(n-2) * r / sqrt(1 - r^2)\nall.equal(lambda, lambda2)"
-  },
-  {
-    "objectID": "exercises/power.html#multiple-regression-overall-r2-7-minutes",
-    "href": "exercises/power.html#multiple-regression-overall-r2-7-minutes",
-    "title": "Power & Sample Size",
-    "section": "5) Multiple regression: overall (\\(R^2\\)) (7 minutes)",
-    "text": "5) Multiple regression: overall (\\(R^2\\)) (7 minutes)\nSetup. You plan (p=4) predictors and expect population (\\(R^2=0.20\\)). Test (\\(H_0: R^2=0\\)) (overall model).\nFind power at (\\(n=80\\)) and required (n) for 80% power.\n\n\nAnswer\n\nUse Cohen’s (\\(f^2=\\frac{R^2}{1-R^2}=0.25\\)). The overall F test has df1=(p), df2=(n-p-1), and noncentrality (\\(\\lambda=f^2(n-p-1)\\)).\nPower at (n=80):\n\n\nCode\np &lt;- 4; R2 &lt;- 0.20; f2 &lt;- R2/(1-R2)\nn &lt;- 80; df1 &lt;- p; df2 &lt;- n - p - 1\nlambda &lt;- f2 * df2\nalpha &lt;- 0.05; Fc &lt;- qf(1 - alpha, df1, df2)\n# P(F_nc &gt; Fc)\npower &lt;- 1 - pf(Fc, df1, df2, ncp=lambda)\npower\n\n\nSolve for (n) (80% power):\n\n\nCode\nf_target &lt;- function(n){\n  df2 &lt;- n - p - 1\n  if (df2 &lt;= 0) return(-1)  # invalid\n  Fc &lt;- qf(0.95, df1=p, df2=df2)\n  1 - pf(Fc, df1=p, df2=df2, ncp=f2*df2) - 0.80\n}\nuniroot(f_target, c(p+5, 1000))$root"
-  },
-  {
-    "objectID": "exercises/power.html#sample-size-for-prediction-interval-width-in-slr-10-minutes",
-    "href": "exercises/power.html#sample-size-for-prediction-interval-width-in-slr-10-minutes",
-    "title": "Power & Sample Size",
-    "section": "6) Sample size for prediction interval width in SLR (10 minutes)",
-    "text": "6) Sample size for prediction interval width in SLR (10 minutes)\nSetup. In \\(Y=\\beta_0+\\beta_1 X+\\varepsilon\\) with \\(\\varepsilon\\sim N(0,\\sigma^2)\\), suppose (\\(\\sigma=10\\)) and you plan (\\(X\\)) standardized (mean 0, var 1). You want a 95% prediction interval for a future observation at (\\(x_0\\)) to have total width ($).\nConsider two cases: (i) (\\(x_0=0\\)) (mean of (X)), (ii) (\\(x_0=1\\)) (1 SD from mean).\nFacts. The half‑width (HW) at (\\(x_0\\)) is \\[\n\\text{HW}(x_0) = t_{0.975,,n-2} \\sigma \\sqrt{1+\\frac{1}{n}+\\frac{(x_0-\\bar x)^2}{S_{xx}}},\\quad S_{xx}=\\sum (x_i-\\bar x)^2\\approx n-1.\n\\]\nThe minimum achievable half‑width is as (\\(n\\to\\infty\\)): (\\(t_{\\infty,0.975} \\sigma)\\) where \\(t_{\\infty,0.975}=1.96\\).\n6A. Feasibility check. With (\\(\\sigma=10\\)), what is the smallest possible total width (\\(W_\\text{min}\\))?\n\n\nAnswer\n\n(\\(W_\\text{min}=2\\times 1.96\\times 10 \\approx 39.2\\)) Any target width (\\(W&lt;39.2\\)) is impossible regardless of (\\(n\\)).\n\n6B. Find (\\(n\\)) to achieve (\\(W=48\\)) (half‑width 24) at (\\(x_0=0\\)). You can brute force it, but also try using root-finding/optimization procedures.\n\n\nAnswer\n\nSolve ( \\(t_{0.975,n-2} 10 \\sqrt{1+1/n} = 24\\)). Use numeric root‑finding:\n\n\nCode\nsigma &lt;- 10; HW &lt;- 24\nf &lt;- function(n){\n  df &lt;- n - 2\n  if (df &lt;= 0) return(1e6)\n  t &lt;- qt(0.975, df)\n  t * sigma * sqrt(1 + 1/n) - HW\n}\nceiling(uniroot(f, c(5, 1e5))$root)\n\n\n\n6C. Repeat for (\\(x_0=1\\)). Use (\\(S_{xx}\\approx n-1\\)), (\\(\\bar x\\approx 0\\)).\n\n\nAnswer\n\nHalf‑width equation: ( \\(t \\sigma\\sqrt{1+1/n+1/(n-1)} = 24\\) ).\n\n\nCode\nsigma &lt;- 10; HW &lt;- 24\nf &lt;- function(n){\n  df &lt;- n - 2\n  if (df &lt;= 2) return(1e6)\n  t &lt;- qt(0.975, df)\n  Sxx &lt;- n - 1\n  t * sigma * sqrt(1 + 1/n + 1/Sxx) - HW\n}\nceiling(uniroot(f, c(6, 1e6))$root)\n\n\nNote the larger (n) due to being 1 SD away from the design mean.\n\n6D. (Optional) Design‑sensitive planning. If you can spread (X) to increase (\\(S_{xx}\\)) (e.g., choose equally spaced design over a range), how does that change (n) for fixed (W)?\n\n\nAnswer\n\nIncreasing (\\(S_{xx}\\)) shrinks the term \\(\\frac{(x_0- \\bar{x})^2}{S_{xx}}\\), reducing the half‑width for off‑mean predictions. For a fixed (\\(n\\)), wider X range lowers HW at (\\(x_0\\neq\\bar x\\)). Conversely, for fixed HW, larger (\\(S_{xx}\\)) allows smaller (n)."
-  },
-  {
-    "objectID": "exercises/power.html#optional-monte-carlo-verification-5-minutes",
-    "href": "exercises/power.html#optional-monte-carlo-verification-5-minutes",
-    "title": "Power & Sample Size",
-    "section": "7) (Optional) Monte Carlo verification (5 minutes)",
-    "text": "7) (Optional) Monte Carlo verification (5 minutes)\nSimulate to verify analytic power for a two‑sample t‑test or slope test.\n\n\nAnswer\n\n\n\nCode\nset.seed(1)\nB &lt;- 5000\nn &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05\np &lt;- replicate(B, {\n  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)\n  t.test(x2, x1, var.equal = TRUE)$p.value\n})\nmean(p &lt; alpha)  # ~ power\n\n\n\n\n\nQuick reference\n\nOne‑sample n (z‑approx): ( \\(n = (z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nTwo‑sample per‑group n: ( \\(n = 2(z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nSLR slope power ncp: ( \\(\\lambda = (\\beta_1/\\sigma)\\sqrt{S_{xx}} \\approx (\\beta_1/\\sigma)\\sqrt{n-1}\\) )\nOverall MR test: (\\(f^2=R^2/(1-R^2)\\), \\(\\lambda=f^2(n-p-1)\\))\nPI half‑width at (x_0): ( \\(t\\sigma\\sqrt{1+1/n+(x_0-\\bar x)^2/S_{xx}}\\) )"
+    "objectID": "homework/hw3_study_planning.html",
+    "href": "homework/hw3_study_planning.html",
+    "title": "Homework 3",
+    "section": "",
+    "text": "You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.\nYou have no preliminary data.\nDo the following:\n\nPropose a statistical analysis plan.\nPerform study planning for a clinical trial to test the primary and hopefully secondary outcome.\nSubjects enrollment and will cost $3k for enrollment and $2k per subsequent visit.\nAdding an MRI for the secondary outcome will cost an additional $5k per visit.\nPower for the primary hypothesis must be 90%\nType 1 error rate (multiplicity adjusted) must be 5%\nMaximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.\nInvestigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.\n\nWrite up your results in a no more than 2 page technical paper.\nThis project will be used as the foundation for one of your in-class presentatinos."
   },
   {
     "objectID": "homework/hw1_shell_and_linux.html",
@@ -224,11 +364,39 @@
     "text": "Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost per subject and so on. To do this, you will need to package your study planning code into functions and then package it up. The package should have documentation and a vignette that explains how to use the package. The readme to your repo should explain how to build and install the package.\nThe package must be checked using GitHub actions. A badge for the check must be on the README.\nThe packages must have unit tests. The code coverage for this package must be over 70%. The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README."
   },
   {
+    "objectID": "homework/presentation2.html",
+    "href": "homework/presentation2.html",
+    "title": "Presentation 2",
+    "section": "",
+    "text": "This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analsysis of the NHANES data. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
+  },
+  {
+    "objectID": "homework/hw6_data_vis.html",
+    "href": "homework/hw6_data_vis.html",
+    "title": "Homework 6",
+    "section": "",
+    "text": "In this homework, you will create a data visualization project using a dataset of your choice. The project should include a single, hosted (on github) web page with a clear and informative visualization of the data.\nPush your code and supporting files to the github classroom repo with a link to the live visualization. Because GH classroom repos are private, the hosted web page should be in a separate public repo."
+  },
+  {
     "objectID": "homework/hw5_grant_writing.html",
     "href": "homework/hw5_grant_writing.html",
     "title": "Homework 5",
     "section": "",
     "text": "In this homework, you will write up grant proposal for a methods or application of your choice. Your proposal should be no more than 2 pages long, and should include the following sections:\n\nSpecific Aims\nSignificance\nInnovation\nApproach\nReferences"
+  },
+  {
+    "objectID": "homework/hw2_slurm_and_cluster.html",
+    "href": "homework/hw2_slurm_and_cluster.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "The goal is to simulate how the Ordinary Least Squares linear regression estimator behaves under stress. According to the Gauss-Markov theorem, OLS is the “best” linear unbiased estimator only under assumptions. Your job is to quantify what happens when they aren’t. You’ll investigate two key properties of an estimator for a regression coefficient, \\(\\beta\\):\n\nBias\nEfficiency (Variance)\n\n\n\nYou will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.\nSimulation Parameters to Vary:\n\nSample Size (n): How does the number of data points affect performance?\nValues: 50, 100, 500, 1000, 5000\nDegree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable \\(x\\).\n\\(x \\sim N(0,1)\\)\n\\(\\beta = 1\\)\nThe error term \\(\\epsilon\\) will be drawn from \\(N(0, \\exp(\\alpha x))\\).\nValues for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).\nDegree of Autocorrelation (\\(\\rho\\)): This violates the “independent errors” assumption, common in time-series data.\nThe error term \\(\\epsilon_i\\) will be calculated as \\(\\epsilon_i = \\epsilon_{i −1} + w_i\\), where \\(w_i \\sim N(0,2)\\).\nValues: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).\n\nYour full experiment will be a grid of 5 (\\(n\\)) x 4 (\\(\\alpha\\)) x 4 (\\(\\rho\\)) = 80 unique scenarios. For each scenario, run \\(1000\\) replications. Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.\nInclude your code and a no more than two page write up of results in your git repository and push your changes."
+  },
+  {
+    "objectID": "homework/hw2_slurm_and_cluster.html#the-simulation-grid",
+    "href": "homework/hw2_slurm_and_cluster.html#the-simulation-grid",
+    "title": "Homework 2",
+    "section": "",
+    "text": "You will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.\nSimulation Parameters to Vary:\n\nSample Size (n): How does the number of data points affect performance?\nValues: 50, 100, 500, 1000, 5000\nDegree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable \\(x\\).\n\\(x \\sim N(0,1)\\)\n\\(\\beta = 1\\)\nThe error term \\(\\epsilon\\) will be drawn from \\(N(0, \\exp(\\alpha x))\\).\nValues for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).\nDegree of Autocorrelation (\\(\\rho\\)): This violates the “independent errors” assumption, common in time-series data.\nThe error term \\(\\epsilon_i\\) will be calculated as \\(\\epsilon_i = \\epsilon_{i −1} + w_i\\), where \\(w_i \\sim N(0,2)\\).\nValues: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).\n\nYour full experiment will be a grid of 5 (\\(n\\)) x 4 (\\(\\alpha\\)) x 4 (\\(\\rho\\)) = 80 unique scenarios. For each scenario, run \\(1000\\) replications. Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.\nInclude your code and a no more than two page write up of results in your git repository and push your changes."
   },
   {
     "objectID": "homework/nhanes_project.html",
@@ -252,11 +420,18 @@
     "text": "Project\nWe want to demonstrate the skills to connect to the cluster, download data, and perform an analysis. The expected output is a report to be given to a collaborator. Code should be hidden unless otherwise specified. This indicates we should have a statement of the purpose of the analysis/introduction, a description of the data (not using names from code, unless relevant), a description of the methods used (including any model formulations if models are used), the results of the analysis. The results section should reference figures or tables for the analysis and provide insight to what you are seeing. Tell the reader what you are seeing. Then a conclusion/discussion section should provide some distillation of the analysis and what was learned.\n\nThe Data\nThe data in this project is from Wave I (2015-2016) data from the NHANES. Each data set has an online associated codebook. You will likely need to reference these codebooks to understand the data. For example, https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&CycleBeginYear=2015 will list out some of the questionnaires.\n\n\nPurpose\nWe would like to show a few concepts:\n\nConnecting to the Cluster\nInteracting with a Database using SQL, dplyr + dbplyr, or Python equivalents\nPerform an analysis on real-world data, with missingness patterns\n\n\n\nAnalysis\nWe would like find associations of smoking, alcohol use, diabetes, and oral health.\nWe define:\n\nAlcohol use (ALQ101): as Had at least 12 alcohol drinks/1 year.\nDiabetes status (DIQ010): Doctor told you have diabetes (group borderline as yes)\nEver smoker (SMQ020): Smoked at least 100 cigarettes in life?\nOral health issue: (OHAREC) if you are recommended care other than “Continue your regular routine care”\n\n\n\nTasks\n\nName your analysis code file as index.Rmd/index.qmd. The output should be index.pdf. The PDF should be generated from the Rmd/qmd.\n(code should be demonstrated here). Automatically download the nhanes_wave_i.sqlite database from the cluster at /users/bcaffo/dataPublic/nhanes on the JHPCE computing cluster.\n\nInclude the sqlite file in your GitHub (it is publicly available data)\nPut the file in a data/ subfolder (this will be checked).\n\n(code demonstrated here) Connect to the SQLITE database using the DBI/dplyr/dbplyr packages (in R) or equivalent in Python. Create counts of missing values for diabetes status and alcohol use using SQL commands.\nCreate a “table 1” that describes the population, including, age, gender, education level, smoking status, alcohol use, diabetes status, and oral health issues. Decide how to present missing data.\n\nMake sure you label variables appropriately for a collaborator.\n\nCreate a table of smoking status versus whether the person was told benefit giving up cigarettes (from (OHQ_I). Discuss missingness and the relationship of these 2 variables with a hypothesis test.\nWe want to determine the effect of smoking and alcohol use on good oral health (outcome). We would adjust for any demographics you think relevant/significant. Discuss how a model was chosen and any performance metrics. Decide whether to adjust for diabetes and discuss why.\nCreate one figure that demonstrates the effect of age on good oral health.\n\n\n\nNotes\nDo not use setwd in your scripts.\nMake sure the figure aspect ratios are appropriate (get someone else to look it over!).\nAny questions on this project should be posted as an issue on https://github.com/jh-adv-data-sci/adv_data_sci_2023/issues."
   },
   {
-    "objectID": "homework/hw3_study_planning.html",
-    "href": "homework/hw3_study_planning.html",
-    "title": "Homework 3",
+    "objectID": "homework/presentation1.html",
+    "href": "homework/presentation1.html",
+    "title": "Presentation 1",
     "section": "",
-    "text": "You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.\nYou have no preliminary data.\nDo the following:\n\nPropose a statistical analysis plan.\nPerform study planning for a clinical trial to test the primary and hopefully secondary outcome.\nSubjects enrollment and will cost $3k for enrollment and $2k per subsequent visit.\nAdding an MRI for the secondary outcome will cost an additional $5k per visit.\nPower for the primary hypothesis must be 90%\nType 1 error rate (multiplicity adjusted) must be 5%\nMaximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.\n\nInvestigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.\nWrite up your results in a no more than 2 page technical paper.\nThis project will be used as the foundation for one of your in-class presentatinos."
+    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease study planning project from homework 3. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
+  },
+  {
+    "objectID": "resources/missing_data_lecture.html",
+    "href": "resources/missing_data_lecture.html",
+    "title": "Missing Data Lecure",
+    "section": "",
+    "text": "See https://www.lshtm.ac.uk/media/38306"
   },
   {
     "objectID": "index.html",
@@ -301,67 +476,60 @@
     "text": "Grades\nAttendance in class is expected will be taken randomly. If you are planning on missing classes, especially at the end of the 2nd term, you are expected to notify the instructors with a solution.\n\nParticipation: 10%\nHomework: 60%\nPresentation(s): 30%\n\nIf not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.\n\nHomework\nHomework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\nCollaboration with AI\nWe fully encourage you to use AI when you feel necessary, and to use as an aid. At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.\n\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment."
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework and Presentations",
+    "objectID": "exercises/data_viz.html",
+    "href": "exercises/data_viz.html",
+    "title": "Data Visualization",
     "section": "",
-    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nData Visualization\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 7\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 7\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 8\n\n\nNHANES project\n\n\n\n\n\n\n\n\nFinal Homework\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\nNo matching items"
+    "text": "How to render with/without answers\n\n\n\n\nWith answers (default): quarto render viz-handout.qmd\nWithout answers (figures only): quarto render viz-handout.qmd -P show_answers:false"
   },
   {
-    "objectID": "resources/missing_data_lecture.html",
-    "href": "resources/missing_data_lecture.html",
-    "title": "Missing Data Lecure",
-    "section": "",
-    "text": "See https://www.lshtm.ac.uk/media/38306"
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better",
+    "href": "exercises/data_viz.html#make-the-above-graph-better",
+    "title": "Data Visualization",
+    "section": "# 1.1) Make the above graph better",
+    "text": "# 1.1) Make the above graph better"
   },
   {
-    "objectID": "exercises.html",
-    "href": "exercises.html",
-    "title": "Exercises",
-    "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\nNo matching items"
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "title": "Data Visualization",
+    "section": "# 2.1) Make the above graph better",
+    "text": "# 2.1) Make the above graph better"
   },
   {
-    "objectID": "homework/hw6_data_vis.html",
-    "href": "homework/hw6_data_vis.html",
-    "title": "Homework 6",
-    "section": "",
-    "text": "In this homework, you will create a data visualization project using a dataset of your choice. The project should include a single, hosted (on github) web page with a clear and informative visualization of the data.\nPush your code and supporting files to the github classroom repo with a link to the live visualization. Because GH classroom repos are private, the hosted web page should be in a separate public repo."
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "title": "Data Visualization",
+    "section": "# 3.1) Make the above graph better",
+    "text": "# 3.1) Make the above graph better"
   },
   {
-    "objectID": "homework/hw2_slurm_and_cluster.html",
-    "href": "homework/hw2_slurm_and_cluster.html",
-    "title": "Homework 2",
-    "section": "",
-    "text": "The goal is to simulate how the Ordinary Least Squares linear regression estimator behaves under stress. According to the Gauss-Markov theorem, OLS is the “best” linear unbiased estimator only under assumptions. Your job is to quantify what happens when they aren’t. You’ll investigate two key properties of an estimator for a regression coefficient, \\(\\beta\\):\n\nBias\nEfficiency (Variance)\n\n\n\nYou will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.\nSimulation Parameters to Vary:\n\nSample Size (n): How does the number of data points affect performance?\nValues: 50, 100, 500, 1000, 5000\nDegree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable \\(x\\).\n\\(x \\sim N(0,1)\\)\n\\(\\beta = 1\\)\nThe error term \\(\\epsilon\\) will be drawn from \\(N(0, \\exp(\\alpha x))\\).\nValues for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).\nDegree of Autocorrelation (\\(\\rho\\)): This violates the “independent errors” assumption, common in time-series data.\nThe error term \\(\\epsilon_i\\) will be calculated as \\(\\epsilon_i = \\epsilon_{i −1} + w_i\\), where \\(w_i \\sim N(0,2)\\).\nValues: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).\n\nYour full experiment will be a grid of 5 (\\(n\\)) x 4 (\\(\\alpha\\)) x 4 (\\(\\rho\\)) = 80 unique scenarios. For each scenario, run \\(1000\\) replications. Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.\nInclude your code and a no more than two page write up of results in your git repository and push your changes."
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "title": "Data Visualization",
+    "section": "# 5.1) Make the above graph better",
+    "text": "# 5.1) Make the above graph better"
   },
   {
-    "objectID": "homework/hw2_slurm_and_cluster.html#the-simulation-grid",
-    "href": "homework/hw2_slurm_and_cluster.html#the-simulation-grid",
-    "title": "Homework 2",
-    "section": "",
-    "text": "You will create a simulation where you generate thousands of datasets and fit a regression model to each one. The key is to build a grid of conditions to test. Each task in your Slurm job array will handle one unique combination of these conditions.\nSimulation Parameters to Vary:\n\nSample Size (n): How does the number of data points affect performance?\nValues: 50, 100, 500, 1000, 5000\nDegree of Heteroscedasticity (alpha): This is a violation of the “constant variance” assumption. We’ll make the error variance depend on the independent variable \\(x\\).\n\\(x \\sim N(0,1)\\)\n\\(\\beta = 1\\)\nThe error term \\(\\epsilon\\) will be drawn from \\(N(0, \\exp(\\alpha x))\\).\nValues for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).\nDegree of Autocorrelation (\\(\\rho\\)): This violates the “independent errors” assumption, common in time-series data.\nThe error term \\(\\epsilon_i\\) will be calculated as \\(\\epsilon_i = \\epsilon_{i −1} + w_i\\), where \\(w_i \\sim N(0,2)\\).\nValues: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).\n\nYour full experiment will be a grid of 5 (\\(n\\)) x 4 (\\(\\alpha\\)) x 4 (\\(\\rho\\)) = 80 unique scenarios. For each scenario, run \\(1000\\) replications. Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.\nInclude your code and a no more than two page write up of results in your git repository and push your changes."
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-4",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-4",
+    "title": "Data Visualization",
+    "section": "# 6.1) Make the above graph better",
+    "text": "# 6.1) Make the above graph better"
   },
   {
-    "objectID": "homework/hw7_app.html",
-    "href": "homework/hw7_app.html",
-    "title": "Homework 7",
-    "section": "",
-    "text": "In this homework, you will bundle your R package for the Alzheimer’s trial in a Shiny app. The app should allow users to do study planning for a similar trial with different parameters. Please include:\n\nYour code\nA README file with instructions on how to run the app\nA link to the live app hosted on shinyapps.io (or other live hosting/using WebR) in the README file\nAn animated gif screenshot of the app in action in the README file (note there are chrome extensions that can help you create these)"
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-5",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-5",
+    "title": "Data Visualization",
+    "section": "# 7.1) Make the above graph better",
+    "text": "# 7.1) Make the above graph better"
   },
   {
-    "objectID": "homework/presentation1.html",
-    "href": "homework/presentation1.html",
-    "title": "Presentation 1",
-    "section": "",
-    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease study planning project from homework 3. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
-  },
-  {
-    "objectID": "homework/presentation2.html",
-    "href": "homework/presentation2.html",
-    "title": "Presentation 2",
-    "section": "",
-    "text": "This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analsysis of the NHANES data. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
+    "objectID": "exercises/data_viz.html#appendix-session-info-hidden",
+    "href": "exercises/data_viz.html#appendix-session-info-hidden",
+    "title": "Data Visualization",
+    "section": "Appendix: Session Info (hidden)",
+    "text": "Appendix: Session Info (hidden)"
   },
   {
     "objectID": "exercises/slurm_and_the_cluster.html",
@@ -469,192 +637,10 @@
     "text": "Deliverables (for practice)\n\nr_minimal.sbatch and output log\nsim.R, params.csv, sim_array.sbatch\nEvidence of a dependency submission (combine.sbatch and combined output)\nYour updated ~/.bashrc helpers"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
     "section": "",
-    "text": "Missing Data Lecure\n\n\nMissing Data Lecure\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "discussion.html",
-    "href": "discussion.html",
-    "title": "Discussion",
-    "section": "",
-    "text": "All course related discussion will be handled by Slack. You will receive a request on the first day of class.\nhttps://jhu-advdatasci.slack.com/"
-  },
-  {
-    "objectID": "exercises/data_viz.html",
-    "href": "exercises/data_viz.html",
-    "title": "Data Visualization",
-    "section": "",
-    "text": "How to render with/without answers\n\n\n\n\nWith answers (default): quarto render viz-handout.qmd\nWithout answers (figures only): quarto render viz-handout.qmd -P show_answers:false"
-  },
-  {
-    "objectID": "exercises/data_viz.html#appendix-session-info-hidden",
-    "href": "exercises/data_viz.html#appendix-session-info-hidden",
-    "title": "Data Visualization",
-    "section": "Appendix: Session Info (hidden)",
-    "text": "Appendix: Session Info (hidden)"
-  },
-  {
-    "objectID": "schedule.html#week-1",
-    "href": "schedule.html#week-1",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1"
-  },
-  {
-    "objectID": "schedule.html#week-2",
-    "href": "schedule.html#week-2",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice"
-  },
-  {
-    "objectID": "schedule.html#week-3",
-    "href": "schedule.html#week-3",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 5: Power Lecture (foundations/tools)\n\nClass 6: Power – Practice"
-  },
-  {
-    "objectID": "schedule.html#week-4",
-    "href": "schedule.html#week-4",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 7: R packages\nClass 8: Grants"
-  },
-  {
-    "objectID": "schedule.html#week-5",
-    "href": "schedule.html#week-5",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 9: Present P1 (see Presentations)\nClass 10: SQL Basics and Hurdles"
-  },
-  {
-    "objectID": "schedule.html#week-6",
-    "href": "schedule.html#week-6",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do"
-  },
-  {
-    "objectID": "schedule.html#week-7",
-    "href": "schedule.html#week-7",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)"
-  },
-  {
-    "objectID": "schedule.html#week-8",
-    "href": "schedule.html#week-8",
-    "title": "Schedule",
-    "section": "",
-    "text": "Class 15: APIs + Pulling\nClass 16: Final Presentations"
-  },
-  {
-    "objectID": "schedule.html#week-1-1",
-    "href": "schedule.html#week-1-1",
-    "title": "Schedule",
-    "section": "Week 1",
-    "text": "Week 1\n\nClass 1: Language Models – API (overview, usage)\n\nClass 2: Language Models – Do (hands-on, coding)"
-  },
-  {
-    "objectID": "schedule.html#week-2-1",
-    "href": "schedule.html#week-2-1",
-    "title": "Schedule",
-    "section": "Week 2",
-    "text": "Week 2\n\nClass 3: Performance Metrics Measurement & Models – Lecture\n\nClass 4: Predictive Competition – Present (framing a comp)"
-  },
-  {
-    "objectID": "schedule.html#week-3-1",
-    "href": "schedule.html#week-3-1",
-    "title": "Schedule",
-    "section": "Week 3",
-    "text": "Week 3\n\nClass 5: Model Selection – tidymodels (intro)\n\nClass 6: Model Selection – Do (practice)"
-  },
-  {
-    "objectID": "schedule.html#week-4-1",
-    "href": "schedule.html#week-4-1",
-    "title": "Schedule",
-    "section": "Week 4",
-    "text": "Week 4\n\nClass 7: Missing Data\nClass 8: Missing Data – Do (coding exercises)"
-  },
-  {
-    "objectID": "schedule.html#week-5-1",
-    "href": "schedule.html#week-5-1",
-    "title": "Schedule",
-    "section": "Week 5",
-    "text": "Week 5\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do"
-  },
-  {
-    "objectID": "schedule.html#week-6-1",
-    "href": "schedule.html#week-6-1",
-    "title": "Schedule",
-    "section": "Week 6",
-    "text": "Week 6\n\nClass 11: Performance Metrics Measurement & Models – Lecture\n\nClass 12: Measurement & Models – Do"
-  },
-  {
-    "objectID": "schedule.html#week-7-1",
-    "href": "schedule.html#week-7-1",
-    "title": "Schedule",
-    "section": "Week 7",
-    "text": "Week 7\n\nClass 13: Practical Bayes – Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)"
-  },
-  {
-    "objectID": "schedule.html#week-8-1",
-    "href": "schedule.html#week-8-1",
-    "title": "Schedule",
-    "section": "Week 8",
-    "text": "Week 8\n\nClass 15: Presentation prep\n\nClass 16: Final Presentations"
-  },
-  {
-    "objectID": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
-    "href": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
-    "title": "Linux & the Shell — Open-Ended Exercises",
-    "section": "18) Find an Answer in the Shell you didn’t know",
-    "text": "18) Find an Answer in the Shell you didn’t know\nQuestion. Either ask a question about the shell you do not know, one thing you’d like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell).\nShare this question/solution with the instructors and the class."
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better",
-    "href": "exercises/data_viz.html#make-the-above-graph-better",
-    "title": "Data Visualization",
-    "section": "# 1.1) Make the above graph better",
-    "text": "# 1.1) Make the above graph better"
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better-1",
-    "href": "exercises/data_viz.html#make-the-above-graph-better-1",
-    "title": "Data Visualization",
-    "section": "# 2.1) Make the above graph better",
-    "text": "# 2.1) Make the above graph better"
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better-2",
-    "href": "exercises/data_viz.html#make-the-above-graph-better-2",
-    "title": "Data Visualization",
-    "section": "# 3.1) Make the above graph better",
-    "text": "# 3.1) Make the above graph better"
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better-3",
-    "href": "exercises/data_viz.html#make-the-above-graph-better-3",
-    "title": "Data Visualization",
-    "section": "# 5.1) Make the above graph better",
-    "text": "# 5.1) Make the above graph better"
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better-4",
-    "href": "exercises/data_viz.html#make-the-above-graph-better-4",
-    "title": "Data Visualization",
-    "section": "# 6.1) Make the above graph better",
-    "text": "# 6.1) Make the above graph better"
-  },
-  {
-    "objectID": "exercises/data_viz.html#make-the-above-graph-better-5",
-    "href": "exercises/data_viz.html#make-the-above-graph-better-5",
-    "title": "Data Visualization",
-    "section": "# 7.1) Make the above graph better",
-    "text": "# 7.1) Make the above graph better"
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\nNo matching items"
   }
 ]

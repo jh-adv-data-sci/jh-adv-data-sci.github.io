@@ -20,8 +20,7 @@ Do the following:
 + Power for the primary hypothesis must be 90%
 + Type 1 error rate (multiplicity adjusted) must be 5%
 + Maximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.
-
-Investigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.
++ Investigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.
 
 Write up your results in a no more than 2 page technical paper.
 
