@@ -57,7 +57,7 @@ Skim how to set up SSH: [https://jhpce.jhu.edu/access/ssh/](https://jhpce.jhu.ed
 
 ### Transfer one file
 
-See https://jhpce.jhu.edu/access/file-transfer/ for transferring files, do this on the transfer node.
+See [https://jhpce.jhu.edu/access/file-transfer/](https://jhpce.jhu.edu/access/file-transfer/) for transferring files, do this on the transfer node.
 
 
 ### Get on the interactive node
@@ -107,7 +107,11 @@ sbatch r_minimal.sbatch
 
 ```{bash, eval = FALSE}
 mkdir -p results
-cat > sim.R <<'RS'
+```
+
+
+`sim.R`
+```{r, eval = FALSE}
 args <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(args) == 4)
 
@@ -124,7 +128,6 @@ res <- data.frame(n=n, mu=mu, sigma=sigma, seed=seed,
 out <- sprintf('results/sim_%d.csv', seed)
 write.csv(res, out, row.names = FALSE)
 cat('Wrote', out, '\n')
-RS
 ```
 
 </details>
@@ -139,8 +142,8 @@ RS
 
 <summary>Show solution</summary>
 
+`sim.sbatch`
 ```{bash, eval = FALSE}
-cat > sim.sbatch <<'SB'
 #!/usr/bin/env bash
 #SBATCH -J sim
 #SBATCH -t 00:05:00
@@ -150,8 +153,10 @@ cat > sim.sbatch <<'SB'
 
 module load conda_R 2>/dev/null || true
 Rscript sim.R 10000 0 1 42
-SB
+```
 
+
+```{bash, eval = FALSE}
 sbatch sim.sbatch
 ```
 
@@ -189,8 +194,6 @@ x <- rnorm(n, mu, sigma)
 `driver_array.sbatch`:
 
 ```{bash, eval = FALSE}
-# Minimal array submission (match the array range to nrow(params) = 64)
-cat > driver_array.sbatch <<'SB'
 #!/usr/bin/env bash
 #SBATCH -J drv
 #SBATCH -t 00:10:00
@@ -198,10 +201,14 @@ cat > driver_array.sbatch <<'SB'
 #SBATCH --mem=2G
 #SBATCH -o slurm-%A_%a.out
 #SBATCH --array=1-64
+
+# Minimal array submission (match the array range to nrow(params) = 64)
 module load conda_R 2>/dev/null || true
 Rscript driver.R
-SB
+```
 
+
+```{bash, eval = FALSE}
 sbatch driver_array.sbatch
 ```
 
@@ -221,8 +228,8 @@ Notes:
 
 <summary>Show solution</summary>
 
+`sim_array.sbatch`:
 ```{bash, eval = FALSE}
-cat > sim_array.sbatch <<'SB'
 #!/usr/bin/env bash
 #SBATCH -J simarr
 #SBATCH -t 00:10:00
@@ -238,8 +245,10 @@ IFS=',' read -r n mu sigma seed < <(sed -n "${SLURM_ARRAY_TASK_ID}p" params.csv)
 
 echo "Task ${SLURM_ARRAY_TASK_ID}: n=$n mu=$mu sigma=$sigma seed=$seed"
 Rscript sim.R "$n" "$mu" "$sigma" "$seed"
-SB
+```
 
+
+```{bash, eval = FALSE}
 # Submit after matching the array range to your params
 lines=$(wc -l < params.csv)
 sbatch --array=1-$lines sim_array.sbatch
@@ -279,6 +288,16 @@ scancel 123456_5         # only task 5
 Use `tail -f slurm-123456_5.out` to live‑watch a specific task's output.
 
 </details>
+
+------------------------------------------------------------------------
+
+## Jobs with Dependencies
+
+Read through [https://hpc.nih.gov/docs/job_dependencies.html](https://hpc.nih.gov/docs/job_dependencies.html)
+
+
+**Question.** How can you run 2 jobs with the 2nd job depending on the first.
+
 
 
 ------------------------------------------------------------------------
