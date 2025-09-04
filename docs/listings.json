@@ -15,18 +15,18 @@
     ]
   },
   {
+    "listing": "/resources.html",
+    "items": [
+      "/resources/missing_data_lecture.html"
+    ]
+  },
+  {
     "listing": "/exercises.html",
     "items": [
       "/exercises/linux_shell.html",
       "/exercises/slurm_and_the_cluster.html",
       "/exercises/power.html",
       "/exercises/data_viz.html"
-    ]
-  },
-  {
-    "listing": "/resources.html",
-    "items": [
-      "/resources/missing_data_lecture.html"
     ]
   }
 ]
