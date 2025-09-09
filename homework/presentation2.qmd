@@ -7,7 +7,7 @@ editor: source
 engine: knitr
 ---
 
-This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analsysis of the NHANES data.  In this presentation please:
+This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analysis of the NHANES data.  In this presentation please:
 
 + Limit your presentation to 10 slides.
 + Limit your presentation to 5 minutes + 2 minutes for questions.

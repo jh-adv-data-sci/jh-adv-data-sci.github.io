@@ -3,6 +3,8 @@ title: "Homework and Presentations"
 editor: source
 listing:
   contents: homework
+  sort:
+    - "author"  
 ---
 
 You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.

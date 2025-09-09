@@ -13,69 +13,89 @@ editor: source
 - **Homework 1:**  [Homework 1](homework/hw1_shell_and_linux.html)
 
 ## Week 2
+<!-- John -->
 - **Class 3:** [SLURM and the Cluster](https://docs.google.com/presentation/d/1L8KgZ_my3Onj8COclq71cQxWP47MHZD1zTG5dHdUdMA/edit?usp=sharing)
 - **Class 4:** [SLURM and the Cluster - Practice](exercises/slurm_and_the_cluster.html)
 
-## Week 3
+## Week 3 
+<!-- Brian -->
 - **Class 5:** [Power and Sample Size](https://docs.google.com/presentation/d/1Ym5S4LkMsUXSdE-CM-X-BMiGH2UthhNOrRh23bkYSOQ/edit?usp=sharing)
 - **Class 6:** [Power – Practice](exercises/power.html)
 
 ## Week 4
+<!-- John -->
 - **Class 7:** [R packages](https://drive.google.com/file/d/17mLWgxBLnAXoRntMAiNYAm4JsqO12AUl/view?usp=sharing)
+<!-- Brian -->
 - **Class 8:** [Grants](https://docs.google.com/presentation/d/1kU4HcYdaVqkg7I3ZexhAse5AZG8dlxTEgfakOUvCIdo/edit?usp=sharing)
 
 ## Week 5
+<!-- Both -->
 - **Class 9:** Present P1 (see [Presentations](homework/presentation1.html))
+<!-- John -->
 - **Class 10:** [SQL Basics and Hurdles](https://docs.google.com/presentation/d/15bZFKubDeY5Mmj37j1p639h2uLMAxZzHW9gExUh2jcU/edit?slide=id.p#slide=id.p)  
 
 ## Week 6
+<!-- John -->
 - **Class 11:** [Data Visualization](https://docs.google.com/presentation/d/17RY0WNOqnsjiII_hE-T7ADP5fAGZdd6v56O8QEw7qhg/edit?usp=sharing) – Lecture  
+<!-- John -->
 - **Class 12:** Data Visualization (EDA) – Do  
 
 ## Week 7
+<!-- Angela -->
 - **Class 13:** App Dashboard – Development (setup & workflow)  
 - **Class 14:** App Dashboard – Do (hands-on build)  
 
 ## Week 8
+<!-- John -->
 - **Class 15:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
+<!-- Both -->
 - **Class 16:** Final Presentations  
 
 
 # Advanced Data Science II
 
 ## Week 1
-- **Class 1:** Language Models – API (overview, usage)  
-- **Class 2:** Language Models – Do (hands-on, coding)  
+<!-- John -->
+- **Class 1:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
+<!-- Angela -->
+- **Class 2:** Model Selection – `tidymodels` (intro)  
 
 ## Week 2
-- **Class 3:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
+<!-- Angela -->
+- **Class 3:** Model Selection – Do (practice)  
+<!-- Brian -->
 - **Class 4:** Predictive Competition – Present (framing a comp)  
 
 ## Week 3
-- **Class 5:** Model Selection – tidymodels (intro)  
-- **Class 6:** Model Selection – Do (practice)  
+<!-- Brian -->
+- **Class 5:** Language Models – API (overview, usage)  
+- **Class 6:** Language Models – Do (hands-on, coding)  
 
 ## Week 4
-
+<!-- John -->
 - **Class 7:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
+<!-- John -->
 - **Class 8:** Missing Data – Do (coding exercises)  
 
 ## Week 5
-
+<!-- John -->
 - **Class 9:** Pipelining Techniques – Lecture  
+<!-- John -->
 - **Class 10:** Pipelining Techniques – Do  
 
 
 ## Week 6
-- **Class 11:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
-- **Class 12:** Measurement & Models – Do  
+<!-- Brian -->
+- **Class 11:** Complex Data
+- **Class 12:** Complex Data lecture do
 
 ## Week 7
-- **Class 13:** Practical Bayes – Lecture (methods)  
+<!-- Guest -->
+- **Class 13:** Practical Bayes – Guest Lecture (methods)  
 - **Class 14:** Practical Bayes – Do (applications)  
 
 ## Week 8
-- **Class 15:** Presentation prep  
+- **Class 15:** Presentation prep
 - **Class 16:** Final Presentations  
 
 
