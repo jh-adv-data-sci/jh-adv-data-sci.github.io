@@ -17,7 +17,7 @@ editor: source
 - **Class 4:** [SLURM and the Cluster - Practice](exercises/slurm_and_the_cluster.html)
 
 ## Week 3
-- **Class 5:** Power Lecture (foundations/tools)  
+- **Class 5:** [Power and Sample Size](https://docs.google.com/presentation/d/1Ym5S4LkMsUXSdE-CM-X-BMiGH2UthhNOrRh23bkYSOQ/edit?usp=sharing)
 - **Class 6:** [Power – Practice](exercises/power.html)
 
 ## Week 4
