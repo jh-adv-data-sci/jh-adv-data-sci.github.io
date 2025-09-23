@@ -38,12 +38,12 @@ editor: source
 <!-- John -->
 - **Class 11:** [Data Visualization](https://docs.google.com/presentation/d/17RY0WNOqnsjiII_hE-T7ADP5fAGZdd6v56O8QEw7qhg/edit?usp=sharing) – Lecture  
 <!-- John -->
-- **Class 12:** Data Visualization (EDA) – Do  
+- **Class 12:** Data Visualization (EDA) – Application
 
 ## Week 7
 <!-- Angela -->
-- **Class 13:** App Dashboard – Development (setup & workflow)  
-- **Class 14:** App Dashboard – Do (hands-on build)  
+- **Class 13:** App Dashboard – Setup & Workflow
+- **Class 14:** App Dashboard – Application
 
 ## Week 8
 <!-- John -->
@@ -62,37 +62,37 @@ editor: source
 
 ## Week 2
 <!-- Angela -->
-- **Class 3:** Model Selection – Do (practice)  
+- **Class 3:** Model Selection – Application
 <!-- Brian -->
 - **Class 4:** Predictive Competition – Present (framing a comp)  
 
 ## Week 3
 <!-- Brian -->
 - **Class 5:** Language Models – API (overview, usage)  
-- **Class 6:** Language Models – Do (hands-on, coding)  
+- **Class 6:** Language Models – Application
 
 ## Week 4
 <!-- John -->
 - **Class 7:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
 <!-- John -->
-- **Class 8:** Missing Data – Do (coding exercises)  
+- **Class 8:** Missing Data – Application
 
 ## Week 5
 <!-- John -->
 - **Class 9:** Pipelining Techniques – Lecture  
 <!-- John -->
-- **Class 10:** Pipelining Techniques – Do  
+- **Class 10:** Pipelining Techniques – Application  
 
 
 ## Week 6
 <!-- Brian -->
-- **Class 11:** Complex Data
-- **Class 12:** Complex Data lecture do
+- **Class 11:** Complex Data - Lecture
+- **Class 12:** Complex Data - Application
 
 ## Week 7
 <!-- Guest -->
-- **Class 13:** Practical Bayes – Guest Lecture (methods)  
-- **Class 14:** Practical Bayes – Do (applications)  
+- **Class 13:** Practical Bayes – Guest Lecture 
+- **Class 14:** Practical Bayes – Application
 
 ## Week 8
 - **Class 15:** Presentation prep

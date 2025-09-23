@@ -1,7 +1,7 @@
 ---
 title: "Homework 8"
 subtitle: "NHANES project"
-author: "Final Homework"
+author: "HW 8"
 format: html
 editor: source
 engine: knitr

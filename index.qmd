@@ -9,7 +9,7 @@ We will teach the necessary skills to gather, manage, and analyze data mainly us
 The course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis. 
 
 
-We will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods.
+We will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation of statistical methods.
 
 # Course objectives
 

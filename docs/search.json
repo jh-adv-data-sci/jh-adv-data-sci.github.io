@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\n\nClass 5: Power and Sample Size\nClass 6: Power – Practice\n\n\n\n\n\n\nClass 7: R packages \nClass 8: Grants\n\n\n\n\n\n\nClass 9: Present P1 (see Presentations) \nClass 10: SQL Basics and Hurdles\n\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do\n\n\n\n\n\n\nClass 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)\n\n\n\n\n\n\nClass 15: APIs + Pulling \nClass 16: Final Presentations"
+    "text": "Class 1: Intro and Linux & Shell – Present (intro, basics)\n\nClass 2: Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\n\nClass 5: Power and Sample Size\nClass 6: Power – Practice\n\n\n\n\n\n\nClass 7: R packages \nClass 8: Grants\n\n\n\n\n\n\nClass 9: Present P1 (see Presentations) \nClass 10: SQL Basics and Hurdles\n\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Application\n\n\n\n\n\n\nClass 13: App Dashboard – Setup & Workflow\nClass 14: App Dashboard – Application\n\n\n\n\n\n\nClass 15: APIs + Pulling \nClass 16: Final Presentations"
   },
   {
     "objectID": "schedule.html#week-1",
@@ -46,14 +46,14 @@
     "href": "schedule.html#week-6",
     "title": "Schedule",
     "section": "",
-    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Do"
+    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Application"
   },
   {
     "objectID": "schedule.html#week-7",
     "href": "schedule.html#week-7",
     "title": "Schedule",
     "section": "",
-    "text": "Class 13: App Dashboard – Development (setup & workflow)\n\nClass 14: App Dashboard – Do (hands-on build)"
+    "text": "Class 13: App Dashboard – Setup & Workflow\nClass 14: App Dashboard – Application"
   },
   {
     "objectID": "schedule.html#week-8",
@@ -74,42 +74,42 @@
     "href": "schedule.html#week-2-1",
     "title": "Schedule",
     "section": "Week 2",
-    "text": "Week 2\n\n\nClass 3: Model Selection – Do (practice)\n\nClass 4: Predictive Competition – Present (framing a comp)"
+    "text": "Week 2\n\n\nClass 3: Model Selection – Application \nClass 4: Predictive Competition – Present (framing a comp)"
   },
   {
     "objectID": "schedule.html#week-3-1",
     "href": "schedule.html#week-3-1",
     "title": "Schedule",
     "section": "Week 3",
-    "text": "Week 3\n\n\nClass 5: Language Models – API (overview, usage)\n\nClass 6: Language Models – Do (hands-on, coding)"
+    "text": "Week 3\n\n\nClass 5: Language Models – API (overview, usage)\n\nClass 6: Language Models – Application"
   },
   {
     "objectID": "schedule.html#week-4-1",
     "href": "schedule.html#week-4-1",
     "title": "Schedule",
     "section": "Week 4",
-    "text": "Week 4\n\n\nClass 7: Missing Data \nClass 8: Missing Data – Do (coding exercises)"
+    "text": "Week 4\n\n\nClass 7: Missing Data \nClass 8: Missing Data – Application"
   },
   {
     "objectID": "schedule.html#week-5-1",
     "href": "schedule.html#week-5-1",
     "title": "Schedule",
     "section": "Week 5",
-    "text": "Week 5\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Do"
+    "text": "Week 5\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Application"
   },
   {
     "objectID": "schedule.html#week-6-1",
     "href": "schedule.html#week-6-1",
     "title": "Schedule",
     "section": "Week 6",
-    "text": "Week 6\n\n\nClass 11: Complex Data\nClass 12: Complex Data lecture do"
+    "text": "Week 6\n\n\nClass 11: Complex Data - Lecture\nClass 12: Complex Data - Application"
   },
   {
     "objectID": "schedule.html#week-7-1",
     "href": "schedule.html#week-7-1",
     "title": "Schedule",
     "section": "Week 7",
-    "text": "Week 7\n\n\nClass 13: Practical Bayes – Guest Lecture (methods)\n\nClass 14: Practical Bayes – Do (applications)"
+    "text": "Week 7\n\n\nClass 13: Practical Bayes – Guest Lecture\nClass 14: Practical Bayes – Application"
   },
   {
     "objectID": "schedule.html#week-8-1",
@@ -382,7 +382,7 @@
     "href": "homework/presentation1.html",
     "title": "Presentation 1",
     "section": "",
-    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease study planning project from homework 3. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
+    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease project from homework 3.\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
   },
   {
     "objectID": "homework/hw7_app.html",
@@ -438,14 +438,14 @@
     "href": "homework.html",
     "title": "Homework and Presentations",
     "section": "",
-    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 8\n\n\nNHANES project\n\n\n\n\n\n\n\n\nFinal Homework\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nData Visualization\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 7\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 7\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\nNo matching items"
+    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nData Visualization\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 7\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 7\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 8\n\n\nNHANES project\n\n\n\n\n\n\n\n\nHW 8\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Advanced Data Science: Welcome and Syllabus",
     "section": "",
-    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods."
+    "text": "Welcome to Advanced Data Science! This course will focus on hands-on data analyses with a main objective of solving real-world problems, working with data science technology, and filling in gaps for real-world work as a biostatistical data scientist.\nWe will teach the necessary skills to gather, manage, and analyze data mainly using the R programming language.\nThe course will cover an introduction to data wrangling, exploratory data analysis, statistical inference and modeling, machine learning, and high-dimensional data analysis.\nWe will teach the necessary skills to develop data products including reproducible reports that can be used to effectively communicate results from data analyses. We will train students to become data scientists capable of both applied data analysis and critical evaluation of the next generation of statistical methods."
   },
   {
     "objectID": "index.html#pre-requisites",
@@ -487,7 +487,7 @@
     "href": "homework/hw3_study_planning.html",
     "title": "Homework 3",
     "section": "",
-    "text": "You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.\nYou have no preliminary data.\nDo the following:\n\nPropose a statistical analysis plan.\nPerform study planning for a clinical trial to test the primary and hopefully secondary outcome.\nSubjects enrollment and will cost $3k for enrollment and $2k per subsequent visit.\nAdding an MRI for the secondary outcome will cost an additional $5k per visit.\nPower for the primary hypothesis must be 90%\nType 1 error rate (multiplicity adjusted) must be 5%\nMaximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.\nInvestigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.\n\nWrite up your results in a no more than 2 page technical paper.\nThis project will be used as the foundation for one of your in-class presentatinos."
+    "text": "You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.\nYou have no preliminary data.\nDo the following:\n\nPropose a statistical analysis plan.\nPerform study planning for a clinical trial to test the primary and hopefully secondary outcome.\nSubjects enrollment and will cost $3k for enrollment and $2k per subsequent visit.\nAdding an MRI for the secondary outcome will cost an additional $5k per visit.\nPower for the primary hypothesis must be 90%\nType 1 error rate (multiplicity adjusted) must be 5%\nMaximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.\nInvestigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.\n\nWrite up your results in a no more than 2 page technical paper.\nThis project will be used as the foundation for one of your in-class presentations."
   },
   {
     "objectID": "homework/nhanes_project.html",
@@ -522,7 +522,7 @@
     "href": "homework/hw4_R_package.html",
     "title": "Homework 4",
     "section": "",
-    "text": "Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost per subject and so on. To do this, you will need to package your study planning code into functions and then package it up. The package should have documentation and a vignette that explains how to use the package. The readme to your repo should explain how to build and install the package.\nThe package must be checked using GitHub actions. A badge for the check must be on the README.\nThe packages must have unit tests. The code coverage for this package must be over 70%. The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README."
+    "text": "Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost per subject and so on. To do this, you will need to package your study planning code into functions and then package it up. The package should have documentation and a vignette that explains how to use the package. The README to your repo should explain how to build and install the package.\nThe package must be checked using GitHub actions. A badge for the check must be on the README.\nThe packages must have unit tests. The code coverage for this package must be over 70%. The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README."
   },
   {
     "objectID": "homework/hw1_shell_and_linux.html",
