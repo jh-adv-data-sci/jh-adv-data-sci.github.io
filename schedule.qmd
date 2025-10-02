@@ -38,7 +38,7 @@ editor: source
 <!-- John -->
 - **Class 11:** [Data Visualization](https://docs.google.com/presentation/d/17RY0WNOqnsjiII_hE-T7ADP5fAGZdd6v56O8QEw7qhg/edit?usp=sharing) – Lecture  
 <!-- John -->
-- **Class 12:** Data Visualization (EDA) – Application
+- **Class 12:** [Data Visualization (EDA) – Application](exercises/data_viz.html)
 
 ## Week 7
 <!-- John -->
@@ -63,37 +63,36 @@ editor: source
 ## Week 2
 <!-- Angela -->
 - **Class 3:** Model Selection – Application
-<!-- Brian  - Prediction competition project assignment -->
-- **Class 4:** Prediction Competition – Presentation (framing a comp)  
+<!-- Brian  - NHANES project assignment -->
+- **Class 4:** Prediction Competition – Presentation 
 
 ## Week 3
-<!-- John - NHANES project -->
-- **Class 5:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
 <!-- John -->
-- **Class 6:** Language Models – API (overview, usage)  
+- **Class 5:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
+<!-- John -->
+- **Class 6:** Missing Data – Application
 
 ## Week 4
 <!-- John -->
-- **Class 7:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
+- **Class 7:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
 <!-- John -->
-- **Class 8:** Missing Data – Application
+- **Class 8:** Language Models – API (overview, usage)  
 
 ## Week 5
-<!-- John -->
+<!-- John Assign targets pipeline project -->
 - **Class 9:** Pipelining Techniques – Lecture  
 <!-- John -->
 - **Class 10:** Pipelining Techniques – Application  
 
+## Week 7
+<!-- Guest -->
+- **Class 11:** Practical Bayes – Guest Lecture 
+- **Class 12:** Practical Bayes – Application
 
 ## Week 6
 <!-- Brian -->
-- **Class 11:** Complex Data - Lecture
-- **Class 12:** Complex Data - Application
-
-## Week 7
-<!-- Guest -->
-- **Class 13:** Practical Bayes – Guest Lecture 
-- **Class 14:** Practical Bayes – Application
+- **Class 13:** Complex Data - Lecture
+- **Class 14:** Complex Data - Application
 
 ## Week 8
 - **Class 15:** Presentation prep

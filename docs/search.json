@@ -74,21 +74,21 @@
     "href": "schedule.html#week-2-1",
     "title": "Schedule",
     "section": "Week 2",
-    "text": "Week 2\n\n\nClass 3: Model Selection – Application \nClass 4: Prediction Competition – Presentation (framing a comp)"
+    "text": "Week 2\n\n\nClass 3: Model Selection – Application \nClass 4: Prediction Competition – Presentation"
   },
   {
     "objectID": "schedule.html#week-3-1",
     "href": "schedule.html#week-3-1",
     "title": "Schedule",
     "section": "Week 3",
-    "text": "Week 3\n\n\nClass 5: APIs + Pulling \nClass 6: Language Models – API (overview, usage)"
+    "text": "Week 3\n\n\nClass 5: Missing Data \nClass 6: Missing Data – Application"
   },
   {
     "objectID": "schedule.html#week-4-1",
     "href": "schedule.html#week-4-1",
     "title": "Schedule",
     "section": "Week 4",
-    "text": "Week 4\n\n\nClass 7: Missing Data \nClass 8: Missing Data – Application"
+    "text": "Week 4\n\n\nClass 7: APIs + Pulling \nClass 8: Language Models – API (overview, usage)"
   },
   {
     "objectID": "schedule.html#week-5-1",
@@ -98,18 +98,18 @@
     "text": "Week 5\n\n\nClass 9: Pipelining Techniques – Lecture\n\nClass 10: Pipelining Techniques – Application"
   },
   {
-    "objectID": "schedule.html#week-6-1",
-    "href": "schedule.html#week-6-1",
-    "title": "Schedule",
-    "section": "Week 6",
-    "text": "Week 6\n\n\nClass 11: Complex Data - Lecture\nClass 12: Complex Data - Application"
-  },
-  {
     "objectID": "schedule.html#week-7-1",
     "href": "schedule.html#week-7-1",
     "title": "Schedule",
     "section": "Week 7",
-    "text": "Week 7\n\n\nClass 13: Practical Bayes – Guest Lecture\nClass 14: Practical Bayes – Application"
+    "text": "Week 7\n\n\nClass 11: Practical Bayes – Guest Lecture\nClass 12: Practical Bayes – Application"
+  },
+  {
+    "objectID": "schedule.html#week-6-1",
+    "href": "schedule.html#week-6-1",
+    "title": "Schedule",
+    "section": "Week 6",
+    "text": "Week 6\n\n\nClass 13: Complex Data - Lecture\nClass 14: Complex Data - Application"
   },
   {
     "objectID": "schedule.html#week-8-1",
@@ -487,7 +487,7 @@
     "href": "homework/term2_hw1_prediction.html",
     "title": "Homework 1",
     "section": "",
-    "text": "In this homework, you will partcipate in a prediction competition."
+    "text": "In this homework, you will participate in a prediction competition."
   },
   {
     "objectID": "homework/nhanes_project.html",

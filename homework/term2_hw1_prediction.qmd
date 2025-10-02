@@ -7,6 +7,6 @@ editor: source
 engine: knitr
 ---
 
-In this homework, you will partcipate in a prediction competition.
+In this homework, you will participate in a prediction competition.
 
 
