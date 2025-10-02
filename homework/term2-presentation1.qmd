@@ -1,0 +1,14 @@
+---
+title: "Presentation 1"
+subtitle: "Prediction Competition"
+author: "Term 2 - Presentation 1"
+format: html
+editor: source
+engine: knitr
+---
+
+In this presentation, you will discuss your strategy and results for the prediction competition.
+
++ Limit your presentation to 10 slides.
++ Limit your presentation to 5 minutes + 2 minutes for questions.
+

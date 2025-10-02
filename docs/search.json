@@ -378,11 +378,18 @@
     "text": "This is the second presentation for the course. It will be based on the grant data project you are working on for your final homework. You will present your grant, including aims. In this presentation please:\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions."
   },
   {
-    "objectID": "homework/presentation1.html",
-    "href": "homework/presentation1.html",
+    "objectID": "homework/term2-presentation2.html",
+    "href": "homework/term2-presentation2.html",
+    "title": "Presentation 2",
+    "section": "",
+    "text": "This is the final presentation for the course.\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions."
+  },
+  {
+    "objectID": "homework/term2-presentation1.html",
+    "href": "homework/term2-presentation1.html",
     "title": "Presentation 1",
     "section": "",
-    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease project from homework 3.\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
+    "text": "In this presentation, you will discuss your strategy and results for the prediction competition.\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions."
   },
   {
     "objectID": "homework/hw6_app.html",
@@ -452,7 +459,7 @@
     "href": "homework.html",
     "title": "Homework and Presentations",
     "section": "",
-    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nGrant Pitch Deck\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nPrediction Competition\n\n\n\n\n\n\n\n\nTerm 2 - HW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nNHANES project\n\n\n\n\n\n\n\n\nTerm 2 - HW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nLLMs\n\n\n\n\n\n\n\n\nTerm 2 - HW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nPipeline with APIs\n\n\n\n\n\n\n\n\nTerm 2- HW 4\n\n\n\n\n\n\nNo matching items"
+    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nFinal Presentation\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nGrant Pitch Deck\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nPrediction Competition\n\n\n\n\n\n\n\n\nTerm 2 - HW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nNHANES project\n\n\n\n\n\n\n\n\nTerm 2 - HW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nLLMs\n\n\n\n\n\n\n\n\nTerm 2 - HW 3\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nPrediction Competition\n\n\n\n\n\n\n\n\nTerm 2 - Presentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nPipeline with APIs\n\n\n\n\n\n\n\n\nTerm 2- HW 4\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -537,6 +544,13 @@
     "title": "Homework 4",
     "section": "",
     "text": "Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost per subject and so on. To do this, you will need to package your study planning code into functions and then package it up. The package should have documentation and a vignette that explains how to use the package. The README to your repo should explain how to build and install the package.\nThe package must be checked using GitHub actions. A badge for the check must be on the README.\nThe packages must have unit tests. The code coverage for this package must be over 70%. The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README."
+  },
+  {
+    "objectID": "homework/presentation1.html",
+    "href": "homework/presentation1.html",
+    "title": "Presentation 1",
+    "section": "",
+    "text": "In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease project from homework 3.\n\nLimit your presentation to 10 slides.\nLimit your presentation to 5 minutes + 2 minutes for questions.\n\nYou will be graded on the following criteria:\n\nClarity of the study design and statistical analysis plan.\nClarity of the presentation.\nDesign of the presentation."
   },
   {
     "objectID": "homework/hw1_shell_and_linux.html",
