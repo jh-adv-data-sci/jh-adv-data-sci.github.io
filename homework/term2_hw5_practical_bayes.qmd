@@ -1,0 +1,10 @@
+---
+title: "Homework 5"
+subtitle: "Practical Bayes"
+author: "Term 2- HW 5"
+format: html
+editor: source
+engine: knitr
+---
+
+You will run a practical Bayes analysis.

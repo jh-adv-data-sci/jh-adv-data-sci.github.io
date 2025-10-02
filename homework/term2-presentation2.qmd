@@ -1,14 +1,14 @@
 ---
 title: "Presentation 2"
-subtitle: "Final Presentation"
+subtitle: "Research Presentation"
 author: "Presentation 2"
 format: html
 editor: source
 engine: knitr
 ---
 
-This is the final presentation for the course.
-
+This is the final presentation for the course, this will be on the 3-page research analysis you have done for the previous homework.
 
 + Limit your presentation to 10 slides.
 + Limit your presentation to 5 minutes + 2 minutes for questions.
+
