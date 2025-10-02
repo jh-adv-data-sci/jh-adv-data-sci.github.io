@@ -1,0 +1,12 @@
+---
+title: "Homework 3"
+subtitle: "LLMs"
+author: "Term 2 - HW 3"
+format: html
+editor: source
+engine: knitr
+---
+
+In this homework, you will call run a local LLM.
+
+

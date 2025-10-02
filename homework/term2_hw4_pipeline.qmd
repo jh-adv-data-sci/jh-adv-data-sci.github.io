@@ -1,0 +1,10 @@
+---
+title: "Homework 4"
+subtitle: "Pipeline with APIs"
+author: "Term 2- HW 4"
+format: html
+editor: source
+engine: knitr
+---
+
+You will create a pipeline that pulls from an API and runs only when the API changes.
