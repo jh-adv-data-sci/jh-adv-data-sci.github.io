@@ -1,0 +1,12 @@
+---
+title: "Homework 1"
+subtitle: "Prediction Competition"
+author: "Term 2 - HW 1"
+format: html
+editor: source
+engine: knitr
+---
+
+In this homework, you will partcipate in a prediction competition.
+
+

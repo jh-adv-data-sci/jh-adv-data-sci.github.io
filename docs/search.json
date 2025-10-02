@@ -413,6 +413,34 @@
     "text": "You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.\nYou have no preliminary data.\nDo the following:\n\nPropose a statistical analysis plan.\nPerform study planning for a clinical trial to test the primary and hopefully secondary outcome.\nSubjects enrollment and will cost $3k for enrollment and $2k per subsequent visit.\nAdding an MRI for the secondary outcome will cost an additional $5k per visit.\nPower for the primary hypothesis must be 90%\nType 1 error rate (multiplicity adjusted) must be 5%\nMaximum spending for enrollment, visit and visit MRIs is hard capped at one million dollars.\nInvestigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.\n\nWrite up your results in a no more than 2 page technical paper.\nThis project will be used as the foundation for one of your in-class presentations."
   },
   {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resources/missing_data_lecture.html",
+    "href": "resources/missing_data_lecture.html",
+    "title": "Missing Data Lecure",
+    "section": "",
+    "text": "See https://www.lshtm.ac.uk/media/38306"
+  },
+  {
+    "objectID": "discussion.html",
+    "href": "discussion.html",
+    "title": "Discussion",
+    "section": "",
+    "text": "All course related discussion will be handled by Slack. You will receive a request on the first day of class.\nhttps://jhu-advdatasci.slack.com/"
+  },
+  {
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework and Presentations",
+    "section": "",
+    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nGrant Pitch Deck\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nPrediction Competition\n\n\n\n\n\n\n\n\nTerm 2 - HW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nNHANES project\n\n\n\n\n\n\n\n\nTerm 2 - HW 2\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Advanced Data Science: Welcome and Syllabus",
@@ -455,32 +483,11 @@
     "text": "Grades\nAttendance in class is expected will be taken randomly. If you are planning on missing classes, especially at the end of the 2nd term, you are expected to notify the instructors with a solution.\n\nParticipation: 10%\nHomework: 60%\nPresentation(s): 30%\n\nIf not specified, assume all work is to be individual: students can discuss projects, including with the TA, but should not work together.\n\nHomework\nHomework will be submitted using git/GitHub - the last commit before midnight will be used to grade the assignment.\n\n\nCollaboration Policy\nYou are welcome and encouraged to discuss the lectures and homework problems with others in order to better understand it, but the work you turn in must be your own. For example, you must write your own code, run your own data analyses, and communicate and explain the results in your own words and with your own visualizations. You may not submit the same or similar work to this course that you have submitted or will submit to another. All students turning in plagiarized solutions will be reported to Office of Academic Integrity, and will fail the assignment.\n\nCollaboration with AI\nWe fully encourage you to use AI when you feel necessary, and to use as an aid. At the end of the course, however, you will be expected to understand the material and be able to do things on your own. That includes pop quizzes, and other assessments that may not be used with AI.\n\n\n\nQuoting Sources\nYou must acknowledge any source code that was not written by you by mentioning the original author(s) directly in your source code (comment or header). You can also acknowledge sources in a README file if you used whole classes or libraries. Do not remove any original copyright notices and headers. However, you are encouraged to use libraries, unless explicitly stated otherwise!\nYou may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. You may not use existing complex combinations or large examples. For example, you may not use a ready to use multiple linked view visualization. You may use parts out of such examples.\n\n\nMissed Activities and Assignment Deadlines\nProjects and homework must be turned in on time, with the exception of late days for homeworks as stated below. It is important that everybody attends and proactively participates in class and online. We understand, however, that certain factors may occasionally interfere with your ability to participate or to hand in work on time. If that factor is an extenuating circumstance, we will ask you to provide documentation directly issued by the University, and we will try to work out an agreeable solution with you (and/or your teammates).\n\n\nLate Day Policy\nEach student is given one late day for homework at the beginning of each term (711 and 712). A late day extends the individual homework deadline by 24 hours without penalty. The late day is intended to give you flexibility: you can use it for any reason no questions asked. You do not get any bonus points for not using your late day in each term. Also, you can only use a late day for the homework deadlines.\nAlthough the each student is only given a total of 1 late day, we will be accepting homework from students that pass this limit. However, we will be deducting 10% for each extra late day. For example, if you have already used your late day for the term, we will deduct 10% for the assignment that is &lt;24 hours late, and 20% points for the assignment that is 24-48 hours late.\n\n\nRegrading Policy\nIt is very important to us that all assignments are properly graded. If you believe there is an error in your assignment grading, please send an email to one of the instructors within 7 days of receiving the grade. No re-grade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after you receive the grade for the assignment."
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework and Presentations",
+    "objectID": "homework/term2_hw1_prediction.html",
+    "href": "homework/term2_hw1_prediction.html",
+    "title": "Homework 1",
     "section": "",
-    "text": "You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\nThe shell and linux HW\n\n\n\n\n\n\n\n\nHW 1\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nSlurm and the cluster HW\n\n\n\n\n\n\n\n\nHW 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\nStudy planning\n\n\n\n\n\n\n\n\nHW 3\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\nR projects\n\n\n\n\n\n\n\n\nHW 4\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\nGrant writing\n\n\n\n\n\n\n\n\nHW 5\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 6\n\n\nApp development\n\n\n\n\n\n\n\n\nHW 6\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 1\n\n\nStudy design and statistical analysis plan\n\n\n\n\n\n\n\n\nPresentation 1\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation 2\n\n\nGrant Pitch Deck\n\n\n\n\n\n\n\n\nPresentation 2\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\nNHANES project\n\n\n\n\n\n\n\n\nTerm 2 - HW 2\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "discussion.html",
-    "href": "discussion.html",
-    "title": "Discussion",
-    "section": "",
-    "text": "All course related discussion will be handled by Slack. You will receive a request on the first day of class.\nhttps://jhu-advdatasci.slack.com/"
-  },
-  {
-    "objectID": "resources/missing_data_lecture.html",
-    "href": "resources/missing_data_lecture.html",
-    "title": "Missing Data Lecure",
-    "section": "",
-    "text": "See https://www.lshtm.ac.uk/media/38306"
-  },
-  {
-    "objectID": "exercises.html",
-    "href": "exercises.html",
-    "title": "Exercises",
-    "section": "",
-    "text": "Linux & the Shell — Open-Ended Exercises\n\n\nHow to Effectively Work at the Command Line\n\n\n\n\n\n\n\n\n01-Linux & Shell\n\n\n\n\n\n\n\n\n\n\n\n\nSubmitting Jobs on HPC with SLURM\n\n\nHow to Effectively Work on JHPCE\n\n\n\n\n\n\n\n\n02-SLURM and the Cluster\n\n\n\n\n\n\n\n\n\n\n\n\nPower & Sample Size\n\n\nEstimating Sample Size and Power from Parameters\n\n\n\n\n\n\n\n\n03-Power and Sample Size\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\nHow to Make Dynamic Figures\n\n\n\n\n\n\n\n\n08-Data Visualization\n\n\n\n\n\n\nNo matching items"
+    "text": "In this homework, you will partcipate in a prediction competition."
   },
   {
     "objectID": "homework/nhanes_project.html",

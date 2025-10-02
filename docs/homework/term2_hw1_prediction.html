@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Term 2 - HW 1">
 
-<title>Homework and Presentations – Advanced Data Science</title>
+<title>Homework 1 – Advanced Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +79,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Advanced Data Science</span>
     </a>
   </div>
@@ -149,19 +90,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./exercises.html"> 
+    <a class="nav-link" href="../exercises.html"> 
 <span class="menu-text">Exercises</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homework.html" aria-current="page"> 
+    <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -180,7 +121,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -202,13 +143,20 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework and Presentations</h1>
+<h1 class="title">Homework 1</h1>
+<p class="subtitle lead">Prediction Competition</p>
 </div>
 
 
 
 <div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Term 2 - HW 1 </p>
+          </div>
+  </div>
     
   
     
@@ -219,268 +167,11 @@ window.Quarto = {
 </header>
 
 
-<p>You will have weekly homework assignments and two presentations in the course. You will have one homework that will not be associated with specific lecture, the NHANES project, that will be the last homework of the course and the content of the final presentation.</p>
+<p>In this homework, you will partcipate in a prediction competition.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1756173565556" data-listing-reading-time-sort="1" data-listing-word-count-sort="199">
-<div class="thumbnail">
-<p><a href="./homework/hw1_shell_and_linux.html" class="no-external"></a></p><a href="./homework/hw1_shell_and_linux.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw1_shell_and_linux.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw1_shell_and_linux.html" class="no-external">Homework 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw1_shell_and_linux.html" class="no-external">The shell and linux HW</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw1_shell_and_linux.html" class="no-external">Create a new directory and execute the following bash script. This will create a list of files of the form <code>subject-NUMBER-VISIT-TYPE</code> where number is from 1 to 100, visit is…<code></code><code></code><code></code><code></code></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw1_shell_and_linux.html" class="no-external"></a></p><a href="./homework/hw1_shell_and_linux.html" class="no-external">
-<div class="listing-author">
-HW 1
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1755895972986" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
-<div class="thumbnail">
-<p><a href="./homework/hw2_slurm_and_cluster.html" class="no-external"></a></p><a href="./homework/hw2_slurm_and_cluster.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw2_slurm_and_cluster.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw2_slurm_and_cluster.html" class="no-external">Homework 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw2_slurm_and_cluster.html" class="no-external">Slurm and the cluster HW</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw2_slurm_and_cluster.html" class="no-external">The goal is to simulate how the Ordinary Least Squares linear regression estimator behaves under stress. According to the Gauss-Markov theorem, OLS is the “best” linear…<span class="math inline"></span></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw2_slurm_and_cluster.html" class="no-external"></a></p><a href="./homework/hw2_slurm_and_cluster.html" class="no-external">
-<div class="listing-author">
-HW 2
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1758554094462" data-listing-reading-time-sort="2" data-listing-word-count-sort="283">
-<div class="thumbnail">
-<p><a href="./homework/hw3_study_planning.html" class="no-external"></a></p><a href="./homework/hw3_study_planning.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw3_study_planning.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw3_study_planning.html" class="no-external">Homework 3</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw3_study_planning.html" class="no-external">Study planning</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw3_study_planning.html" class="no-external">You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw3_study_planning.html" class="no-external"></a></p><a href="./homework/hw3_study_planning.html" class="no-external">
-<div class="listing-author">
-HW 3
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1758575280989" data-listing-reading-time-sort="1" data-listing-word-count-sort="159">
-<div class="thumbnail">
-<p><a href="./homework/hw4_R_package.html" class="no-external"></a></p><a href="./homework/hw4_R_package.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw4_R_package.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw4_R_package.html" class="no-external">Homework 4</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw4_R_package.html" class="no-external">R projects</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw4_R_package.html" class="no-external">Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw4_R_package.html" class="no-external"></a></p><a href="./homework/hw4_R_package.html" class="no-external">
-<div class="listing-author">
-HW 4
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1755891671611" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail">
-<p><a href="./homework/hw5_grant_writing.html" class="no-external"></a></p><a href="./homework/hw5_grant_writing.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw5_grant_writing.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw5_grant_writing.html" class="no-external">Homework 5</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw5_grant_writing.html" class="no-external">Grant writing</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw5_grant_writing.html" class="no-external">In this homework, you will write up grant proposal for a methods or application of your choice. Your proposal should be no more than 2 pages long, and should include the…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw5_grant_writing.html" class="no-external"></a></p><a href="./homework/hw5_grant_writing.html" class="no-external">
-<div class="listing-author">
-HW 5
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1759417823003" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
-<div class="thumbnail">
-<p><a href="./homework/hw6_app.html" class="no-external"></a></p><a href="./homework/hw6_app.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/hw6_app.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/hw6_app.html" class="no-external">Homework 6</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/hw6_app.html" class="no-external">App development</a>
-</div>
-<div class="listing-description">
-<a href="./homework/hw6_app.html" class="no-external">In this homework, you will bundle your R package for the Alzheimer’s trial in a Shiny app. The app should allow users to do study planning for a similar trial with different…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/hw6_app.html" class="no-external"></a></p><a href="./homework/hw6_app.html" class="no-external">
-<div class="listing-author">
-HW 6
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1758574894133" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<div class="thumbnail">
-<p><a href="./homework/presentation1.html" class="no-external"></a></p><a href="./homework/presentation1.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/presentation1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/presentation1.html" class="no-external">Presentation 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/presentation1.html" class="no-external">Study design and statistical analysis plan</a>
-</div>
-<div class="listing-description">
-<a href="./homework/presentation1.html" class="no-external">In this presentation, you will discuss your statistical analysis plan and study design for the Alzheimer’s disease project from homework 3.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/presentation1.html" class="no-external"></a></p><a href="./homework/presentation1.html" class="no-external">
-<div class="listing-author">
-Presentation 1
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-file-modified-sort="1759417054478" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
-<div class="thumbnail">
-<p><a href="./homework/presentation2.html" class="no-external"></a></p><a href="./homework/presentation2.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/presentation2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/presentation2.html" class="no-external">Presentation 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/presentation2.html" class="no-external">Grant Pitch Deck</a>
-</div>
-<div class="listing-description">
-<a href="./homework/presentation2.html" class="no-external">This is the second presentation for the course. It will be based on the grant data project you are working on for your final homework. You will present your grant, including…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/presentation2.html" class="no-external"></a></p><a href="./homework/presentation2.html" class="no-external">
-<div class="listing-author">
-Presentation 2
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1759418194751" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<div class="thumbnail">
-<p><a href="./homework/term2_hw1_prediction.html" class="no-external"></a></p><a href="./homework/term2_hw1_prediction.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/term2_hw1_prediction.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/term2_hw1_prediction.html" class="no-external">Homework 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/term2_hw1_prediction.html" class="no-external">Prediction Competition</a>
-</div>
-<div class="listing-description">
-<a href="./homework/term2_hw1_prediction.html" class="no-external">In this homework, you will partcipate in a prediction competition.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/term2_hw1_prediction.html" class="no-external"></a></p><a href="./homework/term2_hw1_prediction.html" class="no-external">
-<div class="listing-author">
-Term 2 - HW 1
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-file-modified-sort="1759417998301" data-listing-reading-time-sort="4" data-listing-word-count-sort="629">
-<div class="thumbnail">
-<p><a href="./homework/nhanes_project.html" class="no-external"></a></p><a href="./homework/nhanes_project.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./homework/nhanes_project.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./homework/nhanes_project.html" class="no-external">Homework 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./homework/nhanes_project.html" class="no-external">NHANES project</a>
-</div>
-<div class="listing-description">
-<a href="./homework/nhanes_project.html" class="no-external">The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./homework/nhanes_project.html" class="no-external"></a></p><a href="./homework/nhanes_project.html" class="no-external">
-<div class="listing-author">
-Term 2 - HW 2
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
