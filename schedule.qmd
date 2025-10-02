@@ -73,19 +73,21 @@ editor: source
 - **Class 6:** Missing Data – Application
 
 ## Week 4
+<!-- Brian  - LLM project assignment -->
 <!-- John -->
 - **Class 7:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
 <!-- John -->
 - **Class 8:** Language Models – API (overview, usage)  
 
 ## Week 5
-<!-- John Assign targets pipeline project -->
-- **Class 9:** Pipelining Techniques – Lecture  
 <!-- John -->
+- **Class 9:** Pipelining Techniques – Lecture  
+<!-- John Assign targets pipeline project -->
 - **Class 10:** Pipelining Techniques – Application  
 
 ## Week 7
 <!-- Guest -->
+<!-- Practical Bayes assignment -->
 - **Class 11:** Practical Bayes – Guest Lecture 
 - **Class 12:** Practical Bayes – Application
 
