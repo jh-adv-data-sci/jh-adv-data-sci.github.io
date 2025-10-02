@@ -1,19 +1,13 @@
 ---
 title: "Presentation 2"
-subtitle: "Study design and statistical analysis plan"
+subtitle: "Grant Pitch Deck"
 author: "Presentation 2"
 format: html
 editor: source
 engine: knitr
 ---
 
-This is the second presentation for the course. It will be based on the NHANES data project you are working on for your final homework. You will present your analysis of the NHANES data.  In this presentation please:
+This is the second presentation for the course. It will be based on the grant data project you are working on for your final homework. You will present your grant, including aims.  In this presentation please:
 
 + Limit your presentation to 10 slides.
 + Limit your presentation to 5 minutes + 2 minutes for questions.
-
-You will be graded on the following criteria:
-
-+ Clarity of the study design and statistical analysis plan.
-+ Clarity of the presentation.
-+ Design of the presentation.
