@@ -1,12 +1,11 @@
 ---
-title: "Homework 8"
+title: "Homework 2"
 subtitle: "NHANES project"
-author: "HW 8"
+author: "Term 2 - HW 2"
 format: html
 editor: source
 engine: knitr
 ---
-This is the final homework for the term and will serve as the basis for your final presentation.
 
 ## NHANES Data
 

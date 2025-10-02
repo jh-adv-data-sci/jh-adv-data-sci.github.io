@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/exercises.html",
-    "items": [
-      "/exercises/linux_shell.html",
-      "/exercises/slurm_and_the_cluster.html",
-      "/exercises/power.html",
-      "/exercises/data_viz.html"
-    ]
-  },
-  {
     "listing": "/homework.html",
     "items": [
       "/homework/hw1_shell_and_linux.html",
@@ -16,11 +7,19 @@
       "/homework/hw3_study_planning.html",
       "/homework/hw4_R_package.html",
       "/homework/hw5_grant_writing.html",
-      "/homework/hw6_data_vis.html",
-      "/homework/hw7_app.html",
-      "/homework/nhanes_project.html",
+      "/homework/hw6_app.html",
       "/homework/presentation1.html",
-      "/homework/presentation2.html"
+      "/homework/presentation2.html",
+      "/homework/nhanes_project.html"
+    ]
+  },
+  {
+    "listing": "/exercises.html",
+    "items": [
+      "/exercises/linux_shell.html",
+      "/exercises/slurm_and_the_cluster.html",
+      "/exercises/power.html",
+      "/exercises/data_viz.html"
     ]
   },
   {

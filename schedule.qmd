@@ -41,13 +41,13 @@ editor: source
 - **Class 12:** Data Visualization (EDA) – Application
 
 ## Week 7
-<!-- Angela -->
-- **Class 13:** App Dashboard – Setup & Workflow
-- **Class 14:** App Dashboard – Application
+<!-- John -->
+- **Class 13:** (pushed from before) [SQL Basics and Hurdles](https://docs.google.com/presentation/d/15bZFKubDeY5Mmj37j1p639h2uLMAxZzHW9gExUh2jcU/edit?slide=id.p#slide=id.p)  
+- **Class 14:** App Dashboard – Setup & Workflow
 
 ## Week 8
 <!-- John -->
-- **Class 15:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
+- **Class 15:** App Dashboard – Application
 <!-- Both -->
 - **Class 16:** Final Presentations  
 
@@ -55,7 +55,7 @@ editor: source
 # Advanced Data Science II
 
 ## Week 1
-<!-- John -->
+<!-- John - Prediction competition assignment -->
 - **Class 1:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
 <!-- Angela -->
 - **Class 2:** Model Selection – `tidymodels` (intro)  
@@ -63,13 +63,14 @@ editor: source
 ## Week 2
 <!-- Angela -->
 - **Class 3:** Model Selection – Application
-<!-- Brian -->
-- **Class 4:** Predictive Competition – Present (framing a comp)  
+<!-- Brian  - Prediction competition project assignment -->
+- **Class 4:** Prediction Competition – Presentation (framing a comp)  
 
 ## Week 3
-<!-- Brian -->
-- **Class 5:** Language Models – API (overview, usage)  
-- **Class 6:** Language Models – Application
+<!-- John - NHANES project -->
+- **Class 5:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
+<!-- John -->
+- **Class 6:** Language Models – API (overview, usage)  
 
 ## Week 4
 <!-- John -->
@@ -96,6 +97,6 @@ editor: source
 
 ## Week 8
 - **Class 15:** Presentation prep
-- **Class 16:** Final Presentations  
+- **Class 16:** Final Presentations (Data Applications)
 
 

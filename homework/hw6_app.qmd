@@ -1,7 +1,7 @@
 ---
-title: "Homework 7"
+title: "Homework 6"
 subtitle: "App development"
-author: "HW 7"
+author: "HW 6"
 format: html
 editor: source
 engine: knitr
