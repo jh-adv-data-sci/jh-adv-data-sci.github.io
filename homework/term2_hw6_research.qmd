@@ -1,7 +1,7 @@
 ---
-title: "Homework 4"
-subtitle: "Pipeline with APIs"
-author: "Term 2- HW 4"
+title: "Homework 6"
+subtitle: "Research Analysis"
+author: "Term 2 - HW 6"
 format: html
 editor: source
 engine: knitr
