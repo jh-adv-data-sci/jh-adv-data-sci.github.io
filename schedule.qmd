@@ -58,11 +58,11 @@ editor: source
 <!-- John - Prediction competition assignment -->
 - **Class 1:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
 <!-- Angela -->
-- **Class 2:** Model Selection – `tidymodels` (intro)  
+- **Class 2:** [Tidymodels](https://docs.google.com/presentation/d/1DYL83AW0lNF1xAJlBiOxD-V9mfGKAm_3ixEeyoA-Ess/edit?usp=sharing)
 
 ## Week 2
 <!-- Angela -->
-- **Class 3:** Model Selection – Application
+- **Class 3:** [Tidymodels Workthrough](https://www.tidymodels.org/start/)
 <!-- Brian  - NHANES project assignment -->
 - **Class 4:** Prediction Competition – Presentation 
 
