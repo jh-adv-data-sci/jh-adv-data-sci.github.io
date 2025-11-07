@@ -85,16 +85,17 @@ editor: source
 <!-- John Assign targets pipeline project -->
 - **Class 10:** Pipelining Techniques – Application  
 
+## Week 6
+<!-- Brian -->
+- **Class 13:** Complex Data - Lecture
+- **Class 14:** Complex Data - Application
+
 ## Week 7
 <!-- Guest -->
 <!-- Practical Bayes assignment -->
 - **Class 11:** Practical Bayes – Guest Lecture 
 - **Class 12:** Practical Bayes – Application
 
-## Week 6
-<!-- Brian -->
-- **Class 13:** Complex Data - Lecture
-- **Class 14:** Complex Data - Application
 
 ## Week 8
 - **Class 15:** Presentation prep
