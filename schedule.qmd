@@ -70,7 +70,7 @@ editor: source
 <!-- John -->
 - **Class 5:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
 <!-- John -->
-- **Class 6:** Missing Data – Application
+- **Class 6:** [Project Setup](https://docs.google.com/presentation/d/1DVkcFubsWd0vDZypbedzNcHxscaH74enzBplciTJajI/edit?usp=sharing)
 
 ## Week 4
 <!-- Brian  - LLM project assignment -->
