@@ -75,9 +75,9 @@ editor: source
 ## Week 4
 <!-- Brian  - LLM project assignment -->
 <!-- John -->
-- **Class 7:** [APIs + Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
+- **Class 7:** [Pipelining Techniques with targets](https://docs.google.com/presentation/d/1fNiuL6ioLcMqh1l8Y9gDGjZdGixiCUbYTZFfqGzL-ms/edit?usp=sharing)
 <!-- John -->
-- **Class 8:** Language Models – API (overview, usage)  
+- **Class 8:** [APIs + Data Pulling](https://docs.google.com/presentation/d/1xVh29cZAKY01coRTcGOaPftpQn1_1LCdZhW_b7tnY18/edit?usp=sharing)
 
 ## Week 5
 <!-- John -->
