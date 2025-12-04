@@ -81,7 +81,7 @@ editor: source
 
 ## Week 5
 <!-- John -->
-- **Class 9:** Pipelining Techniques – Lecture  
+- **Class 9:** [Docker](https://docs.google.com/presentation/d/1Cz3WncPZbOJTUa9yhD2fbac8acyKkjdbvxlRbGbndEY/edit?usp=sharing)
 <!-- John Assign targets pipeline project -->
 - **Class 10:** Pipelining Techniques – Application  
 
