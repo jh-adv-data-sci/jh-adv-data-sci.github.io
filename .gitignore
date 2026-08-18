@@ -6,3 +6,5 @@
 /.quarto/
 screenshot.jpg
 _freeze/
+
+**/*.quarto_ipynb

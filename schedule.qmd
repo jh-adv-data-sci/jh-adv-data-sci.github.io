@@ -6,8 +6,8 @@ editor: source
 # Advanced Data Science I
 
 ## Week 1
-- **Class 1:** [Intro](https://docs.google.com/presentation/d/1fb5W1fcnIdYtq_sXl6V3bh2uFdJ68h_qSwUxWtPs_to/edit?usp=sharing) and [Linux & Shell](https://docs.google.com/presentation/d/1kFjRsQ0tOaH59HNp-v5_xdmRvAfJM0uv3R3SS-RxT4I/edit?usp=sharing) – Present (intro, basics)  
-- **Class 2:** [Linux & Shell - Practice](exercises/linux_shell.html) (hands-on commands)  
+- **Class 1:** [Intro](https://docs.google.com/presentation/d/1fb5W1fcnIdYtq_sXl6V3bh2uFdJ68h_qSwUxWtPs_to/edit?usp=sharing) and [AI](https://docs.google.com/presentation/d/1dxMF3RJALaPaUBljvH94d24nbeOngpHJrP4rUCSqFM8/edit?usp=sharing)
+- **Class 2:** [Linux & Shell](https://docs.google.com/presentation/d/1kFjRsQ0tOaH59HNp-v5_xdmRvAfJM0uv3R3SS-RxT4I/edit?usp=sharing) – Present (intro, basics) and [Linux & Shell - Practice](exercises/linux_shell.html) (hands-on commands)  
 
 ### Homework 1
 - **Homework 1:**  [Homework 1](homework/hw1_shell_and_linux.html)
