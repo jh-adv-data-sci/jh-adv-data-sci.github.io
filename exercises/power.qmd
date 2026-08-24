@@ -14,6 +14,8 @@ engine: knitr
 
 > **Conventions:** Two‑sided tests at α = 0.05 unless stated. Use R where helpful. Symbols: δ = effect size in the outcome scale; σ = SD; n = total sample unless noted. For two‑sample tests, assume equal allocation and equal variances unless stated.
 
+> **Using agentic AI:** You may use an agent to derive a formula, draft R code, or suggest a simulation. Treat it as an unverified collaborator: state your assumptions, run the code, and reconcile any disagreement with an independent calculation. For the design challenge, include the prompt(s) used and a concise verification log.
+
 ------------------------------------------------------------------------
 
 ## 1) One‑sample t‑test power & n (10 minutes)
@@ -313,6 +315,21 @@ mean(p < alpha)  # ~ power
 ```
 
 </details>
+
+------------------------------------------------------------------------
+
+## 8) Design-review challenge: plan under uncertainty (20 minutes)
+
+You are planning a two-arm study with a continuous primary outcome. A pilot suggests an SD between 10 and 14; the smallest effect worth detecting is 4 units; you can recruit at most 130 participants total; and anticipate 15% dropout. The primary analysis is a two-sided two-sample t-test at α = 0.05 with equal allocation.
+
+**Deliverable.** Write a one-page design recommendation that:
+
+- calculates the analyzable and enrolled sample sizes needed for 80% power at SD = 10, 12, and 14;
+- reports achieved power at the maximum feasible enrollment after dropout;
+- gives a transparent recommendation and one contingency if the pilot SD is too optimistic; and
+- verifies one analytic result with a simulation (state the number of replicates and Monte Carlo uncertainty).
+
+You may ask an AI agent for a first-pass calculation or code, but include your prompt, independently check one output, and explain any correction you made. The grade is based on the reasoning and audit trail, not on whether an agent produced code quickly.
 
 ------------------------------------------------------------------------
 

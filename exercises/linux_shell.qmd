@@ -13,6 +13,8 @@ engine: knitr
 
 > **Tip:** Unless stated otherwise, exercises assume a CSV named `penguins.csv` (with a header) in the working directory. Exercise **0** shows how to download one from the internet. Answers are hidden—click to reveal.
 
+> **Using an AI agent well:** You may ask an agent to explain a command, draft a first attempt, or help debug an error. Before running a command that writes, deletes, transfers, or submits work, inspect it yourself. For the challenge below, submit the prompt(s) you used, the command you ran, and a short note on what you verified or corrected.
+
 ---
 
 **If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there.**
@@ -148,12 +150,13 @@ Why: `-c` writes to stdout; `-d` decompresses. `tail -n +2` skips the header.
 ---
 
 ## 6) Quick column exploration with `cut`, `head`, `sort`, `uniq`
-**Question.** Show the first 5 IDs and the distinct sex values with counts.
+**Question.** Inspect the header, show the first five penguin species, and count the distinct island values.
 
 <details><summary>Show solution</summary>
 
 ```bash
-head -n 6 penguins.csv | cut -d',' -f1      # header + first 5 IDs
+head -n 1 penguins.csv
+cut -d',' -f1 penguins.csv | tail -n +2 | head -n 5
 cut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c
 ```
 </details>
@@ -161,16 +164,16 @@ cut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c
 ---
 
 ## 7) Filter rows by a condition with `awk`
-**Question.** Count participants with `age >= 60`. Compute the mean BMI.
+**Question.** Count penguins with a bill length of at least 50 mm. Compute the mean body mass (g), excluding missing values.
 
 <details><summary>Show solution</summary>
 
 ```bash
-# age >= 60 (age is 3rd column)
-awk -F',' 'NR>1 && $3 >= 60 {c++} END{print c+0}' penguins.csv
+# bill_length_mm is column 3
+awk -F',' 'NR>1 && $3 >= 50 {c++} END{print c+0}' penguins.csv
 
-# mean BMI (4th column)
-awk -F',' 'NR>1 {s+=$4; n++} END{print s/n}' penguins.csv
+# body_mass_g is column 6
+awk -F',' 'NR>1 && $6 != "" {s+=$6; n++} END{print s/n}' penguins.csv
 ```
 </details>
 
@@ -191,33 +194,33 @@ awk -F',' 'NR>1{for(i=1;i<=NF;i++) if($i==""){m++ ; break}} END{print m+0}' peng
 
 ---
 
-## 9) Save the first 20 IDs to a file
-**Question.** Write the first 20 **IDs** (not including header) to `sample_ids.txt`.
+## 9) Save the first 20 species/island records to a file
+**Question.** Write the first 20 **species and island** records (not including the header) to `sample_records.txt`.
 
 <details><summary>Show solution</summary>
 
 ```bash
-tail -n +2 penguins.csv | cut -d',' -f1 | head -n 20 > sample_ids.txt
-wc -l sample_ids.txt   # should be 20
+tail -n +2 penguins.csv | cut -d',' -f1,2 | head -n 20 > sample_records.txt
+wc -l sample_records.txt   # should be 20
 ```
 </details>
 
 ---
 
 ## 10) Chain operations with pipes
-**Question.** Among *male* participants, show counts by **age** (3rd column) in ascending order.
+**Question.** Among *male* penguins, show counts by **species** in alphabetical order.
 
 <details><summary>Show solution</summary>
 
 ```bash
-awk -F',' 'NR>1 && $2=="male"{print $3}' penguins.csv | sort -n | uniq -c
+awk -F',' 'NR>1 && $7=="male"{print $1}' penguins.csv | sort | uniq -c
 ```
 </details>
 
 ---
 
 ## 11) Make the analysis reproducible with a script
-**Question.** Create `analyze.sh` that prints: total rows, rows age ≥ 60, and mean BMI. Run it.
+**Question.** Create `analyze.sh` that prints: total rows, bill-length ≥ 50 mm rows, and mean body mass. Run it.
 
 <details><summary>Show solution</summary>
 
@@ -232,11 +235,11 @@ echo "File: $csv"
 echo -n "Total data rows: "
 tail -n +2 "$csv" | wc -l
 
-echo -n "Age >= 60 rows: "
-awk -F',' 'NR>1 && $3 >= 60 {c++} END{print c+0}' "$csv"
+echo -n "Bill length >= 50 mm rows: "
+awk -F',' 'NR>1 && $3 >= 50 {c++} END{print c+0}' "$csv"
 
-echo -n "Mean BMI: "
-awk -F',' 'NR>1 {s+=$4; n++} END{print s/n}' "$csv"
+echo -n "Mean body mass (g): "
+awk -F',' 'NR>1 && $6 != "" {s+=$6; n++} END{print s/n}' "$csv"
 EOF
 
 chmod +x analyze.sh
@@ -264,13 +267,10 @@ stream() {
   esac
 }
 
-# Skip header once:
-data="$(stream | tail -n +2)"
-
 echo "File: $f"
-echo "Total data rows: $(printf "%s\n" "$data" | wc -l)"
-echo "Age >= 60 rows: $(printf "%s\n" "$data" | awk -F',' '$3>=60{c++} END{print c+0}')"
-echo "Mean BMI: $(printf "%s\n" "$data" | awk -F',' '{s+=$4; n++} END{print s/n}')"
+echo "Total data rows: $(stream | tail -n +2 | wc -l)"
+echo "Bill length >= 50 mm rows: $(stream | awk -F',' 'NR>1 && $3>=50{c++} END{print c+0}')"
+echo "Mean body mass (g): $(stream | awk -F',' 'NR>1 && $6!=""{s+=$6; n++} END{print s/n}')"
 EOF
 
 chmod +x analyze_any.sh
@@ -366,10 +366,9 @@ diff a.md5 b.md5   # no output => identical content
 Explanation: the compressed file’s checksum differs, but the **decompressed content** checksum should match the original.
 </details>
 
-## 18) Find an Answer in the Shell you didn't know
+## 18) Agent-assisted command-line investigation
 
 
-**Question.** Either ask a question about the shell you do not know, one thing you'd like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell). 
+**Question.** Choose a question about the shell or this dataset that you cannot yet answer (for example: create a species-by-island table, safely find all CSVs larger than 10 MB, or identify duplicate records). Use an AI agent to propose a solution, then test it on `penguins.csv` and improve it if needed.
 
-Share this question/solution with the instructors and the class.
-
+**Submit:** your question; the agent prompt and response link/transcript; the final command or script; its output; and 3–5 sentences explaining why it is correct, including one edge case or safety check. Share one useful correction with the class.

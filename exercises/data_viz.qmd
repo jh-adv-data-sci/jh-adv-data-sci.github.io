@@ -22,8 +22,14 @@ execute:
 ::: callout-tip
 ## How to render with/without answers
 
-- **With answers (default)**: `quarto render viz-handout.qmd`
-- **Without answers** (figures only): `quarto render viz-handout.qmd -P show_answers:false`
+- **With answers (default)**: `quarto render exercises/data_viz.qmd`
+- **Without answers** (figures only): `quarto render exercises/data_viz.qmd -P show_answers:false`
+:::
+
+::: callout-important
+## Working with agentic AI
+
+An agent can help you explore an API, diagnose an error, or propose variants. It cannot make the visual argument for you. For every redesign prompt below, state the audience and decision the figure supports; keep an AI-use log (prompt, output used, and changes you made); and verify every displayed encoding against the data. Do not submit a plot you cannot explain layer by layer.
 :::
 
 ```{r}
@@ -76,7 +82,9 @@ p1
 
 ---
 
-# 1.1) Make the above graph better 
+# 1.1) Redesign for a decision
+
+Choose a nontechnical buyer deciding whether a diamond is in a plausible price range. Redesign the plot for that decision, then write 100–150 words explaining what you changed, what trade-off it creates, and why the density overlay is or is not still useful. An agent may propose options, but you must justify the final choice.
 --- 
 
 
@@ -113,7 +121,9 @@ mpg |>
 
 ---
 
-# 2.1) Make the above graph better 
+# 2.1) Audit a misleading default
+
+Create a deliberately less informative version of this plot (for example, by changing scales, overplotting, or grouping), then repair it. Include a short caption identifying the specific inference that the bad version could encourage.
 --- 
 
 # 3) Small Multiples: Facet Wrap by Class (MPG)
@@ -146,7 +156,7 @@ mpg |>
 
 ---
 
-# 3.1) Make the above graph better 
+# 3.1) Make the above graph better
 --- 
 
 # 4) Time Series: Unemployment Rate with 12-Month Moving Average (economics)
@@ -219,7 +229,7 @@ iris |>
 
 ---
 
-# 5.1) Make the above graph better 
+# 5.1) Make the above graph better
 --- 
 
 # 6) Correlation Heatmap with Clustering (mtcars)
@@ -264,7 +274,7 @@ ggplot(corr_df, aes(var2, var1, fill = r)) +
 
 ---
 
-# 6.1) Make the above graph better 
+# 6.1) Make the above graph better
 --- 
 
 
@@ -303,8 +313,14 @@ ggplot(au, aes(year, Month, fill = median)) +
   theme(legend.position = "right")
 ```
 
-# 7.1) Make the above graph better 
+# 7.1) Make the above graph better
 --- 
+
+# 8) Mini data-story: critique, build, and verify
+
+Choose one dataset used above or a small, public dataset relevant to your interests. Pose one answerable descriptive question for a named audience. Create a two-figure data story: one overview and one supporting or qualifying view. Each figure needs an informative title, a caption that states the takeaway, and accessible color/label choices.
+
+Use an AI agent for at least one bounded task (such as proposing a chart type, checking a `ggplot2` API detail, or reviewing labels). Submit the prompt and a brief verification note. Your final write-up (250–400 words) must explain why each encoding is appropriate, name one limitation, and identify one change you rejected after inspecting the data. Put the analysis in a reproducible `.qmd` or `.R` file.
 
 
 ## Appendix: Session Info (hidden)
@@ -315,4 +331,3 @@ ggplot(au, aes(year, Month, fill = median)) +
 #| include: false
 sessioninfo::session_info()
 ```
-

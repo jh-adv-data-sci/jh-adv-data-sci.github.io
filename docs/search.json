@@ -172,14 +172,14 @@
     "href": "exercises/linux_shell.html#quick-column-exploration-with-cut-head-sort-uniq",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "6) Quick column exploration with cut, head, sort, uniq",
-    "text": "6) Quick column exploration with cut, head, sort, uniq\nQuestion. Show the first 5 IDs and the distinct sex values with counts.\n\n\nShow solution\n\nhead -n 6 penguins.csv | cut -d',' -f1      # header + first 5 IDs\ncut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c"
+    "text": "6) Quick column exploration with cut, head, sort, uniq\nQuestion. Inspect the header, show the first five penguin species, and count the distinct island values.\n\n\nShow solution\n\nhead -n 1 penguins.csv\ncut -d',' -f1 penguins.csv | tail -n +2 | head -n 5\ncut -d',' -f2 penguins.csv | tail -n +2 | sort | uniq -c"
   },
   {
     "objectID": "exercises/linux_shell.html#filter-rows-by-a-condition-with-awk",
     "href": "exercises/linux_shell.html#filter-rows-by-a-condition-with-awk",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "7) Filter rows by a condition with awk",
-    "text": "7) Filter rows by a condition with awk\nQuestion. Count participants with age &gt;= 60. Compute the mean BMI.\n\n\nShow solution\n\n# age &gt;= 60 (age is 3rd column)\nawk -F',' 'NR&gt;1 && $3 &gt;= 60 {c++} END{print c+0}' penguins.csv\n\n# mean BMI (4th column)\nawk -F',' 'NR&gt;1 {s+=$4; n++} END{print s/n}' penguins.csv"
+    "text": "7) Filter rows by a condition with awk\nQuestion. Count penguins with a bill length of at least 50 mm. Compute the mean body mass (g), excluding missing values.\n\n\nShow solution\n\n# bill_length_mm is column 3\nawk -F',' 'NR&gt;1 && $3 &gt;= 50 {c++} END{print c+0}' penguins.csv\n\n# body_mass_g is column 6\nawk -F',' 'NR&gt;1 && $6 != \"\" {s+=$6; n++} END{print s/n}' penguins.csv"
   },
   {
     "objectID": "exercises/linux_shell.html#find-rows-with-missing-values-in-any-field",
@@ -189,32 +189,32 @@
     "text": "8) Find rows with missing values in any field\nQuestion. Count how many data rows contain an empty field.\n\n\nShow solution\n\n# simple heuristic: consecutive delimiters or trailing comma\ngrep -E ',,' penguins.csv | wc -l\n# more thorough (detect empty at start/end or middle):\nawk -F',' 'NR&gt;1{for(i=1;i&lt;=NF;i++) if($i==\"\"){m++ ; break}} END{print m+0}' penguins.csv"
   },
   {
-    "objectID": "exercises/linux_shell.html#save-the-first-20-ids-to-a-file",
-    "href": "exercises/linux_shell.html#save-the-first-20-ids-to-a-file",
+    "objectID": "exercises/linux_shell.html#save-the-first-20-speciesisland-records-to-a-file",
+    "href": "exercises/linux_shell.html#save-the-first-20-speciesisland-records-to-a-file",
     "title": "Linux & the Shell — Open-Ended Exercises",
-    "section": "9) Save the first 20 IDs to a file",
-    "text": "9) Save the first 20 IDs to a file\nQuestion. Write the first 20 IDs (not including header) to sample_ids.txt.\n\n\nShow solution\n\ntail -n +2 penguins.csv | cut -d',' -f1 | head -n 20 &gt; sample_ids.txt\nwc -l sample_ids.txt   # should be 20"
+    "section": "9) Save the first 20 species/island records to a file",
+    "text": "9) Save the first 20 species/island records to a file\nQuestion. Write the first 20 species and island records (not including the header) to sample_records.txt.\n\n\nShow solution\n\ntail -n +2 penguins.csv | cut -d',' -f1,2 | head -n 20 &gt; sample_records.txt\nwc -l sample_records.txt   # should be 20"
   },
   {
     "objectID": "exercises/linux_shell.html#chain-operations-with-pipes",
     "href": "exercises/linux_shell.html#chain-operations-with-pipes",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "10) Chain operations with pipes",
-    "text": "10) Chain operations with pipes\nQuestion. Among male participants, show counts by age (3rd column) in ascending order.\n\n\nShow solution\n\nawk -F',' 'NR&gt;1 && $2==\"male\"{print $3}' penguins.csv | sort -n | uniq -c"
+    "text": "10) Chain operations with pipes\nQuestion. Among male penguins, show counts by species in alphabetical order.\n\n\nShow solution\n\nawk -F',' 'NR&gt;1 && $7==\"male\"{print $1}' penguins.csv | sort | uniq -c"
   },
   {
     "objectID": "exercises/linux_shell.html#make-the-analysis-reproducible-with-a-script",
     "href": "exercises/linux_shell.html#make-the-analysis-reproducible-with-a-script",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "11) Make the analysis reproducible with a script",
-    "text": "11) Make the analysis reproducible with a script\nQuestion. Create analyze.sh that prints: total rows, rows age ≥ 60, and mean BMI. Run it.\n\n\nShow solution\n\ncat &gt; analyze.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\n\ncsv=\"${1:-penguins.csv}\"\n\necho \"File: $csv\"\necho -n \"Total data rows: \"\ntail -n +2 \"$csv\" | wc -l\n\necho -n \"Age &gt;= 60 rows: \"\nawk -F',' 'NR&gt;1 && $3 &gt;= 60 {c++} END{print c+0}' \"$csv\"\n\necho -n \"Mean BMI: \"\nawk -F',' 'NR&gt;1 {s+=$4; n++} END{print s/n}' \"$csv\"\nEOF\n\nchmod +x analyze.sh\n./analyze.sh penguins.csv"
+    "text": "11) Make the analysis reproducible with a script\nQuestion. Create analyze.sh that prints: total rows, bill-length ≥ 50 mm rows, and mean body mass. Run it.\n\n\nShow solution\n\ncat &gt; analyze.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\n\ncsv=\"${1:-penguins.csv}\"\n\necho \"File: $csv\"\necho -n \"Total data rows: \"\ntail -n +2 \"$csv\" | wc -l\n\necho -n \"Bill length &gt;= 50 mm rows: \"\nawk -F',' 'NR&gt;1 && $3 &gt;= 50 {c++} END{print c+0}' \"$csv\"\n\necho -n \"Mean body mass (g): \"\nawk -F',' 'NR&gt;1 && $6 != \"\" {s+=$6; n++} END{print s/n}' \"$csv\"\nEOF\n\nchmod +x analyze.sh\n./analyze.sh penguins.csv"
   },
   {
     "objectID": "exercises/linux_shell.html#script-for-compressed-input",
     "href": "exercises/linux_shell.html#script-for-compressed-input",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "12) Script for compressed input",
-    "text": "12) Script for compressed input\nQuestion. Modify your script so it also accepts penguins.csv.gz seamlessly.\n\n\nShow solution\n\ncat &gt; analyze_any.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\nf=\"${1:-penguins.csv}\"\n\nstream() {\n  case \"$f\" in\n    *.gz)  gzip -cd \"$f\" ;;\n    *)     cat \"$f\" ;;\n  esac\n}\n\n# Skip header once:\ndata=\"$(stream | tail -n +2)\"\n\necho \"File: $f\"\necho \"Total data rows: $(printf \"%s\\n\" \"$data\" | wc -l)\"\necho \"Age &gt;= 60 rows: $(printf \"%s\\n\" \"$data\" | awk -F',' '$3&gt;=60{c++} END{print c+0}')\"\necho \"Mean BMI: $(printf \"%s\\n\" \"$data\" | awk -F',' '{s+=$4; n++} END{print s/n}')\"\nEOF\n\nchmod +x analyze_any.sh\n./analyze_any.sh penguins.csv.gz"
+    "text": "12) Script for compressed input\nQuestion. Modify your script so it also accepts penguins.csv.gz seamlessly.\n\n\nShow solution\n\ncat &gt; analyze_any.sh &lt;&lt; 'EOF'\n#!/usr/bin/env bash\nset -euo pipefail\nf=\"${1:-penguins.csv}\"\n\nstream() {\n  case \"$f\" in\n    *.gz)  gzip -cd \"$f\" ;;\n    *)     cat \"$f\" ;;\n  esac\n}\n\necho \"File: $f\"\necho \"Total data rows: $(stream | tail -n +2 | wc -l)\"\necho \"Bill length &gt;= 50 mm rows: $(stream | awk -F',' 'NR&gt;1 && $3&gt;=50{c++} END{print c+0}')\"\necho \"Mean body mass (g): $(stream | awk -F',' 'NR&gt;1 && $6!=\"\"{s+=$6; n++} END{print s/n}')\"\nEOF\n\nchmod +x analyze_any.sh\n./analyze_any.sh penguins.csv.gz"
   },
   {
     "objectID": "exercises/linux_shell.html#record-a-reproducible-terminal-session",
@@ -252,11 +252,11 @@
     "text": "17) Sanity checks and integrity\nQuestion. Verify that the compressed and uncompressed files have identical content checksums.\n\n\nShow solution\n\nmd5sum penguins.csv\ngzip -c penguins.csv | md5sum       # checksum of compressed stream (different)\ngzip -cd penguins.csv.gz | md5sum   # checksum of decompressed content stream\n# To compare content equality:\nmd5sum penguins.csv &gt; a.md5\ngzip -cd penguins.csv.gz | md5sum &gt; b.md5\ndiff a.md5 b.md5   # no output =&gt; identical content\nExplanation: the compressed file’s checksum differs, but the decompressed content checksum should match the original."
   },
   {
-    "objectID": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
-    "href": "exercises/linux_shell.html#find-an-answer-in-the-shell-you-didnt-know",
+    "objectID": "exercises/linux_shell.html#agent-assisted-command-line-investigation",
+    "href": "exercises/linux_shell.html#agent-assisted-command-line-investigation",
     "title": "Linux & the Shell — Open-Ended Exercises",
-    "section": "18) Find an Answer in the Shell you didn’t know",
-    "text": "18) Find an Answer in the Shell you didn’t know\nQuestion. Either ask a question about the shell you do not know, one thing you’d like your terminal to be able to do more easily, or figure out something with data (e.g. pull one column from a CSV file in bash/shell).\nShare this question/solution with the instructors and the class."
+    "section": "18) Agent-assisted command-line investigation",
+    "text": "18) Agent-assisted command-line investigation\nQuestion. Choose a question about the shell or this dataset that you cannot yet answer (for example: create a species-by-island table, safely find all CSVs larger than 10 MB, or identify duplicate records). Use an AI agent to propose a solution, then test it on penguins.csv and improve it if needed.\nSubmit: your question; the agent prompt and response link/transcript; the final command or script; its output; and 3–5 sentences explaining why it is correct, including one edge case or safety check. Share one useful correction with the class."
   },
   {
     "objectID": "exercises/slurm_and_the_cluster.html",
@@ -319,7 +319,7 @@
     "href": "exercises/slurm_and_the_cluster.html#jobs-with-dependencies",
     "title": "Submitting Jobs on HPC with SLURM",
     "section": "Jobs with Dependencies",
-    "text": "Jobs with Dependencies\nRead through https://hpc.nih.gov/docs/job_dependencies.html\nQuestion. How can you run 2 jobs with the 2nd job depending on the first."
+    "text": "Jobs with Dependencies\nRead through https://hpc.nih.gov/docs/job_dependencies.html\nQuestion. How can you run 2 jobs with the 2nd job depending on the first.\nChallenge. Write a minimal combine.sbatch and the submission commands so that it runs only if a preceding array job succeeds. Capture the parent job ID with sbatch --parsable, use --dependency=afterok:&lt;jobid&gt;, and show how you would inspect a dependency that is pending. Explain what should happen if one array task fails."
   },
   {
     "objectID": "exercises/slurm_and_the_cluster.html#resource-requests-usage-diagnostics",
@@ -369,6 +369,13 @@
     "title": "Submitting Jobs on HPC with SLURM",
     "section": "Deliverables (for practice)",
     "text": "Deliverables (for practice)\n\nr_minimal.sbatch and output log\nsim.R, params.csv, sim_array.sbatch\nEvidence of a dependency submission (combine.sbatch and combined output)\nYour updated ~/.bashrc helpers"
+  },
+  {
+    "objectID": "exercises/slurm_and_the_cluster.html#capstone-failure-aware-simulation-workflow",
+    "href": "exercises/slurm_and_the_cluster.html#capstone-failure-aware-simulation-workflow",
+    "title": "Submitting Jobs on HPC with SLURM",
+    "section": "Capstone: failure-aware simulation workflow",
+    "text": "Capstone: failure-aware simulation workflow\nBuild a small, reproducible simulation project that runs a parameter grid as a Slurm array and produces one combined summary only when all required work succeeds. Your project must include a project-local README.md, a parameter source, a task script with deterministic seeds, an array submission script, a combining step with an afterok dependency, and logs written to logs/.\nUse an AI agent for one focused task (for example, diagnosing a failed task or drafting a resource-estimation plan), then validate its advice against sacct, the log, and your source files. Submit the agent prompt, the evidence you checked, and one improvement you made. Include a short resource report comparing requested versus observed CPU time and memory, plus a resubmission plan for failures. Never submit an agent-generated script blindly."
   },
   {
     "objectID": "homework/presentation2.html",
@@ -648,14 +655,63 @@
     "href": "exercises/power.html#optional-monte-carlo-verification-5-minutes",
     "title": "Power & Sample Size",
     "section": "7) (Optional) Monte Carlo verification (5 minutes)",
-    "text": "7) (Optional) Monte Carlo verification (5 minutes)\nSimulate to verify analytic power for a two‑sample t‑test or slope test.\n\n\nAnswer\n\n\n\nCode\nset.seed(1)\nB &lt;- 5000\nn &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05\np &lt;- replicate(B, {\n  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)\n  t.test(x2, x1, var.equal = TRUE)$p.value\n})\nmean(p &lt; alpha)  # ~ power\n\n\n\n\n\nQuick reference\n\nOne‑sample n (z‑approx): ( \\(n = (z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nTwo‑sample per‑group n: ( \\(n = 2(z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nSLR slope power ncp: ( \\(\\lambda = (\\beta_1/\\sigma)\\sqrt{S_{xx}} \\approx (\\beta_1/\\sigma)\\sqrt{n-1}\\) )\nOverall MR test: (\\(f^2=R^2/(1-R^2)\\), \\(\\lambda=f^2(n-p-1)\\))\nPI half‑width at (x_0): ( \\(t\\sigma\\sqrt{1+1/n+(x_0-\\bar x)^2/S_{xx}}\\) )"
+    "text": "7) (Optional) Monte Carlo verification (5 minutes)\nSimulate to verify analytic power for a two‑sample t‑test or slope test.\n\n\nAnswer\n\n\n\nCode\nset.seed(1)\nB &lt;- 5000\nn &lt;- 40; sd &lt;- 12; delta &lt;- 5; alpha &lt;- 0.05\np &lt;- replicate(B, {\n  x1 &lt;- rnorm(n, 0, sd); x2 &lt;- rnorm(n, delta, sd)\n  t.test(x2, x1, var.equal = TRUE)$p.value\n})\nmean(p &lt; alpha)  # ~ power"
+  },
+  {
+    "objectID": "exercises/power.html#design-review-challenge-plan-under-uncertainty-20-minutes",
+    "href": "exercises/power.html#design-review-challenge-plan-under-uncertainty-20-minutes",
+    "title": "Power & Sample Size",
+    "section": "8) Design-review challenge: plan under uncertainty (20 minutes)",
+    "text": "8) Design-review challenge: plan under uncertainty (20 minutes)\nYou are planning a two-arm study with a continuous primary outcome. A pilot suggests an SD between 10 and 14; the smallest effect worth detecting is 4 units; you can recruit at most 130 participants total; and anticipate 15% dropout. The primary analysis is a two-sided two-sample t-test at α = 0.05 with equal allocation.\nDeliverable. Write a one-page design recommendation that:\n\ncalculates the analyzable and enrolled sample sizes needed for 80% power at SD = 10, 12, and 14;\nreports achieved power at the maximum feasible enrollment after dropout;\ngives a transparent recommendation and one contingency if the pilot SD is too optimistic; and\nverifies one analytic result with a simulation (state the number of replicates and Monte Carlo uncertainty).\n\nYou may ask an AI agent for a first-pass calculation or code, but include your prompt, independently check one output, and explain any correction you made. The grade is based on the reasoning and audit trail, not on whether an agent produced code quickly.\n\n\nQuick reference\n\nOne‑sample n (z‑approx): ( \\(n = (z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nTwo‑sample per‑group n: ( \\(n = 2(z_{1-\\alpha/2}+z_{1-\\beta})^2 \\frac{\\sigma^2}{\\delta^2}\\) )\nSLR slope power ncp: ( \\(\\lambda = (\\beta_1/\\sigma)\\sqrt{S_{xx}} \\approx (\\beta_1/\\sigma)\\sqrt{n-1}\\) )\nOverall MR test: (\\(f^2=R^2/(1-R^2)\\), \\(\\lambda=f^2(n-p-1)\\))\nPI half‑width at (x_0): ( \\(t\\sigma\\sqrt{1+1/n+(x_0-\\bar x)^2/S_{xx}}\\) )"
   },
   {
     "objectID": "exercises/data_viz.html",
     "href": "exercises/data_viz.html",
     "title": "Data Visualization",
     "section": "",
-    "text": "TipHow to render with/without answers\n\n\n\n\nWith answers (default): quarto render viz-handout.qmd\nWithout answers (figures only): quarto render viz-handout.qmd -P show_answers:false"
+    "text": "TipHow to render with/without answers\n\n\n\n\nWith answers (default): quarto render exercises/data_viz.qmd\nWithout answers (figures only): quarto render exercises/data_viz.qmd -P show_answers:false"
+  },
+  {
+    "objectID": "exercises/data_viz.html#choose-a-nontechnical-buyer-deciding-whether-a-diamond-is-in-a-plausible-price-range.-redesign-the-plot-for-that-decision-then-write-100150-words-explaining-what-you-changed-what-trade-off-it-creates-and-why-the-density-overlay-is-or-is-not-still-useful.-an-agent-may-propose-options-but-you-must-justify-the-final-choice.",
+    "href": "exercises/data_viz.html#choose-a-nontechnical-buyer-deciding-whether-a-diamond-is-in-a-plausible-price-range.-redesign-the-plot-for-that-decision-then-write-100150-words-explaining-what-you-changed-what-trade-off-it-creates-and-why-the-density-overlay-is-or-is-not-still-useful.-an-agent-may-propose-options-but-you-must-justify-the-final-choice.",
+    "title": "Data Visualization",
+    "section": "Choose a nontechnical buyer deciding whether a diamond is in a plausible price range. Redesign the plot for that decision, then write 100–150 words explaining what you changed, what trade-off it creates, and why the density overlay is or is not still useful. An agent may propose options, but you must justify the final choice.",
+    "text": "Choose a nontechnical buyer deciding whether a diamond is in a plausible price range. Redesign the plot for that decision, then write 100–150 words explaining what you changed, what trade-off it creates, and why the density overlay is or is not still useful. An agent may propose options, but you must justify the final choice."
+  },
+  {
+    "objectID": "exercises/data_viz.html#create-a-deliberately-less-informative-version-of-this-plot-for-example-by-changing-scales-overplotting-or-grouping-then-repair-it.-include-a-short-caption-identifying-the-specific-inference-that-the-bad-version-could-encourage.",
+    "href": "exercises/data_viz.html#create-a-deliberately-less-informative-version-of-this-plot-for-example-by-changing-scales-overplotting-or-grouping-then-repair-it.-include-a-short-caption-identifying-the-specific-inference-that-the-bad-version-could-encourage.",
+    "title": "Data Visualization",
+    "section": "Create a deliberately less informative version of this plot (for example, by changing scales, overplotting, or grouping), then repair it. Include a short caption identifying the specific inference that the bad version could encourage.",
+    "text": "Create a deliberately less informative version of this plot (for example, by changing scales, overplotting, or grouping), then repair it. Include a short caption identifying the specific inference that the bad version could encourage."
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better",
+    "href": "exercises/data_viz.html#make-the-above-graph-better",
+    "title": "Data Visualization",
+    "section": "# 3.1) Make the above graph better",
+    "text": "# 3.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-1",
+    "title": "Data Visualization",
+    "section": "# 5.1) Make the above graph better",
+    "text": "# 5.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-2",
+    "title": "Data Visualization",
+    "section": "# 6.1) Make the above graph better",
+    "text": "# 6.1) Make the above graph better"
+  },
+  {
+    "objectID": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "href": "exercises/data_viz.html#make-the-above-graph-better-3",
+    "title": "Data Visualization",
+    "section": "# 7.1) Make the above graph better",
+    "text": "# 7.1) Make the above graph better"
   },
   {
     "objectID": "exercises/data_viz.html#appendix-session-info-hidden",
