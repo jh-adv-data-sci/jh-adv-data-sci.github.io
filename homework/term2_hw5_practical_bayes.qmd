@@ -7,4 +7,14 @@ editor: source
 engine: knitr
 ---
 
-You will run a practical Bayes analysis.
+## Goal
+
+Conduct a practical Bayesian analysis that connects a real decision to a transparent model, prior, posterior, and posterior predictive check.
+
+## Requirements
+
+Use a public or approved research dataset and state one decision-relevant estimand. Fit a Bayesian model with at least two defensible prior specifications (including a sensitivity prior). Report posterior summaries as probabilities or decision quantities—not only credible intervals—and conduct posterior predictive checks and convergence diagnostics where applicable.
+
+Compare the conclusion under the prior choices, name one model limitation, and provide a 2-page report plus reproducible analysis. Include code, data-access instructions, environment information, and a `README.md`.
+
+AI can help explain software or draft code, but document prompts in `AI_USE.md` and independently check model specification, priors, and interpretation. Do not claim causal effects without a design that supports them.

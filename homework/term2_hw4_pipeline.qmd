@@ -7,4 +7,17 @@ editor: source
 engine: knitr
 ---
 
-You will create a pipeline that pulls from an API and runs only when the API changes.
+## Goal
+
+Create a reproducible, failure-aware pipeline that retrieves data from an API and runs downstream work only when the relevant data have changed.
+
+## Requirements
+
+- Choose a documented public API and identify the endpoint, license, update semantics, and rate limits.
+- Cache the raw response with metadata (retrieval time, URL/parameters, and content hash or stable version identifier).
+- Implement change detection that avoids unnecessary downstream computation while allowing a forced refresh.
+- Validate the schema and fail with a useful message if expected fields change or disappear.
+- Produce one derived artifact and a provenance record; test the unchanged, changed, and malformed-response paths.
+- Submit source code, a `README.md`, a small example cache/fixture where licensing permits, and a short architecture diagram.
+
+AI may help draft client code, but you must validate it against the API documentation and include prompts plus tests in `AI_USE.md`. Do not put API secrets in the repository or an AI prompt.

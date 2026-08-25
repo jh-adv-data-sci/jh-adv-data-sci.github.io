@@ -28,9 +28,15 @@ Simulation Parameters to Vary:
 + The error term $\epsilon$ will be drawn from $N(0, \exp(\alpha x))$. 
 + Values for alpha: 0 (no violation), 0.5 (mild), 1.0 (strong), 2.0 (extreme).
 + Degree of Autocorrelation ($\rho$): This violates the "independent errors" assumption, common in time-series data.
-+ The error term $\epsilon_i$ will be calculated as  $\epsilon_i = \epsilon_{i −1} + w_i$, where $w_i \sim N(0,2)$.
++ The error term will follow an AR(1) process, $\epsilon_i = \rho\epsilon_{i-1} + w_i$, where $w_i$ is Gaussian innovation noise scaled so that comparisons across $\rho$ are meaningful.
 + Values: 0 (no violation), 0.25 (mild), 0.5 (strong), 0.9 (extreme).
 
 Your full experiment will be a grid of 5 ($n$) x 4 ($\alpha$) x 4 ($\rho$) = 80 unique scenarios. For each scenario, run $1000$ replications.  Evaluate both bias and standard error. Run your simulation on the cluster using a SLURM array job.
 
 Include your code and a no more than two page write up of results in your git repository and push your changes. 
+
+## Reproducibility and AI-use requirements
+
+Use deterministic, scenario-specific seeds; save one result file per array task; and include a combine script that refuses to summarize incomplete scenarios. Report requested and observed resources from `sacct`, and show how you would identify and resubmit failed tasks. Your report should distinguish estimator bias, empirical variance, mean model-based standard error, and interval coverage; explain the role of each assumption violation.
+
+An AI agent may help draft or debug code, but submit an `AI_USE.md` containing relevant prompts, output used, and one independent check (for example, a locally run tiny grid or a hand-checked scenario). Never submit cluster jobs without reviewing requested resources and commands.

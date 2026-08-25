@@ -16,3 +16,8 @@ In this homework, you will write up grant proposal for a methods or application 
 + Approach
 + References
 
+## Evidence and AI-use expectations
+
+Name a funder and mechanism (or clearly state that this is a mock mechanism), an intended reviewer audience, and one measurable success criterion per aim. Include a one-paragraph feasibility/risk plan that names a technical risk and an alternative strategy. Cite primary or authoritative sources for factual claims.
+
+You may use an AI agent for outlining, editing, or brainstorming, but not as an uncited source of evidence. Include a brief disclosure of prompts/material assistance and fact-check every externally verifiable claim. Submit the proposal, references, and a one-page reviewer response that anticipates the strongest concern and your response.

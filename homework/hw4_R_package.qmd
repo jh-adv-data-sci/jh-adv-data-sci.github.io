@@ -14,5 +14,11 @@ The package must be checked using GitHub actions.  A badge for the check must be
 The packages must have unit tests.  The code coverage for this package must be over 70%.  The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README.
 
 
+## 2026 extension: trustworthy package interface
+
+Expose a validated, user-facing function that returns both the design recommendation and its assumptions. Test invalid inputs and at least one known-answer case, not only successful runs. Add a concise changelog and a reproducible example that generates a design sensitivity table or figure. Configure CI to run `R CMD check` and tests on a clean environment.
+
+AI tools may help scaffold documentation or tests, but you must review generated code and add an `AI_USE.md` noting what was used and how you validated it. Grading emphasizes API design, test quality, documentation, and reproducibility—not code volume.
+
 <!-- Assume a 1:1 treatment design. -->
 <!-- Input: alpha level (assume a 2-sided test), partial r-squared -->

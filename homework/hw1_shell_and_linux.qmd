@@ -28,9 +28,10 @@ echo "Generated 200 files in the 'generated_files' directory."
 echo "Each subject has two versions (v1, v2) and two types (mri, dti)."
 echo "Total files generated: 100 subjects * 2 versions * 2 types = 400 files."
 
-# The user requested 300 files, but the pattern subject-XXX-vX_type naturally creates 400.
-# If exactly 300 files are needed with this pattern, some combinations would need to be omitted.
-# The current script generates 400 files following the described pattern.
 ```
 
-Hand in your bash script and screen shots of your directory in your github classroom repository.
+## Requirements and submission
+
+Your script must use `set -euo pipefail`, accept input and output directories as arguments, be safe to re-run, and report the number of files it organized. Add a verification command that proves there are exactly 400 files in the expected subject/visit/type layout. Submit the script, a short `README.md` with the command used, and terminal output (not only screenshots) in your GitHub Classroom repository.
+
+You may use an AI agent to explain shell syntax or draft a first version. Include the prompt(s), inspect every file-moving command before running it, and describe one test or correction you made. Do not use destructive commands on directories outside this homework workspace.

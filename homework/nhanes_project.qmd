@@ -61,3 +61,9 @@ Do not use `setwd` in your scripts.
 Make sure the figure aspect ratios are appropriate (get someone else to look it over!).
 
 Any questions on this project should be posted as an issue on <https://github.com/jh-adv-data-sci/adv_data_sci_2023/issues>.
+
+## 2026 extension: auditable analysis
+
+Add a data dictionary mapping every analytic variable to its NHANES source variable, coding decision, and missing-data handling. Make the report fully reproducible from a fresh clone with one documented command; do not commit credentials. Include a sensitivity analysis for one consequential modeling or missingness decision, and distinguish association from causal language.
+
+You may use an AI agent for code explanation or debugging, but include an `AI_USE.md` with prompts, output used, and a verification note. Treat codebooks and the data itself as the authority: validate any agent-proposed variable definition against the source documentation.

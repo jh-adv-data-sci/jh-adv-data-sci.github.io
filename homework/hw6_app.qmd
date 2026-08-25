@@ -14,6 +14,11 @@ In this homework, you will bundle your R package for the Alzheimer's trial in a 
 3. A link to the live app hosted on `shinyapps.io` (or other live hosting/using WebR) in the README file
 4. An animated gif screenshot of the app in action in the README file (note there are chrome extensions that can help you create these)
 
+## 2026 extension: decision-ready and tested
+
+The app must surface assumptions, validate inputs, and show the resulting sample-size/power/cost trade-offs rather than returning only a number. Include at least one sensitivity visualization and a downloadable, reproducible design summary. Add automated tests for the underlying calculation functions and a short manual test checklist for the app’s main flow and invalid inputs.
+
+If an AI agent helped build the interface or debug deployment, document the prompts and verification steps in `AI_USE.md`. Do not include participant-level or other sensitive data in prompts, screenshots, or the deployed app.
 
 
 
