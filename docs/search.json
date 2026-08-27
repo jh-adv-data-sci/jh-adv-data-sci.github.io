@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Class 1: Intro and AI\nClass 2: Linux & Shell – Present (intro, basics) and Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\n\nClass 5: Power and Sample Size\nClass 6: Power – Practice\n\n\n\n\n\n\nClass 7: R packages \nClass 8: Grants\n\n\n\n\n\n\nClass 9: Present P1 (see Presentations) \nClass 10: SQL Basics and Hurdles\n\n\n\n\n\n\nClass 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Application\n\n\n\n\n\n\nClass 13: (pushed from before) SQL Basics and Hurdles\n\nClass 14: App Dashboard – Setup & Workflow\n\n\n\n\n\n\nClass 15: App Dashboard – Application \nClass 16: Final Presentations"
+    "text": "Class 1: Intro and AI\nClass 2: Linux & Shell – Present (intro, basics) and Linux & Shell - Practice (hands-on commands)\n\n\n\n\nHomework 1: Homework 1\n\n\n\n\n\n\n\nClass 3: SLURM and the Cluster\nClass 4: SLURM and the Cluster - Practice\n\n\n\n\n\n\nClass 5: Power and Sample Size\nClass 6: Power – Practice\n\n\n\n\n\n\nClass 7: Packing Software: Tools and Creating R packages \nClass 8: Grants\n\n\n\n\n\n\nClass 9: Present P1 (see Presentations) \nClass 10: SQL Basics and Hurdles\n\n\n\n\n\n\nClass 11: Project Setup\nClass 12: Data Visualization – Lecture\n\n\n\n\n\n\n\nClass 13: Data Visualization (EDA) – Application\nClass 14: App Dashboard – Setup & Workflow\n\n\n\n\n\n\nClass 15: App Dashboard – Application \nClass 16: Final Presentations"
   },
   {
     "objectID": "schedule.html#week-1",
@@ -32,7 +32,7 @@
     "href": "schedule.html#week-4",
     "title": "Schedule",
     "section": "",
-    "text": "Class 7: R packages \nClass 8: Grants"
+    "text": "Class 7: Packing Software: Tools and Creating R packages \nClass 8: Grants"
   },
   {
     "objectID": "schedule.html#week-5",
@@ -46,14 +46,14 @@
     "href": "schedule.html#week-6",
     "title": "Schedule",
     "section": "",
-    "text": "Class 11: Data Visualization – Lecture\n\nClass 12: Data Visualization (EDA) – Application"
+    "text": "Class 11: Project Setup\nClass 12: Data Visualization – Lecture"
   },
   {
     "objectID": "schedule.html#week-7",
     "href": "schedule.html#week-7",
     "title": "Schedule",
     "section": "",
-    "text": "Class 13: (pushed from before) SQL Basics and Hurdles\n\nClass 14: App Dashboard – Setup & Workflow"
+    "text": "Class 13: Data Visualization (EDA) – Application\nClass 14: App Dashboard – Setup & Workflow"
   },
   {
     "objectID": "schedule.html#week-8",
@@ -81,7 +81,7 @@
     "href": "schedule.html#week-3-1",
     "title": "Schedule",
     "section": "Week 3",
-    "text": "Week 3\n\n\nClass 5: Missing Data \nClass 6: Project Setup"
+    "text": "Week 3\n\n\nClass 5: Missing Data \nClass 6:"
   },
   {
     "objectID": "schedule.html#week-4-1",
@@ -123,14 +123,14 @@
     "href": "exercises/linux_shell.html",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "",
-    "text": "Tip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal.\nIf you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there."
+    "text": "Tip: Unless stated otherwise, exercises assume a CSV named penguins.csv (with a header) in the working directory. Exercise 0 shows how to download one from the internet. Answers are hidden—click to reveal.\nIf you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces/RStudio Terminal for one of your repositories and navigate through there."
   },
   {
     "objectID": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
     "href": "exercises/linux_shell.html#download-a-csv-from-the-internet-and-name-it-penguins.csv",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "0) Download a CSV from the internet (and name it penguins.csv)",
-    "text": "0) Download a CSV from the internet (and name it penguins.csv)\nQuestion. Use a command-line tool to download a CSV and save it as penguins.csv. Verify it looks like a CSV and preview the first few lines.\nThe file is available at https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n\nShow solution\n\n# Using curl (follow redirects, write to file):\ncurl -L -o penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# Or using wget:\nwget -O penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# (Optional) R from shell:\nR -q -e \"download.file('https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv','penguins.csv', mode='wb')\"\n\n# (Optional) Python from shell:\npython - &lt;&lt;'PY'\nimport urllib.request\nurl='https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv'\nurllib.request.urlretrieve(url, 'penguins.csv')\nPY\n\n# Basic checks\nfile penguins.csv\nhead -n 5 penguins.csv\nwc -l penguins.csv   # total lines (incl. header)\nNotes: - -L (curl) follows redirects. -O/-o choose output filename. - Use head, wc -l, and cut -d',' -f1-5 | head to quickly sanity-check."
+    "text": "0) Download a CSV from the internet (and name it penguins.csv)\nQuestion. Use a command-line tool to download a CSV and save it as penguins.csv. Verify it looks like a CSV and preview the first few lines.\nThe file is available at https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n\nShow solution\n\n# Using curl (follow redirects, write to file):\ncurl -L -o penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# Or using wget:\nwget -O penguins.csv \\\n  https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\n\n# (Optional) R from shell:\nR -q -e \"download.file('https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv','penguins.csv', mode='wb')\"\n\n# (Optional) Python from shell:\npython - &lt;&lt;'PY'\nimport urllib.request\nurl='https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv'\nurllib.request.urlretrieve(url, 'penguins.csv')\nPY\n\n# Basic checks\nfile penguins.csv\nhead -n 5 penguins.csv\nwc -l penguins.csv   # total lines (incl. header)\nNotes:\n\n-L (curl) follows redirects. -O/-o choose output filename.\nUse head, wc -l, and cut -d',' -f1-5 | head to quickly sanity-check."
   },
   {
     "objectID": "exercises/linux_shell.html#where-am-i-whats-here",
@@ -186,7 +186,7 @@
     "href": "exercises/linux_shell.html#find-rows-with-missing-values-in-any-field",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "8) Find rows with missing values in any field",
-    "text": "8) Find rows with missing values in any field\nQuestion. Count how many data rows contain an empty field.\n\n\nShow solution\n\n# simple heuristic: consecutive delimiters or trailing comma\ngrep -E ',,' penguins.csv | wc -l\n# more thorough (detect empty at start/end or middle):\nawk -F',' 'NR&gt;1{for(i=1;i&lt;=NF;i++) if($i==\"\"){m++ ; break}} END{print m+0}' penguins.csv"
+    "text": "8) Find rows with missing values in any field\nQuestion. Count how many data rows contain an empty field. Assume the data elements are not quoted.\n\n\nShow solution\n\n# simple heuristic: consecutive delimiters or trailing comma\ngrep -E ',,' penguins.csv | wc -l\n# more thorough (detect empty at start/end or middle):\nawk -F',' 'NR&gt;1{for(i=1;i&lt;=NF;i++) if($i==\"\"){m++ ; break}} END{print m+0}' penguins.csv"
   },
   {
     "objectID": "exercises/linux_shell.html#save-the-first-20-speciesisland-records-to-a-file",
@@ -228,7 +228,7 @@
     "href": "exercises/linux_shell.html#one-liners-for-large-files",
     "title": "Linux & the Shell — Open-Ended Exercises",
     "section": "14) One-liners for large files",
-    "text": "14) One-liners for large files\nQuestion. Show the uncompressed byte size of penguins.csv.gz without fully inflating it; then estimate memory needed to load the CSV.\n\n\nShow solution\n\n# Uncompressed and compressed sizes (bytes):\ngzip -l penguins.csv.gz\n\n# Rough row count without header (streaming):\nrows=$(gzip -cd penguins.csv.gz | tail -n +2 | wc -l)\necho \"Rows: $rows\"\nNotes: - gzip -l reports compressed and uncompressed sizes; not row count. - Memory needs depend on parsing overhead; this is only an order-of-magnitude check."
+    "text": "14) One-liners for large files\nQuestion. Show the uncompressed byte size of penguins.csv.gz without fully inflating it; then estimate memory needed to load the CSV.\n\n\nShow solution\n\n# Uncompressed and compressed sizes (bytes):\ngzip -l penguins.csv.gz\n\n# Rough row count without header (streaming):\nrows=$(gzip -cd penguins.csv.gz | tail -n +2 | wc -l)\necho \"Rows: $rows\"\nNotes:\n\ngzip -l reports compressed and uncompressed sizes; not row count.\nMemory needs depend on parsing overhead; this is only an order-of-magnitude check."
   },
   {
     "objectID": "exercises/linux_shell.html#remotehpc-touchpoint-optional",

@@ -233,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Using an AI agent well:</strong> You may ask an agent to explain a command, draft a first attempt, or help debug an error. Before running a command that writes, deletes, transfers, or submits work, inspect it yourself. For the challenge below, submit the prompt(s) you used, the command you ran, and a short note on what you verified or corrected.</p>
 </blockquote>
 <hr>
-<p><strong>If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there.</strong></p>
+<p><strong>If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces/RStudio Terminal for one of your repositories and navigate through there.</strong></p>
 <section id="download-a-csv-from-the-internet-and-name-it-penguins.csv" class="level2">
 <h2 class="anchored" data-anchor-id="download-a-csv-from-the-internet-and-name-it-penguins.csv">0) Download a CSV from the internet (and name it <code>penguins.csv</code>)</h2>
 <p><strong>Question.</strong> Use a command-line tool to download a CSV and save it as <code>penguins.csv</code>. Verify it looks like a CSV and preview the first few lines.</p>
@@ -264,7 +264,11 @@ Show solution
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">file</span> penguins.csv</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-n</span> 5 penguins.csv</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> penguins.csv   <span class="co"># total lines (incl. header)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-Notes: - <code>-L</code> (curl) follows redirects. <code>-O/-o</code> choose output filename. - Use <code>head</code>, <code>wc -l</code>, and <code>cut -d',' -f1-5 | head</code> to quickly sanity-check.
+<p>Notes:</p>
+<ul>
+<li><code>-L</code> (curl) follows redirects. <code>-O/-o</code> choose output filename.</li>
+<li>Use <code>head</code>, <code>wc -l</code>, and <code>cut -d',' -f1-5 | head</code> to quickly sanity-check.</li>
+</ul>
 </details>
 <hr>
 </section>
@@ -379,7 +383,7 @@ Show solution
 </section>
 <section id="find-rows-with-missing-values-in-any-field" class="level2">
 <h2 class="anchored" data-anchor-id="find-rows-with-missing-values-in-any-field">8) Find rows with missing values in <strong>any</strong> field</h2>
-<p><strong>Question.</strong> Count how many data rows contain an empty field.</p>
+<p><strong>Question.</strong> Count how many data rows contain an empty field. Assume the data elements are not quoted.</p>
 <details>
 <summary>
 Show solution
@@ -500,7 +504,11 @@ Show solution
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Rough row count without header (streaming):</span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="va">rows</span><span class="op">=</span><span class="va">$(</span><span class="fu">gzip</span> <span class="at">-cd</span> penguins.csv.gz <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> +2 <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span></span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Rows: </span><span class="va">$rows</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-Notes: - <code>gzip -l</code> reports compressed and uncompressed sizes; not row count. - Memory needs depend on parsing overhead; this is only an order-of-magnitude check.
+<p>Notes:</p>
+<ul>
+<li><code>gzip -l</code> reports compressed and uncompressed sizes; not row count.</li>
+<li>Memory needs depend on parsing overhead; this is only an order-of-magnitude check.</li>
+</ul>
 </details>
 <hr>
 </section>
