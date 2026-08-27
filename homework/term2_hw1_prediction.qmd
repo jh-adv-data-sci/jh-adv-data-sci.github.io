@@ -7,6 +7,17 @@ editor: source
 engine: knitr
 ---
 
-In this homework, you will participate in a prediction competition.
+## Goal
 
+Participate in the course prediction competition and build a reproducible prediction system rather than optimizing a single leaderboard submission.
+
+## Requirements
+
+- Define the outcome, unit of prediction, loss/leaderboard metric, and the information available at prediction time.
+- Create a leakage-resistant train/validation strategy before tuning models. Explain why it matches the data-generating or deployment setting.
+- Submit at least two substantively different baselines and one improved model. Report validation performance, calibration or residual diagnostics as appropriate, and a brief error/slice analysis.
+- Save code, package/environment information, predictions, and a `README.md` with exact reproduction instructions. Do not include hidden test labels in the repository.
+- Write a 2-page model card: intended use, inputs, validation design, results, limitations, and potential harms or failure modes.
+
+AI agents may help with API questions or debugging. Record prompts and output relied on in `AI_USE.md`, and independently verify that no suggested feature leaks future or target information.
 

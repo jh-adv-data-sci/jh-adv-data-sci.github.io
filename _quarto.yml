@@ -10,8 +10,6 @@ website:
         text: Home
       - href: schedule.qmd
         text: Schedule/Syllabus
-      - href: exercises.qmd
-        text: Exercises
       - href: homework.qmd
       - text: "Instructors"
         menu: # The 'menu' key creates a drop-down

@@ -102,10 +102,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercises.html"> 
-<span class="menu-text">Exercises</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
@@ -139,11 +135,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -153,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -171,9 +174,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You will run a practical Bayes analysis.</p>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<p>Conduct a practical Bayesian analysis that connects a real decision to a transparent model, prior, posterior, and posterior predictive check.</p>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<p>Use a public or approved research dataset and state one decision-relevant estimand. Fit a Bayesian model with at least two defensible prior specifications (including a sensitivity prior). Report posterior summaries as probabilities or decision quantities—not only credible intervals—and conduct posterior predictive checks and convergence diagnostics where applicable.</p>
+<p>Compare the conclusion under the prior choices, name one model limitation, and provide a 2-page report plus reproducible analysis. Include code, data-access instructions, environment information, and a <code>README.md</code>.</p>
+<p>AI can help explain software or draft code, but document prompts in <code>AI_USE.md</code> and independently check model specification, priors, and interpretation. Do not claim causal effects without a design that supports them.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

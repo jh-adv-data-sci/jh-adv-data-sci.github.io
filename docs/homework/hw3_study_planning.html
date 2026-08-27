@@ -102,10 +102,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercises.html"> 
-<span class="menu-text">Exercises</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
@@ -139,11 +135,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#design-review-requirements" id="toc-design-review-requirements" class="nav-link active" data-scroll-target="#design-review-requirements">Design review requirements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -153,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -171,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.</p>
+<p>You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test Clinical Dementia Rating (CDR) sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected.</p>
 <p>You have no preliminary data.</p>
 <p>Do the following:</p>
 <ul>
@@ -185,9 +187,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Investigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.</li>
 </ul>
 <p>Write up your results in a no more than 2 page technical paper.</p>
+<section id="design-review-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="design-review-requirements">Design review requirements</h2>
+<p>Make the missing design assumptions explicit (effect sizes, outcome variability, correlation of repeated measures, dropout, allocation, and multiplicity strategy). Perform a sensitivity analysis over at least three plausible values for the primary-outcome standard deviation (SD) and treatment effect, and show whether each option meets both the 90% power and $1M budget constraints. Clearly distinguish costs for randomized, retained, and MRI-assessed participants.</p>
+<p>You may use an AI agent to locate a formula, draft code, or critique the plan. Document that use in an appendix: prompts, output relied on, and an independent verification of one calculation. The recommendation must be yours and must explain how it changes if the assumed effect or dropout is worse than expected.</p>
 <p>This project will be used as the foundation for one of your in-class presentations.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

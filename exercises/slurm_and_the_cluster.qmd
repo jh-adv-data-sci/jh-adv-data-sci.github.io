@@ -13,6 +13,8 @@ engine: knitr
 
 > **Setup assumptions:** You have SSH access to the cluster and R is available via modules or a system install. Replace partition/account names with your site's values.
 
+> **Using agentic AI safely:** An agent can draft an `sbatch` file or help interpret a log, but it does not know your cluster's partitions, policies, data restrictions, or quotas. Do not paste sensitive data or credentials into an AI tool. Before submitting, inspect every `#SBATCH` directive and command; after completion, verify the exit code and output.
+
 ------------------------------------------------------------------------
 
 ## Warm‑up: Explore the cluster
@@ -298,6 +300,8 @@ Read through [https://hpc.nih.gov/docs/job_dependencies.html](https://hpc.nih.go
 
 **Question.** How can you run 2 jobs with the 2nd job depending on the first.
 
+**Challenge.** Write a minimal `combine.sbatch` and the submission commands so that it runs only if a preceding array job succeeds. Capture the parent job ID with `sbatch --parsable`, use `--dependency=afterok:<jobid>`, and show how you would inspect a dependency that is pending. Explain what should happen if one array task fails.
+
 
 
 ------------------------------------------------------------------------
@@ -528,3 +532,11 @@ Now copy `_header.sbatch` into new jobs and append your commands.
 -   `sim.R`, `params.csv`, `sim_array.sbatch`
 -   Evidence of a dependency submission (`combine.sbatch` and combined output)
 -   Your updated `~/.bashrc` helpers
+
+------------------------------------------------------------------------
+
+## Capstone: failure-aware simulation workflow
+
+Build a small, reproducible simulation project that runs a parameter grid as a Slurm array and produces one combined summary only when all required work succeeds. Your project must include a project-local `README.md`, a parameter source, a task script with deterministic seeds, an array submission script, a combining step with an `afterok` dependency, and logs written to `logs/`.
+
+Use an AI agent for one focused task (for example, diagnosing a failed task or drafting a resource-estimation plan), then validate its advice against `sacct`, the log, and your source files. Submit the agent prompt, the evidence you checked, and one improvement you made. Include a short resource report comparing requested versus observed CPU time and memory, plus a resubmission plan for failures. Never submit an agent-generated script blindly.

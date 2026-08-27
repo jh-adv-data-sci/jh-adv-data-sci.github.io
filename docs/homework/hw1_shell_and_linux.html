@@ -137,10 +137,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercises.html"> 
-<span class="menu-text">Exercises</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
@@ -174,11 +170,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#requirements-and-submission" id="toc-requirements-and-submission" class="nav-link active" data-scroll-target="#requirements-and-submission">Requirements and submission</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -188,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -222,14 +224,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Generated 200 files in the 'generated_files' directory."</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Each subject has two versions (v1, v2) and two types (mri, dti)."</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Total files generated: 100 subjects * 2 versions * 2 types = 400 files."</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># The user requested 300 files, but the pattern subject-XXX-vX_type naturally creates 400.</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># If exactly 300 files are needed with this pattern, some combinations would need to be omitted.</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># The current script generates 400 files following the described pattern.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Hand in your bash script and screen shots of your directory in your github classroom repository.</p>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Total files generated: 100 subjects * 2 versions * 2 types = 400 files."</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="requirements-and-submission" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-and-submission">Requirements and submission</h2>
+<p>Your script must use <code>set -euo pipefail</code>, accept input and output directories as arguments, be safe to re-run, and report the number of files it organized. Add a verification command that proves there are exactly 400 files in the expected subject/visit/type layout. Submit the script, a short <code>README.md</code> with the command used, and terminal output (not only screenshots).</p>
+<p>You may use an AI agent to explain shell syntax or draft a first version. Include the prompt(s), inspect every file-moving command before running it, and describe one test or correction you made. Do not use destructive commands on directories outside this homework workspace.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

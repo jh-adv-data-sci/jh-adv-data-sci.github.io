@@ -18,3 +18,4 @@ You will be graded on the following criteria:
 + Clarity of the presentation.
 + Design of the presentation.
 
+Include one slide that makes a design trade-off visible (for example, power, cost, and dropout) and one slide on the most important assumption or risk. If AI helped prepare the deck, disclose its bounded role in speaker notes; be ready to explain and defend every quantitative claim.

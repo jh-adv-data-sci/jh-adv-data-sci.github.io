@@ -7,7 +7,7 @@ editor: source
 engine: knitr
 ---
 
-You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test CDR sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected. 
+You are really excited that a collaborator has come up with a possible new Alzheimer’s disease treatment drug. The drug is thought of as reducing progression among those with mild cognitive impairment. A meeting with FDA officials stated the following. First, the primary outcome has to be the memory test Clinical Dementia Rating (CDR) sum of boxes and, second, the drug has to show a significant decrease in progression over a one year follow up. Otherwise, all other study parameters are available for debate. There’s a secondary outcome in the volume of the hippocampus that would be beneficial to test after the primary outcome. All tests need to be multiplicity corrected. 
 
 You have no preliminary data. 
 
@@ -23,5 +23,11 @@ Do the following:
 + Investigators are interested in whether controlling for baseline age impacts power. All subjects will be over 65. However, little else is known about their age distribution. They plan on testing the treatment effect using an ANCOVA test of the treatment effect on the change in primary outcome adjusting for age. Give a recommendation as to whether this strategy should be employed.
 
 Write up your results in a no more than 2 page technical paper.
+
+## Design review requirements
+
+Make the missing design assumptions explicit (effect sizes, outcome variability, correlation of repeated measures, dropout, allocation, and multiplicity strategy). Perform a sensitivity analysis over at least three plausible values for the primary-outcome standard deviation (SD) and treatment effect, and show whether each option meets both the 90% power and $1M budget constraints. Clearly distinguish costs for randomized, retained, and MRI-assessed participants.
+
+You may use an AI agent to locate a formula, draft code, or critique the plan. Document that use in an appendix: prompts, output relied on, and an independent verification of one calculation. The recommendation must be yours and must explain how it changes if the assumed effect or dropout is worse than expected.
 
 This project will be used as the foundation for one of your in-class presentations.

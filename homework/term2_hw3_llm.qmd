@@ -7,6 +7,15 @@ editor: source
 engine: knitr
 ---
 
-In this homework, you will call run a local LLM.
+## Goal
 
+Run a local LLM and evaluate it as a component in a small, reproducible data-science workflow.
+
+## Requirements
+
+Choose one bounded task with a reference answer set (for example, structured extraction, short-text classification, code explanation, or retrieval-grounded question answering). Run at least two prompt/model configurations locally. Specify the model/version, hardware/runtime, decoding settings, prompt templates, and any retrieved context.
+
+Evaluate at least 20 examples with a task-appropriate metric and a qualitative error taxonomy. Include examples of a useful answer and a failure, discuss privacy/copyright constraints, and propose one mitigation. Submit code, prompts, outputs or reproducible output-generation instructions, and a 2-page report.
+
+An LLM may assist with the project, but it cannot be its own sole evaluator: use reference labels, deterministic checks, or human review. Keep an `AI_USE.md` that distinguishes the model under study from other AI assistance.
 

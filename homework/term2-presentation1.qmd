@@ -12,3 +12,4 @@ In this presentation, you will discuss your strategy and results for the predict
 + Limit your presentation to 10 slides.
 + Limit your presentation to 5 minutes + 2 minutes for questions.
 
+Show the validation strategy, the leaderboard metric, and one failure mode or subgroup where performance changes. Clearly separate decisions made before seeing test labels from post-hoc exploration. If AI assisted with slides or code, disclose that assistance and be able to explain all features and metrics.

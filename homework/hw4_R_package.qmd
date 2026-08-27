@@ -9,10 +9,14 @@ engine: knitr
 
 Write an R package that implements your study planning analysis from the prior project where subjects can vary study parameters, such as inputs to the power calculator, cost per subject and so on. To do this, you will need to package your study planning code into functions and then package it up. The package should have documentation and a vignette that explains how to use the package. The README to your repo should explain how to build and install the package.
 
-The package must be checked using GitHub actions.  A badge for the check must be on the README.
+The package must be checked using GitHub Actions.  A badge for the check must be on the README.
 
-The packages must have unit tests.  The code coverage for this package must be over 70%.  The coverage should be checked automatically using GitHub actions and updated every time the package is checked, and requires a badge of the coverage in the README.
+The packages must have unit tests.  The code coverage for this package must be over 70%.  The coverage should be checked automatically using GitHub Actions and updated every time the package is checked, and requires a badge of the coverage (see `covr` package) in the README.
 
+
+Expose a validated, user-facing function that returns both the design recommendation and its assumptions. Test invalid inputs and at least one known-answer case, not only successful runs. Add a concise changelog (e.g. `NEWS.md`) and a reproducible example that generates a design sensitivity table or figure. Configure CI to run `R CMD check` and tests on a clean environment.  Use `devtools::release` to do everything required to submit to CRAN, but do **not** validate the submission.
+
+AI tools may help scaffold documentation or tests, but you must review generated code and add an `AI_USE.md` noting what was used and how you validated it. Grading emphasizes API design, test quality, documentation, and reproducibility—not code volume.
 
 <!-- Assume a 1:1 treatment design. -->
 <!-- Input: alpha level (assume a 2-sided test), partial r-squared -->
