@@ -17,7 +17,7 @@ engine: knitr
 
 ---
 
-**If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces for one of your repositories and navigate through there.**
+**If you do not have a Linux/Unix-based Machine (aka Windows), you can go to GitHub codespaces/RStudio Terminal for one of your repositories and navigate through there.**
 
 ## 0) Download a CSV from the internet (and name it `penguins.csv`)
 **Question.** Use a command-line tool to download a CSV and save it as `penguins.csv`. Verify it looks like a CSV and preview the first few lines.
@@ -54,6 +54,7 @@ wc -l penguins.csv   # total lines (incl. header)
 ```
 
 Notes:
+
 - `-L` (curl) follows redirects. `-O/-o` choose output filename.
 - Use `head`, `wc -l`, and `cut -d',' -f1-5 | head` to quickly sanity-check.
 </details>
@@ -180,7 +181,7 @@ awk -F',' 'NR>1 && $6 != "" {s+=$6; n++} END{print s/n}' penguins.csv
 ---
 
 ## 8) Find rows with missing values in **any** field
-**Question.** Count how many data rows contain an empty field.
+**Question.** Count how many data rows contain an empty field.  Assume the data elements are not quoted.
 
 <details><summary>Show solution</summary>
 
@@ -310,6 +311,7 @@ echo "Rows: $rows"
 ```
 
 Notes:
+
 - `gzip -l` reports compressed and uncompressed sizes; not row count.
 - Memory needs depend on parsing overhead; this is only an order-of-magnitude check.
 </details>

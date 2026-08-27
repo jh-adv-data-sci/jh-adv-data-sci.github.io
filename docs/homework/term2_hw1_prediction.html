@@ -102,10 +102,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Schedule/Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercises.html"> 
-<span class="menu-text">Exercises</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../homework.html"> 
 <span class="menu-text">Homework and Presentations</span></a>
   </li>  
@@ -139,11 +135,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -153,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -171,9 +174,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this homework, you will participate in a prediction competition.</p>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<p>Participate in the course prediction competition and build a reproducible prediction system rather than optimizing a single leaderboard submission.</p>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<ul>
+<li>Define the outcome, unit of prediction, loss/leaderboard metric, and the information available at prediction time.</li>
+<li>Create a leakage-resistant train/validation strategy before tuning models. Explain why it matches the data-generating or deployment setting.</li>
+<li>Submit at least two substantively different baselines and one improved model. Report validation performance, calibration or residual diagnostics as appropriate, and a brief error/slice analysis.</li>
+<li>Save code, package/environment information, predictions, and a <code>README.md</code> with exact reproduction instructions. Do not include hidden test labels in the repository.</li>
+<li>Write a 2-page model card: intended use, inputs, validation design, results, limitations, and potential harms or failure modes.</li>
+</ul>
+<p>AI agents may help with API questions or debugging. Record prompts and output relied on in <code>AI_USE.md</code>, and independently verify that no suggested feature leaks future or target information.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
