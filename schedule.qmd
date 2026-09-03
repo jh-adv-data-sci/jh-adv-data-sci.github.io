@@ -24,7 +24,7 @@ editor: source
 
 ## Week 4
 <!-- John -->
-- **Class 7:** Packing Software: [Tools]() and [Creating R packages](https://drive.google.com/file/d/17mLWgxBLnAXoRntMAiNYAm4JsqO12AUl/view?usp=sharing)
+- **Class 7:** Packing Software: [Tools](https://docs.google.com/presentation/d/1rpQtfpGEkVSCYmrVMhNoHcgMMQmLU78B4-EkHssc2o8/edit?usp=sharing) and [Creating R packages](https://drive.google.com/file/d/17mLWgxBLnAXoRntMAiNYAm4JsqO12AUl/view?usp=sharing)
 <!-- Brian -->
 - **Class 8:** [Grants](https://docs.google.com/presentation/d/1kU4HcYdaVqkg7I3ZexhAse5AZG8dlxTEgfakOUvCIdo/edit?usp=sharing)
 
