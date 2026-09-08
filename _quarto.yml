@@ -20,6 +20,10 @@ website:
           - text: "John Muschelli"
             href: https://johnmuschelli.com/
       - href: resources.qmd
+    right:
+      - icon: github
+        href: https://github.com/jh-adv-data-sci/jh-adv-data-sci.github.io
+        aria-label: GitHub repository
 
 format:
   html:
