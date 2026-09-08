@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "resources/**"
 
 website:
   title: "Advanced Data Science"
