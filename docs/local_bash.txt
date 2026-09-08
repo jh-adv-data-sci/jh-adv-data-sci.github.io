@@ -21,6 +21,6 @@ function sqrgig {
     shift;
     ell="--mem=$x";
     echo "jhpce requests were: $ell $@";
-    cmd="source ~/.bash_profile; qbash $ell $@";
+    cmd="source ~/.bash_profile; srun--pty --x11 $@ $ell /bin/bash";
     jhpce -t $cmd
 }
