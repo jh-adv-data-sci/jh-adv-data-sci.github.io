@@ -26,3 +26,12 @@ function Rnosave {
   ${cmd}
   rm $tempfile
 }
+
+# in ~/.bashrc
+if [[ $HOSTNAME == compute-* ]] ; then
+    if [[ -n ${SLURM_CLUSTER_NAME} ]] && echo `hostname` | $(! grep -q "transfer"); then
+    # SLURM
+    # load R whenever I go onto compute node
+        module load conda_R
+    fi
+fi
