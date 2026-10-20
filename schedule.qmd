@@ -56,21 +56,22 @@ editor: source
 
 ## Week 1
 <!-- John - Prediction competition assignment -->
-- **Class 1:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
-<!-- Angela -->
-- **Class 2:** [Tidymodels](https://docs.google.com/presentation/d/1DYL83AW0lNF1xAJlBiOxD-V9mfGKAm_3ixEeyoA-Ess/edit?usp=sharing)
+- **Class 1:** [Git Again)](https://docs.google.com/presentation/d/1DHJVh2lQhkNqFoQ7CGvxefWQx2ZBscQCc8Xu5uoU070/edit?usp=sharing)
+
+- **Class 2:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
+
 
 ## Week 2
 <!-- Angela -->
-- **Class 3:** [Tidymodels Workthrough](https://www.tidymodels.org/start/)
-<!-- Brian  - NHANES project assignment -->
-- **Class 4:** Prediction Competition – Presentation 
+- **Class 3:** [Tidymodels](https://docs.google.com/presentation/d/1DYL83AW0lNF1xAJlBiOxD-V9mfGKAm_3ixEeyoA-Ess/edit?usp=sharing)
+- **Class 4:** [Tidymodels Workthrough](https://www.tidymodels.org/start/)
+
 
 ## Week 3
+<!-- Brian  - NHANES project assignment -->
+- **Class 5:** Prediction Competition – Presentation 
 <!-- John -->
-- **Class 5:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
-<!-- John -->
-- **Class 6:** 
+- **Class 6:** [Missing Data](https://docs.google.com/presentation/d/1_yN0OIDyloqqH4_Utk66KmiUhKHGIuwRl3rUvy1f5EE/edit?usp=sharing)
 
 ## Week 4
 <!-- Brian  - LLM project assignment -->
