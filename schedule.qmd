@@ -56,7 +56,7 @@ editor: source
 
 ## Week 1
 <!-- John - Prediction competition assignment -->
-- **Class 1:** [Git Again)](https://docs.google.com/presentation/d/1DHJVh2lQhkNqFoQ7CGvxefWQx2ZBscQCc8Xu5uoU070/edit?usp=sharing)
+- **Class 1:** [Git Again](https://docs.google.com/presentation/d/1DHJVh2lQhkNqFoQ7CGvxefWQx2ZBscQCc8Xu5uoU070/edit?usp=sharing)
 
 - **Class 2:** [Performance Metrics](https://docs.google.com/presentation/d/1oSBcOWzJ7rOvZJuxiEDOQRuEBp4ncucBeXF8DiHL8kY/edit?usp=sharing) Measurement & Models – Lecture  
 
